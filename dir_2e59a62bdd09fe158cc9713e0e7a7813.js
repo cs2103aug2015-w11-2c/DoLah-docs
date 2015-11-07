@@ -1,7 +1,6 @@
 var dir_2e59a62bdd09fe158cc9713e0e7a7813 =
 [
     [ "Commands", "dir_c53c36cc7374ed65b45e51db68b010e8.html", "dir_c53c36cc7374ed65b45e51db68b010e8" ],
-    [ "Config", "dir_7884e4c830a6e3985140a731e937abe0.html", "dir_7884e4c830a6e3985140a731e937abe0" ],
     [ "Models", "dir_4122db6a7e46e42725a5ec045ffb0b24.html", "dir_4122db6a7e46e42725a5ec045ffb0b24" ],
     [ "Parser", "dir_fc58207c1113c5c3955a652b78cdea76.html", "dir_fc58207c1113c5c3955a652b78cdea76" ],
     [ "Storage", "dir_6157b1992c033af33cec39423221f46d.html", "dir_6157b1992c033af33cec39423221f46d" ],

@@ -116,30 +116,28 @@ $(document).ready(function(){initNavTree('_do_lah_client_8h_source.html','');});
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//#include &quot;Models/Task.h&quot;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;Models/Calendar.h&quot;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;CommandInvoker.h&quot;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;Config/ConfigurationManager.h&quot;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_do_lah.html">DoLah</a> {</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_do_lah_1_1_do_lah_client.html">   14</a></span>&#160;    <span class="keyword">class </span><a class="code" href="class_do_lah_1_1_do_lah_client.html">DoLahClient</a> {</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <a class="code" href="class_do_lah_1_1_do_lah_client.html">DoLahClient</a>();</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        ~<a class="code" href="class_do_lah_1_1_do_lah_client.html">DoLahClient</a>();</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keywordtype">void</span> parseAndProcessCommand(std::string);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <a class="code" href="class_do_lah_1_1_calendar.html">Calendar</a> getCalendar() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keywordtype">void</span> setStorageLocation(std::string);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <a class="code" href="class_do_lah_1_1_configuration.html">Configuration</a> config;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        std::string settingsFile;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <a class="code" href="class_do_lah_1_1_calendar.html">DoLah::Calendar</a> calendar;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <a class="code" href="class_do_lah_1_1_command_invoker.html">DoLah::CommandInvoker</a> commandInvoker;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    };</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_do_lah.html">DoLah</a> {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_do_lah_1_1_do_lah_client.html">   13</a></span>&#160;    <span class="keyword">class </span><a class="code" href="class_do_lah_1_1_do_lah_client.html">DoLahClient</a> {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <a class="code" href="class_do_lah_1_1_do_lah_client.html">DoLahClient</a>();</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        ~<a class="code" href="class_do_lah_1_1_do_lah_client.html">DoLahClient</a>();</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keywordtype">void</span> parseAndProcessCommand(std::string);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <a class="code" href="class_do_lah_1_1_calendar.html">Calendar</a> getCalendar() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        std::string settingsFile;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        std::string storageFile;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <a class="code" href="class_do_lah_1_1_calendar.html">DoLah::Calendar</a> calendar;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <a class="code" href="class_do_lah_1_1_command_invoker.html">DoLah::CommandInvoker</a> commandInvoker;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    };</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
 <div class="ttc" id="namespace_do_lah_html"><div class="ttname"><a href="namespace_do_lah.html">DoLah</a></div><div class="ttdef"><b>Definition:</b> CommandInvoker.cpp:3</div></div>
 <div class="ttc" id="class_do_lah_1_1_command_invoker_html"><div class="ttname"><a href="class_do_lah_1_1_command_invoker.html">DoLah::CommandInvoker</a></div><div class="ttdef"><b>Definition:</b> CommandInvoker.h:9</div></div>
-<div class="ttc" id="class_do_lah_1_1_configuration_html"><div class="ttname"><a href="class_do_lah_1_1_configuration.html">DoLah::Configuration</a></div><div class="ttdef"><b>Definition:</b> Configuration.h:8</div></div>
 <div class="ttc" id="class_do_lah_1_1_calendar_html"><div class="ttname"><a href="class_do_lah_1_1_calendar.html">DoLah::Calendar</a></div><div class="ttdef"><b>Definition:</b> Calendar.h:10</div></div>
-<div class="ttc" id="class_do_lah_1_1_do_lah_client_html"><div class="ttname"><a href="class_do_lah_1_1_do_lah_client.html">DoLah::DoLahClient</a></div><div class="ttdef"><b>Definition:</b> DoLahClient.h:14</div></div>
+<div class="ttc" id="class_do_lah_1_1_do_lah_client_html"><div class="ttname"><a href="class_do_lah_1_1_do_lah_client.html">DoLah::DoLahClient</a></div><div class="ttdef"><b>Definition:</b> DoLahClient.h:13</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

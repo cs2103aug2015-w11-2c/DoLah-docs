@@ -11,8 +11,6 @@ var annotated_dup =
       [ "CommandHistory", "class_do_lah_1_1_command_history.html", "class_do_lah_1_1_command_history" ],
       [ "CommandInvoker", "class_do_lah_1_1_command_invoker.html", "class_do_lah_1_1_command_invoker" ],
       [ "CommandParser", "class_do_lah_1_1_command_parser.html", "class_do_lah_1_1_command_parser" ],
-      [ "Configuration", "class_do_lah_1_1_configuration.html", "class_do_lah_1_1_configuration" ],
-      [ "ConfigurationManager", "class_do_lah_1_1_configuration_manager.html", "class_do_lah_1_1_configuration_manager" ],
       [ "DateTimeParser", "class_do_lah_1_1_date_time_parser.html", "class_do_lah_1_1_date_time_parser" ],
       [ "DeadlineTask", "class_do_lah_1_1_deadline_task.html", "class_do_lah_1_1_deadline_task" ],
       [ "DeleteTaskCommand", "class_do_lah_1_1_delete_task_command.html", "class_do_lah_1_1_delete_task_command" ],
@@ -32,9 +30,5 @@ var annotated_dup =
     ] ],
     [ "YAML", null, [
       [ "convert< std::tm >", "struct_y_a_m_l_1_1convert_3_01std_1_1tm_01_4.html", null ]
-    ] ],
-    [ "AbstractTaskFactory", "class_abstract_task_factory.html", "class_abstract_task_factory" ],
-    [ "DeadlineTaskFactory", "class_deadline_task_factory.html", null ],
-    [ "EventTaskFactory", "class_event_task_factory.html", null ],
-    [ "FloatingTaskFactory", "class_floating_task_factory.html", null ]
+    ] ]
 ];

@@ -104,9 +104,12 @@ $(document).ready(function(){initNavTree('index.html','');});
 <div class="contents">
 <div class="textblock"><p>Welcome to our contribution guideline. Feel free to explore our documentation page.</p>
 <h2>API Docs</h2>
-<p>Our API Documentation will be automatically generated from the project code using <a href="http://www.doxygen.org/">Doxygen</a> docs formatting.</p>
-<p>Generally, you should write the API docs in header file instead of the source file.</p>
-<h2>Branch naming</h2>
+<p>The API docs should be written in the header files. It will be automatically generated from the project code using <a href="http://www.doxygen.org/">Doxygen</a> docs using <a href="https://www.stack.nl/~dimitri/doxygen/manual/docblocks.html#cppblock">C-like (C/C++) formatting</a>.</p>
+<p>Our API docs should start with <code>///</code> for single line or <code>/**</code> <code>*/</code> for multilines above the function or class. Alternatively, use <code>int myVariable; ///&lt; description</code> for inline description.</p>
+<p>Whenever possible, use the correct <a href="https://www.stack.nl/~dimitri/doxygen/manual/commands.html">semantic command</a> when writing the API docs (e.g <code>params</code>, <code>todo</code>, <code>class</code>). Also use the <code>@</code> sign instead of backslash for command (e.g. <code>@params</code>).</p>
+<p>Please ensure the consistency of the syntax, and also consult with the team when in doubt of a certain format. It is also good to check out at some tips that others mentioned in online forum or Q&amp;A site such as Stackoverflow (e.g. <a href="https://www.stack.nl/~dimitri/doxygen/manual/commands.html">Tips Doxygen</a>).</p>
+<p>Generating document for our project can be done by executing the following command in the terminal: </p><pre class="fragment">doxygen
+</pre><h2>Branch naming</h2>
 <pre class="fragment"># Specific Feature or Functionality
 feature/&lt;feature-label&gt;
 
