@@ -1,0 +1,5 @@
+<map id="DoLah::AbstractTask" name="DoLah::AbstractTask">
+<area shape="rect" id="node2" href="$class_do_lah_1_1_deadline_task.html" title="DeadlineTask is a task that have a specific due datetime. " alt="" coords="5,387,151,523"/>
+<area shape="rect" id="node3" href="$class_do_lah_1_1_event_task.html" title="EventTask is a Task that have a specific starting datetime and ending datetime. " alt="" coords="175,365,301,545"/>
+<area shape="rect" id="node4" href="$class_do_lah_1_1_floating_task.html" title="A floating task is a task without any time specified. " alt="" coords="326,417,467,494"/>
+</map>

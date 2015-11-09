@@ -1,0 +1,6 @@
+<map id="DoLah::DoLahClient" name="DoLah::DoLahClient">
+<area shape="rect" id="node2" href="$class_do_lah_1_1_calendar.html" title="Class for holding the actual tasklist(s) and any operations on tasks in those list(s). " alt="" coords="5,277,224,604"/>
+<area shape="rect" id="node3" href="$class_do_lah_1_1_command_history.html" title="{DoLah::CommandHistory\n|&#45; undoStack\l&#45; redoStack\l&#45; INVALID_UNDO_CALL_MESSAGE\l&#45; INVALID_REDO_CALL_MESSAGE\l|+ CommandHistory()\l+ ~CommandHistory()\l+ addToUndoStack()\l+ getUndoStackSize()\l+ getRedoStackSize()\l+ undo()\l+ redo()\l}" alt="" coords="136,5,371,215"/>
+<area shape="rect" id="node5" href="$class_do_lah_1_1_command_invoker.html" title="{DoLah::CommandInvoker\n||+ CommandInvoker()\l+ ~CommandInvoker()\l+ setCmdHistory()\l+ checkIfExcludedCommandType()\l+ process()\l}" alt="" coords="248,373,472,509"/>
+<area shape="rect" id="node4" href="$class_do_lah_1_1_configuration.html" title="The user configuration data structure. " alt="" coords="497,395,639,487"/>
+</map>

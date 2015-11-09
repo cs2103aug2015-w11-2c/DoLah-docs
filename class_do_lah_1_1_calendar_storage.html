@@ -48,6 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -72,7 +73,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
-      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -107,32 +108,286 @@ $(document).ready(function(){initNavTree('class_do_lah_1_1_calendar_storage.html
 
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="class_do_lah_1_1_calendar_storage-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">DoLah::CalendarStorage Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>This class handles the saving and loading of <a class="el" href="class_do_lah_1_1_calendar.html" title="Class for holding the actual tasklist(s) and any operations on tasks in those list(s). ">Calendar</a>.  
+ <a href="class_do_lah_1_1_calendar_storage.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_calendar_storage_8h_source.html">CalendarStorage.h</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for DoLah::CalendarStorage:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_do_lah_1_1_calendar_storage__coll__graph.png" border="0" usemap="#_do_lah_1_1_calendar_storage_coll__map" alt="Collaboration graph"/></div>
+<map name="_do_lah_1_1_calendar_storage_coll__map" id="_do_lah_1_1_calendar_storage_coll__map">
+</map>
+</div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a803d9eccc464d755008ece41b166be9b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_calendar_storage.html#a803d9eccc464d755008ece41b166be9b">CalendarStorage</a> ()</td></tr>
+<tr class="separator:a803d9eccc464d755008ece41b166be9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afadcfb4f199649bf06664ddf669aa4b8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_calendar_storage.html#afadcfb4f199649bf06664ddf669aa4b8">~CalendarStorage</a> ()</td></tr>
+<tr class="separator:afadcfb4f199649bf06664ddf669aa4b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a42bf58169068f4cd3a0c5285a3bd07de"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a42bf58169068f4cd3a0c5285a3bd07de"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>save</b> (const <a class="el" href="class_do_lah_1_1_calendar.html">DoLah::Calendar</a> &amp;, const std::string &amp;)</td></tr>
+<tr class="memitem:a42bf58169068f4cd3a0c5285a3bd07de"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_calendar_storage.html#a42bf58169068f4cd3a0c5285a3bd07de">save</a> (const <a class="el" href="class_do_lah_1_1_calendar.html">DoLah::Calendar</a> &amp;, const std::string &amp;)</td></tr>
+<tr class="memdesc:a42bf58169068f4cd3a0c5285a3bd07de"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method handles the saving of calendar.  <a href="#a42bf58169068f4cd3a0c5285a3bd07de">More...</a><br /></td></tr>
 <tr class="separator:a42bf58169068f4cd3a0c5285a3bd07de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35f14ee71c332fe9bb26a887ceb3f317"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a35f14ee71c332fe9bb26a887ceb3f317"></a>
-static <a class="el" href="class_do_lah_1_1_calendar.html">Calendar</a>&#160;</td><td class="memItemRight" valign="bottom"><b>load</b> (const std::string &amp;)</td></tr>
+<tr class="memitem:a35f14ee71c332fe9bb26a887ceb3f317"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_do_lah_1_1_calendar.html">Calendar</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_calendar_storage.html#a35f14ee71c332fe9bb26a887ceb3f317">load</a> (const std::string &amp;)</td></tr>
+<tr class="memdesc:a35f14ee71c332fe9bb26a887ceb3f317"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method handles the saving of <a class="el" href="class_do_lah_1_1_calendar.html" title="Class for holding the actual tasklist(s) and any operations on tasks in those list(s). ">Calendar</a>.  <a href="#a35f14ee71c332fe9bb26a887ceb3f317">More...</a><br /></td></tr>
 <tr class="separator:a35f14ee71c332fe9bb26a887ceb3f317"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a3cb4b54df533884fa7506d803f19e002"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_calendar_storage.html#a3cb4b54df533884fa7506d803f19e002">emitYAMLtoString</a> (const YAML::Node &amp;, const YAML::Node &amp;)</td></tr>
+<tr class="memdesc:a3cb4b54df533884fa7506d803f19e002"><td class="mdescLeft">&#160;</td><td class="mdescRight">build yaml string from two task list: done and todo  <a href="#a3cb4b54df533884fa7506d803f19e002">More...</a><br /></td></tr>
+<tr class="separator:a3cb4b54df533884fa7506d803f19e002"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb9b1537e8bc0314e6cc6b76daf62ba3"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_calendar_storage.html#adb9b1537e8bc0314e6cc6b76daf62ba3">buildCalendarYAML</a> (const <a class="el" href="class_do_lah_1_1_calendar.html">DoLah::Calendar</a> &amp;)</td></tr>
+<tr class="memdesc:adb9b1537e8bc0314e6cc6b76daf62ba3"><td class="mdescLeft">&#160;</td><td class="mdescRight">build the yaml string of the calendar.  <a href="#adb9b1537e8bc0314e6cc6b76daf62ba3">More...</a><br /></td></tr>
+<tr class="separator:adb9b1537e8bc0314e6cc6b76daf62ba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c4f50ec5ae99c28cc7cb924d21151df"><td class="memItemLeft" align="right" valign="top">static YAML::Node&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_calendar_storage.html#a1c4f50ec5ae99c28cc7cb924d21151df">CalendarStorage::buildTaskNode</a> (<a class="el" href="class_do_lah_1_1_abstract_task.html">AbstractTask</a> *)</td></tr>
+<tr class="memdesc:a1c4f50ec5ae99c28cc7cb924d21151df"><td class="mdescLeft">&#160;</td><td class="mdescRight">build YAML::Node from the task  <a href="#a1c4f50ec5ae99c28cc7cb924d21151df">More...</a><br /></td></tr>
+<tr class="separator:a1c4f50ec5ae99c28cc7cb924d21151df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This class handles the saving and loading of <a class="el" href="class_do_lah_1_1_calendar.html" title="Class for holding the actual tasklist(s) and any operations on tasks in those list(s). ">Calendar</a>. </p>
+<p>The <a class="el" href="class_do_lah_1_1_calendar.html" title="Class for holding the actual tasklist(s) and any operations on tasks in those list(s). ">Calendar</a> will be stored in <a class="el" href="namespace_y_a_m_l.html">YAML</a> format for readability. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a803d9eccc464d755008ece41b166be9b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DoLah::CalendarStorage::CalendarStorage </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afadcfb4f199649bf06664ddf669aa4b8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DoLah::CalendarStorage::~CalendarStorage </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="adb9b1537e8bc0314e6cc6b76daf62ba3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string DoLah::CalendarStorage::buildCalendarYAML </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_do_lah_1_1_calendar.html">DoLah::Calendar</a> &amp;&#160;</td>
+          <td class="paramname"><em>calendar</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>build the yaml string of the calendar. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">calendar</td><td>the <a class="el" href="class_do_lah_1_1_calendar.html" title="Class for holding the actual tasklist(s) and any operations on tasks in those list(s). ">Calendar</a> object to build </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>yaml string ready to be stored. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1c4f50ec5ae99c28cc7cb924d21151df"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static YAML::Node DoLah::CalendarStorage::CalendarStorage::buildTaskNode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_do_lah_1_1_abstract_task.html">AbstractTask</a> *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>build YAML::Node from the task </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">task</td><td>the <a class="el" href="class_do_lah_1_1_abstract_task.html" title="Abstract Task class is the base class for any Task. ">AbstractTask</a> object that will be constructed. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>YAML::Node of the task </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3cb4b54df533884fa7506d803f19e002"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string DoLah::CalendarStorage::emitYAMLtoString </td>
+          <td>(</td>
+          <td class="paramtype">const YAML::Node &amp;&#160;</td>
+          <td class="paramname"><em>todoNode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const YAML::Node &amp;&#160;</td>
+          <td class="paramname"><em>completedNode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>build yaml string from two task list: done and todo </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">todoNode</td><td>The YAML::Node for todo task. </td></tr>
+    <tr><td class="paramname">completedNode</td><td>The YAML::Node for done task. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the string ready to be saved as a yaml file. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a35f14ee71c332fe9bb26a887ceb3f317"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_do_lah_1_1_calendar.html">Calendar</a> DoLah::CalendarStorage::load </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This method handles the saving of <a class="el" href="class_do_lah_1_1_calendar.html" title="Class for holding the actual tasklist(s) and any operations on tasks in those list(s). ">Calendar</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>The filepath of yaml file. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="class_do_lah_1_1_calendar.html" title="Class for holding the actual tasklist(s) and any operations on tasks in those list(s). ">Calendar</a> object that is loaded </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a42bf58169068f4cd3a0c5285a3bd07de"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DoLah::CalendarStorage::save </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_do_lah_1_1_calendar.html">DoLah::Calendar</a> &amp;&#160;</td>
+          <td class="paramname"><em>calendar</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This method handles the saving of calendar. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">calendar</td><td>The <a class="el" href="class_do_lah_1_1_calendar.html" title="Class for holding the actual tasklist(s) and any operations on tasks in those list(s). ">Calendar</a> object that will be saved </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>The filepath of yaml file. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>DoLah/Storage/<a class="el" href="_calendar_storage_8h_source.html">CalendarStorage.h</a></li>
-<li>DoLah/Storage/CalendarStorage.cpp</li>
+<li>DoLah/Storage/<a class="el" href="_calendar_storage_8cpp.html">CalendarStorage.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>DoLah</b></li><li class="navelem"><a class="el" href="class_do_lah_1_1_calendar_storage.html">CalendarStorage</a></li>
+    <li class="navelem"><a class="el" href="namespace_do_lah.html">DoLah</a></li><li class="navelem"><a class="el" href="class_do_lah_1_1_calendar_storage.html">CalendarStorage</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>

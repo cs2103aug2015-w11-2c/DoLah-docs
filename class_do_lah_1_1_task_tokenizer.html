@@ -48,6 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -72,7 +73,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
-      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -107,35 +108,412 @@ $(document).ready(function(){initNavTree('class_do_lah_1_1_task_tokenizer.html',
 
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="class_do_lah_1_1_task_tokenizer-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">DoLah::TaskTokenizer Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_task_tokenizer_8h_source.html">TaskTokenizer.h</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for DoLah::TaskTokenizer:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_do_lah_1_1_task_tokenizer__coll__graph.png" border="0" usemap="#_do_lah_1_1_task_tokenizer_coll__map" alt="Collaboration graph"/></div>
+</div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a0ad3177a4ddfaf3f1ef0a85101192125"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_task_tokenizer.html#a0ad3177a4ddfaf3f1ef0a85101192125">TaskTokenizer</a> ()</td></tr>
+<tr class="separator:a0ad3177a4ddfaf3f1ef0a85101192125"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88463a698aad5e7328b3fe698dda7e9e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_task_tokenizer.html#a88463a698aad5e7328b3fe698dda7e9e">~TaskTokenizer</a> ()</td></tr>
+<tr class="separator:a88463a698aad5e7328b3fe698dda7e9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ae4d5dd5e768250ab52f79cf2333244c0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae4d5dd5e768250ab52f79cf2333244c0"></a>
-static std::vector&lt; std::tm &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>findAndRemoveDate</b> (std::vector&lt; std::string &gt; &amp;)</td></tr>
+<tr class="memitem:ae4d5dd5e768250ab52f79cf2333244c0"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::tm &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_task_tokenizer.html#ae4d5dd5e768250ab52f79cf2333244c0">findAndRemoveDate</a> (std::vector&lt; std::string &gt; &amp;)</td></tr>
 <tr class="separator:ae4d5dd5e768250ab52f79cf2333244c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a685b79ad21e6fbcee9a8444f1ecee242"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a685b79ad21e6fbcee9a8444f1ecee242"></a>
-static std::string&#160;</td><td class="memItemRight" valign="bottom"><b>findDescription</b> (std::vector&lt; std::string &gt;)</td></tr>
+<tr class="memitem:a685b79ad21e6fbcee9a8444f1ecee242"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_task_tokenizer.html#a685b79ad21e6fbcee9a8444f1ecee242">findDescription</a> (std::vector&lt; std::string &gt;)</td></tr>
 <tr class="separator:a685b79ad21e6fbcee9a8444f1ecee242"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18c52165865d50a601ee80de7e5b842b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a18c52165865d50a601ee80de7e5b842b"></a>
-static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>findTags</b> (std::vector&lt; std::string &gt;)</td></tr>
+<tr class="memitem:a18c52165865d50a601ee80de7e5b842b"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_task_tokenizer.html#a18c52165865d50a601ee80de7e5b842b">findTags</a> (std::vector&lt; std::string &gt;)</td></tr>
 <tr class="separator:a18c52165865d50a601ee80de7e5b842b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:ada3fadabb1179f148f154414d752504f"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::tm &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_task_tokenizer.html#ada3fadabb1179f148f154414d752504f">TaskTokenizer::findDate</a> (std::vector&lt; std::string &gt;, int)</td></tr>
+<tr class="separator:ada3fadabb1179f148f154414d752504f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82b33da61aae5f6ae01aceaf470d8aaa"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::tm &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_task_tokenizer.html#a82b33da61aae5f6ae01aceaf470d8aaa">TaskTokenizer::findDeadline</a> (std::vector&lt; std::string &gt;)</td></tr>
+<tr class="separator:a82b33da61aae5f6ae01aceaf470d8aaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5c39a94f0663c393b23b56dd43bd275"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::tm &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_task_tokenizer.html#ae5c39a94f0663c393b23b56dd43bd275">TaskTokenizer::findEvent</a> (std::vector&lt; std::string &gt;, std::vector&lt; std::string &gt;)</td></tr>
+<tr class="separator:ae5c39a94f0663c393b23b56dd43bd275"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a8544e1db764064ab0775b7dc20146365"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_task_tokenizer.html#a8544e1db764064ab0775b7dc20146365">DEADLINE_INDICATOR</a> = { &quot;in&quot;, &quot;on&quot;, &quot;by&quot;, &quot;due&quot;, &quot;at&quot; }</td></tr>
+<tr class="separator:a8544e1db764064ab0775b7dc20146365"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6cb395be71da1b56c8a21702fe8e145"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_task_tokenizer.html#ac6cb395be71da1b56c8a21702fe8e145">EVENT_INDICATOR</a> = { &quot;in&quot;, &quot;on&quot;, &quot;from&quot;, &quot;between&quot; }</td></tr>
+<tr class="separator:ac6cb395be71da1b56c8a21702fe8e145"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9014063c9cecbca31aff4c3af27edb75"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_task_tokenizer.html#a9014063c9cecbca31aff4c3af27edb75">EVENT_SEPARATOR</a> = { &quot;to&quot;, &quot;~&quot;, &quot;until&quot; }</td></tr>
+<tr class="separator:a9014063c9cecbca31aff4c3af27edb75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c004d5ac6e5d8fcfd4e97e70eeaf809"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_task_tokenizer.html#a2c004d5ac6e5d8fcfd4e97e70eeaf809">SCHEDULE_INDICATOR</a></td></tr>
+<tr class="separator:a2c004d5ac6e5d8fcfd4e97e70eeaf809"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0ffb0a1a7b6ef69807a106422bc2796"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_task_tokenizer.html#ab0ffb0a1a7b6ef69807a106422bc2796">SCHEDULE_SEPARATOR</a></td></tr>
+<tr class="separator:ab0ffb0a1a7b6ef69807a106422bc2796"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab64352e34f7515a27733061a6e01e984"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_task_tokenizer.html#ab64352e34f7515a27733061a6e01e984">tag</a> = &quot;#&quot;</td></tr>
+<tr class="separator:ab64352e34f7515a27733061a6e01e984"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaeedd5c644d736b1a0c1810934874a2d"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_task_tokenizer.html#aaeedd5c644d736b1a0c1810934874a2d">defaultTMYear</a> = 0</td></tr>
+<tr class="separator:aaeedd5c644d736b1a0c1810934874a2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a0ad3177a4ddfaf3f1ef0a85101192125"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DoLah::TaskTokenizer::TaskTokenizer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a88463a698aad5e7328b3fe698dda7e9e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DoLah::TaskTokenizer::~TaskTokenizer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ae4d5dd5e768250ab52f79cf2333244c0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::tm &gt; DoLah::TaskTokenizer::findAndRemoveDate </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>lineArr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a685b79ad21e6fbcee9a8444f1ecee242"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string DoLah::TaskTokenizer::findDescription </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; std::string &gt;&#160;</td>
+          <td class="paramname"><em>lineArr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a18c52165865d50a601ee80de7e5b842b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::string &gt; DoLah::TaskTokenizer::findTags </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; std::string &gt;&#160;</td>
+          <td class="paramname"><em>lineArr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ada3fadabb1179f148f154414d752504f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::vector&lt;std::tm&gt; DoLah::TaskTokenizer::TaskTokenizer::findDate </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; std::string &gt;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a82b33da61aae5f6ae01aceaf470d8aaa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::vector&lt;std::tm&gt; DoLah::TaskTokenizer::TaskTokenizer::findDeadline </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; std::string &gt;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae5c39a94f0663c393b23b56dd43bd275"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::vector&lt;std::tm&gt; DoLah::TaskTokenizer::TaskTokenizer::findEvent </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; std::string &gt;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; std::string &gt;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a8544e1db764064ab0775b7dc20146365"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::string &gt; DoLah::TaskTokenizer::DEADLINE_INDICATOR = { &quot;in&quot;, &quot;on&quot;, &quot;by&quot;, &quot;due&quot;, &quot;at&quot; }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aaeedd5c644d736b1a0c1810934874a2d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DoLah::TaskTokenizer::defaultTMYear = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac6cb395be71da1b56c8a21702fe8e145"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::string &gt; DoLah::TaskTokenizer::EVENT_INDICATOR = { &quot;in&quot;, &quot;on&quot;, &quot;from&quot;, &quot;between&quot; }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9014063c9cecbca31aff4c3af27edb75"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::string &gt; DoLah::TaskTokenizer::EVENT_SEPARATOR = { &quot;to&quot;, &quot;~&quot;, &quot;until&quot; }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2c004d5ac6e5d8fcfd4e97e70eeaf809"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string DoLah::TaskTokenizer::SCHEDULE_INDICATOR</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab0ffb0a1a7b6ef69807a106422bc2796"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::string&gt; DoLah::TaskTokenizer::SCHEDULE_SEPARATOR</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab64352e34f7515a27733061a6e01e984"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string DoLah::TaskTokenizer::tag = &quot;#&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>DoLah/Parser/<a class="el" href="_task_tokenizer_8h_source.html">TaskTokenizer.h</a></li>
-<li>DoLah/Parser/TaskTokenizer.cpp</li>
+<li>DoLah/Parser/<a class="el" href="_task_tokenizer_8cpp.html">TaskTokenizer.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>DoLah</b></li><li class="navelem"><a class="el" href="class_do_lah_1_1_task_tokenizer.html">TaskTokenizer</a></li>
+    <li class="navelem"><a class="el" href="namespace_do_lah.html">DoLah</a></li><li class="navelem"><a class="el" href="class_do_lah_1_1_task_tokenizer.html">TaskTokenizer</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>

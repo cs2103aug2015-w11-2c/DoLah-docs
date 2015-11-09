@@ -1,0 +1,13 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$class_do_lah_1_1_abstract_command.html" title="DoLah::AbstractCommand" alt="" coords="5,233,180,260"/>
+<area shape="rect" id="node2" href="$class_do_lah_1_1_add_task_command.html" title="DoLah::AddTaskCommand" alt="" coords="251,5,428,32"/>
+<area shape="rect" id="node3" href="$class_do_lah_1_1_clear_task_command.html" title="DoLah::ClearTaskCommand" alt="" coords="247,56,431,83"/>
+<area shape="rect" id="node4" href="$class_do_lah_1_1_delete_task_command.html" title="DoLah::DeleteTaskCommand" alt="" coords="244,107,435,133"/>
+<area shape="rect" id="node5" href="$class_do_lah_1_1_edit_task_command.html" title="DoLah::EditTaskCommand" alt="" coords="251,157,428,184"/>
+<area shape="rect" id="node6" href="$class_do_lah_1_1_redo_task_command.html" title="DoLah::RedoTaskCommand" alt="" coords="247,208,431,235"/>
+<area shape="rect" id="node7" href="$class_do_lah_1_1_search_date_task_command.html" title="DoLah::SearchDateTaskCommand" alt="" coords="228,259,451,285"/>
+<area shape="rect" id="node8" href="$class_do_lah_1_1_search_task_command.html" title="DoLah::SearchTaskCommand" alt="" coords="242,309,437,336"/>
+<area shape="rect" id="node9" href="$class_do_lah_1_1_set_done_task_command.html" title="DoLah::SetDoneTaskCommand" alt="" coords="237,360,441,387"/>
+<area shape="rect" id="node10" href="$class_do_lah_1_1_set_undone_task_command.html" title="DoLah::SetUndoneTaskCommand" alt="" coords="230,411,449,437"/>
+<area shape="rect" id="node11" href="$class_do_lah_1_1_undo_task_command.html" title="DoLah::UndoTaskCommand" alt="" coords="247,461,431,488"/>
+</map>

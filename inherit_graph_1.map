@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$class_do_lah_1_1_abstract_task.html" title="Abstract Task class is the base class for any Task. " alt="" coords="5,56,149,83"/>
+<area shape="rect" id="node2" href="$class_do_lah_1_1_deadline_task.html" title="DeadlineTask is a task that have a specific due datetime. " alt="" coords="197,5,343,32"/>
+<area shape="rect" id="node3" href="$class_do_lah_1_1_event_task.html" title="EventTask is a Task that have a specific starting datetime and ending datetime. " alt="" coords="207,56,333,83"/>
+<area shape="rect" id="node4" href="$class_do_lah_1_1_floating_task.html" title="A floating task is a task without any time specified. " alt="" coords="199,107,341,133"/>
+</map>

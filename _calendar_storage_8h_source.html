@@ -48,6 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -71,6 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -107,57 +109,76 @@ $(document).ready(function(){initNavTree('_calendar_storage_8h_source.html','');
 <div class="title">CalendarStorage.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;Models/Calendar.h&quot;</span></div>
+<a href="_calendar_storage_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_calendar_8h.html">Models/Calendar.h</a>&quot;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;boost/date_time/posix_time/posix_time.hpp&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_do_lah.html">DoLah</a> {</div>
-<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_do_lah_1_1_calendar_storage.html">    8</a></span>&#160;    <span class="keyword">class </span><a class="code" href="class_do_lah_1_1_calendar_storage.html">CalendarStorage</a></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    {</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        <a class="code" href="class_do_lah_1_1_calendar_storage.html">CalendarStorage</a>();</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        ~<a class="code" href="class_do_lah_1_1_calendar_storage.html">CalendarStorage</a>();</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> save(<span class="keyword">const</span> <a class="code" href="class_do_lah_1_1_calendar.html">DoLah::Calendar</a> &amp;, <span class="keyword">const</span> std::string &amp;);</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keyword">static</span> <a class="code" href="class_do_lah_1_1_calendar.html">Calendar</a> load(<span class="keyword">const</span> std::string &amp;);</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    };</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;}</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_do_lah_1_1_calendar_storage.html">   13</a></span>&#160;    <span class="keyword">class </span><a class="code" href="class_do_lah_1_1_calendar_storage.html">CalendarStorage</a></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <a class="code" href="class_do_lah_1_1_calendar_storage.html#a803d9eccc464d755008ece41b166be9b">CalendarStorage</a>();</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <a class="code" href="class_do_lah_1_1_calendar_storage.html#afadcfb4f199649bf06664ddf669aa4b8">~CalendarStorage</a>();</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_y_a_m_l.html">YAML</a> {</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">template</span>&lt;&gt;</div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="struct_y_a_m_l_1_1convert_3_01std_1_1tm_01_4.html">   22</a></span>&#160;    <span class="keyword">struct </span>convert&lt;std::tm&gt; {</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keyword">static</span> Node encode(<span class="keyword">const</span> std::tm&amp; rhs) {</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            Node node;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            <span class="keywordtype">char</span> s_dt[<span class="keyword">sizeof</span> <span class="stringliteral">&quot;2011-10-20 20:30:40&quot;</span>];</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            std::strftime(s_dt, <span class="keyword">sizeof</span> s_dt, <span class="stringliteral">&quot;%F %T&quot;</span>, &amp;rhs);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            node = s_dt;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            <span class="keywordflow">return</span> node;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        }</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">bool</span> decode(<span class="keyword">const</span> Node&amp; node, std::tm&amp; rhs) {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            <span class="keywordflow">if</span> (!node.IsScalar()) {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            }</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            std::string s_datetime = node.as&lt;std::string&gt;();</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            boost::posix_time::ptime t(boost::posix_time::time_from_string(s_datetime));</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            rhs = boost::posix_time::to_tm(t);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        }</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    };</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_do_lah_1_1_calendar_storage.html#a42bf58169068f4cd3a0c5285a3bd07de">save</a>(<span class="keyword">const</span> <a class="code" href="class_do_lah_1_1_calendar.html">DoLah::Calendar</a> &amp;, <span class="keyword">const</span> std::string &amp;);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keyword">static</span> <a class="code" href="class_do_lah_1_1_calendar.html">Calendar</a> <a class="code" href="class_do_lah_1_1_calendar_storage.html#a35f14ee71c332fe9bb26a887ceb3f317">load</a>(<span class="keyword">const</span> std::string &amp;);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keyword">static</span> std::string <a class="code" href="class_do_lah_1_1_calendar_storage.html#a3cb4b54df533884fa7506d803f19e002">emitYAMLtoString</a>(<span class="keyword">const</span> YAML::Node&amp;, <span class="keyword">const</span> YAML::Node&amp;);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keyword">static</span> std::string <a class="code" href="class_do_lah_1_1_calendar_storage.html#adb9b1537e8bc0314e6cc6b76daf62ba3">buildCalendarYAML</a>(<span class="keyword">const</span> <a class="code" href="class_do_lah_1_1_calendar.html">DoLah::Calendar</a>&amp;);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keyword">static</span> YAML::Node <a class="code" href="class_do_lah_1_1_calendar_storage.html#a1c4f50ec5ae99c28cc7cb924d21151df">CalendarStorage::buildTaskNode</a>(<a class="code" href="class_do_lah_1_1_abstract_task.html">AbstractTask</a>*);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    };</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="namespace_y_a_m_l.html">   61</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_y_a_m_l.html">YAML</a> {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">template</span>&lt;&gt;</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="struct_y_a_m_l_1_1convert_3_01std_1_1tm_01_4.html">   66</a></span>&#160;    <span class="keyword">struct </span>convert&lt;std::tm&gt; {</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="struct_y_a_m_l_1_1convert_3_01std_1_1tm_01_4.html#a07440b7d6799934170be3ea677f77d43">   67</a></span>&#160;        <span class="keyword">static</span> Node <a class="code" href="struct_y_a_m_l_1_1convert_3_01std_1_1tm_01_4.html#a07440b7d6799934170be3ea677f77d43">encode</a>(<span class="keyword">const</span> std::tm&amp; rhs) {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            Node node;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <span class="keywordtype">char</span> s_dt[<span class="keyword">sizeof</span> <span class="stringliteral">&quot;2011-10-20 20:30:40&quot;</span>];</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            std::strftime(s_dt, <span class="keyword">sizeof</span> s_dt, <span class="stringliteral">&quot;%F %T&quot;</span>, &amp;rhs);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            node = s_dt;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            <span class="keywordflow">return</span> node;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="struct_y_a_m_l_1_1convert_3_01std_1_1tm_01_4.html#a7c8b7509772b8dc4ba46537749f90fec">   75</a></span>&#160;        <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="struct_y_a_m_l_1_1convert_3_01std_1_1tm_01_4.html#a7c8b7509772b8dc4ba46537749f90fec">decode</a>(<span class="keyword">const</span> Node&amp; node, std::tm&amp; rhs) {</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            <span class="keywordflow">if</span> (!node.IsScalar()) {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            std::string s_datetime = node.as&lt;std::string&gt;();</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            boost::posix_time::ptime t(boost::posix_time::time_from_string(s_datetime));</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            rhs = boost::posix_time::to_tm(t);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    };</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}</div>
+<div class="ttc" id="class_do_lah_1_1_calendar_storage_html_a1c4f50ec5ae99c28cc7cb924d21151df"><div class="ttname"><a href="class_do_lah_1_1_calendar_storage.html#a1c4f50ec5ae99c28cc7cb924d21151df">DoLah::CalendarStorage::buildTaskNode</a></div><div class="ttdeci">static YAML::Node CalendarStorage::buildTaskNode(AbstractTask *)</div><div class="ttdoc">build YAML::Node from the task </div></div>
+<div class="ttc" id="class_do_lah_1_1_calendar_storage_html_a42bf58169068f4cd3a0c5285a3bd07de"><div class="ttname"><a href="class_do_lah_1_1_calendar_storage.html#a42bf58169068f4cd3a0c5285a3bd07de">DoLah::CalendarStorage::save</a></div><div class="ttdeci">static void save(const DoLah::Calendar &amp;, const std::string &amp;)</div><div class="ttdoc">This method handles the saving of calendar. </div><div class="ttdef"><b>Definition:</b> CalendarStorage.cpp:78</div></div>
+<div class="ttc" id="class_do_lah_1_1_calendar_storage_html_afadcfb4f199649bf06664ddf669aa4b8"><div class="ttname"><a href="class_do_lah_1_1_calendar_storage.html#afadcfb4f199649bf06664ddf669aa4b8">DoLah::CalendarStorage::~CalendarStorage</a></div><div class="ttdeci">~CalendarStorage()</div><div class="ttdef"><b>Definition:</b> CalendarStorage.cpp:12</div></div>
 <div class="ttc" id="namespace_do_lah_html"><div class="ttname"><a href="namespace_do_lah.html">DoLah</a></div><div class="ttdef"><b>Definition:</b> CommandInvoker.cpp:3</div></div>
-<div class="ttc" id="class_do_lah_1_1_calendar_storage_html"><div class="ttname"><a href="class_do_lah_1_1_calendar_storage.html">DoLah::CalendarStorage</a></div><div class="ttdef"><b>Definition:</b> CalendarStorage.h:8</div></div>
-<div class="ttc" id="namespace_y_a_m_l_html"><div class="ttname"><a href="namespace_y_a_m_l.html">YAML</a></div><div class="ttdef"><b>Definition:</b> CalendarStorage.h:20</div></div>
-<div class="ttc" id="class_do_lah_1_1_calendar_html"><div class="ttname"><a href="class_do_lah_1_1_calendar.html">DoLah::Calendar</a></div><div class="ttdef"><b>Definition:</b> Calendar.h:10</div></div>
+<div class="ttc" id="struct_y_a_m_l_1_1convert_3_01std_1_1tm_01_4_html_a07440b7d6799934170be3ea677f77d43"><div class="ttname"><a href="struct_y_a_m_l_1_1convert_3_01std_1_1tm_01_4.html#a07440b7d6799934170be3ea677f77d43">YAML::convert&lt; std::tm &gt;::encode</a></div><div class="ttdeci">static Node encode(const std::tm &amp;rhs)</div><div class="ttdef"><b>Definition:</b> CalendarStorage.h:67</div></div>
+<div class="ttc" id="class_do_lah_1_1_calendar_storage_html_a3cb4b54df533884fa7506d803f19e002"><div class="ttname"><a href="class_do_lah_1_1_calendar_storage.html#a3cb4b54df533884fa7506d803f19e002">DoLah::CalendarStorage::emitYAMLtoString</a></div><div class="ttdeci">static std::string emitYAMLtoString(const YAML::Node &amp;, const YAML::Node &amp;)</div><div class="ttdoc">build yaml string from two task list: done and todo </div><div class="ttdef"><b>Definition:</b> CalendarStorage.cpp:56</div></div>
+<div class="ttc" id="class_do_lah_1_1_calendar_storage_html_a803d9eccc464d755008ece41b166be9b"><div class="ttname"><a href="class_do_lah_1_1_calendar_storage.html#a803d9eccc464d755008ece41b166be9b">DoLah::CalendarStorage::CalendarStorage</a></div><div class="ttdeci">CalendarStorage()</div><div class="ttdef"><b>Definition:</b> CalendarStorage.cpp:10</div></div>
+<div class="ttc" id="class_do_lah_1_1_calendar_storage_html"><div class="ttname"><a href="class_do_lah_1_1_calendar_storage.html">DoLah::CalendarStorage</a></div><div class="ttdoc">This class handles the saving and loading of Calendar. </div><div class="ttdef"><b>Definition:</b> CalendarStorage.h:13</div></div>
+<div class="ttc" id="namespace_y_a_m_l_html"><div class="ttname"><a href="namespace_y_a_m_l.html">YAML</a></div><div class="ttdef"><b>Definition:</b> CalendarStorage.h:61</div></div>
+<div class="ttc" id="class_do_lah_1_1_calendar_storage_html_adb9b1537e8bc0314e6cc6b76daf62ba3"><div class="ttname"><a href="class_do_lah_1_1_calendar_storage.html#adb9b1537e8bc0314e6cc6b76daf62ba3">DoLah::CalendarStorage::buildCalendarYAML</a></div><div class="ttdeci">static std::string buildCalendarYAML(const DoLah::Calendar &amp;)</div><div class="ttdoc">build the yaml string of the calendar. </div><div class="ttdef"><b>Definition:</b> CalendarStorage.cpp:37</div></div>
+<div class="ttc" id="struct_y_a_m_l_1_1convert_3_01std_1_1tm_01_4_html_a7c8b7509772b8dc4ba46537749f90fec"><div class="ttname"><a href="struct_y_a_m_l_1_1convert_3_01std_1_1tm_01_4.html#a7c8b7509772b8dc4ba46537749f90fec">YAML::convert&lt; std::tm &gt;::decode</a></div><div class="ttdeci">static bool decode(const Node &amp;node, std::tm &amp;rhs)</div><div class="ttdef"><b>Definition:</b> CalendarStorage.h:75</div></div>
+<div class="ttc" id="class_do_lah_1_1_calendar_html"><div class="ttname"><a href="class_do_lah_1_1_calendar.html">DoLah::Calendar</a></div><div class="ttdoc">Class for holding the actual tasklist(s) and any operations on tasks in those list(s). </div><div class="ttdef"><b>Definition:</b> Calendar.h:21</div></div>
+<div class="ttc" id="_calendar_8h_html"><div class="ttname"><a href="_calendar_8h.html">Calendar.h</a></div></div>
+<div class="ttc" id="class_do_lah_1_1_abstract_task_html"><div class="ttname"><a href="class_do_lah_1_1_abstract_task.html">DoLah::AbstractTask</a></div><div class="ttdoc">Abstract Task class is the base class for any Task. </div><div class="ttdef"><b>Definition:</b> Task.h:12</div></div>
+<div class="ttc" id="class_do_lah_1_1_calendar_storage_html_a35f14ee71c332fe9bb26a887ceb3f317"><div class="ttname"><a href="class_do_lah_1_1_calendar_storage.html#a35f14ee71c332fe9bb26a887ceb3f317">DoLah::CalendarStorage::load</a></div><div class="ttdeci">static Calendar load(const std::string &amp;)</div><div class="ttdoc">This method handles the saving of Calendar. </div><div class="ttdef"><b>Definition:</b> CalendarStorage.cpp:87</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_2e59a62bdd09fe158cc9713e0e7a7813.html">DoLah</a></li><li class="navelem"><a class="el" href="dir_6157b1992c033af33cec39423221f46d.html">Storage</a></li><li class="navelem"><b>CalendarStorage.h</b></li>
+    <li class="navelem"><a class="el" href="dir_2e59a62bdd09fe158cc9713e0e7a7813.html">DoLah</a></li><li class="navelem"><a class="el" href="dir_6157b1992c033af33cec39423221f46d.html">Storage</a></li><li class="navelem"><a class="el" href="_calendar_storage_8h.html">CalendarStorage.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>

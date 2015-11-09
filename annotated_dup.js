@@ -1,34 +1,10 @@
 var annotated_dup =
 [
-    [ "DoLah", null, [
-      [ "AbstractCommand", "class_do_lah_1_1_abstract_command.html", "class_do_lah_1_1_abstract_command" ],
-      [ "AbstractTask", "class_do_lah_1_1_abstract_task.html", "class_do_lah_1_1_abstract_task" ],
-      [ "AddTaskCommand", "class_do_lah_1_1_add_task_command.html", "class_do_lah_1_1_add_task_command" ],
-      [ "Calendar", "class_do_lah_1_1_calendar.html", "class_do_lah_1_1_calendar" ],
-      [ "CalendarInverter", "class_do_lah_1_1_calendar_inverter.html", "class_do_lah_1_1_calendar_inverter" ],
-      [ "CalendarStorage", "class_do_lah_1_1_calendar_storage.html", "class_do_lah_1_1_calendar_storage" ],
-      [ "ClearTaskCommand", "class_do_lah_1_1_clear_task_command.html", "class_do_lah_1_1_clear_task_command" ],
-      [ "CommandHistory", "class_do_lah_1_1_command_history.html", "class_do_lah_1_1_command_history" ],
-      [ "CommandInvoker", "class_do_lah_1_1_command_invoker.html", "class_do_lah_1_1_command_invoker" ],
-      [ "CommandParser", "class_do_lah_1_1_command_parser.html", "class_do_lah_1_1_command_parser" ],
-      [ "DateTimeParser", "class_do_lah_1_1_date_time_parser.html", "class_do_lah_1_1_date_time_parser" ],
-      [ "DeadlineTask", "class_do_lah_1_1_deadline_task.html", "class_do_lah_1_1_deadline_task" ],
-      [ "DeleteTaskCommand", "class_do_lah_1_1_delete_task_command.html", "class_do_lah_1_1_delete_task_command" ],
-      [ "DoLahClient", "class_do_lah_1_1_do_lah_client.html", "class_do_lah_1_1_do_lah_client" ],
-      [ "EditTaskCommand", "class_do_lah_1_1_edit_task_command.html", "class_do_lah_1_1_edit_task_command" ],
-      [ "EventTask", "class_do_lah_1_1_event_task.html", "class_do_lah_1_1_event_task" ],
-      [ "FloatingTask", "class_do_lah_1_1_floating_task.html", null ],
-      [ "ParserLibrary", "class_do_lah_1_1_parser_library.html", "class_do_lah_1_1_parser_library" ],
-      [ "RedoTaskCommand", "class_do_lah_1_1_redo_task_command.html", "class_do_lah_1_1_redo_task_command" ],
-      [ "SearchTaskCommand", "class_do_lah_1_1_search_task_command.html", "class_do_lah_1_1_search_task_command" ],
-      [ "SetDoneTaskCommand", "class_do_lah_1_1_set_done_task_command.html", "class_do_lah_1_1_set_done_task_command" ],
-      [ "SetUndoneTaskCommand", "class_do_lah_1_1_set_undone_task_command.html", "class_do_lah_1_1_set_undone_task_command" ],
-      [ "TaskParser", "class_do_lah_1_1_task_parser.html", "class_do_lah_1_1_task_parser" ],
-      [ "TaskTokenizer", "class_do_lah_1_1_task_tokenizer.html", "class_do_lah_1_1_task_tokenizer" ],
-      [ "TimeManager", "class_do_lah_1_1_time_manager.html", "class_do_lah_1_1_time_manager" ],
-      [ "UndoTaskCommand", "class_do_lah_1_1_undo_task_command.html", "class_do_lah_1_1_undo_task_command" ]
-    ] ],
-    [ "YAML", null, [
-      [ "convert< std::tm >", "struct_y_a_m_l_1_1convert_3_01std_1_1tm_01_4.html", null ]
-    ] ]
+    [ "DoLah", "namespace_do_lah.html", "namespace_do_lah" ],
+    [ "YAML", "namespace_y_a_m_l.html", "namespace_y_a_m_l" ],
+    [ "qt_meta_stringdata_DoLah__DisplayArea_t", "structqt__meta__stringdata___do_lah_____display_area__t.html", "structqt__meta__stringdata___do_lah_____display_area__t" ],
+    [ "qt_meta_stringdata_DoLah__DoLahUI_t", "structqt__meta__stringdata___do_lah_____do_lah_u_i__t.html", "structqt__meta__stringdata___do_lah_____do_lah_u_i__t" ],
+    [ "qt_meta_stringdata_DoLah__HelpWindow_t", "structqt__meta__stringdata___do_lah_____help_window__t.html", "structqt__meta__stringdata___do_lah_____help_window__t" ],
+    [ "qt_meta_stringdata_DoLah__MenuLabel_t", "structqt__meta__stringdata___do_lah_____menu_label__t.html", "structqt__meta__stringdata___do_lah_____menu_label__t" ],
+    [ "qt_meta_stringdata_DoLah__UITaskBox_t", "structqt__meta__stringdata___do_lah_____u_i_task_box__t.html", "structqt__meta__stringdata___do_lah_____u_i_task_box__t" ]
 ];

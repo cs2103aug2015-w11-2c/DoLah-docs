@@ -48,6 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -72,7 +73,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
-      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -114,52 +115,173 @@ $(document).ready(function(){initNavTree('class_do_lah_1_1_abstract_command.html
 <div class="title">DoLah::AbstractCommand Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_command_8h_source.html">Command.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for DoLah::AbstractCommand:</div>
 <div class="dyncontent">
- <div class="center">
-  <img src="class_do_lah_1_1_abstract_command.png" usemap="#DoLah::AbstractCommand_map" alt=""/>
-  <map id="DoLah::AbstractCommand_map" name="DoLah::AbstractCommand_map">
-<area href="class_do_lah_1_1_add_task_command.html" alt="DoLah::AddTaskCommand" shape="rect" coords="207,56,404,80"/>
-<area href="class_do_lah_1_1_clear_task_command.html" alt="DoLah::ClearTaskCommand" shape="rect" coords="207,112,404,136"/>
-<area href="class_do_lah_1_1_delete_task_command.html" alt="DoLah::DeleteTaskCommand" shape="rect" coords="207,168,404,192"/>
-<area href="class_do_lah_1_1_edit_task_command.html" alt="DoLah::EditTaskCommand" shape="rect" coords="207,224,404,248"/>
-<area href="class_do_lah_1_1_redo_task_command.html" alt="DoLah::RedoTaskCommand" shape="rect" coords="207,280,404,304"/>
-<area href="class_do_lah_1_1_search_task_command.html" alt="DoLah::SearchTaskCommand" shape="rect" coords="207,336,404,360"/>
-<area href="class_do_lah_1_1_set_done_task_command.html" alt="DoLah::SetDoneTaskCommand" shape="rect" coords="207,392,404,416"/>
-<area href="class_do_lah_1_1_set_undone_task_command.html" alt="DoLah::SetUndoneTaskCommand" shape="rect" coords="207,448,404,472"/>
-<area href="class_do_lah_1_1_undo_task_command.html" alt="DoLah::UndoTaskCommand" shape="rect" coords="207,504,404,528"/>
+<div class="center"><img src="class_do_lah_1_1_abstract_command__inherit__graph.png" border="0" usemap="#_do_lah_1_1_abstract_command_inherit__map" alt="Inheritance graph"/></div>
+<map name="_do_lah_1_1_abstract_command_inherit__map" id="_do_lah_1_1_abstract_command_inherit__map">
+<area shape="rect" id="node2" href="class_do_lah_1_1_add_task_command.html" title="{DoLah::AddTaskCommand\n|&#45; task\l|+ AddTaskCommand()\l+ AddTaskCommand()\l+ ~AddTaskCommand()\l+ execute()\l+ revert()\l}" alt="" coords="5,197,183,333"/>
+<area shape="rect" id="node3" href="class_do_lah_1_1_clear_task_command.html" title="{DoLah::ClearTaskCommand\n|&#45; oldTaskList\l&#45; oldDoneList\l|+ ClearTaskCommand()\l+ ~ClearTaskCommand()\l+ execute()\l+ revert()\l}" alt="" coords="207,197,391,333"/>
+<area shape="rect" id="node4" href="class_do_lah_1_1_delete_task_command.html" title="{DoLah::DeleteTaskCommand\n|&#45; taskIndex\l&#45; oldTask\l|+ DeleteTaskCommand()\l+ DeleteTaskCommand()\l+ ~DeleteTaskCommand()\l+ execute()\l+ revert()\l}" alt="" coords="416,189,607,340"/>
+<area shape="rect" id="node5" href="class_do_lah_1_1_edit_task_command.html" title="{DoLah::EditTaskCommand\n|&#45; taskIndex\l&#45; task\l&#45; oldTask\l|+ EditTaskCommand()\l+ EditTaskCommand()\l+ ~EditTaskCommand()\l+ execute()\l+ revert()\l}" alt="" coords="631,182,808,347"/>
+<area shape="rect" id="node6" href="class_do_lah_1_1_redo_task_command.html" title="{DoLah::RedoTaskCommand\n|&#45; ILLEGAL_FUNCTION_CALL\l_MESSAGE\l|+ RedoTaskCommand()\l+ ~RedoTaskCommand()\l+ execute()\l+ revert()\l}" alt="" coords="833,197,1025,333"/>
+<area shape="rect" id="node7" href="class_do_lah_1_1_search_date_task_command.html" title="{DoLah::SearchDateTaskCommand\n|&#45; from\l&#45; to\l&#45; resultVector\l|+ SearchDateTaskCommand()\l+ SearchDateTaskCommand()\l+ SearchDateTaskCommand()\l+ ~SearchDateTaskCommand()\l+ execute()\l+ revert()\l}" alt="" coords="1049,175,1272,355"/>
+<area shape="rect" id="node8" href="class_do_lah_1_1_search_task_command.html" title="{DoLah::SearchTaskCommand\n|&#45; query\l&#45; resultVector\l|+ SearchTaskCommand()\l+ SearchTaskCommand()\l+ SearchTaskCommand()\l+ ~SearchTaskCommand()\l+ execute()\l+ revert()\l}" alt="" coords="1297,182,1491,347"/>
+<area shape="rect" id="node9" href="class_do_lah_1_1_set_done_task_command.html" title="{DoLah::SetDoneTaskCommand\n|&#45; taskIndex\l&#45; oldTask\l|+ SetDoneTaskCommand()\l+ SetDoneTaskCommand()\l+ ~SetDoneTaskCommand()\l+ execute()\l+ revert()\l}" alt="" coords="1516,189,1720,340"/>
+<area shape="rect" id="node10" href="class_do_lah_1_1_set_undone_task_command.html" title="{DoLah::SetUndoneTaskCommand\n|&#45; taskIndex\l&#45; oldTask\l|+ SetUndoneTaskCommand()\l+ SetUndoneTaskCommand()\l+ ~SetUndoneTaskCommand()\l+ execute()\l+ revert()\l}" alt="" coords="1745,189,1963,340"/>
+<area shape="rect" id="node11" href="class_do_lah_1_1_undo_task_command.html" title="{DoLah::UndoTaskCommand\n|&#45; ILLEGAL_FUNCTION_CALL\l_MESSAGE\l|+ UndoTaskCommand()\l+ ~UndoTaskCommand()\l+ execute()\l+ revert()\l}" alt="" coords="1987,197,2179,333"/>
 </map>
- </div></div>
+</div>
+<div class="dynheader">
+Collaboration diagram for DoLah::AbstractCommand:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_do_lah_1_1_abstract_command__coll__graph.png" border="0" usemap="#_do_lah_1_1_abstract_command_coll__map" alt="Collaboration graph"/></div>
+<map name="_do_lah_1_1_abstract_command_coll__map" id="_do_lah_1_1_abstract_command_coll__map">
+<area shape="rect" id="node2" href="class_do_lah_1_1_calendar.html" title="Class for holding the actual tasklist(s) and any operations on tasks in those list(s). " alt="" coords="13,277,232,604"/>
+<area shape="rect" id="node3" href="class_do_lah_1_1_command_history.html" title="{DoLah::CommandHistory\n|&#45; undoStack\l&#45; redoStack\l&#45; INVALID_UNDO_CALL_MESSAGE\l&#45; INVALID_REDO_CALL_MESSAGE\l|+ CommandHistory()\l+ ~CommandHistory()\l+ addToUndoStack()\l+ getUndoStackSize()\l+ getRedoStackSize()\l+ undo()\l+ redo()\l}" alt="" coords="5,5,240,215"/>
+</map>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:acd50f0abee5e40527edb5272c4f00546"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acd50f0abee5e40527edb5272c4f00546"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setCalendar</b> (<a class="el" href="class_do_lah_1_1_calendar.html">DoLah::Calendar</a> *)</td></tr>
+<tr class="memitem:af4d1825c5f9e4c3b744d5a7333c2797e"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_abstract_command.html#af4d1825c5f9e4c3b744d5a7333c2797e">~AbstractCommand</a> ()=0</td></tr>
+<tr class="separator:af4d1825c5f9e4c3b744d5a7333c2797e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd50f0abee5e40527edb5272c4f00546"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_abstract_command.html#acd50f0abee5e40527edb5272c4f00546">setCalendar</a> (<a class="el" href="class_do_lah_1_1_calendar.html">DoLah::Calendar</a> *)</td></tr>
 <tr class="separator:acd50f0abee5e40527edb5272c4f00546"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada445a2be6e13e7dcb0d0dac45f039e5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ada445a2be6e13e7dcb0d0dac45f039e5"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>execute</b> ()=0</td></tr>
+<tr class="memitem:ada445a2be6e13e7dcb0d0dac45f039e5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_abstract_command.html#ada445a2be6e13e7dcb0d0dac45f039e5">execute</a> ()=0</td></tr>
 <tr class="separator:ada445a2be6e13e7dcb0d0dac45f039e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9760328f2d6b85d8edc803a97a29dfc0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9760328f2d6b85d8edc803a97a29dfc0"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>revert</b> ()=0</td></tr>
+<tr class="memitem:a9760328f2d6b85d8edc803a97a29dfc0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_abstract_command.html#a9760328f2d6b85d8edc803a97a29dfc0">revert</a> ()=0</td></tr>
 <tr class="separator:a9760328f2d6b85d8edc803a97a29dfc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:aa84442d22aaf6c9cf46c9133efb3088d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa84442d22aaf6c9cf46c9133efb3088d"></a>
-<a class="el" href="class_do_lah_1_1_calendar.html">DoLah::Calendar</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>calendar</b></td></tr>
+<tr class="memitem:aa84442d22aaf6c9cf46c9133efb3088d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_do_lah_1_1_calendar.html">DoLah::Calendar</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_abstract_command.html#aa84442d22aaf6c9cf46c9133efb3088d">calendar</a></td></tr>
 <tr class="separator:aa84442d22aaf6c9cf46c9133efb3088d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="af4d1825c5f9e4c3b744d5a7333c2797e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DoLah::AbstractCommand::~AbstractCommand </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ada445a2be6e13e7dcb0d0dac45f039e5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void DoLah::AbstractCommand::execute </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="class_do_lah_1_1_redo_task_command.html#ac800b1815e384bbef9b1aff35a0f5fe2">DoLah::RedoTaskCommand</a>, <a class="el" href="class_do_lah_1_1_undo_task_command.html#a3a4a747128048cafbfd5baa780642d6b">DoLah::UndoTaskCommand</a>, <a class="el" href="class_do_lah_1_1_search_date_task_command.html#ab20f0aa10b01a7b025c503c6794b3652">DoLah::SearchDateTaskCommand</a>, <a class="el" href="class_do_lah_1_1_search_task_command.html#a29dec8cac9a658f3885f4a566a114485">DoLah::SearchTaskCommand</a>, <a class="el" href="class_do_lah_1_1_clear_task_command.html#abdfcb4df8381737ee5682a706c9828d2">DoLah::ClearTaskCommand</a>, <a class="el" href="class_do_lah_1_1_delete_task_command.html#ad0c00ebde581c2a850b9a2341b001d70">DoLah::DeleteTaskCommand</a>, <a class="el" href="class_do_lah_1_1_set_undone_task_command.html#a0c23852210bd370f40d96a699ef69780">DoLah::SetUndoneTaskCommand</a>, <a class="el" href="class_do_lah_1_1_set_done_task_command.html#a487762c0643f1b49fd61349fe1d6549e">DoLah::SetDoneTaskCommand</a>, <a class="el" href="class_do_lah_1_1_edit_task_command.html#ae49f66ed0e3eaf276b9171b21aa1aa48">DoLah::EditTaskCommand</a>, and <a class="el" href="class_do_lah_1_1_add_task_command.html#a27e8abeb8937d70d11d6bfdd276844ca">DoLah::AddTaskCommand</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9760328f2d6b85d8edc803a97a29dfc0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void DoLah::AbstractCommand::revert </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="class_do_lah_1_1_redo_task_command.html#ad37e7e810f33597506b4347ed4945f3b">DoLah::RedoTaskCommand</a>, <a class="el" href="class_do_lah_1_1_undo_task_command.html#abccc5882e346c4599601bbf24178cf23">DoLah::UndoTaskCommand</a>, <a class="el" href="class_do_lah_1_1_search_date_task_command.html#a33b164b407d2033550f94f0b156ed458">DoLah::SearchDateTaskCommand</a>, <a class="el" href="class_do_lah_1_1_search_task_command.html#a609e103cc1c0657225bff0c0420e7172">DoLah::SearchTaskCommand</a>, <a class="el" href="class_do_lah_1_1_clear_task_command.html#aa1d5a57fb19de0018460ff9e8cb14a5c">DoLah::ClearTaskCommand</a>, <a class="el" href="class_do_lah_1_1_delete_task_command.html#a07e77b62d20d1c8e5d1f7c1568d796a7">DoLah::DeleteTaskCommand</a>, <a class="el" href="class_do_lah_1_1_set_undone_task_command.html#afcd217bd18dbdff5bf0b135aec1713ad">DoLah::SetUndoneTaskCommand</a>, <a class="el" href="class_do_lah_1_1_set_done_task_command.html#a93aa0d32b0cb2a5588a6ded7118bf926">DoLah::SetDoneTaskCommand</a>, <a class="el" href="class_do_lah_1_1_edit_task_command.html#ac4ed306ed190674f27d1afab248aea2a">DoLah::EditTaskCommand</a>, and <a class="el" href="class_do_lah_1_1_add_task_command.html#aa8b0be25711d9875ed4ff4ece28ee75e">DoLah::AddTaskCommand</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acd50f0abee5e40527edb5272c4f00546"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DoLah::AbstractCommand::setCalendar </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_do_lah_1_1_calendar.html">DoLah::Calendar</a> *&#160;</td>
+          <td class="paramname"><em>calendar</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="aa84442d22aaf6c9cf46c9133efb3088d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_do_lah_1_1_calendar.html">DoLah::Calendar</a>* DoLah::AbstractCommand::calendar</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>DoLah/Commands/<a class="el" href="_command_8h_source.html">Command.h</a></li>
-<li>DoLah/Commands/Command.cpp</li>
+<li>DoLah/Commands/<a class="el" href="_command_8cpp.html">Command.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>DoLah</b></li><li class="navelem"><a class="el" href="class_do_lah_1_1_abstract_command.html">AbstractCommand</a></li>
+    <li class="navelem"><a class="el" href="namespace_do_lah.html">DoLah</a></li><li class="navelem"><a class="el" href="class_do_lah_1_1_abstract_command.html">AbstractCommand</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>

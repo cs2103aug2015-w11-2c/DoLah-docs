@@ -17,5 +17,12 @@ var class_do_lah_1_1_abstract_task =
     [ "setIndex", "class_do_lah_1_1_abstract_task.html#ac6ff5bbb5435d6e4f9cf42f0aa50e16b", null ],
     [ "setName", "class_do_lah_1_1_abstract_task.html#ae3e1d1fd3cc09b0138e435604c61a437", null ],
     [ "setTags", "class_do_lah_1_1_abstract_task.html#ae87df86920dcaaf1353a412269d73727", null ],
-    [ "updateExpired", "class_do_lah_1_1_abstract_task.html#a51e072bcd3e1e32dfb16c3950e5ce99d", null ]
+    [ "updateExpired", "class_do_lah_1_1_abstract_task.html#a51e072bcd3e1e32dfb16c3950e5ce99d", null ],
+    [ "description", "class_do_lah_1_1_abstract_task.html#a3db5bb82f4afb67fe7ac19a866f161d0", null ],
+    [ "done", "class_do_lah_1_1_abstract_task.html#a52d0b20701f38574b77811cd002b65ad", null ],
+    [ "expired", "class_do_lah_1_1_abstract_task.html#afdee8129f634d24d559670e8da94b1a2", null ],
+    [ "id", "class_do_lah_1_1_abstract_task.html#a2ad7d227c4ab1ac0768a7633419f0934", null ],
+    [ "index", "class_do_lah_1_1_abstract_task.html#a473c5889b75b19da3e81424e3710075e", null ],
+    [ "name", "class_do_lah_1_1_abstract_task.html#a0d5e0174ffcd6b8e0f152130ede57fcb", null ],
+    [ "tags", "class_do_lah_1_1_abstract_task.html#aeffd99b2d49c068eaff0fe305464546d", null ]
 ];

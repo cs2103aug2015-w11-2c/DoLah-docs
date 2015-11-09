@@ -48,6 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -72,7 +73,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
-      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -109,85 +110,696 @@ $(document).ready(function(){initNavTree('class_do_lah_1_1_calendar.html','');})
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_do_lah_1_1_calendar-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">DoLah::Calendar Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Class for holding the actual tasklist(s) and any operations on tasks in those list(s).  
+ <a href="class_do_lah_1_1_calendar.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_calendar_8h_source.html">Calendar.h</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for DoLah::Calendar:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_do_lah_1_1_calendar__coll__graph.png" border="0" usemap="#_do_lah_1_1_calendar_coll__map" alt="Collaboration graph"/></div>
+<map name="_do_lah_1_1_calendar_coll__map" id="_do_lah_1_1_calendar_coll__map">
+<area shape="rect" id="node2" href="class_do_lah_1_1_command_history.html" title="{DoLah::CommandHistory\n|&#45; undoStack\l&#45; redoStack\l&#45; INVALID_UNDO_CALL_MESSAGE\l&#45; INVALID_REDO_CALL_MESSAGE\l|+ CommandHistory()\l+ ~CommandHistory()\l+ addToUndoStack()\l+ getUndoStackSize()\l+ getRedoStackSize()\l+ undo()\l+ redo()\l}" alt="" coords="5,5,240,215"/>
+</map>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:abb1d17aa8c99cc151a43d8f13ebff86b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abb1d17aa8c99cc151a43d8f13ebff86b"></a>
-<a class="el" href="class_do_lah_1_1_abstract_task.html">AbstractTask</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getTask</b> (int) const </td></tr>
+<tr class="memitem:afde5e203ea4cb45ecf4d2cabce19826e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_calendar.html#afde5e203ea4cb45ecf4d2cabce19826e">Calendar</a> ()</td></tr>
+<tr class="separator:afde5e203ea4cb45ecf4d2cabce19826e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe8ecd064fff0cb055938c2f2ab6eaca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_calendar.html#abe8ecd064fff0cb055938c2f2ab6eaca">~Calendar</a> ()</td></tr>
+<tr class="separator:abe8ecd064fff0cb055938c2f2ab6eaca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb1d17aa8c99cc151a43d8f13ebff86b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_do_lah_1_1_abstract_task.html">AbstractTask</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_calendar.html#abb1d17aa8c99cc151a43d8f13ebff86b">getTask</a> (int) const </td></tr>
+<tr class="memdesc:abb1d17aa8c99cc151a43d8f13ebff86b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the task at the given index in the main task list taskList.  <a href="#abb1d17aa8c99cc151a43d8f13ebff86b">More...</a><br /></td></tr>
 <tr class="separator:abb1d17aa8c99cc151a43d8f13ebff86b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6461f76975d358bd5f109d3e5c129a6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac6461f76975d358bd5f109d3e5c129a6"></a>
-<a class="el" href="class_do_lah_1_1_abstract_task.html">AbstractTask</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getDone</b> (int) const </td></tr>
+<tr class="memitem:ac6461f76975d358bd5f109d3e5c129a6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_do_lah_1_1_abstract_task.html">AbstractTask</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_calendar.html#ac6461f76975d358bd5f109d3e5c129a6">getDone</a> (int) const </td></tr>
+<tr class="memdesc:ac6461f76975d358bd5f109d3e5c129a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the task at the given index in the done task list doneList.  <a href="#ac6461f76975d358bd5f109d3e5c129a6">More...</a><br /></td></tr>
 <tr class="separator:ac6461f76975d358bd5f109d3e5c129a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3cbae80d27c584a64026725f64d07896"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3cbae80d27c584a64026725f64d07896"></a>
-std::vector&lt; <a class="el" href="class_do_lah_1_1_abstract_task.html">AbstractTask</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getTaskList</b> () const </td></tr>
+<tr class="memitem:a3cbae80d27c584a64026725f64d07896"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_do_lah_1_1_abstract_task.html">AbstractTask</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_calendar.html#a3cbae80d27c584a64026725f64d07896">getTaskList</a> () const </td></tr>
+<tr class="memdesc:a3cbae80d27c584a64026725f64d07896"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a copy of taskList as an actual vector object.  <a href="#a3cbae80d27c584a64026725f64d07896">More...</a><br /></td></tr>
 <tr class="separator:a3cbae80d27c584a64026725f64d07896"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b9e6a0447f88611166dfa8523503ca6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2b9e6a0447f88611166dfa8523503ca6"></a>
-std::vector&lt; <a class="el" href="class_do_lah_1_1_abstract_task.html">AbstractTask</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Calendar::getDoneList</b> () const </td></tr>
-<tr class="separator:a2b9e6a0447f88611166dfa8523503ca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf633ddb1652ac6faa1e6e3a0a2aaea9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaf633ddb1652ac6faa1e6e3a0a2aaea9"></a>
-std::vector&lt; <a class="el" href="class_do_lah_1_1_abstract_task.html">AbstractTask</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getSearchedTaskList</b> () const </td></tr>
+<tr class="memitem:ac14944af156416344c85d0c4001281b0"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_do_lah_1_1_abstract_task.html">AbstractTask</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_calendar.html#ac14944af156416344c85d0c4001281b0">getDoneList</a> () const </td></tr>
+<tr class="memdesc:ac14944af156416344c85d0c4001281b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a copy of doneList as an actual vector object.  <a href="#ac14944af156416344c85d0c4001281b0">More...</a><br /></td></tr>
+<tr class="separator:ac14944af156416344c85d0c4001281b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf633ddb1652ac6faa1e6e3a0a2aaea9"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_do_lah_1_1_abstract_task.html">AbstractTask</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_calendar.html#aaf633ddb1652ac6faa1e6e3a0a2aaea9">getSearchedTaskList</a> () const </td></tr>
+<tr class="memdesc:aaf633ddb1652ac6faa1e6e3a0a2aaea9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a copy of the vector containing the search results of the last query as an actual object.  <a href="#aaf633ddb1652ac6faa1e6e3a0a2aaea9">More...</a><br /></td></tr>
 <tr class="separator:aaf633ddb1652ac6faa1e6e3a0a2aaea9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a190db0f939a52b40fbec2482056820f4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a190db0f939a52b40fbec2482056820f4"></a>
-std::vector&lt; <a class="el" href="class_do_lah_1_1_abstract_task.html">AbstractTask</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getAllTaskList</b> () const </td></tr>
+<tr class="memitem:a190db0f939a52b40fbec2482056820f4"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_do_lah_1_1_abstract_task.html">AbstractTask</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_calendar.html#a190db0f939a52b40fbec2482056820f4">getAllTaskList</a> () const </td></tr>
+<tr class="memdesc:a190db0f939a52b40fbec2482056820f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a vector containing all tasks from taskList and doneList as an actual object.  <a href="#a190db0f939a52b40fbec2482056820f4">More...</a><br /></td></tr>
 <tr class="separator:a190db0f939a52b40fbec2482056820f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2aab5e859c9102336727766712c83a9b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2aab5e859c9102336727766712c83a9b"></a>
-<a class="el" href="class_do_lah_1_1_command_history.html">CommandHistory</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>Calendar::getCmdHistory</b> ()</td></tr>
-<tr class="separator:a2aab5e859c9102336727766712c83a9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a962c1ff0c5d697282fa5943a5e62a538"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a962c1ff0c5d697282fa5943a5e62a538"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>addTask</b> (<a class="el" href="class_do_lah_1_1_abstract_task.html">AbstractTask</a> *)</td></tr>
+<tr class="memitem:a65c6f8e5a6bc421d20eded6fbf6221ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_do_lah_1_1_command_history.html">CommandHistory</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_calendar.html#a65c6f8e5a6bc421d20eded6fbf6221ae">getCmdHistory</a> ()</td></tr>
+<tr class="memdesc:a65c6f8e5a6bc421d20eded6fbf6221ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the <a class="el" href="class_do_lah_1_1_command_history.html">CommandHistory</a> class instance associated with this particular <a class="el" href="class_do_lah_1_1_calendar.html" title="Class for holding the actual tasklist(s) and any operations on tasks in those list(s). ">Calendar</a> instance.  <a href="#a65c6f8e5a6bc421d20eded6fbf6221ae">More...</a><br /></td></tr>
+<tr class="separator:a65c6f8e5a6bc421d20eded6fbf6221ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a962c1ff0c5d697282fa5943a5e62a538"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_calendar.html#a962c1ff0c5d697282fa5943a5e62a538">addTask</a> (<a class="el" href="class_do_lah_1_1_abstract_task.html">AbstractTask</a> *)</td></tr>
 <tr class="separator:a962c1ff0c5d697282fa5943a5e62a538"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1be61169b76d6ede8585ba544eed1a6e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1be61169b76d6ede8585ba544eed1a6e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>addTask</b> (<a class="el" href="class_do_lah_1_1_abstract_task.html">AbstractTask</a> *, int)</td></tr>
-<tr class="separator:a1be61169b76d6ede8585ba544eed1a6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f5d55b04a1ea3b62f03a3cad19b12c9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4f5d55b04a1ea3b62f03a3cad19b12c9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>deleteTask</b> (int, bool=true)</td></tr>
+<tr class="memitem:a4f5d55b04a1ea3b62f03a3cad19b12c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_calendar.html#a4f5d55b04a1ea3b62f03a3cad19b12c9">deleteTask</a> (int, bool=true)</td></tr>
+<tr class="memdesc:a4f5d55b04a1ea3b62f03a3cad19b12c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes.  <a href="#a4f5d55b04a1ea3b62f03a3cad19b12c9">More...</a><br /></td></tr>
 <tr class="separator:a4f5d55b04a1ea3b62f03a3cad19b12c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4e2ac9b3563863cb402c3070dc4a068"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af4e2ac9b3563863cb402c3070dc4a068"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setDoneTask</b> (int, bool=true)</td></tr>
+<tr class="memitem:af4e2ac9b3563863cb402c3070dc4a068"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_calendar.html#af4e2ac9b3563863cb402c3070dc4a068">setDoneTask</a> (int, bool=true)</td></tr>
 <tr class="separator:af4e2ac9b3563863cb402c3070dc4a068"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeeaf96fc786f7bb10f4f705990463376"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeeaf96fc786f7bb10f4f705990463376"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>updateTask</b> (int, <a class="el" href="class_do_lah_1_1_abstract_task.html">AbstractTask</a> *)</td></tr>
+<tr class="memitem:aeeaf96fc786f7bb10f4f705990463376"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_calendar.html#aeeaf96fc786f7bb10f4f705990463376">updateTask</a> (int, <a class="el" href="class_do_lah_1_1_abstract_task.html">AbstractTask</a> *)</td></tr>
 <tr class="separator:aeeaf96fc786f7bb10f4f705990463376"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35b75de2b1203f707c25fe7f75b8f58b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a35b75de2b1203f707c25fe7f75b8f58b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>clearTasks</b> ()</td></tr>
+<tr class="memitem:a35b75de2b1203f707c25fe7f75b8f58b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_calendar.html#a35b75de2b1203f707c25fe7f75b8f58b">clearTasks</a> ()</td></tr>
 <tr class="separator:a35b75de2b1203f707c25fe7f75b8f58b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91fa97512b28c6c09c28d912340c1e2e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a91fa97512b28c6c09c28d912340c1e2e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>search</b> (std::string)</td></tr>
+<tr class="memitem:a91fa97512b28c6c09c28d912340c1e2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_calendar.html#a91fa97512b28c6c09c28d912340c1e2e">search</a> (std::string)</td></tr>
 <tr class="separator:a91fa97512b28c6c09c28d912340c1e2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4eebadb86c16cb33b00531c1523ce5e3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4eebadb86c16cb33b00531c1523ce5e3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>sortTasks</b> (std::vector&lt; <a class="el" href="class_do_lah_1_1_abstract_task.html">AbstractTask</a> * &gt; &amp;)</td></tr>
+<tr class="memitem:aaea96510180152ca13e24793b92f46c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_calendar.html#aaea96510180152ca13e24793b92f46c9">searchDate</a> (std::tm, std::tm)</td></tr>
+<tr class="separator:aaea96510180152ca13e24793b92f46c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4eebadb86c16cb33b00531c1523ce5e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_calendar.html#a4eebadb86c16cb33b00531c1523ce5e3">sortTasks</a> (std::vector&lt; <a class="el" href="class_do_lah_1_1_abstract_task.html">AbstractTask</a> * &gt; &amp;)</td></tr>
 <tr class="separator:a4eebadb86c16cb33b00531c1523ce5e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7824820e868bcd25b13771aea3b1e03e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7824820e868bcd25b13771aea3b1e03e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>updateTaskExpiry</b> ()</td></tr>
+<tr class="memitem:a7824820e868bcd25b13771aea3b1e03e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_calendar.html#a7824820e868bcd25b13771aea3b1e03e">updateTaskExpiry</a> ()</td></tr>
 <tr class="separator:a7824820e868bcd25b13771aea3b1e03e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44a1a787d875cc3e8e67d261b8b097bc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a44a1a787d875cc3e8e67d261b8b097bc"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>indexTasks</b> (std::vector&lt; <a class="el" href="class_do_lah_1_1_abstract_task.html">AbstractTask</a> * &gt; &amp;, int=0)</td></tr>
+<tr class="memitem:a44a1a787d875cc3e8e67d261b8b097bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_calendar.html#a44a1a787d875cc3e8e67d261b8b097bc">indexTasks</a> (std::vector&lt; <a class="el" href="class_do_lah_1_1_abstract_task.html">AbstractTask</a> * &gt; &amp;, int=0)</td></tr>
 <tr class="separator:a44a1a787d875cc3e8e67d261b8b097bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a7a0efe29e15b06b684b4069e9cd1c665"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7a0efe29e15b06b684b4069e9cd1c665"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>taskCompare</b> (<a class="el" href="class_do_lah_1_1_abstract_task.html">AbstractTask</a> *, <a class="el" href="class_do_lah_1_1_abstract_task.html">AbstractTask</a> *)</td></tr>
+<tr class="memitem:a7a0efe29e15b06b684b4069e9cd1c665"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_calendar.html#a7a0efe29e15b06b684b4069e9cd1c665">taskCompare</a> (<a class="el" href="class_do_lah_1_1_abstract_task.html">AbstractTask</a> *, <a class="el" href="class_do_lah_1_1_abstract_task.html">AbstractTask</a> *)</td></tr>
 <tr class="separator:a7a0efe29e15b06b684b4069e9cd1c665"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5cc616d7cf65a05871c0d399e8fae083"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5cc616d7cf65a05871c0d399e8fae083"></a>
-static std::vector&lt; std::tm &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getDates</b> (<a class="el" href="class_do_lah_1_1_abstract_task.html">AbstractTask</a> *)</td></tr>
+<tr class="memitem:a5cc616d7cf65a05871c0d399e8fae083"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::tm &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_calendar.html#a5cc616d7cf65a05871c0d399e8fae083">getDates</a> (<a class="el" href="class_do_lah_1_1_abstract_task.html">AbstractTask</a> *)</td></tr>
 <tr class="separator:a5cc616d7cf65a05871c0d399e8fae083"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a824cb648003203e6fe2784955efbf078"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_calendar.html#a824cb648003203e6fe2784955efbf078">Calendar::findInsertionPoint</a> (<a class="el" href="class_do_lah_1_1_abstract_task.html">AbstractTask</a> *task, int start, int end)</td></tr>
+<tr class="separator:a824cb648003203e6fe2784955efbf078"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:aec812b23859cfd1e7cce11d4efe1ff56"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_do_lah_1_1_abstract_task.html">AbstractTask</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_calendar.html#aec812b23859cfd1e7cce11d4efe1ff56">taskList</a></td></tr>
+<tr class="separator:aec812b23859cfd1e7cce11d4efe1ff56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d8b88d505dfdf50201129928c7cb97b"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_do_lah_1_1_abstract_task.html">AbstractTask</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_calendar.html#a7d8b88d505dfdf50201129928c7cb97b">doneList</a></td></tr>
+<tr class="separator:a7d8b88d505dfdf50201129928c7cb97b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4324df6d3d33b55375d650a5baa41e3a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_do_lah_1_1_command_history.html">CommandHistory</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_calendar.html#a4324df6d3d33b55375d650a5baa41e3a">cmdHistory</a></td></tr>
+<tr class="separator:a4324df6d3d33b55375d650a5baa41e3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4354b2eeb2a32b579dcab4d16fbe3f9f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_do_lah_1_1_abstract_task.html">AbstractTask</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_calendar.html#a4354b2eeb2a32b579dcab4d16fbe3f9f">searchedList</a></td></tr>
+<tr class="separator:a4354b2eeb2a32b579dcab4d16fbe3f9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bb6992b8aeb30195175e1b742a7f2fa"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_calendar.html#a6bb6992b8aeb30195175e1b742a7f2fa">TASK_INDEX_OUT_OF_RANGE_MESSAGE</a> = &quot;Task index out of range&quot;</td></tr>
+<tr class="separator:a6bb6992b8aeb30195175e1b742a7f2fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Class for holding the actual tasklist(s) and any operations on tasks in those list(s). </p>
+<p>This class holds all the tasks and contains all the possible operations onthe tasklists. Any operation on the tasklists must necessarily go through one of the methods in this class. For all practical purposes only one copy of this class should exist in the program at any point of time. It is not a singleton class only because of testing purposes and also encapsulation problems arising from creating a singleton class. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="afde5e203ea4cb45ecf4d2cabce19826e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DoLah::Calendar::Calendar </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abe8ecd064fff0cb055938c2f2ab6eaca"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DoLah::Calendar::~Calendar </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a962c1ff0c5d697282fa5943a5e62a538"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DoLah::Calendar::addTask </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_do_lah_1_1_abstract_task.html">AbstractTask</a> *&#160;</td>
+          <td class="paramname"><em>task</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Adds a task to either doneList or taskList depending on whether the task is done. The task is inserted into the vector at the appropriate index to maintain a sorted file. </p>
+
+</div>
+</div>
+<a class="anchor" id="a824cb648003203e6fe2784955efbf078"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DoLah::Calendar::Calendar::findInsertionPoint </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_do_lah_1_1_abstract_task.html">AbstractTask</a> *&#160;</td>
+          <td class="paramname"><em>task</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>end</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a35b75de2b1203f707c25fe7f75b8f58b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DoLah::Calendar::clearTasks </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4f5d55b04a1ea3b62f03a3cad19b12c9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DoLah::Calendar::deleteTask </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>status</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Deletes. </p>
+
+</div>
+</div>
+<a class="anchor" id="a190db0f939a52b40fbec2482056820f4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="class_do_lah_1_1_abstract_task.html">AbstractTask</a> * &gt; DoLah::Calendar::getAllTaskList </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a vector containing all tasks from taskList and doneList as an actual object. </p>
+<dl class="section return"><dt>Returns</dt><dd>A vector containing all tasks. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a65c6f8e5a6bc421d20eded6fbf6221ae"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_do_lah_1_1_command_history.html">DoLah::CommandHistory</a> * DoLah::Calendar::getCmdHistory </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a pointer to the <a class="el" href="class_do_lah_1_1_command_history.html">CommandHistory</a> class instance associated with this particular <a class="el" href="class_do_lah_1_1_calendar.html" title="Class for holding the actual tasklist(s) and any operations on tasks in those list(s). ">Calendar</a> instance. </p>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to an instance of <a class="el" href="class_do_lah_1_1_command_history.html">CommandHistory</a>. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5cc616d7cf65a05871c0d399e8fae083"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::tm &gt; DoLah::Calendar::getDates </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_do_lah_1_1_abstract_task.html">AbstractTask</a> *&#160;</td>
+          <td class="paramname"><em>it</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac6461f76975d358bd5f109d3e5c129a6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_do_lah_1_1_abstract_task.html">AbstractTask</a> * DoLah::Calendar::getDone </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the task at the given index in the done task list doneList. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>The target index. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the relevant <a class="el" href="class_do_lah_1_1_abstract_task.html" title="Abstract Task class is the base class for any Task. ">AbstractTask</a>. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac14944af156416344c85d0c4001281b0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="class_do_lah_1_1_abstract_task.html">AbstractTask</a> * &gt; DoLah::Calendar::getDoneList </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a copy of doneList as an actual vector object. </p>
+<dl class="section return"><dt>Returns</dt><dd>A vector containing all done tasks. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aaf633ddb1652ac6faa1e6e3a0a2aaea9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="class_do_lah_1_1_abstract_task.html">AbstractTask</a> * &gt; DoLah::Calendar::getSearchedTaskList </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a copy of the vector containing the search results of the last query as an actual object. </p>
+<dl class="section return"><dt>Returns</dt><dd>A vector containing the search results of the last query. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="abb1d17aa8c99cc151a43d8f13ebff86b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_do_lah_1_1_abstract_task.html">AbstractTask</a> * DoLah::Calendar::getTask </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the task at the given index in the main task list taskList. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>The target index. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the relevant <a class="el" href="class_do_lah_1_1_abstract_task.html" title="Abstract Task class is the base class for any Task. ">AbstractTask</a>. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3cbae80d27c584a64026725f64d07896"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="class_do_lah_1_1_abstract_task.html">AbstractTask</a> * &gt; DoLah::Calendar::getTaskList </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a copy of taskList as an actual vector object. </p>
+<dl class="section return"><dt>Returns</dt><dd>A vector containing all undone tasks. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a44a1a787d875cc3e8e67d261b8b097bc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DoLah::Calendar::indexTasks </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="class_do_lah_1_1_abstract_task.html">AbstractTask</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>startIndex</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a91fa97512b28c6c09c28d912340c1e2e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DoLah::Calendar::search </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>query</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aaea96510180152ca13e24793b92f46c9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DoLah::Calendar::searchDate </td>
+          <td>(</td>
+          <td class="paramtype">std::tm&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::tm&#160;</td>
+          <td class="paramname"><em>to</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af4e2ac9b3563863cb402c3070dc4a068"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DoLah::Calendar::setDoneTask </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>taskIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>status</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4eebadb86c16cb33b00531c1523ce5e3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DoLah::Calendar::sortTasks </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="class_do_lah_1_1_abstract_task.html">AbstractTask</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>unsortedTaskList</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7a0efe29e15b06b684b4069e9cd1c665"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DoLah::Calendar::taskCompare </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_do_lah_1_1_abstract_task.html">AbstractTask</a> *&#160;</td>
+          <td class="paramname"><em>first</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_do_lah_1_1_abstract_task.html">AbstractTask</a> *&#160;</td>
+          <td class="paramname"><em>second</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aeeaf96fc786f7bb10f4f705990463376"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DoLah::Calendar::updateTask </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>taskIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_do_lah_1_1_abstract_task.html">AbstractTask</a> *&#160;</td>
+          <td class="paramname"><em>task</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7824820e868bcd25b13771aea3b1e03e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DoLah::Calendar::updateTaskExpiry </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a4324df6d3d33b55375d650a5baa41e3a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_do_lah_1_1_command_history.html">CommandHistory</a> DoLah::Calendar::cmdHistory</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7d8b88d505dfdf50201129928c7cb97b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="class_do_lah_1_1_abstract_task.html">AbstractTask</a>*&gt; DoLah::Calendar::doneList</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4354b2eeb2a32b579dcab4d16fbe3f9f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="class_do_lah_1_1_abstract_task.html">AbstractTask</a>*&gt; DoLah::Calendar::searchedList</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6bb6992b8aeb30195175e1b742a7f2fa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string DoLah::Calendar::TASK_INDEX_OUT_OF_RANGE_MESSAGE = &quot;Task index out of range&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aec812b23859cfd1e7cce11d4efe1ff56"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="class_do_lah_1_1_abstract_task.html">AbstractTask</a>*&gt; DoLah::Calendar::taskList</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>DoLah/Models/<a class="el" href="_calendar_8h_source.html">Calendar.h</a></li>
-<li>DoLah/Models/Calendar.cpp</li>
+<li>DoLah/Models/<a class="el" href="_calendar_8cpp.html">Calendar.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>DoLah</b></li><li class="navelem"><a class="el" href="class_do_lah_1_1_calendar.html">Calendar</a></li>
+    <li class="navelem"><a class="el" href="namespace_do_lah.html">DoLah</a></li><li class="navelem"><a class="el" href="class_do_lah_1_1_calendar.html">Calendar</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>

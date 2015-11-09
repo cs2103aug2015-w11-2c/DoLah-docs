@@ -1,0 +1,14 @@
+<map id="DoLahUI/UITaskBox.h" name="DoLahUI/UITaskBox.h">
+<area shape="rect" id="node2" href="$_do_lah_client_8h.html" title="DoLahClient.h" alt="" coords="589,80,691,107"/>
+<area shape="rect" id="node24" href="$_easy_edit_8h.html" title="EasyEdit.h" alt="" coords="1491,80,1578,107"/>
+<area shape="rect" id="node7" href="$_calendar_8h.html" title="Models/Calendar.h" alt="" coords="337,379,468,405"/>
+<area shape="rect" id="node16" href="$_command_invoker_8h.html" title="CommandInvoker.h" alt="" coords="319,155,451,181"/>
+<area shape="rect" id="node20" href="$_configuration_manager_8h.html" title="Config/ConfigurationManager.h" alt="" coords="731,155,930,181"/>
+<area shape="rect" id="node9" href="$_task_8h.html" title="Models/Task.h" alt="" coords="245,453,352,480"/>
+<area shape="rect" id="node13" href="$_time_manager_8h.html" title="TimeManager.h" alt="" coords="411,528,522,555"/>
+<area shape="rect" id="node15" href="$_command_history_8h.html" title="Models/CommandHistory.h" alt="" coords="43,453,221,480"/>
+<area shape="rect" id="node18" href="$_command_8h.html" title="Commands/Command.h" alt="" coords="304,229,467,256"/>
+<area shape="rect" id="node19" href="$_calendar_inverter_8h.html" title="Models/CalendarInverter.h" alt="" coords="331,304,501,331"/>
+<area shape="rect" id="node21" href="$_configuration_8h.html" title="Configuration.h" alt="" coords="823,229,931,256"/>
+<area shape="rect" id="node25" href="$_menu_label_8h.html" title="MenuLabel.h" alt="" coords="1656,155,1752,181"/>
+</map>

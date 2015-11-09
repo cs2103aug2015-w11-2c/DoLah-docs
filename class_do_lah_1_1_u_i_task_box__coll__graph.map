@@ -1,0 +1,5 @@
+<map id="DoLah::UITaskBox" name="DoLah::UITaskBox">
+<area shape="rect" id="node5" href="$class_do_lah_1_1_menu_label.html" title="{DoLah::MenuLabel\n||+ MenuLabel()\l+ ~MenuLabel()\l# mousePressEvent()\l# mouseMoveEvent()\l}" alt="" coords="42,132,189,253"/>
+<area shape="rect" id="node3" href="$class_do_lah_1_1_easy_edit.html" title="{DoLah::EasyEdit\n|+ description\l+ editarea\l+ buttonBox\l&#45; dragPosition\l|+ EasyEdit()\l+ ~EasyEdit()\l# mousePressEvent()\l# mouseMoveEvent()\l}" alt="" coords="42,389,189,555"/>
+<area shape="rect" id="node6" href="$class_do_lah_1_1_abstract_task.html" title="Abstract Task class is the base class for any Task. " alt="" coords="213,316,357,628"/>
+</map>

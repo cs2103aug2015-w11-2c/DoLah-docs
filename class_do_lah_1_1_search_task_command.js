@@ -5,5 +5,7 @@ var class_do_lah_1_1_search_task_command =
     [ "SearchTaskCommand", "class_do_lah_1_1_search_task_command.html#a1faf946bb97736a54adfd75cc3bebdb5", null ],
     [ "~SearchTaskCommand", "class_do_lah_1_1_search_task_command.html#ae238384cee8c09083def88725b0b2d7b", null ],
     [ "execute", "class_do_lah_1_1_search_task_command.html#a29dec8cac9a658f3885f4a566a114485", null ],
-    [ "revert", "class_do_lah_1_1_search_task_command.html#a609e103cc1c0657225bff0c0420e7172", null ]
+    [ "revert", "class_do_lah_1_1_search_task_command.html#a609e103cc1c0657225bff0c0420e7172", null ],
+    [ "query", "class_do_lah_1_1_search_task_command.html#a59f503319380f50d33eeb389f2e3208b", null ],
+    [ "resultVector", "class_do_lah_1_1_search_task_command.html#ab57f29ebbae60c4a5d71fdf75a8621cd", null ]
 ];

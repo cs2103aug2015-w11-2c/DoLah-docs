@@ -48,6 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -72,7 +73,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
-      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -108,40 +109,251 @@ $(document).ready(function(){initNavTree('class_do_lah_1_1_command_history.html'
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="class_do_lah_1_1_command_history-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">DoLah::CommandHistory Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_command_history_8h_source.html">CommandHistory.h</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for DoLah::CommandHistory:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_do_lah_1_1_command_history__coll__graph.png" border="0" usemap="#_do_lah_1_1_command_history_coll__map" alt="Collaboration graph"/></div>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6c2ca1c4dcda54fea643c3cd8cff1fd2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6c2ca1c4dcda54fea643c3cd8cff1fd2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>addToUndoStack</b> (<a class="el" href="class_do_lah_1_1_abstract_command.html">AbstractCommand</a> *)</td></tr>
+<tr class="memitem:a3043a7b3d26409243270f85d0f9e3817"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_command_history.html#a3043a7b3d26409243270f85d0f9e3817">CommandHistory</a> ()</td></tr>
+<tr class="separator:a3043a7b3d26409243270f85d0f9e3817"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a475754a1e316ccf4df7281b16ff4a68c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_command_history.html#a475754a1e316ccf4df7281b16ff4a68c">~CommandHistory</a> ()</td></tr>
+<tr class="separator:a475754a1e316ccf4df7281b16ff4a68c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c2ca1c4dcda54fea643c3cd8cff1fd2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_command_history.html#a6c2ca1c4dcda54fea643c3cd8cff1fd2">addToUndoStack</a> (<a class="el" href="class_do_lah_1_1_abstract_command.html">AbstractCommand</a> *)</td></tr>
 <tr class="separator:a6c2ca1c4dcda54fea643c3cd8cff1fd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a244773421e301208b5d9d5f9fdc6d9de"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a244773421e301208b5d9d5f9fdc6d9de"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>getUndoStackSize</b> () const </td></tr>
+<tr class="memitem:a244773421e301208b5d9d5f9fdc6d9de"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_command_history.html#a244773421e301208b5d9d5f9fdc6d9de">getUndoStackSize</a> () const </td></tr>
 <tr class="separator:a244773421e301208b5d9d5f9fdc6d9de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9358078e4d016efb55f0e2e3e3de14e3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9358078e4d016efb55f0e2e3e3de14e3"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>getRedoStackSize</b> () const </td></tr>
+<tr class="memitem:a9358078e4d016efb55f0e2e3e3de14e3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_command_history.html#a9358078e4d016efb55f0e2e3e3de14e3">getRedoStackSize</a> () const </td></tr>
 <tr class="separator:a9358078e4d016efb55f0e2e3e3de14e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4a061dcb6f1150acb10cf3bb37e5aba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa4a061dcb6f1150acb10cf3bb37e5aba"></a>
-<a class="el" href="class_do_lah_1_1_abstract_command.html">AbstractCommand</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>undo</b> ()</td></tr>
+<tr class="memitem:aa4a061dcb6f1150acb10cf3bb37e5aba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_do_lah_1_1_abstract_command.html">AbstractCommand</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_command_history.html#aa4a061dcb6f1150acb10cf3bb37e5aba">undo</a> ()</td></tr>
 <tr class="separator:aa4a061dcb6f1150acb10cf3bb37e5aba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae2728781861917fd44b1fd133a51886"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aae2728781861917fd44b1fd133a51886"></a>
-<a class="el" href="class_do_lah_1_1_abstract_command.html">AbstractCommand</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>redo</b> ()</td></tr>
+<tr class="memitem:aae2728781861917fd44b1fd133a51886"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_do_lah_1_1_abstract_command.html">AbstractCommand</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_command_history.html#aae2728781861917fd44b1fd133a51886">redo</a> ()</td></tr>
 <tr class="separator:aae2728781861917fd44b1fd133a51886"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a73a9d3c5e02fd12e19f4bf23b364c7d0"><td class="memItemLeft" align="right" valign="top">std::stack&lt; <a class="el" href="class_do_lah_1_1_abstract_command.html">AbstractCommand</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_command_history.html#a73a9d3c5e02fd12e19f4bf23b364c7d0">undoStack</a></td></tr>
+<tr class="separator:a73a9d3c5e02fd12e19f4bf23b364c7d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab756c962f4957cd8b802bde3831569cc"><td class="memItemLeft" align="right" valign="top">std::stack&lt; <a class="el" href="class_do_lah_1_1_abstract_command.html">AbstractCommand</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_command_history.html#ab756c962f4957cd8b802bde3831569cc">redoStack</a></td></tr>
+<tr class="separator:ab756c962f4957cd8b802bde3831569cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a99a81f9e4d380a010c79de5105f1aa04"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_command_history.html#a99a81f9e4d380a010c79de5105f1aa04">INVALID_UNDO_CALL_MESSAGE</a> = &quot;There is nothing to undo!&quot;</td></tr>
+<tr class="separator:a99a81f9e4d380a010c79de5105f1aa04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c4f33372b0868e9f59e3f97b6c3645c"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_command_history.html#a1c4f33372b0868e9f59e3f97b6c3645c">INVALID_REDO_CALL_MESSAGE</a> = &quot;There is nothing to redo!&quot;</td></tr>
+<tr class="separator:a1c4f33372b0868e9f59e3f97b6c3645c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a3043a7b3d26409243270f85d0f9e3817"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DoLah::CommandHistory::CommandHistory </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a475754a1e316ccf4df7281b16ff4a68c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DoLah::CommandHistory::~CommandHistory </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a6c2ca1c4dcda54fea643c3cd8cff1fd2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DoLah::CommandHistory::addToUndoStack </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_do_lah_1_1_abstract_command.html">AbstractCommand</a> *&#160;</td>
+          <td class="paramname"><em>command</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9358078e4d016efb55f0e2e3e3de14e3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DoLah::CommandHistory::getRedoStackSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a244773421e301208b5d9d5f9fdc6d9de"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DoLah::CommandHistory::getUndoStackSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aae2728781861917fd44b1fd133a51886"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_do_lah_1_1_abstract_command.html">AbstractCommand</a> * DoLah::CommandHistory::redo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa4a061dcb6f1150acb10cf3bb37e5aba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_do_lah_1_1_abstract_command.html">AbstractCommand</a> * DoLah::CommandHistory::undo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a1c4f33372b0868e9f59e3f97b6c3645c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string DoLah::CommandHistory::INVALID_REDO_CALL_MESSAGE = &quot;There is nothing to redo!&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a99a81f9e4d380a010c79de5105f1aa04"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string DoLah::CommandHistory::INVALID_UNDO_CALL_MESSAGE = &quot;There is nothing to undo!&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab756c962f4957cd8b802bde3831569cc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::stack&lt;<a class="el" href="class_do_lah_1_1_abstract_command.html">AbstractCommand</a> *&gt; DoLah::CommandHistory::redoStack</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a73a9d3c5e02fd12e19f4bf23b364c7d0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::stack&lt;<a class="el" href="class_do_lah_1_1_abstract_command.html">AbstractCommand</a> *&gt; DoLah::CommandHistory::undoStack</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>DoLah/Models/<a class="el" href="_command_history_8h_source.html">CommandHistory.h</a></li>
-<li>DoLah/Models/CommandHistory.cpp</li>
+<li>DoLah/Models/<a class="el" href="_command_history_8cpp.html">CommandHistory.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>DoLah</b></li><li class="navelem"><a class="el" href="class_do_lah_1_1_command_history.html">CommandHistory</a></li>
+    <li class="navelem"><a class="el" href="namespace_do_lah.html">DoLah</a></li><li class="navelem"><a class="el" href="class_do_lah_1_1_command_history.html">CommandHistory</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>

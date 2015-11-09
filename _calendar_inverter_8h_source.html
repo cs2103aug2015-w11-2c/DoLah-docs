@@ -48,6 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -71,6 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -107,27 +109,36 @@ $(document).ready(function(){initNavTree('_calendar_inverter_8h_source.html','')
 <div class="title">CalendarInverter.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;Models/Calendar.h&gt;</span></div>
+<a href="_calendar_inverter_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="_calendar_8h.html">Models/Calendar.h</a>&gt;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_do_lah.html">DoLah</a> {</div>
 <div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="class_do_lah_1_1_calendar_inverter.html">    5</a></span>&#160;    <span class="keyword">class </span><a class="code" href="class_do_lah_1_1_calendar_inverter.html">CalendarInverter</a> {</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;        <a class="code" href="class_do_lah_1_1_calendar_inverter.html">CalendarInverter</a>();</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;        ~<a class="code" href="class_do_lah_1_1_calendar_inverter.html">CalendarInverter</a>();</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;        <a class="code" href="class_do_lah_1_1_calendar_inverter.html#a51fb3dc56d04563676901b50f72c2dc6">CalendarInverter</a>();</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;        <a class="code" href="class_do_lah_1_1_calendar_inverter.html#a29fc792ceaf73a246ad4fc700050c208">~CalendarInverter</a>();</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> invertAdd(<a class="code" href="class_do_lah_1_1_abstract_task.html">AbstractTask</a> *, <a class="code" href="class_do_lah_1_1_calendar.html">Calendar</a> *);</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> invertDelete(<a class="code" href="class_do_lah_1_1_abstract_task.html">AbstractTask</a> *, <a class="code" href="class_do_lah_1_1_calendar.html">Calendar</a> *);</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> invertEdit(<a class="code" href="class_do_lah_1_1_abstract_task.html">AbstractTask</a> *, <a class="code" href="class_do_lah_1_1_calendar.html">Calendar</a> *);</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> invertClear(std::vector&lt;AbstractTask*&gt;, <a class="code" href="class_do_lah_1_1_calendar.html">Calendar</a> *);</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> invertSearch(std::vector&lt;AbstractTask*&gt; **, std::string, <a class="code" href="class_do_lah_1_1_calendar.html">Calendar</a> *);</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> invertDone(<a class="code" href="class_do_lah_1_1_abstract_task.html">AbstractTask</a> *, <a class="code" href="class_do_lah_1_1_calendar.html">Calendar</a> *);</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_do_lah_1_1_calendar_inverter.html#a71af02c5cdcb6904417eebffd45e3f80">invertAdd</a>(<a class="code" href="class_do_lah_1_1_abstract_task.html">AbstractTask</a> *, <a class="code" href="class_do_lah_1_1_calendar.html">Calendar</a> *);</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_do_lah_1_1_calendar_inverter.html#ae7b5c92a949dd2cb90954fd0814fd575">invertDelete</a>(<a class="code" href="class_do_lah_1_1_abstract_task.html">AbstractTask</a> *, <a class="code" href="class_do_lah_1_1_calendar.html">Calendar</a> *);</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_do_lah_1_1_calendar_inverter.html#a1468dfb88afb3346c2d29c74989003e1">invertEdit</a>(<a class="code" href="class_do_lah_1_1_abstract_task.html">AbstractTask</a> *, <a class="code" href="class_do_lah_1_1_calendar.html">Calendar</a> *);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_do_lah_1_1_calendar_inverter.html#a3bf514450b1fab9e0ec206eb093825c2">invertClear</a>(std::vector&lt;AbstractTask*&gt;, <a class="code" href="class_do_lah_1_1_calendar.html">Calendar</a> *);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_do_lah_1_1_calendar_inverter.html#ae7c3a5818d21c568863abe36d3ba54a8">invertSearch</a>(std::vector&lt;AbstractTask*&gt; **, std::string, <a class="code" href="class_do_lah_1_1_calendar.html">Calendar</a> *);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_do_lah_1_1_calendar_inverter.html#a74bc7a028c9a7eb2567fb3bb1c5975e2">invertDone</a>(<a class="code" href="class_do_lah_1_1_abstract_task.html">AbstractTask</a> *, <a class="code" href="class_do_lah_1_1_calendar.html">Calendar</a> *);</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    };</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
+<div class="ttc" id="class_do_lah_1_1_calendar_inverter_html_a74bc7a028c9a7eb2567fb3bb1c5975e2"><div class="ttname"><a href="class_do_lah_1_1_calendar_inverter.html#a74bc7a028c9a7eb2567fb3bb1c5975e2">DoLah::CalendarInverter::invertDone</a></div><div class="ttdeci">static void invertDone(AbstractTask *, Calendar *)</div><div class="ttdef"><b>Definition:</b> CalendarInverter.cpp:31</div></div>
+<div class="ttc" id="class_do_lah_1_1_calendar_inverter_html_a71af02c5cdcb6904417eebffd45e3f80"><div class="ttname"><a href="class_do_lah_1_1_calendar_inverter.html#a71af02c5cdcb6904417eebffd45e3f80">DoLah::CalendarInverter::invertAdd</a></div><div class="ttdeci">static void invertAdd(AbstractTask *, Calendar *)</div><div class="ttdef"><b>Definition:</b> CalendarInverter.cpp:9</div></div>
+<div class="ttc" id="class_do_lah_1_1_calendar_inverter_html_ae7b5c92a949dd2cb90954fd0814fd575"><div class="ttname"><a href="class_do_lah_1_1_calendar_inverter.html#ae7b5c92a949dd2cb90954fd0814fd575">DoLah::CalendarInverter::invertDelete</a></div><div class="ttdeci">static void invertDelete(AbstractTask *, Calendar *)</div><div class="ttdef"><b>Definition:</b> CalendarInverter.cpp:13</div></div>
+<div class="ttc" id="class_do_lah_1_1_calendar_inverter_html_ae7c3a5818d21c568863abe36d3ba54a8"><div class="ttname"><a href="class_do_lah_1_1_calendar_inverter.html#ae7c3a5818d21c568863abe36d3ba54a8">DoLah::CalendarInverter::invertSearch</a></div><div class="ttdeci">static void invertSearch(std::vector&lt; AbstractTask * &gt; **, std::string, Calendar *)</div><div class="ttdef"><b>Definition:</b> CalendarInverter.cpp:27</div></div>
 <div class="ttc" id="namespace_do_lah_html"><div class="ttname"><a href="namespace_do_lah.html">DoLah</a></div><div class="ttdef"><b>Definition:</b> CommandInvoker.cpp:3</div></div>
-<div class="ttc" id="class_do_lah_1_1_calendar_html"><div class="ttname"><a href="class_do_lah_1_1_calendar.html">DoLah::Calendar</a></div><div class="ttdef"><b>Definition:</b> Calendar.h:10</div></div>
+<div class="ttc" id="class_do_lah_1_1_calendar_inverter_html_a3bf514450b1fab9e0ec206eb093825c2"><div class="ttname"><a href="class_do_lah_1_1_calendar_inverter.html#a3bf514450b1fab9e0ec206eb093825c2">DoLah::CalendarInverter::invertClear</a></div><div class="ttdeci">static void invertClear(std::vector&lt; AbstractTask * &gt;, Calendar *)</div><div class="ttdef"><b>Definition:</b> CalendarInverter.cpp:21</div></div>
+<div class="ttc" id="class_do_lah_1_1_calendar_inverter_html_a29fc792ceaf73a246ad4fc700050c208"><div class="ttname"><a href="class_do_lah_1_1_calendar_inverter.html#a29fc792ceaf73a246ad4fc700050c208">DoLah::CalendarInverter::~CalendarInverter</a></div><div class="ttdeci">~CalendarInverter()</div><div class="ttdef"><b>Definition:</b> CalendarInverter.cpp:6</div></div>
+<div class="ttc" id="class_do_lah_1_1_calendar_inverter_html_a1468dfb88afb3346c2d29c74989003e1"><div class="ttname"><a href="class_do_lah_1_1_calendar_inverter.html#a1468dfb88afb3346c2d29c74989003e1">DoLah::CalendarInverter::invertEdit</a></div><div class="ttdeci">static void invertEdit(AbstractTask *, Calendar *)</div><div class="ttdef"><b>Definition:</b> CalendarInverter.cpp:17</div></div>
+<div class="ttc" id="class_do_lah_1_1_calendar_html"><div class="ttname"><a href="class_do_lah_1_1_calendar.html">DoLah::Calendar</a></div><div class="ttdoc">Class for holding the actual tasklist(s) and any operations on tasks in those list(s). </div><div class="ttdef"><b>Definition:</b> Calendar.h:21</div></div>
+<div class="ttc" id="_calendar_8h_html"><div class="ttname"><a href="_calendar_8h.html">Calendar.h</a></div></div>
+<div class="ttc" id="class_do_lah_1_1_calendar_inverter_html_a51fb3dc56d04563676901b50f72c2dc6"><div class="ttname"><a href="class_do_lah_1_1_calendar_inverter.html#a51fb3dc56d04563676901b50f72c2dc6">DoLah::CalendarInverter::CalendarInverter</a></div><div class="ttdeci">CalendarInverter()</div><div class="ttdef"><b>Definition:</b> CalendarInverter.cpp:3</div></div>
 <div class="ttc" id="class_do_lah_1_1_calendar_inverter_html"><div class="ttname"><a href="class_do_lah_1_1_calendar_inverter.html">DoLah::CalendarInverter</a></div><div class="ttdef"><b>Definition:</b> CalendarInverter.h:5</div></div>
 <div class="ttc" id="class_do_lah_1_1_abstract_task_html"><div class="ttname"><a href="class_do_lah_1_1_abstract_task.html">DoLah::AbstractTask</a></div><div class="ttdoc">Abstract Task class is the base class for any Task. </div><div class="ttdef"><b>Definition:</b> Task.h:12</div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -135,7 +146,7 @@ $(document).ready(function(){initNavTree('_calendar_inverter_8h_source.html','')
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_2e59a62bdd09fe158cc9713e0e7a7813.html">DoLah</a></li><li class="navelem"><a class="el" href="dir_4122db6a7e46e42725a5ec045ffb0b24.html">Models</a></li><li class="navelem"><b>CalendarInverter.h</b></li>
+    <li class="navelem"><a class="el" href="dir_2e59a62bdd09fe158cc9713e0e7a7813.html">DoLah</a></li><li class="navelem"><a class="el" href="dir_4122db6a7e46e42725a5ec045ffb0b24.html">Models</a></li><li class="navelem"><a class="el" href="_calendar_inverter_8h.html">CalendarInverter.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>

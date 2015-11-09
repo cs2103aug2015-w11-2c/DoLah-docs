@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['redotaskcommand',['RedoTaskCommand',['../class_do_lah_1_1_redo_task_command.html',1,'DoLah']]]
+  ['inputbox',['InputBox',['../class_do_lah_1_1_input_box.html',1,'DoLah']]]
 ];

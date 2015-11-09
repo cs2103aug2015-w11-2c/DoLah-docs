@@ -48,6 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -72,7 +73,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
-      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -108,31 +109,152 @@ $(document).ready(function(){initNavTree('class_do_lah_1_1_command_invoker.html'
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_do_lah_1_1_command_invoker-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">DoLah::CommandInvoker Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_command_invoker_8h_source.html">CommandInvoker.h</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for DoLah::CommandInvoker:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_do_lah_1_1_command_invoker__coll__graph.png" border="0" usemap="#_do_lah_1_1_command_invoker_coll__map" alt="Collaboration graph"/></div>
+<map name="_do_lah_1_1_command_invoker_coll__map" id="_do_lah_1_1_command_invoker_coll__map">
+<area shape="rect" id="node2" href="class_do_lah_1_1_command_history.html" title="{DoLah::CommandHistory\n|&#45; undoStack\l&#45; redoStack\l&#45; INVALID_UNDO_CALL_MESSAGE\l&#45; INVALID_REDO_CALL_MESSAGE\l|+ CommandHistory()\l+ ~CommandHistory()\l+ addToUndoStack()\l+ getUndoStackSize()\l+ getRedoStackSize()\l+ undo()\l+ redo()\l}" alt="" coords="5,5,240,215"/>
+</map>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a09a2224cfe840086bebb435cf7d84a5a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a09a2224cfe840086bebb435cf7d84a5a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setCmdHistory</b> (<a class="el" href="class_do_lah_1_1_command_history.html">CommandHistory</a> *)</td></tr>
+<tr class="memitem:a9db5bddfc275411d21a7b5ceb7d03ca8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_command_invoker.html#a9db5bddfc275411d21a7b5ceb7d03ca8">CommandInvoker</a> ()</td></tr>
+<tr class="separator:a9db5bddfc275411d21a7b5ceb7d03ca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc83684ccc81bc4611f67c075c9ae378"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_command_invoker.html#acc83684ccc81bc4611f67c075c9ae378">~CommandInvoker</a> ()</td></tr>
+<tr class="separator:acc83684ccc81bc4611f67c075c9ae378"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09a2224cfe840086bebb435cf7d84a5a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_command_invoker.html#a09a2224cfe840086bebb435cf7d84a5a">setCmdHistory</a> (<a class="el" href="class_do_lah_1_1_command_history.html">CommandHistory</a> *)</td></tr>
 <tr class="separator:a09a2224cfe840086bebb435cf7d84a5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acce58bcbf75a9d29c57ceb32dbff243d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acce58bcbf75a9d29c57ceb32dbff243d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>process</b> (<a class="el" href="class_do_lah_1_1_abstract_command.html">AbstractCommand</a> *)</td></tr>
+<tr class="memitem:a47a8625421f67d225d165827da5081c2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_command_invoker.html#a47a8625421f67d225d165827da5081c2">checkIfExcludedCommandType</a> (<a class="el" href="class_do_lah_1_1_abstract_command.html">AbstractCommand</a> *command)</td></tr>
+<tr class="separator:a47a8625421f67d225d165827da5081c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acce58bcbf75a9d29c57ceb32dbff243d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_command_invoker.html#acce58bcbf75a9d29c57ceb32dbff243d">process</a> (<a class="el" href="class_do_lah_1_1_abstract_command.html">AbstractCommand</a> *)</td></tr>
 <tr class="separator:acce58bcbf75a9d29c57ceb32dbff243d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ae7c2f26d708cbd33163918a43e0e5754"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_do_lah_1_1_command_history.html">CommandHistory</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_command_invoker.html#ae7c2f26d708cbd33163918a43e0e5754">cmdHistory</a></td></tr>
+<tr class="separator:ae7c2f26d708cbd33163918a43e0e5754"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a9db5bddfc275411d21a7b5ceb7d03ca8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DoLah::CommandInvoker::CommandInvoker </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acc83684ccc81bc4611f67c075c9ae378"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DoLah::CommandInvoker::~CommandInvoker </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a47a8625421f67d225d165827da5081c2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DoLah::CommandInvoker::checkIfExcludedCommandType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_do_lah_1_1_abstract_command.html">AbstractCommand</a> *&#160;</td>
+          <td class="paramname"><em>command</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acce58bcbf75a9d29c57ceb32dbff243d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DoLah::CommandInvoker::process </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_do_lah_1_1_abstract_command.html">AbstractCommand</a> *&#160;</td>
+          <td class="paramname"><em>command</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a09a2224cfe840086bebb435cf7d84a5a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DoLah::CommandInvoker::setCmdHistory </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_do_lah_1_1_command_history.html">CommandHistory</a> *&#160;</td>
+          <td class="paramname"><em>history</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="ae7c2f26d708cbd33163918a43e0e5754"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_do_lah_1_1_command_history.html">CommandHistory</a>* DoLah::CommandInvoker::cmdHistory</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>DoLah/<a class="el" href="_command_invoker_8h_source.html">CommandInvoker.h</a></li>
-<li>DoLah/CommandInvoker.cpp</li>
+<li>DoLah/<a class="el" href="_command_invoker_8cpp.html">CommandInvoker.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>DoLah</b></li><li class="navelem"><a class="el" href="class_do_lah_1_1_command_invoker.html">CommandInvoker</a></li>
+    <li class="navelem"><a class="el" href="namespace_do_lah.html">DoLah</a></li><li class="navelem"><a class="el" href="class_do_lah_1_1_command_invoker.html">CommandInvoker</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>

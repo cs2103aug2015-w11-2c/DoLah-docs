@@ -1,0 +1,6 @@
+<map id="DoLah::SetDoneTaskCommand" name="DoLah::SetDoneTaskCommand">
+<area shape="rect" id="node2" href="$class_do_lah_1_1_abstract_command.html" title="{DoLah::AbstractCommand\n||+ ~AbstractCommand()\l+ setCalendar()\l+ execute()\l+ revert()\l}" alt="" coords="35,762,210,883"/>
+<area shape="rect" id="node3" href="$class_do_lah_1_1_calendar.html" title="Class for holding the actual tasklist(s) and any operations on tasks in those list(s). " alt="" coords="13,277,232,604"/>
+<area shape="rect" id="node4" href="$class_do_lah_1_1_command_history.html" title="{DoLah::CommandHistory\n|&#45; undoStack\l&#45; redoStack\l&#45; INVALID_UNDO_CALL_MESSAGE\l&#45; INVALID_REDO_CALL_MESSAGE\l|+ CommandHistory()\l+ ~CommandHistory()\l+ addToUndoStack()\l+ getUndoStackSize()\l+ getRedoStackSize()\l+ undo()\l+ redo()\l}" alt="" coords="5,5,240,215"/>
+<area shape="rect" id="node5" href="$class_do_lah_1_1_abstract_task.html" title="Abstract Task class is the base class for any Task. " alt="" coords="235,667,379,979"/>
+</map>

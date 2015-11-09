@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['parserlibrary',['ParserLibrary',['../class_do_lah_1_1_parser_library.html',1,'DoLah']]]
+  ['helpwindow',['HelpWindow',['../class_do_lah_1_1_help_window.html',1,'DoLah']]]
 ];

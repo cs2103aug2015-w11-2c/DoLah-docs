@@ -48,6 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -71,6 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -107,37 +109,46 @@ $(document).ready(function(){initNavTree('_command_invoker_8h_source.html','');}
 <div class="title">CommandInvoker.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<a href="_command_invoker_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;Commands/Command.h&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;Models/CommandHistory.h&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_command_8h.html">Commands/Command.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_command_history_8h.html">Models/CommandHistory.h</a>&quot;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_do_lah.html">DoLah</a> {</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
 <div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_do_lah_1_1_command_invoker.html">    9</a></span>&#160;    <span class="keyword">class </span><a class="code" href="class_do_lah_1_1_command_invoker.html">CommandInvoker</a></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    {</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        <a class="code" href="class_do_lah_1_1_command_invoker.html">CommandInvoker</a>();</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        ~<a class="code" href="class_do_lah_1_1_command_invoker.html">CommandInvoker</a>();</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="keywordtype">void</span> setCmdHistory(<a class="code" href="class_do_lah_1_1_command_history.html">CommandHistory</a>*);</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keywordtype">void</span> process(<a class="code" href="class_do_lah_1_1_abstract_command.html">AbstractCommand</a>*);</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <a class="code" href="class_do_lah_1_1_command_history.html">CommandHistory</a>* cmdHistory;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    };</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        <a class="code" href="class_do_lah_1_1_command_invoker.html#a9db5bddfc275411d21a7b5ceb7d03ca8">CommandInvoker</a>();</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <a class="code" href="class_do_lah_1_1_command_invoker.html#acc83684ccc81bc4611f67c075c9ae378">~CommandInvoker</a>();</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_do_lah_1_1_command_invoker.html#a09a2224cfe840086bebb435cf7d84a5a">setCmdHistory</a>(<a class="code" href="class_do_lah_1_1_command_history.html">CommandHistory</a>*);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_do_lah_1_1_command_invoker.html#a47a8625421f67d225d165827da5081c2">checkIfExcludedCommandType</a>(<a class="code" href="class_do_lah_1_1_abstract_command.html">AbstractCommand</a> * command);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_do_lah_1_1_command_invoker.html#acce58bcbf75a9d29c57ceb32dbff243d">process</a>(<a class="code" href="class_do_lah_1_1_abstract_command.html">AbstractCommand</a>*);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_do_lah_1_1_command_invoker.html#ae7c2f26d708cbd33163918a43e0e5754">   19</a></span>&#160;        <a class="code" href="class_do_lah_1_1_command_history.html">CommandHistory</a>* <a class="code" href="class_do_lah_1_1_command_invoker.html#ae7c2f26d708cbd33163918a43e0e5754">cmdHistory</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    };</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}</div>
+<div class="ttc" id="class_do_lah_1_1_command_invoker_html_acc83684ccc81bc4611f67c075c9ae378"><div class="ttname"><a href="class_do_lah_1_1_command_invoker.html#acc83684ccc81bc4611f67c075c9ae378">DoLah::CommandInvoker::~CommandInvoker</a></div><div class="ttdeci">~CommandInvoker()</div><div class="ttdef"><b>Definition:</b> CommandInvoker.cpp:9</div></div>
+<div class="ttc" id="_command_history_8h_html"><div class="ttname"><a href="_command_history_8h.html">CommandHistory.h</a></div></div>
+<div class="ttc" id="class_do_lah_1_1_command_invoker_html_a9db5bddfc275411d21a7b5ceb7d03ca8"><div class="ttname"><a href="class_do_lah_1_1_command_invoker.html#a9db5bddfc275411d21a7b5ceb7d03ca8">DoLah::CommandInvoker::CommandInvoker</a></div><div class="ttdeci">CommandInvoker()</div><div class="ttdef"><b>Definition:</b> CommandInvoker.cpp:5</div></div>
+<div class="ttc" id="_command_8h_html"><div class="ttname"><a href="_command_8h.html">Command.h</a></div></div>
 <div class="ttc" id="namespace_do_lah_html"><div class="ttname"><a href="namespace_do_lah.html">DoLah</a></div><div class="ttdef"><b>Definition:</b> CommandInvoker.cpp:3</div></div>
 <div class="ttc" id="class_do_lah_1_1_abstract_command_html"><div class="ttname"><a href="class_do_lah_1_1_abstract_command.html">DoLah::AbstractCommand</a></div><div class="ttdef"><b>Definition:</b> Command.h:12</div></div>
 <div class="ttc" id="class_do_lah_1_1_command_invoker_html"><div class="ttname"><a href="class_do_lah_1_1_command_invoker.html">DoLah::CommandInvoker</a></div><div class="ttdef"><b>Definition:</b> CommandInvoker.h:9</div></div>
+<div class="ttc" id="class_do_lah_1_1_command_invoker_html_ae7c2f26d708cbd33163918a43e0e5754"><div class="ttname"><a href="class_do_lah_1_1_command_invoker.html#ae7c2f26d708cbd33163918a43e0e5754">DoLah::CommandInvoker::cmdHistory</a></div><div class="ttdeci">CommandHistory * cmdHistory</div><div class="ttdef"><b>Definition:</b> CommandInvoker.h:19</div></div>
+<div class="ttc" id="class_do_lah_1_1_command_invoker_html_a47a8625421f67d225d165827da5081c2"><div class="ttname"><a href="class_do_lah_1_1_command_invoker.html#a47a8625421f67d225d165827da5081c2">DoLah::CommandInvoker::checkIfExcludedCommandType</a></div><div class="ttdeci">bool checkIfExcludedCommandType(AbstractCommand *command)</div><div class="ttdef"><b>Definition:</b> CommandInvoker.cpp:17</div></div>
+<div class="ttc" id="class_do_lah_1_1_command_invoker_html_a09a2224cfe840086bebb435cf7d84a5a"><div class="ttname"><a href="class_do_lah_1_1_command_invoker.html#a09a2224cfe840086bebb435cf7d84a5a">DoLah::CommandInvoker::setCmdHistory</a></div><div class="ttdeci">void setCmdHistory(CommandHistory *)</div><div class="ttdef"><b>Definition:</b> CommandInvoker.cpp:13</div></div>
 <div class="ttc" id="class_do_lah_1_1_command_history_html"><div class="ttname"><a href="class_do_lah_1_1_command_history.html">DoLah::CommandHistory</a></div><div class="ttdef"><b>Definition:</b> CommandHistory.h:8</div></div>
+<div class="ttc" id="class_do_lah_1_1_command_invoker_html_acce58bcbf75a9d29c57ceb32dbff243d"><div class="ttname"><a href="class_do_lah_1_1_command_invoker.html#acce58bcbf75a9d29c57ceb32dbff243d">DoLah::CommandInvoker::process</a></div><div class="ttdeci">void process(AbstractCommand *)</div><div class="ttdef"><b>Definition:</b> CommandInvoker.cpp:34</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_2e59a62bdd09fe158cc9713e0e7a7813.html">DoLah</a></li><li class="navelem"><b>CommandInvoker.h</b></li>
+    <li class="navelem"><a class="el" href="dir_2e59a62bdd09fe158cc9713e0e7a7813.html">DoLah</a></li><li class="navelem"><a class="el" href="_command_invoker_8h.html">CommandInvoker.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>

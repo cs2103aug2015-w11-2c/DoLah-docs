@@ -48,6 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -71,6 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -107,7 +109,7 @@ $(document).ready(function(){initNavTree('_command_history_8h_source.html','');}
 <div class="title">CommandHistory.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<a href="_command_history_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;stack&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
@@ -117,35 +119,46 @@ $(document).ready(function(){initNavTree('_command_history_8h_source.html','');}
 <div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_do_lah_1_1_command_history.html">    8</a></span>&#160;    <span class="keyword">class </span><a class="code" href="class_do_lah_1_1_command_history.html">CommandHistory</a> {</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        <a class="code" href="class_do_lah_1_1_command_history.html">CommandHistory</a>();</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        ~<a class="code" href="class_do_lah_1_1_command_history.html">CommandHistory</a>();</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        <a class="code" href="class_do_lah_1_1_command_history.html#a3043a7b3d26409243270f85d0f9e3817">CommandHistory</a>();</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        <a class="code" href="class_do_lah_1_1_command_history.html#a475754a1e316ccf4df7281b16ff4a68c">~CommandHistory</a>();</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="keywordtype">void</span> addToUndoStack(<a class="code" href="class_do_lah_1_1_abstract_command.html">AbstractCommand</a> *);</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keywordtype">int</span> getUndoStackSize() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="keywordtype">int</span> getRedoStackSize() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_do_lah_1_1_command_history.html#a6c2ca1c4dcda54fea643c3cd8cff1fd2">addToUndoStack</a>(<a class="code" href="class_do_lah_1_1_abstract_command.html">AbstractCommand</a> *);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_do_lah_1_1_command_history.html#a244773421e301208b5d9d5f9fdc6d9de">getUndoStackSize</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_do_lah_1_1_command_history.html#a9358078e4d016efb55f0e2e3e3de14e3">getRedoStackSize</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <a class="code" href="class_do_lah_1_1_abstract_command.html">AbstractCommand</a> * undo();</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <a class="code" href="class_do_lah_1_1_abstract_command.html">AbstractCommand</a> * redo();</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <a class="code" href="class_do_lah_1_1_abstract_command.html">AbstractCommand</a> * <a class="code" href="class_do_lah_1_1_command_history.html#aa4a061dcb6f1150acb10cf3bb37e5aba">undo</a>();</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <a class="code" href="class_do_lah_1_1_abstract_command.html">AbstractCommand</a> * <a class="code" href="class_do_lah_1_1_command_history.html#aae2728781861917fd44b1fd133a51886">redo</a>();</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="comment">//actual data</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        std::stack&lt;AbstractCommand *&gt; undoStack;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        std::stack&lt;AbstractCommand *&gt; redoStack;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_do_lah_1_1_command_history.html#a73a9d3c5e02fd12e19f4bf23b364c7d0">   23</a></span>&#160;        std::stack&lt;AbstractCommand *&gt; <a class="code" href="class_do_lah_1_1_command_history.html#a73a9d3c5e02fd12e19f4bf23b364c7d0">undoStack</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_do_lah_1_1_command_history.html#ab756c962f4957cd8b802bde3831569cc">   24</a></span>&#160;        std::stack&lt;AbstractCommand *&gt; <a class="code" href="class_do_lah_1_1_command_history.html#ab756c962f4957cd8b802bde3831569cc">redoStack</a>;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="comment">//error messages</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keyword">static</span> std::string INVALID_UNDO_CALL_MESSAGE;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keyword">static</span> std::string INVALID_REDO_CALL_MESSAGE;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_do_lah_1_1_command_history.html#a99a81f9e4d380a010c79de5105f1aa04">   27</a></span>&#160;        <span class="keyword">static</span> std::string <a class="code" href="class_do_lah_1_1_command_history.html#a99a81f9e4d380a010c79de5105f1aa04">INVALID_UNDO_CALL_MESSAGE</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_do_lah_1_1_command_history.html#a1c4f33372b0868e9f59e3f97b6c3645c">   28</a></span>&#160;        <span class="keyword">static</span> std::string <a class="code" href="class_do_lah_1_1_command_history.html#a1c4f33372b0868e9f59e3f97b6c3645c">INVALID_REDO_CALL_MESSAGE</a>;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    };</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
+<div class="ttc" id="class_do_lah_1_1_command_history_html_a73a9d3c5e02fd12e19f4bf23b364c7d0"><div class="ttname"><a href="class_do_lah_1_1_command_history.html#a73a9d3c5e02fd12e19f4bf23b364c7d0">DoLah::CommandHistory::undoStack</a></div><div class="ttdeci">std::stack&lt; AbstractCommand * &gt; undoStack</div><div class="ttdef"><b>Definition:</b> CommandHistory.h:23</div></div>
+<div class="ttc" id="class_do_lah_1_1_command_history_html_a1c4f33372b0868e9f59e3f97b6c3645c"><div class="ttname"><a href="class_do_lah_1_1_command_history.html#a1c4f33372b0868e9f59e3f97b6c3645c">DoLah::CommandHistory::INVALID_REDO_CALL_MESSAGE</a></div><div class="ttdeci">static std::string INVALID_REDO_CALL_MESSAGE</div><div class="ttdef"><b>Definition:</b> CommandHistory.h:28</div></div>
+<div class="ttc" id="class_do_lah_1_1_command_history_html_ab756c962f4957cd8b802bde3831569cc"><div class="ttname"><a href="class_do_lah_1_1_command_history.html#ab756c962f4957cd8b802bde3831569cc">DoLah::CommandHistory::redoStack</a></div><div class="ttdeci">std::stack&lt; AbstractCommand * &gt; redoStack</div><div class="ttdef"><b>Definition:</b> CommandHistory.h:24</div></div>
+<div class="ttc" id="class_do_lah_1_1_command_history_html_a6c2ca1c4dcda54fea643c3cd8cff1fd2"><div class="ttname"><a href="class_do_lah_1_1_command_history.html#a6c2ca1c4dcda54fea643c3cd8cff1fd2">DoLah::CommandHistory::addToUndoStack</a></div><div class="ttdeci">void addToUndoStack(AbstractCommand *)</div><div class="ttdef"><b>Definition:</b> CommandHistory.cpp:17</div></div>
 <div class="ttc" id="namespace_do_lah_html"><div class="ttname"><a href="namespace_do_lah.html">DoLah</a></div><div class="ttdef"><b>Definition:</b> CommandInvoker.cpp:3</div></div>
+<div class="ttc" id="class_do_lah_1_1_command_history_html_a3043a7b3d26409243270f85d0f9e3817"><div class="ttname"><a href="class_do_lah_1_1_command_history.html#a3043a7b3d26409243270f85d0f9e3817">DoLah::CommandHistory::CommandHistory</a></div><div class="ttdeci">CommandHistory()</div><div class="ttdef"><b>Definition:</b> CommandHistory.cpp:9</div></div>
 <div class="ttc" id="class_do_lah_1_1_abstract_command_html"><div class="ttname"><a href="class_do_lah_1_1_abstract_command.html">DoLah::AbstractCommand</a></div><div class="ttdef"><b>Definition:</b> Command.h:12</div></div>
+<div class="ttc" id="class_do_lah_1_1_command_history_html_aae2728781861917fd44b1fd133a51886"><div class="ttname"><a href="class_do_lah_1_1_command_history.html#aae2728781861917fd44b1fd133a51886">DoLah::CommandHistory::redo</a></div><div class="ttdeci">AbstractCommand * redo()</div><div class="ttdef"><b>Definition:</b> CommandHistory.cpp:40</div></div>
+<div class="ttc" id="class_do_lah_1_1_command_history_html_a9358078e4d016efb55f0e2e3e3de14e3"><div class="ttname"><a href="class_do_lah_1_1_command_history.html#a9358078e4d016efb55f0e2e3e3de14e3">DoLah::CommandHistory::getRedoStackSize</a></div><div class="ttdeci">int getRedoStackSize() const </div><div class="ttdef"><b>Definition:</b> CommandHistory.cpp:25</div></div>
+<div class="ttc" id="class_do_lah_1_1_command_history_html_a244773421e301208b5d9d5f9fdc6d9de"><div class="ttname"><a href="class_do_lah_1_1_command_history.html#a244773421e301208b5d9d5f9fdc6d9de">DoLah::CommandHistory::getUndoStackSize</a></div><div class="ttdeci">int getUndoStackSize() const </div><div class="ttdef"><b>Definition:</b> CommandHistory.cpp:21</div></div>
+<div class="ttc" id="class_do_lah_1_1_command_history_html_a475754a1e316ccf4df7281b16ff4a68c"><div class="ttname"><a href="class_do_lah_1_1_command_history.html#a475754a1e316ccf4df7281b16ff4a68c">DoLah::CommandHistory::~CommandHistory</a></div><div class="ttdeci">~CommandHistory()</div><div class="ttdef"><b>Definition:</b> CommandHistory.cpp:13</div></div>
+<div class="ttc" id="class_do_lah_1_1_command_history_html_aa4a061dcb6f1150acb10cf3bb37e5aba"><div class="ttname"><a href="class_do_lah_1_1_command_history.html#aa4a061dcb6f1150acb10cf3bb37e5aba">DoLah::CommandHistory::undo</a></div><div class="ttdeci">AbstractCommand * undo()</div><div class="ttdef"><b>Definition:</b> CommandHistory.cpp:29</div></div>
 <div class="ttc" id="class_do_lah_1_1_command_history_html"><div class="ttname"><a href="class_do_lah_1_1_command_history.html">DoLah::CommandHistory</a></div><div class="ttdef"><b>Definition:</b> CommandHistory.h:8</div></div>
+<div class="ttc" id="class_do_lah_1_1_command_history_html_a99a81f9e4d380a010c79de5105f1aa04"><div class="ttname"><a href="class_do_lah_1_1_command_history.html#a99a81f9e4d380a010c79de5105f1aa04">DoLah::CommandHistory::INVALID_UNDO_CALL_MESSAGE</a></div><div class="ttdeci">static std::string INVALID_UNDO_CALL_MESSAGE</div><div class="ttdef"><b>Definition:</b> CommandHistory.h:27</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_2e59a62bdd09fe158cc9713e0e7a7813.html">DoLah</a></li><li class="navelem"><a class="el" href="dir_4122db6a7e46e42725a5ec045ffb0b24.html">Models</a></li><li class="navelem"><b>CommandHistory.h</b></li>
+    <li class="navelem"><a class="el" href="dir_2e59a62bdd09fe158cc9713e0e7a7813.html">DoLah</a></li><li class="navelem"><a class="el" href="dir_4122db6a7e46e42725a5ec045ffb0b24.html">Models</a></li><li class="navelem"><a class="el" href="_command_history_8h.html">CommandHistory.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>

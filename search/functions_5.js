@@ -1,11 +1,8 @@
 var searchData=
 [
-  ['setdescription',['setDescription',['../class_do_lah_1_1_abstract_task.html#a32653fb2aae95d9d8fda718cfd73e360',1,'DoLah::AbstractTask']]],
-  ['setdone',['setDone',['../class_do_lah_1_1_abstract_task.html#afc71900760187a03038f0780cce78897',1,'DoLah::AbstractTask']]],
-  ['setduedate',['setDueDate',['../class_do_lah_1_1_deadline_task.html#a2bb8f4360b80ce4d3c8c3da417485691',1,'DoLah::DeadlineTask']]],
-  ['setenddate',['setEndDate',['../class_do_lah_1_1_event_task.html#a7c7fab60cf79b0e276163da8b3bd0fa5',1,'DoLah::EventTask']]],
-  ['setid',['setId',['../class_do_lah_1_1_abstract_task.html#a4647ce88273add6435a14215a9ce1a58',1,'DoLah::AbstractTask']]],
-  ['setname',['setName',['../class_do_lah_1_1_abstract_task.html#ae3e1d1fd3cc09b0138e435604c61a437',1,'DoLah::AbstractTask']]],
-  ['setstartdate',['setStartDate',['../class_do_lah_1_1_event_task.html#aa35cfdeaeec9ddfd33026ad250161fe4',1,'DoLah::EventTask']]],
-  ['settags',['setTags',['../class_do_lah_1_1_abstract_task.html#ae87df86920dcaaf1353a412269d73727',1,'DoLah::AbstractTask']]]
+  ['findandremovedate',['findAndRemoveDate',['../class_do_lah_1_1_task_tokenizer.html#ae4d5dd5e768250ab52f79cf2333244c0',1,'DoLah::TaskTokenizer']]],
+  ['finddescription',['findDescription',['../class_do_lah_1_1_task_tokenizer.html#a685b79ad21e6fbcee9a8444f1ecee242',1,'DoLah::TaskTokenizer']]],
+  ['findtags',['findTags',['../class_do_lah_1_1_task_tokenizer.html#a18c52165865d50a601ee80de7e5b842b',1,'DoLah::TaskTokenizer']]],
+  ['flushpage',['flushPage',['../class_do_lah_1_1_do_lah_u_i.html#aef4c195a731c21951a7da1e39cb96d32',1,'DoLah::DoLahUI']]],
+  ['formatarr',['formatArr',['../class_do_lah_1_1_date_time_parser.html#a03735027b318f5fb216e3077b32ece3f',1,'DoLah::DateTimeParser']]]
 ];

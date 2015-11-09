@@ -48,6 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -72,7 +73,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
-      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -108,31 +109,237 @@ $(document).ready(function(){initNavTree('class_do_lah_1_1_do_lah_client.html','
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_do_lah_1_1_do_lah_client-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">DoLah::DoLahClient Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_do_lah_client_8h_source.html">DoLahClient.h</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for DoLah::DoLahClient:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_do_lah_1_1_do_lah_client__coll__graph.png" border="0" usemap="#_do_lah_1_1_do_lah_client_coll__map" alt="Collaboration graph"/></div>
+<map name="_do_lah_1_1_do_lah_client_coll__map" id="_do_lah_1_1_do_lah_client_coll__map">
+<area shape="rect" id="node2" href="class_do_lah_1_1_calendar.html" title="Class for holding the actual tasklist(s) and any operations on tasks in those list(s). " alt="" coords="5,277,224,604"/>
+<area shape="rect" id="node3" href="class_do_lah_1_1_command_history.html" title="{DoLah::CommandHistory\n|&#45; undoStack\l&#45; redoStack\l&#45; INVALID_UNDO_CALL_MESSAGE\l&#45; INVALID_REDO_CALL_MESSAGE\l|+ CommandHistory()\l+ ~CommandHistory()\l+ addToUndoStack()\l+ getUndoStackSize()\l+ getRedoStackSize()\l+ undo()\l+ redo()\l}" alt="" coords="136,5,371,215"/>
+<area shape="rect" id="node5" href="class_do_lah_1_1_command_invoker.html" title="{DoLah::CommandInvoker\n||+ CommandInvoker()\l+ ~CommandInvoker()\l+ setCmdHistory()\l+ checkIfExcludedCommandType()\l+ process()\l}" alt="" coords="248,373,472,509"/>
+<area shape="rect" id="node4" href="class_do_lah_1_1_configuration.html" title="The user configuration data structure. " alt="" coords="497,395,639,487"/>
+</map>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a74843a748129cc862416e87c9730d654"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a74843a748129cc862416e87c9730d654"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>parseAndProcessCommand</b> (std::string)</td></tr>
+<tr class="memitem:af91cc5a123a0a20c6b55fb3491de0dd7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_do_lah_client.html#af91cc5a123a0a20c6b55fb3491de0dd7">DoLahClient</a> ()</td></tr>
+<tr class="separator:af91cc5a123a0a20c6b55fb3491de0dd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb030d8fc57e598cdebd2b7236b994bf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_do_lah_client.html#acb030d8fc57e598cdebd2b7236b994bf">~DoLahClient</a> ()</td></tr>
+<tr class="separator:acb030d8fc57e598cdebd2b7236b994bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74843a748129cc862416e87c9730d654"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_do_lah_client.html#a74843a748129cc862416e87c9730d654">parseAndProcessCommand</a> (std::string)</td></tr>
 <tr class="separator:a74843a748129cc862416e87c9730d654"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4df82f4f39c05462ef0743112d64193"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af4df82f4f39c05462ef0743112d64193"></a>
-<a class="el" href="class_do_lah_1_1_calendar.html">Calendar</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getCalendar</b> () const </td></tr>
+<tr class="memitem:af4df82f4f39c05462ef0743112d64193"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_do_lah_1_1_calendar.html">Calendar</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_do_lah_client.html#af4df82f4f39c05462ef0743112d64193">getCalendar</a> () const </td></tr>
 <tr class="separator:af4df82f4f39c05462ef0743112d64193"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0849e1f18ae1983dcea42ed0ed87d4c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_do_lah_client.html#af0849e1f18ae1983dcea42ed0ed87d4c">setStorageLocation</a> (std::string)</td></tr>
+<tr class="separator:af0849e1f18ae1983dcea42ed0ed87d4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a702e3fcdf119dfb69b8a0fa96b0f5c86"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_do_lah_client.html#a702e3fcdf119dfb69b8a0fa96b0f5c86">restart</a> ()</td></tr>
+<tr class="separator:a702e3fcdf119dfb69b8a0fa96b0f5c86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a01d9d99b4d1db03117fffccb2f4fb81b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_do_lah_1_1_configuration.html">Configuration</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_do_lah_client.html#a01d9d99b4d1db03117fffccb2f4fb81b">config</a></td></tr>
+<tr class="separator:a01d9d99b4d1db03117fffccb2f4fb81b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65625760378215d86a7578fad09ef779"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_do_lah_client.html#a65625760378215d86a7578fad09ef779">settingsFile</a></td></tr>
+<tr class="separator:a65625760378215d86a7578fad09ef779"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb2e6fbb727d41de344d163de8c8de33"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_do_lah_1_1_calendar.html">DoLah::Calendar</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_do_lah_client.html#adb2e6fbb727d41de344d163de8c8de33">calendar</a></td></tr>
+<tr class="separator:adb2e6fbb727d41de344d163de8c8de33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53d3d667c3a6b9f20b5709bb4ed886fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_do_lah_1_1_command_invoker.html">DoLah::CommandInvoker</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_do_lah_client.html#a53d3d667c3a6b9f20b5709bb4ed886fa">commandInvoker</a></td></tr>
+<tr class="separator:a53d3d667c3a6b9f20b5709bb4ed886fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="af91cc5a123a0a20c6b55fb3491de0dd7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DoLah::DoLahClient::DoLahClient </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acb030d8fc57e598cdebd2b7236b994bf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DoLah::DoLahClient::~DoLahClient </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="af4df82f4f39c05462ef0743112d64193"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_do_lah_1_1_calendar.html">Calendar</a> DoLah::DoLahClient::getCalendar </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a74843a748129cc862416e87c9730d654"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DoLah::DoLahClient::parseAndProcessCommand </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>userinput</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a702e3fcdf119dfb69b8a0fa96b0f5c86"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DoLah::DoLahClient::restart </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af0849e1f18ae1983dcea42ed0ed87d4c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DoLah::DoLahClient::setStorageLocation </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>location</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="adb2e6fbb727d41de344d163de8c8de33"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_do_lah_1_1_calendar.html">DoLah::Calendar</a> DoLah::DoLahClient::calendar</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a53d3d667c3a6b9f20b5709bb4ed886fa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_do_lah_1_1_command_invoker.html">DoLah::CommandInvoker</a> DoLah::DoLahClient::commandInvoker</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a01d9d99b4d1db03117fffccb2f4fb81b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_do_lah_1_1_configuration.html">Configuration</a> DoLah::DoLahClient::config</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a65625760378215d86a7578fad09ef779"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string DoLah::DoLahClient::settingsFile</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>DoLah/<a class="el" href="_do_lah_client_8h_source.html">DoLahClient.h</a></li>
-<li>DoLah/DoLahClient.cpp</li>
+<li>DoLah/<a class="el" href="_do_lah_client_8cpp.html">DoLahClient.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>DoLah</b></li><li class="navelem"><a class="el" href="class_do_lah_1_1_do_lah_client.html">DoLahClient</a></li>
+    <li class="navelem"><a class="el" href="namespace_do_lah.html">DoLah</a></li><li class="navelem"><a class="el" href="class_do_lah_1_1_do_lah_client.html">DoLahClient</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>

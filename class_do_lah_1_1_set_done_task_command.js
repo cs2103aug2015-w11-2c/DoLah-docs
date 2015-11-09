@@ -4,5 +4,7 @@ var class_do_lah_1_1_set_done_task_command =
     [ "SetDoneTaskCommand", "class_do_lah_1_1_set_done_task_command.html#a15bbe8b9be76109759f076ebe0e022fd", null ],
     [ "~SetDoneTaskCommand", "class_do_lah_1_1_set_done_task_command.html#a6753bae40df656cf4b0abead7e08fd9e", null ],
     [ "execute", "class_do_lah_1_1_set_done_task_command.html#a487762c0643f1b49fd61349fe1d6549e", null ],
-    [ "revert", "class_do_lah_1_1_set_done_task_command.html#a93aa0d32b0cb2a5588a6ded7118bf926", null ]
+    [ "revert", "class_do_lah_1_1_set_done_task_command.html#a93aa0d32b0cb2a5588a6ded7118bf926", null ],
+    [ "oldTask", "class_do_lah_1_1_set_done_task_command.html#a986b196327bc85c2a844d6d15112969d", null ],
+    [ "taskIndex", "class_do_lah_1_1_set_done_task_command.html#a0c82110ae249083704566e4e7201747f", null ]
 ];
