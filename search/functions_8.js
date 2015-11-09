@@ -1,11 +1,13 @@
 var searchData=
 [
-  ['implode',['implode',['../class_do_lah_1_1_parser_library.html#ae37e525cef014948d6e867c51e48f852',1,'DoLah::ParserLibrary']]],
+  ['implode',['implode',['../class_do_lah_1_1_parser_library.html#a039b701d33e69b5267539124fc09af7f',1,'DoLah::ParserLibrary']]],
   ['indextasks',['indexTasks',['../class_do_lah_1_1_calendar.html#a44a1a787d875cc3e8e67d261b8b097bc',1,'DoLah::Calendar']]],
+  ['initcontents',['initContents',['../class_do_lah_1_1_help_window.html#ae8cb19f42e7b2cb7c84ffd7ee853427b',1,'DoLah::HelpWindow']]],
   ['initdisplayarea',['initDisplayArea',['../class_do_lah_1_1_do_lah_u_i.html#ac3c868605bee91675fb77a5d75fd6391',1,'DoLah::DoLahUI']]],
   ['initinputarea',['initInputArea',['../class_do_lah_1_1_do_lah_u_i.html#ac35a9678c46a90d2ad643aa302ef2c60',1,'DoLah::DoLahUI']]],
   ['initmenu',['initMenu',['../class_do_lah_1_1_do_lah_u_i.html#afcf7b7bc62c10ae88f0d52f30fdbfdaf',1,'DoLah::DoLahUI']]],
   ['initnavi',['initNavi',['../class_do_lah_1_1_help_window.html#a327bf99b9b9b9f8525cfd6c4f4a328a8',1,'DoLah::HelpWindow']]],
+  ['initpage',['initPage',['../class_do_lah_1_1_help_window.html#af1b3eab82f169ab4ddba8f28512d4045',1,'DoLah::HelpWindow']]],
   ['initviewport',['initViewPort',['../class_do_lah_1_1_display_area.html#aa4af5f0cc1405eac87bb65c89ef8bcef',1,'DoLah::DisplayArea']]],
   ['inputbox',['InputBox',['../class_do_lah_1_1_input_box.html#a23eea1852eb1377105dd048a99656687',1,'DoLah::InputBox']]],
   ['instringarray',['inStringArray',['../class_do_lah_1_1_parser_library.html#a5466cb23270e52817d9f653fe23c6b21',1,'DoLah::ParserLibrary']]],

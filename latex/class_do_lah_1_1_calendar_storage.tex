@@ -1,0 +1,172 @@
+\hypertarget{class_do_lah_1_1_calendar_storage}{}\section{Do\+Lah\+:\+:Calendar\+Storage Class Reference}
+\label{class_do_lah_1_1_calendar_storage}\index{Do\+Lah\+::\+Calendar\+Storage@{Do\+Lah\+::\+Calendar\+Storage}}
+
+
+This class handles the saving and loading of \hyperlink{class_do_lah_1_1_calendar}{Calendar}.  
+
+
+
+
+{\ttfamily \#include $<$Calendar\+Storage.\+h$>$}
+
+
+
+Collaboration diagram for Do\+Lah\+:\+:Calendar\+Storage\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{class_do_lah_1_1_calendar_storage__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_do_lah_1_1_calendar_storage_a803d9eccc464d755008ece41b166be9b}{Calendar\+Storage} ()
+\item 
+\hyperlink{class_do_lah_1_1_calendar_storage_afadcfb4f199649bf06664ddf669aa4b8}{$\sim$\+Calendar\+Storage} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_do_lah_1_1_calendar_storage_a42bf58169068f4cd3a0c5285a3bd07de}{save} (const \hyperlink{class_do_lah_1_1_calendar}{Do\+Lah\+::\+Calendar} \&, const std\+::string \&)
+\begin{DoxyCompactList}\small\item\em This method handles the saving of calendar. \end{DoxyCompactList}\item 
+static \hyperlink{class_do_lah_1_1_calendar}{Calendar} \hyperlink{class_do_lah_1_1_calendar_storage_a35f14ee71c332fe9bb26a887ceb3f317}{load} (const std\+::string \&)
+\begin{DoxyCompactList}\small\item\em This method handles the saving of \hyperlink{class_do_lah_1_1_calendar}{Calendar}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::string \hyperlink{class_do_lah_1_1_calendar_storage_a3cb4b54df533884fa7506d803f19e002}{emit\+Y\+A\+M\+Lto\+String} (const Y\+A\+M\+L\+::\+Node \&, const Y\+A\+M\+L\+::\+Node \&)
+\begin{DoxyCompactList}\small\item\em build yaml string from two task list\+: done and todo \end{DoxyCompactList}\item 
+static std\+::string \hyperlink{class_do_lah_1_1_calendar_storage_adb9b1537e8bc0314e6cc6b76daf62ba3}{build\+Calendar\+Y\+A\+M\+L} (const \hyperlink{class_do_lah_1_1_calendar}{Do\+Lah\+::\+Calendar} \&)
+\begin{DoxyCompactList}\small\item\em build the yaml string of the calendar. \end{DoxyCompactList}\item 
+static Y\+A\+M\+L\+::\+Node \hyperlink{class_do_lah_1_1_calendar_storage_a1c4f50ec5ae99c28cc7cb924d21151df}{Calendar\+Storage\+::build\+Task\+Node} (\hyperlink{class_do_lah_1_1_abstract_task}{Abstract\+Task} $\ast$)
+\begin{DoxyCompactList}\small\item\em build Y\+A\+M\+L\+::\+Node from the task \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class handles the saving and loading of \hyperlink{class_do_lah_1_1_calendar}{Calendar}. 
+
+The \hyperlink{class_do_lah_1_1_calendar}{Calendar} will be stored in \hyperlink{namespace_y_a_m_l}{Y\+A\+M\+L} format for readability. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_do_lah_1_1_calendar_storage_a803d9eccc464d755008ece41b166be9b}{}\index{Do\+Lah\+::\+Calendar\+Storage@{Do\+Lah\+::\+Calendar\+Storage}!Calendar\+Storage@{Calendar\+Storage}}
+\index{Calendar\+Storage@{Calendar\+Storage}!Do\+Lah\+::\+Calendar\+Storage@{Do\+Lah\+::\+Calendar\+Storage}}
+\subsubsection[{Calendar\+Storage()}]{\setlength{\rightskip}{0pt plus 5cm}Do\+Lah\+::\+Calendar\+Storage\+::\+Calendar\+Storage (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_do_lah_1_1_calendar_storage_a803d9eccc464d755008ece41b166be9b}
+\hypertarget{class_do_lah_1_1_calendar_storage_afadcfb4f199649bf06664ddf669aa4b8}{}\index{Do\+Lah\+::\+Calendar\+Storage@{Do\+Lah\+::\+Calendar\+Storage}!````~Calendar\+Storage@{$\sim$\+Calendar\+Storage}}
+\index{````~Calendar\+Storage@{$\sim$\+Calendar\+Storage}!Do\+Lah\+::\+Calendar\+Storage@{Do\+Lah\+::\+Calendar\+Storage}}
+\subsubsection[{$\sim$\+Calendar\+Storage()}]{\setlength{\rightskip}{0pt plus 5cm}Do\+Lah\+::\+Calendar\+Storage\+::$\sim$\+Calendar\+Storage (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_do_lah_1_1_calendar_storage_afadcfb4f199649bf06664ddf669aa4b8}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_do_lah_1_1_calendar_storage_adb9b1537e8bc0314e6cc6b76daf62ba3}{}\index{Do\+Lah\+::\+Calendar\+Storage@{Do\+Lah\+::\+Calendar\+Storage}!build\+Calendar\+Y\+A\+M\+L@{build\+Calendar\+Y\+A\+M\+L}}
+\index{build\+Calendar\+Y\+A\+M\+L@{build\+Calendar\+Y\+A\+M\+L}!Do\+Lah\+::\+Calendar\+Storage@{Do\+Lah\+::\+Calendar\+Storage}}
+\subsubsection[{build\+Calendar\+Y\+A\+M\+L(const Do\+Lah\+::\+Calendar \&)}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Do\+Lah\+::\+Calendar\+Storage\+::build\+Calendar\+Y\+A\+M\+L (
+\begin{DoxyParamCaption}
+\item[{const {\bf Do\+Lah\+::\+Calendar} \&}]{calendar}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_do_lah_1_1_calendar_storage_adb9b1537e8bc0314e6cc6b76daf62ba3}
+
+
+build the yaml string of the calendar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em calendar} & the \hyperlink{class_do_lah_1_1_calendar}{Calendar} object to build \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+yaml string ready to be stored. 
+\end{DoxyReturn}
+\hypertarget{class_do_lah_1_1_calendar_storage_a1c4f50ec5ae99c28cc7cb924d21151df}{}\index{Do\+Lah\+::\+Calendar\+Storage@{Do\+Lah\+::\+Calendar\+Storage}!Calendar\+Storage\+::build\+Task\+Node@{Calendar\+Storage\+::build\+Task\+Node}}
+\index{Calendar\+Storage\+::build\+Task\+Node@{Calendar\+Storage\+::build\+Task\+Node}!Do\+Lah\+::\+Calendar\+Storage@{Do\+Lah\+::\+Calendar\+Storage}}
+\subsubsection[{Calendar\+Storage\+::build\+Task\+Node(\+Abstract\+Task $\ast$)}]{\setlength{\rightskip}{0pt plus 5cm}static Y\+A\+M\+L\+::\+Node Do\+Lah\+::\+Calendar\+Storage\+::\+Calendar\+Storage\+::build\+Task\+Node (
+\begin{DoxyParamCaption}
+\item[{{\bf Abstract\+Task} $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_do_lah_1_1_calendar_storage_a1c4f50ec5ae99c28cc7cb924d21151df}
+
+
+build Y\+A\+M\+L\+::\+Node from the task 
+
+
+\begin{DoxyParams}{Parameters}
+{\em task} & the \hyperlink{class_do_lah_1_1_abstract_task}{Abstract\+Task} object that will be constructed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Y\+A\+M\+L\+::\+Node of the task 
+\end{DoxyReturn}
+\hypertarget{class_do_lah_1_1_calendar_storage_a3cb4b54df533884fa7506d803f19e002}{}\index{Do\+Lah\+::\+Calendar\+Storage@{Do\+Lah\+::\+Calendar\+Storage}!emit\+Y\+A\+M\+Lto\+String@{emit\+Y\+A\+M\+Lto\+String}}
+\index{emit\+Y\+A\+M\+Lto\+String@{emit\+Y\+A\+M\+Lto\+String}!Do\+Lah\+::\+Calendar\+Storage@{Do\+Lah\+::\+Calendar\+Storage}}
+\subsubsection[{emit\+Y\+A\+M\+Lto\+String(const Y\+A\+M\+L\+::\+Node \&, const Y\+A\+M\+L\+::\+Node \&)}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Do\+Lah\+::\+Calendar\+Storage\+::emit\+Y\+A\+M\+Lto\+String (
+\begin{DoxyParamCaption}
+\item[{const Y\+A\+M\+L\+::\+Node \&}]{todo\+Node, }
+\item[{const Y\+A\+M\+L\+::\+Node \&}]{completed\+Node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_do_lah_1_1_calendar_storage_a3cb4b54df533884fa7506d803f19e002}
+
+
+build yaml string from two task list\+: done and todo 
+
+
+\begin{DoxyParams}{Parameters}
+{\em todo\+Node} & The Y\+A\+M\+L\+::\+Node for todo task. \\
+\hline
+{\em completed\+Node} & The Y\+A\+M\+L\+::\+Node for done task. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the string ready to be saved as a yaml file. 
+\end{DoxyReturn}
+\hypertarget{class_do_lah_1_1_calendar_storage_a35f14ee71c332fe9bb26a887ceb3f317}{}\index{Do\+Lah\+::\+Calendar\+Storage@{Do\+Lah\+::\+Calendar\+Storage}!load@{load}}
+\index{load@{load}!Do\+Lah\+::\+Calendar\+Storage@{Do\+Lah\+::\+Calendar\+Storage}}
+\subsubsection[{load(const std\+::string \&)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Calendar} Do\+Lah\+::\+Calendar\+Storage\+::load (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{filename}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_do_lah_1_1_calendar_storage_a35f14ee71c332fe9bb26a887ceb3f317}
+
+
+This method handles the saving of \hyperlink{class_do_lah_1_1_calendar}{Calendar}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em filename} & The filepath of yaml file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The \hyperlink{class_do_lah_1_1_calendar}{Calendar} object that is loaded 
+\end{DoxyReturn}
+\hypertarget{class_do_lah_1_1_calendar_storage_a42bf58169068f4cd3a0c5285a3bd07de}{}\index{Do\+Lah\+::\+Calendar\+Storage@{Do\+Lah\+::\+Calendar\+Storage}!save@{save}}
+\index{save@{save}!Do\+Lah\+::\+Calendar\+Storage@{Do\+Lah\+::\+Calendar\+Storage}}
+\subsubsection[{save(const Do\+Lah\+::\+Calendar \&, const std\+::string \&)}]{\setlength{\rightskip}{0pt plus 5cm}void Do\+Lah\+::\+Calendar\+Storage\+::save (
+\begin{DoxyParamCaption}
+\item[{const {\bf Do\+Lah\+::\+Calendar} \&}]{calendar, }
+\item[{const std\+::string \&}]{filename}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_do_lah_1_1_calendar_storage_a42bf58169068f4cd3a0c5285a3bd07de}
+
+
+This method handles the saving of calendar. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em calendar} & The \hyperlink{class_do_lah_1_1_calendar}{Calendar} object that will be saved \\
+\hline
+\mbox{\tt in}  & {\em filename} & The filepath of yaml file. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Do\+Lah/\+Storage/\hyperlink{_calendar_storage_8h}{Calendar\+Storage.\+h}\item 
+Do\+Lah/\+Storage/\hyperlink{_calendar_storage_8cpp}{Calendar\+Storage.\+cpp}\end{DoxyCompactItemize}

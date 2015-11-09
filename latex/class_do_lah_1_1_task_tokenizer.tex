@@ -1,0 +1,199 @@
+\hypertarget{class_do_lah_1_1_task_tokenizer}{}\section{Do\+Lah\+:\+:Task\+Tokenizer Class Reference}
+\label{class_do_lah_1_1_task_tokenizer}\index{Do\+Lah\+::\+Task\+Tokenizer@{Do\+Lah\+::\+Task\+Tokenizer}}
+
+
+{\ttfamily \#include $<$Task\+Tokenizer.\+h$>$}
+
+
+
+Collaboration diagram for Do\+Lah\+:\+:Task\+Tokenizer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{class_do_lah_1_1_task_tokenizer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_do_lah_1_1_task_tokenizer_a0ad3177a4ddfaf3f1ef0a85101192125}{Task\+Tokenizer} ()
+\item 
+\hyperlink{class_do_lah_1_1_task_tokenizer_a88463a698aad5e7328b3fe698dda7e9e}{$\sim$\+Task\+Tokenizer} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::vector$<$ std\+::tm $>$ \hyperlink{class_do_lah_1_1_task_tokenizer_ae4d5dd5e768250ab52f79cf2333244c0}{find\+And\+Remove\+Date} (std\+::vector$<$ std\+::string $>$ \&)
+\item 
+static std\+::string \hyperlink{class_do_lah_1_1_task_tokenizer_a685b79ad21e6fbcee9a8444f1ecee242}{find\+Description} (std\+::vector$<$ std\+::string $>$)
+\item 
+static std\+::vector$<$ std\+::string $>$ \hyperlink{class_do_lah_1_1_task_tokenizer_a18c52165865d50a601ee80de7e5b842b}{find\+Tags} (std\+::vector$<$ std\+::string $>$)
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::vector$<$ std\+::tm $>$ \hyperlink{class_do_lah_1_1_task_tokenizer_a2bb2e8d0d007af6186401bb46e205510}{Task\+Tokenizer\+::find\+Date} (std\+::vector$<$ std\+::string $>$)
+\item 
+static std\+::vector$<$ std\+::tm $>$ \hyperlink{class_do_lah_1_1_task_tokenizer_a82b33da61aae5f6ae01aceaf470d8aaa}{Task\+Tokenizer\+::find\+Deadline} (std\+::vector$<$ std\+::string $>$)
+\item 
+static std\+::vector$<$ std\+::tm $>$ \hyperlink{class_do_lah_1_1_task_tokenizer_ae5c39a94f0663c393b23b56dd43bd275}{Task\+Tokenizer\+::find\+Event} (std\+::vector$<$ std\+::string $>$, std\+::vector$<$ std\+::string $>$)
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::vector$<$ std\+::string $>$ \hyperlink{class_do_lah_1_1_task_tokenizer_a8544e1db764064ab0775b7dc20146365}{D\+E\+A\+D\+L\+I\+N\+E\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R} = \{ \char`\"{}in\char`\"{}, \char`\"{}on\char`\"{}, \char`\"{}by\char`\"{}, \char`\"{}due\char`\"{}, \char`\"{}at\char`\"{} \}
+\item 
+static std\+::vector$<$ std\+::string $>$ \hyperlink{class_do_lah_1_1_task_tokenizer_ac6cb395be71da1b56c8a21702fe8e145}{E\+V\+E\+N\+T\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R} = \{ \char`\"{}in\char`\"{}, \char`\"{}on\char`\"{}, \char`\"{}from\char`\"{}, \char`\"{}between\char`\"{} \}
+\item 
+static std\+::vector$<$ std\+::string $>$ \hyperlink{class_do_lah_1_1_task_tokenizer_a9014063c9cecbca31aff4c3af27edb75}{E\+V\+E\+N\+T\+\_\+\+S\+E\+P\+A\+R\+A\+T\+O\+R} = \{ \char`\"{}to\char`\"{}, \char`\"{}$\sim$\char`\"{}, \char`\"{}until\char`\"{} \}
+\item 
+static std\+::string \hyperlink{class_do_lah_1_1_task_tokenizer_a2c004d5ac6e5d8fcfd4e97e70eeaf809}{S\+C\+H\+E\+D\+U\+L\+E\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R}
+\item 
+static std\+::vector$<$ std\+::string $>$ \hyperlink{class_do_lah_1_1_task_tokenizer_ab0ffb0a1a7b6ef69807a106422bc2796}{S\+C\+H\+E\+D\+U\+L\+E\+\_\+\+S\+E\+P\+A\+R\+A\+T\+O\+R}
+\item 
+static std\+::string \hyperlink{class_do_lah_1_1_task_tokenizer_ac2e862c393876c5b0d5586e3eaad36e8}{T\+A\+G\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R} = \char`\"{}\#\char`\"{}
+\item 
+static int \hyperlink{class_do_lah_1_1_task_tokenizer_a23af31ea42cd39b0164e2de0c8ef42c2}{D\+E\+F\+A\+U\+L\+T\+T\+M\+Y\+E\+A\+R} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_do_lah_1_1_task_tokenizer_a0ad3177a4ddfaf3f1ef0a85101192125}{}\index{Do\+Lah\+::\+Task\+Tokenizer@{Do\+Lah\+::\+Task\+Tokenizer}!Task\+Tokenizer@{Task\+Tokenizer}}
+\index{Task\+Tokenizer@{Task\+Tokenizer}!Do\+Lah\+::\+Task\+Tokenizer@{Do\+Lah\+::\+Task\+Tokenizer}}
+\subsubsection[{Task\+Tokenizer()}]{\setlength{\rightskip}{0pt plus 5cm}Do\+Lah\+::\+Task\+Tokenizer\+::\+Task\+Tokenizer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_do_lah_1_1_task_tokenizer_a0ad3177a4ddfaf3f1ef0a85101192125}
+\hypertarget{class_do_lah_1_1_task_tokenizer_a88463a698aad5e7328b3fe698dda7e9e}{}\index{Do\+Lah\+::\+Task\+Tokenizer@{Do\+Lah\+::\+Task\+Tokenizer}!````~Task\+Tokenizer@{$\sim$\+Task\+Tokenizer}}
+\index{````~Task\+Tokenizer@{$\sim$\+Task\+Tokenizer}!Do\+Lah\+::\+Task\+Tokenizer@{Do\+Lah\+::\+Task\+Tokenizer}}
+\subsubsection[{$\sim$\+Task\+Tokenizer()}]{\setlength{\rightskip}{0pt plus 5cm}Do\+Lah\+::\+Task\+Tokenizer\+::$\sim$\+Task\+Tokenizer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_do_lah_1_1_task_tokenizer_a88463a698aad5e7328b3fe698dda7e9e}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_do_lah_1_1_task_tokenizer_ae4d5dd5e768250ab52f79cf2333244c0}{}\index{Do\+Lah\+::\+Task\+Tokenizer@{Do\+Lah\+::\+Task\+Tokenizer}!find\+And\+Remove\+Date@{find\+And\+Remove\+Date}}
+\index{find\+And\+Remove\+Date@{find\+And\+Remove\+Date}!Do\+Lah\+::\+Task\+Tokenizer@{Do\+Lah\+::\+Task\+Tokenizer}}
+\subsubsection[{find\+And\+Remove\+Date(std\+::vector$<$ std\+::string $>$ \&)}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ std\+::tm $>$ Do\+Lah\+::\+Task\+Tokenizer\+::find\+And\+Remove\+Date (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::string $>$ \&}]{line\+Arr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_do_lah_1_1_task_tokenizer_ae4d5dd5e768250ab52f79cf2333244c0}
+Find the date from the string vector list and returns it as well as removing the date portion from the referenced list. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em line\+Arr} & Reference of a string vector list to be evaluated. Date portion will be removed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Date found in std\+::tm format. 
+\end{DoxyReturn}
+\hypertarget{class_do_lah_1_1_task_tokenizer_a685b79ad21e6fbcee9a8444f1ecee242}{}\index{Do\+Lah\+::\+Task\+Tokenizer@{Do\+Lah\+::\+Task\+Tokenizer}!find\+Description@{find\+Description}}
+\index{find\+Description@{find\+Description}!Do\+Lah\+::\+Task\+Tokenizer@{Do\+Lah\+::\+Task\+Tokenizer}}
+\subsubsection[{find\+Description(std\+::vector$<$ std\+::string $>$)}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Do\+Lah\+::\+Task\+Tokenizer\+::find\+Description (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::string $>$}]{line\+Arr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_do_lah_1_1_task_tokenizer_a685b79ad21e6fbcee9a8444f1ecee242}
+Find the description from the string vector list. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em line\+Arr} & String vector list to be evaluated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String that represents the description. 
+\end{DoxyReturn}
+\hypertarget{class_do_lah_1_1_task_tokenizer_a18c52165865d50a601ee80de7e5b842b}{}\index{Do\+Lah\+::\+Task\+Tokenizer@{Do\+Lah\+::\+Task\+Tokenizer}!find\+Tags@{find\+Tags}}
+\index{find\+Tags@{find\+Tags}!Do\+Lah\+::\+Task\+Tokenizer@{Do\+Lah\+::\+Task\+Tokenizer}}
+\subsubsection[{find\+Tags(std\+::vector$<$ std\+::string $>$)}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ std\+::string $>$ Do\+Lah\+::\+Task\+Tokenizer\+::find\+Tags (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::string $>$}]{line\+Arr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_do_lah_1_1_task_tokenizer_a18c52165865d50a601ee80de7e5b842b}
+Find the tags from the string vector list. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em line\+Arr} & String vector list to be evaluated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String vector list of tags. 
+\end{DoxyReturn}
+\hypertarget{class_do_lah_1_1_task_tokenizer_a2bb2e8d0d007af6186401bb46e205510}{}\index{Do\+Lah\+::\+Task\+Tokenizer@{Do\+Lah\+::\+Task\+Tokenizer}!Task\+Tokenizer\+::find\+Date@{Task\+Tokenizer\+::find\+Date}}
+\index{Task\+Tokenizer\+::find\+Date@{Task\+Tokenizer\+::find\+Date}!Do\+Lah\+::\+Task\+Tokenizer@{Do\+Lah\+::\+Task\+Tokenizer}}
+\subsubsection[{Task\+Tokenizer\+::find\+Date(std\+::vector$<$ std\+::string $>$)}]{\setlength{\rightskip}{0pt plus 5cm}static std\+::vector$<$std\+::tm$>$ Do\+Lah\+::\+Task\+Tokenizer\+::\+Task\+Tokenizer\+::find\+Date (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::string $>$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_do_lah_1_1_task_tokenizer_a2bb2e8d0d007af6186401bb46e205510}
+Find all dates from the given string vector list. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em line\+Arr} & String vector list to be evaluated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vector list of time in std\+::tm format. 
+\end{DoxyReturn}
+\hypertarget{class_do_lah_1_1_task_tokenizer_a82b33da61aae5f6ae01aceaf470d8aaa}{}\index{Do\+Lah\+::\+Task\+Tokenizer@{Do\+Lah\+::\+Task\+Tokenizer}!Task\+Tokenizer\+::find\+Deadline@{Task\+Tokenizer\+::find\+Deadline}}
+\index{Task\+Tokenizer\+::find\+Deadline@{Task\+Tokenizer\+::find\+Deadline}!Do\+Lah\+::\+Task\+Tokenizer@{Do\+Lah\+::\+Task\+Tokenizer}}
+\subsubsection[{Task\+Tokenizer\+::find\+Deadline(std\+::vector$<$ std\+::string $>$)}]{\setlength{\rightskip}{0pt plus 5cm}static std\+::vector$<$std\+::tm$>$ Do\+Lah\+::\+Task\+Tokenizer\+::\+Task\+Tokenizer\+::find\+Deadline (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::string $>$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_do_lah_1_1_task_tokenizer_a82b33da61aae5f6ae01aceaf470d8aaa}
+Find date for deadline task. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em line\+Arr} & String vector list to be evaluated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vector list of time in std\+::tm format. 
+\end{DoxyReturn}
+\hypertarget{class_do_lah_1_1_task_tokenizer_ae5c39a94f0663c393b23b56dd43bd275}{}\index{Do\+Lah\+::\+Task\+Tokenizer@{Do\+Lah\+::\+Task\+Tokenizer}!Task\+Tokenizer\+::find\+Event@{Task\+Tokenizer\+::find\+Event}}
+\index{Task\+Tokenizer\+::find\+Event@{Task\+Tokenizer\+::find\+Event}!Do\+Lah\+::\+Task\+Tokenizer@{Do\+Lah\+::\+Task\+Tokenizer}}
+\subsubsection[{Task\+Tokenizer\+::find\+Event(std\+::vector$<$ std\+::string $>$, std\+::vector$<$ std\+::string $>$)}]{\setlength{\rightskip}{0pt plus 5cm}static std\+::vector$<$std\+::tm$>$ Do\+Lah\+::\+Task\+Tokenizer\+::\+Task\+Tokenizer\+::find\+Event (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::string $>$}]{, }
+\item[{std\+::vector$<$ std\+::string $>$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_do_lah_1_1_task_tokenizer_ae5c39a94f0663c393b23b56dd43bd275}
+Find dates for event task. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em line\+Arr} & String vector list to be evaluated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vector list of time in std\+::tm format. 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_do_lah_1_1_task_tokenizer_a8544e1db764064ab0775b7dc20146365}{}\index{Do\+Lah\+::\+Task\+Tokenizer@{Do\+Lah\+::\+Task\+Tokenizer}!D\+E\+A\+D\+L\+I\+N\+E\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R@{D\+E\+A\+D\+L\+I\+N\+E\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R}}
+\index{D\+E\+A\+D\+L\+I\+N\+E\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R@{D\+E\+A\+D\+L\+I\+N\+E\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R}!Do\+Lah\+::\+Task\+Tokenizer@{Do\+Lah\+::\+Task\+Tokenizer}}
+\subsubsection[{D\+E\+A\+D\+L\+I\+N\+E\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ std\+::string $>$ Do\+Lah\+::\+Task\+Tokenizer\+::\+D\+E\+A\+D\+L\+I\+N\+E\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R = \{ \char`\"{}in\char`\"{}, \char`\"{}on\char`\"{}, \char`\"{}by\char`\"{}, \char`\"{}due\char`\"{}, \char`\"{}at\char`\"{} \}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_do_lah_1_1_task_tokenizer_a8544e1db764064ab0775b7dc20146365}
+\hypertarget{class_do_lah_1_1_task_tokenizer_a23af31ea42cd39b0164e2de0c8ef42c2}{}\index{Do\+Lah\+::\+Task\+Tokenizer@{Do\+Lah\+::\+Task\+Tokenizer}!D\+E\+F\+A\+U\+L\+T\+T\+M\+Y\+E\+A\+R@{D\+E\+F\+A\+U\+L\+T\+T\+M\+Y\+E\+A\+R}}
+\index{D\+E\+F\+A\+U\+L\+T\+T\+M\+Y\+E\+A\+R@{D\+E\+F\+A\+U\+L\+T\+T\+M\+Y\+E\+A\+R}!Do\+Lah\+::\+Task\+Tokenizer@{Do\+Lah\+::\+Task\+Tokenizer}}
+\subsubsection[{D\+E\+F\+A\+U\+L\+T\+T\+M\+Y\+E\+A\+R}]{\setlength{\rightskip}{0pt plus 5cm}int Do\+Lah\+::\+Task\+Tokenizer\+::\+D\+E\+F\+A\+U\+L\+T\+T\+M\+Y\+E\+A\+R = 0\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_do_lah_1_1_task_tokenizer_a23af31ea42cd39b0164e2de0c8ef42c2}
+\hypertarget{class_do_lah_1_1_task_tokenizer_ac6cb395be71da1b56c8a21702fe8e145}{}\index{Do\+Lah\+::\+Task\+Tokenizer@{Do\+Lah\+::\+Task\+Tokenizer}!E\+V\+E\+N\+T\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R@{E\+V\+E\+N\+T\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R}}
+\index{E\+V\+E\+N\+T\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R@{E\+V\+E\+N\+T\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R}!Do\+Lah\+::\+Task\+Tokenizer@{Do\+Lah\+::\+Task\+Tokenizer}}
+\subsubsection[{E\+V\+E\+N\+T\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ std\+::string $>$ Do\+Lah\+::\+Task\+Tokenizer\+::\+E\+V\+E\+N\+T\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R = \{ \char`\"{}in\char`\"{}, \char`\"{}on\char`\"{}, \char`\"{}from\char`\"{}, \char`\"{}between\char`\"{} \}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_do_lah_1_1_task_tokenizer_ac6cb395be71da1b56c8a21702fe8e145}
+\hypertarget{class_do_lah_1_1_task_tokenizer_a9014063c9cecbca31aff4c3af27edb75}{}\index{Do\+Lah\+::\+Task\+Tokenizer@{Do\+Lah\+::\+Task\+Tokenizer}!E\+V\+E\+N\+T\+\_\+\+S\+E\+P\+A\+R\+A\+T\+O\+R@{E\+V\+E\+N\+T\+\_\+\+S\+E\+P\+A\+R\+A\+T\+O\+R}}
+\index{E\+V\+E\+N\+T\+\_\+\+S\+E\+P\+A\+R\+A\+T\+O\+R@{E\+V\+E\+N\+T\+\_\+\+S\+E\+P\+A\+R\+A\+T\+O\+R}!Do\+Lah\+::\+Task\+Tokenizer@{Do\+Lah\+::\+Task\+Tokenizer}}
+\subsubsection[{E\+V\+E\+N\+T\+\_\+\+S\+E\+P\+A\+R\+A\+T\+O\+R}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ std\+::string $>$ Do\+Lah\+::\+Task\+Tokenizer\+::\+E\+V\+E\+N\+T\+\_\+\+S\+E\+P\+A\+R\+A\+T\+O\+R = \{ \char`\"{}to\char`\"{}, \char`\"{}$\sim$\char`\"{}, \char`\"{}until\char`\"{} \}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_do_lah_1_1_task_tokenizer_a9014063c9cecbca31aff4c3af27edb75}
+\hypertarget{class_do_lah_1_1_task_tokenizer_a2c004d5ac6e5d8fcfd4e97e70eeaf809}{}\index{Do\+Lah\+::\+Task\+Tokenizer@{Do\+Lah\+::\+Task\+Tokenizer}!S\+C\+H\+E\+D\+U\+L\+E\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R@{S\+C\+H\+E\+D\+U\+L\+E\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R}}
+\index{S\+C\+H\+E\+D\+U\+L\+E\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R@{S\+C\+H\+E\+D\+U\+L\+E\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R}!Do\+Lah\+::\+Task\+Tokenizer@{Do\+Lah\+::\+Task\+Tokenizer}}
+\subsubsection[{S\+C\+H\+E\+D\+U\+L\+E\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Do\+Lah\+::\+Task\+Tokenizer\+::\+S\+C\+H\+E\+D\+U\+L\+E\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_do_lah_1_1_task_tokenizer_a2c004d5ac6e5d8fcfd4e97e70eeaf809}
+\hypertarget{class_do_lah_1_1_task_tokenizer_ab0ffb0a1a7b6ef69807a106422bc2796}{}\index{Do\+Lah\+::\+Task\+Tokenizer@{Do\+Lah\+::\+Task\+Tokenizer}!S\+C\+H\+E\+D\+U\+L\+E\+\_\+\+S\+E\+P\+A\+R\+A\+T\+O\+R@{S\+C\+H\+E\+D\+U\+L\+E\+\_\+\+S\+E\+P\+A\+R\+A\+T\+O\+R}}
+\index{S\+C\+H\+E\+D\+U\+L\+E\+\_\+\+S\+E\+P\+A\+R\+A\+T\+O\+R@{S\+C\+H\+E\+D\+U\+L\+E\+\_\+\+S\+E\+P\+A\+R\+A\+T\+O\+R}!Do\+Lah\+::\+Task\+Tokenizer@{Do\+Lah\+::\+Task\+Tokenizer}}
+\subsubsection[{S\+C\+H\+E\+D\+U\+L\+E\+\_\+\+S\+E\+P\+A\+R\+A\+T\+O\+R}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::string$>$ Do\+Lah\+::\+Task\+Tokenizer\+::\+S\+C\+H\+E\+D\+U\+L\+E\+\_\+\+S\+E\+P\+A\+R\+A\+T\+O\+R\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_do_lah_1_1_task_tokenizer_ab0ffb0a1a7b6ef69807a106422bc2796}
+\hypertarget{class_do_lah_1_1_task_tokenizer_ac2e862c393876c5b0d5586e3eaad36e8}{}\index{Do\+Lah\+::\+Task\+Tokenizer@{Do\+Lah\+::\+Task\+Tokenizer}!T\+A\+G\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R@{T\+A\+G\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R}}
+\index{T\+A\+G\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R@{T\+A\+G\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R}!Do\+Lah\+::\+Task\+Tokenizer@{Do\+Lah\+::\+Task\+Tokenizer}}
+\subsubsection[{T\+A\+G\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Do\+Lah\+::\+Task\+Tokenizer\+::\+T\+A\+G\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R = \char`\"{}\#\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_do_lah_1_1_task_tokenizer_ac2e862c393876c5b0d5586e3eaad36e8}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Do\+Lah/\+Parser/\hyperlink{_task_tokenizer_8h}{Task\+Tokenizer.\+h}\item 
+Do\+Lah/\+Parser/\hyperlink{_task_tokenizer_8cpp}{Task\+Tokenizer.\+cpp}\end{DoxyCompactItemize}

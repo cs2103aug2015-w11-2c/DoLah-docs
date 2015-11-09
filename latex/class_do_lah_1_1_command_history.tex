@@ -1,0 +1,122 @@
+\hypertarget{class_do_lah_1_1_command_history}{}\section{Do\+Lah\+:\+:Command\+History Class Reference}
+\label{class_do_lah_1_1_command_history}\index{Do\+Lah\+::\+Command\+History@{Do\+Lah\+::\+Command\+History}}
+
+
+{\ttfamily \#include $<$Command\+History.\+h$>$}
+
+
+
+Collaboration diagram for Do\+Lah\+:\+:Command\+History\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{class_do_lah_1_1_command_history__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_do_lah_1_1_command_history_a3043a7b3d26409243270f85d0f9e3817}{Command\+History} ()
+\item 
+\hyperlink{class_do_lah_1_1_command_history_a475754a1e316ccf4df7281b16ff4a68c}{$\sim$\+Command\+History} ()
+\item 
+void \hyperlink{class_do_lah_1_1_command_history_a6c2ca1c4dcda54fea643c3cd8cff1fd2}{add\+To\+Undo\+Stack} (\hyperlink{class_do_lah_1_1_abstract_command}{Abstract\+Command} $\ast$)
+\item 
+int \hyperlink{class_do_lah_1_1_command_history_a244773421e301208b5d9d5f9fdc6d9de}{get\+Undo\+Stack\+Size} () const 
+\item 
+int \hyperlink{class_do_lah_1_1_command_history_a9358078e4d016efb55f0e2e3e3de14e3}{get\+Redo\+Stack\+Size} () const 
+\item 
+\hyperlink{class_do_lah_1_1_abstract_command}{Abstract\+Command} $\ast$ \hyperlink{class_do_lah_1_1_command_history_aa4a061dcb6f1150acb10cf3bb37e5aba}{undo} ()
+\item 
+\hyperlink{class_do_lah_1_1_abstract_command}{Abstract\+Command} $\ast$ \hyperlink{class_do_lah_1_1_command_history_aae2728781861917fd44b1fd133a51886}{redo} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::stack$<$ \hyperlink{class_do_lah_1_1_abstract_command}{Abstract\+Command} $\ast$ $>$ \hyperlink{class_do_lah_1_1_command_history_a73a9d3c5e02fd12e19f4bf23b364c7d0}{undo\+Stack}
+\item 
+std\+::stack$<$ \hyperlink{class_do_lah_1_1_abstract_command}{Abstract\+Command} $\ast$ $>$ \hyperlink{class_do_lah_1_1_command_history_ab756c962f4957cd8b802bde3831569cc}{redo\+Stack}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::string \hyperlink{class_do_lah_1_1_command_history_a99a81f9e4d380a010c79de5105f1aa04}{I\+N\+V\+A\+L\+I\+D\+\_\+\+U\+N\+D\+O\+\_\+\+C\+A\+L\+L\+\_\+\+M\+E\+S\+S\+A\+G\+E} = \char`\"{}There is nothing to undo!\char`\"{}
+\item 
+static std\+::string \hyperlink{class_do_lah_1_1_command_history_a1c4f33372b0868e9f59e3f97b6c3645c}{I\+N\+V\+A\+L\+I\+D\+\_\+\+R\+E\+D\+O\+\_\+\+C\+A\+L\+L\+\_\+\+M\+E\+S\+S\+A\+G\+E} = \char`\"{}There is nothing to redo!\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_do_lah_1_1_command_history_a3043a7b3d26409243270f85d0f9e3817}{}\index{Do\+Lah\+::\+Command\+History@{Do\+Lah\+::\+Command\+History}!Command\+History@{Command\+History}}
+\index{Command\+History@{Command\+History}!Do\+Lah\+::\+Command\+History@{Do\+Lah\+::\+Command\+History}}
+\subsubsection[{Command\+History()}]{\setlength{\rightskip}{0pt plus 5cm}Do\+Lah\+::\+Command\+History\+::\+Command\+History (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_do_lah_1_1_command_history_a3043a7b3d26409243270f85d0f9e3817}
+\hypertarget{class_do_lah_1_1_command_history_a475754a1e316ccf4df7281b16ff4a68c}{}\index{Do\+Lah\+::\+Command\+History@{Do\+Lah\+::\+Command\+History}!````~Command\+History@{$\sim$\+Command\+History}}
+\index{````~Command\+History@{$\sim$\+Command\+History}!Do\+Lah\+::\+Command\+History@{Do\+Lah\+::\+Command\+History}}
+\subsubsection[{$\sim$\+Command\+History()}]{\setlength{\rightskip}{0pt plus 5cm}Do\+Lah\+::\+Command\+History\+::$\sim$\+Command\+History (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_do_lah_1_1_command_history_a475754a1e316ccf4df7281b16ff4a68c}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_do_lah_1_1_command_history_a6c2ca1c4dcda54fea643c3cd8cff1fd2}{}\index{Do\+Lah\+::\+Command\+History@{Do\+Lah\+::\+Command\+History}!add\+To\+Undo\+Stack@{add\+To\+Undo\+Stack}}
+\index{add\+To\+Undo\+Stack@{add\+To\+Undo\+Stack}!Do\+Lah\+::\+Command\+History@{Do\+Lah\+::\+Command\+History}}
+\subsubsection[{add\+To\+Undo\+Stack(\+Abstract\+Command $\ast$)}]{\setlength{\rightskip}{0pt plus 5cm}void Do\+Lah\+::\+Command\+History\+::add\+To\+Undo\+Stack (
+\begin{DoxyParamCaption}
+\item[{{\bf Abstract\+Command} $\ast$}]{command}
+\end{DoxyParamCaption}
+)}\label{class_do_lah_1_1_command_history_a6c2ca1c4dcda54fea643c3cd8cff1fd2}
+\hypertarget{class_do_lah_1_1_command_history_a9358078e4d016efb55f0e2e3e3de14e3}{}\index{Do\+Lah\+::\+Command\+History@{Do\+Lah\+::\+Command\+History}!get\+Redo\+Stack\+Size@{get\+Redo\+Stack\+Size}}
+\index{get\+Redo\+Stack\+Size@{get\+Redo\+Stack\+Size}!Do\+Lah\+::\+Command\+History@{Do\+Lah\+::\+Command\+History}}
+\subsubsection[{get\+Redo\+Stack\+Size() const }]{\setlength{\rightskip}{0pt plus 5cm}int Do\+Lah\+::\+Command\+History\+::get\+Redo\+Stack\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_do_lah_1_1_command_history_a9358078e4d016efb55f0e2e3e3de14e3}
+\hypertarget{class_do_lah_1_1_command_history_a244773421e301208b5d9d5f9fdc6d9de}{}\index{Do\+Lah\+::\+Command\+History@{Do\+Lah\+::\+Command\+History}!get\+Undo\+Stack\+Size@{get\+Undo\+Stack\+Size}}
+\index{get\+Undo\+Stack\+Size@{get\+Undo\+Stack\+Size}!Do\+Lah\+::\+Command\+History@{Do\+Lah\+::\+Command\+History}}
+\subsubsection[{get\+Undo\+Stack\+Size() const }]{\setlength{\rightskip}{0pt plus 5cm}int Do\+Lah\+::\+Command\+History\+::get\+Undo\+Stack\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_do_lah_1_1_command_history_a244773421e301208b5d9d5f9fdc6d9de}
+\hypertarget{class_do_lah_1_1_command_history_aae2728781861917fd44b1fd133a51886}{}\index{Do\+Lah\+::\+Command\+History@{Do\+Lah\+::\+Command\+History}!redo@{redo}}
+\index{redo@{redo}!Do\+Lah\+::\+Command\+History@{Do\+Lah\+::\+Command\+History}}
+\subsubsection[{redo()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Abstract\+Command} $\ast$ Do\+Lah\+::\+Command\+History\+::redo (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_do_lah_1_1_command_history_aae2728781861917fd44b1fd133a51886}
+\hypertarget{class_do_lah_1_1_command_history_aa4a061dcb6f1150acb10cf3bb37e5aba}{}\index{Do\+Lah\+::\+Command\+History@{Do\+Lah\+::\+Command\+History}!undo@{undo}}
+\index{undo@{undo}!Do\+Lah\+::\+Command\+History@{Do\+Lah\+::\+Command\+History}}
+\subsubsection[{undo()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Abstract\+Command} $\ast$ Do\+Lah\+::\+Command\+History\+::undo (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_do_lah_1_1_command_history_aa4a061dcb6f1150acb10cf3bb37e5aba}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_do_lah_1_1_command_history_a1c4f33372b0868e9f59e3f97b6c3645c}{}\index{Do\+Lah\+::\+Command\+History@{Do\+Lah\+::\+Command\+History}!I\+N\+V\+A\+L\+I\+D\+\_\+\+R\+E\+D\+O\+\_\+\+C\+A\+L\+L\+\_\+\+M\+E\+S\+S\+A\+G\+E@{I\+N\+V\+A\+L\+I\+D\+\_\+\+R\+E\+D\+O\+\_\+\+C\+A\+L\+L\+\_\+\+M\+E\+S\+S\+A\+G\+E}}
+\index{I\+N\+V\+A\+L\+I\+D\+\_\+\+R\+E\+D\+O\+\_\+\+C\+A\+L\+L\+\_\+\+M\+E\+S\+S\+A\+G\+E@{I\+N\+V\+A\+L\+I\+D\+\_\+\+R\+E\+D\+O\+\_\+\+C\+A\+L\+L\+\_\+\+M\+E\+S\+S\+A\+G\+E}!Do\+Lah\+::\+Command\+History@{Do\+Lah\+::\+Command\+History}}
+\subsubsection[{I\+N\+V\+A\+L\+I\+D\+\_\+\+R\+E\+D\+O\+\_\+\+C\+A\+L\+L\+\_\+\+M\+E\+S\+S\+A\+G\+E}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Do\+Lah\+::\+Command\+History\+::\+I\+N\+V\+A\+L\+I\+D\+\_\+\+R\+E\+D\+O\+\_\+\+C\+A\+L\+L\+\_\+\+M\+E\+S\+S\+A\+G\+E = \char`\"{}There is nothing to redo!\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_do_lah_1_1_command_history_a1c4f33372b0868e9f59e3f97b6c3645c}
+\hypertarget{class_do_lah_1_1_command_history_a99a81f9e4d380a010c79de5105f1aa04}{}\index{Do\+Lah\+::\+Command\+History@{Do\+Lah\+::\+Command\+History}!I\+N\+V\+A\+L\+I\+D\+\_\+\+U\+N\+D\+O\+\_\+\+C\+A\+L\+L\+\_\+\+M\+E\+S\+S\+A\+G\+E@{I\+N\+V\+A\+L\+I\+D\+\_\+\+U\+N\+D\+O\+\_\+\+C\+A\+L\+L\+\_\+\+M\+E\+S\+S\+A\+G\+E}}
+\index{I\+N\+V\+A\+L\+I\+D\+\_\+\+U\+N\+D\+O\+\_\+\+C\+A\+L\+L\+\_\+\+M\+E\+S\+S\+A\+G\+E@{I\+N\+V\+A\+L\+I\+D\+\_\+\+U\+N\+D\+O\+\_\+\+C\+A\+L\+L\+\_\+\+M\+E\+S\+S\+A\+G\+E}!Do\+Lah\+::\+Command\+History@{Do\+Lah\+::\+Command\+History}}
+\subsubsection[{I\+N\+V\+A\+L\+I\+D\+\_\+\+U\+N\+D\+O\+\_\+\+C\+A\+L\+L\+\_\+\+M\+E\+S\+S\+A\+G\+E}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Do\+Lah\+::\+Command\+History\+::\+I\+N\+V\+A\+L\+I\+D\+\_\+\+U\+N\+D\+O\+\_\+\+C\+A\+L\+L\+\_\+\+M\+E\+S\+S\+A\+G\+E = \char`\"{}There is nothing to undo!\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_do_lah_1_1_command_history_a99a81f9e4d380a010c79de5105f1aa04}
+\hypertarget{class_do_lah_1_1_command_history_ab756c962f4957cd8b802bde3831569cc}{}\index{Do\+Lah\+::\+Command\+History@{Do\+Lah\+::\+Command\+History}!redo\+Stack@{redo\+Stack}}
+\index{redo\+Stack@{redo\+Stack}!Do\+Lah\+::\+Command\+History@{Do\+Lah\+::\+Command\+History}}
+\subsubsection[{redo\+Stack}]{\setlength{\rightskip}{0pt plus 5cm}std\+::stack$<${\bf Abstract\+Command} $\ast$$>$ Do\+Lah\+::\+Command\+History\+::redo\+Stack\hspace{0.3cm}{\ttfamily [private]}}\label{class_do_lah_1_1_command_history_ab756c962f4957cd8b802bde3831569cc}
+\hypertarget{class_do_lah_1_1_command_history_a73a9d3c5e02fd12e19f4bf23b364c7d0}{}\index{Do\+Lah\+::\+Command\+History@{Do\+Lah\+::\+Command\+History}!undo\+Stack@{undo\+Stack}}
+\index{undo\+Stack@{undo\+Stack}!Do\+Lah\+::\+Command\+History@{Do\+Lah\+::\+Command\+History}}
+\subsubsection[{undo\+Stack}]{\setlength{\rightskip}{0pt plus 5cm}std\+::stack$<${\bf Abstract\+Command} $\ast$$>$ Do\+Lah\+::\+Command\+History\+::undo\+Stack\hspace{0.3cm}{\ttfamily [private]}}\label{class_do_lah_1_1_command_history_a73a9d3c5e02fd12e19f4bf23b364c7d0}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Do\+Lah/\+Models/\hyperlink{_command_history_8h}{Command\+History.\+h}\item 
+Do\+Lah/\+Models/\hyperlink{_command_history_8cpp}{Command\+History.\+cpp}\end{DoxyCompactItemize}

@@ -7,6 +7,6 @@ var class_do_lah_1_1_easy_edit =
     [ "buttonBox", "class_do_lah_1_1_easy_edit.html#a1e4ffe1820e49d246fdb8e7e96c72ef5", null ],
     [ "description", "class_do_lah_1_1_easy_edit.html#ace3761bbfc57c6f2a01ba479c444a43d", null ],
     [ "dragPosition", "class_do_lah_1_1_easy_edit.html#a4f038cda09358f83aaaba492c7e01b0a", null ],
-    [ "editarea", "class_do_lah_1_1_easy_edit.html#a5227d7d3756fc2dd05939db7b719c55c", null ],
+    [ "editArea", "class_do_lah_1_1_easy_edit.html#af0fcb4b23998a319e187da309748e319", null ],
     [ "exitButton", "class_do_lah_1_1_easy_edit.html#ae92382bcf128f607904cc76dcdca07fa", null ]
 ];

@@ -1,0 +1,326 @@
+\hypertarget{class_do_lah_1_1_abstract_task}{}\section{Do\+Lah\+:\+:Abstract\+Task Class Reference}
+\label{class_do_lah_1_1_abstract_task}\index{Do\+Lah\+::\+Abstract\+Task@{Do\+Lah\+::\+Abstract\+Task}}
+
+
+Abstract Task class is the base class for any Task.  
+
+
+
+
+{\ttfamily \#include $<$Task.\+h$>$}
+
+
+
+Inheritance diagram for Do\+Lah\+:\+:Abstract\+Task\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_do_lah_1_1_abstract_task__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Do\+Lah\+:\+:Abstract\+Task\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{class_do_lah_1_1_abstract_task__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_do_lah_1_1_abstract_task_ae2a97fef4144783a29066808f0fa5b52}{Abstract\+Task} ()
+\begin{DoxyCompactList}\small\item\em default constructor \end{DoxyCompactList}\item 
+virtual \hyperlink{class_do_lah_1_1_abstract_task_a2c6d75a44dfba478d8a31ad4a3fec339}{$\sim$\+Abstract\+Task} ()=0
+\begin{DoxyCompactList}\small\item\em destructor \end{DoxyCompactList}\item 
+void \hyperlink{class_do_lah_1_1_abstract_task_a4647ce88273add6435a14215a9ce1a58}{set\+Id} (int \hyperlink{class_do_lah_1_1_abstract_task_a2ad7d227c4ab1ac0768a7633419f0934}{id})
+\begin{DoxyCompactList}\small\item\em set the Task I\+D \end{DoxyCompactList}\item 
+int \hyperlink{class_do_lah_1_1_abstract_task_af90dffe6985e8df0827b861c048867cb}{get\+Id} ()
+\begin{DoxyCompactList}\small\item\em get the Task I\+D \end{DoxyCompactList}\item 
+void \hyperlink{class_do_lah_1_1_abstract_task_ac6ff5bbb5435d6e4f9cf42f0aa50e16b}{set\+Index} (int)
+\item 
+int \hyperlink{class_do_lah_1_1_abstract_task_ae0a89118e62013e3e007d7541bf7311f}{get\+Index} ()
+\item 
+void \hyperlink{class_do_lah_1_1_abstract_task_ae3e1d1fd3cc09b0138e435604c61a437}{set\+Name} (std\+::string)
+\begin{DoxyCompactList}\small\item\em set the Task name \end{DoxyCompactList}\item 
+std\+::string \hyperlink{class_do_lah_1_1_abstract_task_acd3b530c15e995d71b08ab9aae6c96a2}{get\+Name} ()
+\begin{DoxyCompactList}\small\item\em get the Task name \end{DoxyCompactList}\item 
+void \hyperlink{class_do_lah_1_1_abstract_task_a32653fb2aae95d9d8fda718cfd73e360}{set\+Description} (std\+::string)
+\begin{DoxyCompactList}\small\item\em set the Task description \end{DoxyCompactList}\item 
+std\+::string \hyperlink{class_do_lah_1_1_abstract_task_a309b9fded6b35e7373dbd045115d7e77}{get\+Description} ()
+\begin{DoxyCompactList}\small\item\em get the Task description \end{DoxyCompactList}\item 
+void \hyperlink{class_do_lah_1_1_abstract_task_afc71900760187a03038f0780cce78897}{set\+Done} (bool)
+\begin{DoxyCompactList}\small\item\em set the Task done flag \end{DoxyCompactList}\item 
+bool \hyperlink{class_do_lah_1_1_abstract_task_a758742a67d1f74ab80bfb81c6ec5a4ab}{is\+Done} ()
+\begin{DoxyCompactList}\small\item\em get the Task done flag \end{DoxyCompactList}\item 
+void \hyperlink{class_do_lah_1_1_abstract_task_ae87df86920dcaaf1353a412269d73727}{set\+Tags} (std\+::vector$<$ std\+::string $>$)
+\begin{DoxyCompactList}\small\item\em set the vector of tags assigned to the task. \end{DoxyCompactList}\item 
+void \hyperlink{class_do_lah_1_1_abstract_task_a6b47fd0b29884cbc26833cb1c6af4e29}{add\+Tag} (std\+::string)
+\begin{DoxyCompactList}\small\item\em add a tag assigned to the task. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{class_do_lah_1_1_abstract_task_a940dc50582e060429e987b90ab58d685}{get\+Tags} ()
+\begin{DoxyCompactList}\small\item\em get the vector of tags assigned to the task. \end{DoxyCompactList}\item 
+bool \hyperlink{class_do_lah_1_1_abstract_task_a915a202277d840a8c1df2abb042f7801}{is\+Expired} ()
+\item 
+void \hyperlink{class_do_lah_1_1_abstract_task_ada5ad524823b580ce205b77b6ce50b50}{set\+Expired} (bool)
+\item 
+virtual void \hyperlink{class_do_lah_1_1_abstract_task_a51e072bcd3e1e32dfb16c3950e5ce99d}{update\+Expired} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{class_do_lah_1_1_abstract_task_a3db5bb82f4afb67fe7ac19a866f161d0}{description}
+\begin{DoxyCompactList}\small\item\em A Detailed explanation about the task. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{class_do_lah_1_1_abstract_task_a0d5e0174ffcd6b8e0f152130ede57fcb}{name}
+\begin{DoxyCompactList}\small\item\em Task name is the header of the task. \end{DoxyCompactList}\item 
+int \hyperlink{class_do_lah_1_1_abstract_task_a2ad7d227c4ab1ac0768a7633419f0934}{id}
+\begin{DoxyCompactList}\small\item\em Task identifier is used for the storage tracking. \end{DoxyCompactList}\item 
+int \hyperlink{class_do_lah_1_1_abstract_task_a473c5889b75b19da3e81424e3710075e}{index}
+\item 
+bool \hyperlink{class_do_lah_1_1_abstract_task_a52d0b20701f38574b77811cd002b65ad}{done}
+\begin{DoxyCompactList}\small\item\em a flag that mark whether a task has finished, and may be hide or cleared later. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{class_do_lah_1_1_abstract_task_aeffd99b2d49c068eaff0fe305464546d}{tags}
+\begin{DoxyCompactList}\small\item\em Vector holding tags assigned to the task. \end{DoxyCompactList}\item 
+bool \hyperlink{class_do_lah_1_1_abstract_task_afdee8129f634d24d559670e8da94b1a2}{expired} = false
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract Task class is the base class for any Task. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_do_lah_1_1_abstract_task_ae2a97fef4144783a29066808f0fa5b52}{}\index{Do\+Lah\+::\+Abstract\+Task@{Do\+Lah\+::\+Abstract\+Task}!Abstract\+Task@{Abstract\+Task}}
+\index{Abstract\+Task@{Abstract\+Task}!Do\+Lah\+::\+Abstract\+Task@{Do\+Lah\+::\+Abstract\+Task}}
+\subsubsection[{Abstract\+Task()}]{\setlength{\rightskip}{0pt plus 5cm}Do\+Lah\+::\+Abstract\+Task\+::\+Abstract\+Task (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_do_lah_1_1_abstract_task_ae2a97fef4144783a29066808f0fa5b52}
+
+
+default constructor 
+
+\hypertarget{class_do_lah_1_1_abstract_task_a2c6d75a44dfba478d8a31ad4a3fec339}{}\index{Do\+Lah\+::\+Abstract\+Task@{Do\+Lah\+::\+Abstract\+Task}!````~Abstract\+Task@{$\sim$\+Abstract\+Task}}
+\index{````~Abstract\+Task@{$\sim$\+Abstract\+Task}!Do\+Lah\+::\+Abstract\+Task@{Do\+Lah\+::\+Abstract\+Task}}
+\subsubsection[{$\sim$\+Abstract\+Task()=0}]{\setlength{\rightskip}{0pt plus 5cm}Do\+Lah\+::\+Abstract\+Task\+::$\sim$\+Abstract\+Task (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_do_lah_1_1_abstract_task_a2c6d75a44dfba478d8a31ad4a3fec339}
+
+
+destructor 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_do_lah_1_1_abstract_task_a6b47fd0b29884cbc26833cb1c6af4e29}{}\index{Do\+Lah\+::\+Abstract\+Task@{Do\+Lah\+::\+Abstract\+Task}!add\+Tag@{add\+Tag}}
+\index{add\+Tag@{add\+Tag}!Do\+Lah\+::\+Abstract\+Task@{Do\+Lah\+::\+Abstract\+Task}}
+\subsubsection[{add\+Tag(std\+::string)}]{\setlength{\rightskip}{0pt plus 5cm}void Do\+Lah\+::\+Abstract\+Task\+::add\+Tag (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{tag}
+\end{DoxyParamCaption}
+)}\label{class_do_lah_1_1_abstract_task_a6b47fd0b29884cbc26833cb1c6af4e29}
+
+
+add a tag assigned to the task. 
+
+\hypertarget{class_do_lah_1_1_abstract_task_a309b9fded6b35e7373dbd045115d7e77}{}\index{Do\+Lah\+::\+Abstract\+Task@{Do\+Lah\+::\+Abstract\+Task}!get\+Description@{get\+Description}}
+\index{get\+Description@{get\+Description}!Do\+Lah\+::\+Abstract\+Task@{Do\+Lah\+::\+Abstract\+Task}}
+\subsubsection[{get\+Description()}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Do\+Lah\+::\+Abstract\+Task\+::get\+Description (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_do_lah_1_1_abstract_task_a309b9fded6b35e7373dbd045115d7e77}
+
+
+get the Task description 
+
+\hypertarget{class_do_lah_1_1_abstract_task_af90dffe6985e8df0827b861c048867cb}{}\index{Do\+Lah\+::\+Abstract\+Task@{Do\+Lah\+::\+Abstract\+Task}!get\+Id@{get\+Id}}
+\index{get\+Id@{get\+Id}!Do\+Lah\+::\+Abstract\+Task@{Do\+Lah\+::\+Abstract\+Task}}
+\subsubsection[{get\+Id()}]{\setlength{\rightskip}{0pt plus 5cm}int Do\+Lah\+::\+Abstract\+Task\+::get\+Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_do_lah_1_1_abstract_task_af90dffe6985e8df0827b861c048867cb}
+
+
+get the Task I\+D 
+
+\hypertarget{class_do_lah_1_1_abstract_task_ae0a89118e62013e3e007d7541bf7311f}{}\index{Do\+Lah\+::\+Abstract\+Task@{Do\+Lah\+::\+Abstract\+Task}!get\+Index@{get\+Index}}
+\index{get\+Index@{get\+Index}!Do\+Lah\+::\+Abstract\+Task@{Do\+Lah\+::\+Abstract\+Task}}
+\subsubsection[{get\+Index()}]{\setlength{\rightskip}{0pt plus 5cm}int Do\+Lah\+::\+Abstract\+Task\+::get\+Index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_do_lah_1_1_abstract_task_ae0a89118e62013e3e007d7541bf7311f}
+\hypertarget{class_do_lah_1_1_abstract_task_acd3b530c15e995d71b08ab9aae6c96a2}{}\index{Do\+Lah\+::\+Abstract\+Task@{Do\+Lah\+::\+Abstract\+Task}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!Do\+Lah\+::\+Abstract\+Task@{Do\+Lah\+::\+Abstract\+Task}}
+\subsubsection[{get\+Name()}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Do\+Lah\+::\+Abstract\+Task\+::get\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_do_lah_1_1_abstract_task_acd3b530c15e995d71b08ab9aae6c96a2}
+
+
+get the Task name 
+
+\hypertarget{class_do_lah_1_1_abstract_task_a940dc50582e060429e987b90ab58d685}{}\index{Do\+Lah\+::\+Abstract\+Task@{Do\+Lah\+::\+Abstract\+Task}!get\+Tags@{get\+Tags}}
+\index{get\+Tags@{get\+Tags}!Do\+Lah\+::\+Abstract\+Task@{Do\+Lah\+::\+Abstract\+Task}}
+\subsubsection[{get\+Tags()}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ std\+::string $>$ Do\+Lah\+::\+Abstract\+Task\+::get\+Tags (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_do_lah_1_1_abstract_task_a940dc50582e060429e987b90ab58d685}
+
+
+get the vector of tags assigned to the task. 
+
+\hypertarget{class_do_lah_1_1_abstract_task_a758742a67d1f74ab80bfb81c6ec5a4ab}{}\index{Do\+Lah\+::\+Abstract\+Task@{Do\+Lah\+::\+Abstract\+Task}!is\+Done@{is\+Done}}
+\index{is\+Done@{is\+Done}!Do\+Lah\+::\+Abstract\+Task@{Do\+Lah\+::\+Abstract\+Task}}
+\subsubsection[{is\+Done()}]{\setlength{\rightskip}{0pt plus 5cm}bool Do\+Lah\+::\+Abstract\+Task\+::is\+Done (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_do_lah_1_1_abstract_task_a758742a67d1f74ab80bfb81c6ec5a4ab}
+
+
+get the Task done flag 
+
+\hypertarget{class_do_lah_1_1_abstract_task_a915a202277d840a8c1df2abb042f7801}{}\index{Do\+Lah\+::\+Abstract\+Task@{Do\+Lah\+::\+Abstract\+Task}!is\+Expired@{is\+Expired}}
+\index{is\+Expired@{is\+Expired}!Do\+Lah\+::\+Abstract\+Task@{Do\+Lah\+::\+Abstract\+Task}}
+\subsubsection[{is\+Expired()}]{\setlength{\rightskip}{0pt plus 5cm}bool Do\+Lah\+::\+Abstract\+Task\+::is\+Expired (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_do_lah_1_1_abstract_task_a915a202277d840a8c1df2abb042f7801}
+\hypertarget{class_do_lah_1_1_abstract_task_a32653fb2aae95d9d8fda718cfd73e360}{}\index{Do\+Lah\+::\+Abstract\+Task@{Do\+Lah\+::\+Abstract\+Task}!set\+Description@{set\+Description}}
+\index{set\+Description@{set\+Description}!Do\+Lah\+::\+Abstract\+Task@{Do\+Lah\+::\+Abstract\+Task}}
+\subsubsection[{set\+Description(std\+::string)}]{\setlength{\rightskip}{0pt plus 5cm}void Do\+Lah\+::\+Abstract\+Task\+::set\+Description (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{description}
+\end{DoxyParamCaption}
+)}\label{class_do_lah_1_1_abstract_task_a32653fb2aae95d9d8fda718cfd73e360}
+
+
+set the Task description 
+
+\hypertarget{class_do_lah_1_1_abstract_task_afc71900760187a03038f0780cce78897}{}\index{Do\+Lah\+::\+Abstract\+Task@{Do\+Lah\+::\+Abstract\+Task}!set\+Done@{set\+Done}}
+\index{set\+Done@{set\+Done}!Do\+Lah\+::\+Abstract\+Task@{Do\+Lah\+::\+Abstract\+Task}}
+\subsubsection[{set\+Done(bool)}]{\setlength{\rightskip}{0pt plus 5cm}void Do\+Lah\+::\+Abstract\+Task\+::set\+Done (
+\begin{DoxyParamCaption}
+\item[{bool}]{done}
+\end{DoxyParamCaption}
+)}\label{class_do_lah_1_1_abstract_task_afc71900760187a03038f0780cce78897}
+
+
+set the Task done flag 
+
+\hypertarget{class_do_lah_1_1_abstract_task_ada5ad524823b580ce205b77b6ce50b50}{}\index{Do\+Lah\+::\+Abstract\+Task@{Do\+Lah\+::\+Abstract\+Task}!set\+Expired@{set\+Expired}}
+\index{set\+Expired@{set\+Expired}!Do\+Lah\+::\+Abstract\+Task@{Do\+Lah\+::\+Abstract\+Task}}
+\subsubsection[{set\+Expired(bool)}]{\setlength{\rightskip}{0pt plus 5cm}void Do\+Lah\+::\+Abstract\+Task\+::set\+Expired (
+\begin{DoxyParamCaption}
+\item[{bool}]{expired}
+\end{DoxyParamCaption}
+)}\label{class_do_lah_1_1_abstract_task_ada5ad524823b580ce205b77b6ce50b50}
+\hypertarget{class_do_lah_1_1_abstract_task_a4647ce88273add6435a14215a9ce1a58}{}\index{Do\+Lah\+::\+Abstract\+Task@{Do\+Lah\+::\+Abstract\+Task}!set\+Id@{set\+Id}}
+\index{set\+Id@{set\+Id}!Do\+Lah\+::\+Abstract\+Task@{Do\+Lah\+::\+Abstract\+Task}}
+\subsubsection[{set\+Id(int id)}]{\setlength{\rightskip}{0pt plus 5cm}void Do\+Lah\+::\+Abstract\+Task\+::set\+Id (
+\begin{DoxyParamCaption}
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)}\label{class_do_lah_1_1_abstract_task_a4647ce88273add6435a14215a9ce1a58}
+
+
+set the Task I\+D 
+
+\hypertarget{class_do_lah_1_1_abstract_task_ac6ff5bbb5435d6e4f9cf42f0aa50e16b}{}\index{Do\+Lah\+::\+Abstract\+Task@{Do\+Lah\+::\+Abstract\+Task}!set\+Index@{set\+Index}}
+\index{set\+Index@{set\+Index}!Do\+Lah\+::\+Abstract\+Task@{Do\+Lah\+::\+Abstract\+Task}}
+\subsubsection[{set\+Index(int)}]{\setlength{\rightskip}{0pt plus 5cm}void Do\+Lah\+::\+Abstract\+Task\+::set\+Index (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)}\label{class_do_lah_1_1_abstract_task_ac6ff5bbb5435d6e4f9cf42f0aa50e16b}
+\hypertarget{class_do_lah_1_1_abstract_task_ae3e1d1fd3cc09b0138e435604c61a437}{}\index{Do\+Lah\+::\+Abstract\+Task@{Do\+Lah\+::\+Abstract\+Task}!set\+Name@{set\+Name}}
+\index{set\+Name@{set\+Name}!Do\+Lah\+::\+Abstract\+Task@{Do\+Lah\+::\+Abstract\+Task}}
+\subsubsection[{set\+Name(std\+::string)}]{\setlength{\rightskip}{0pt plus 5cm}void Do\+Lah\+::\+Abstract\+Task\+::set\+Name (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{name}
+\end{DoxyParamCaption}
+)}\label{class_do_lah_1_1_abstract_task_ae3e1d1fd3cc09b0138e435604c61a437}
+
+
+set the Task name 
+
+\hypertarget{class_do_lah_1_1_abstract_task_ae87df86920dcaaf1353a412269d73727}{}\index{Do\+Lah\+::\+Abstract\+Task@{Do\+Lah\+::\+Abstract\+Task}!set\+Tags@{set\+Tags}}
+\index{set\+Tags@{set\+Tags}!Do\+Lah\+::\+Abstract\+Task@{Do\+Lah\+::\+Abstract\+Task}}
+\subsubsection[{set\+Tags(std\+::vector$<$ std\+::string $>$)}]{\setlength{\rightskip}{0pt plus 5cm}void Do\+Lah\+::\+Abstract\+Task\+::set\+Tags (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::string $>$}]{tags}
+\end{DoxyParamCaption}
+)}\label{class_do_lah_1_1_abstract_task_ae87df86920dcaaf1353a412269d73727}
+
+
+set the vector of tags assigned to the task. 
+
+\hypertarget{class_do_lah_1_1_abstract_task_a51e072bcd3e1e32dfb16c3950e5ce99d}{}\index{Do\+Lah\+::\+Abstract\+Task@{Do\+Lah\+::\+Abstract\+Task}!update\+Expired@{update\+Expired}}
+\index{update\+Expired@{update\+Expired}!Do\+Lah\+::\+Abstract\+Task@{Do\+Lah\+::\+Abstract\+Task}}
+\subsubsection[{update\+Expired()}]{\setlength{\rightskip}{0pt plus 5cm}void Do\+Lah\+::\+Abstract\+Task\+::update\+Expired (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_do_lah_1_1_abstract_task_a51e072bcd3e1e32dfb16c3950e5ce99d}
+
+
+Reimplemented in \hyperlink{class_do_lah_1_1_deadline_task_ad6bb39417228f7cc6a649c5e910b4f8b}{Do\+Lah\+::\+Deadline\+Task}, and \hyperlink{class_do_lah_1_1_event_task_ae2a071328fc27ae7c4ac48aad4099e86}{Do\+Lah\+::\+Event\+Task}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_do_lah_1_1_abstract_task_a3db5bb82f4afb67fe7ac19a866f161d0}{}\index{Do\+Lah\+::\+Abstract\+Task@{Do\+Lah\+::\+Abstract\+Task}!description@{description}}
+\index{description@{description}!Do\+Lah\+::\+Abstract\+Task@{Do\+Lah\+::\+Abstract\+Task}}
+\subsubsection[{description}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Do\+Lah\+::\+Abstract\+Task\+::description\hspace{0.3cm}{\ttfamily [private]}}\label{class_do_lah_1_1_abstract_task_a3db5bb82f4afb67fe7ac19a866f161d0}
+
+
+A Detailed explanation about the task. 
+
+\hypertarget{class_do_lah_1_1_abstract_task_a52d0b20701f38574b77811cd002b65ad}{}\index{Do\+Lah\+::\+Abstract\+Task@{Do\+Lah\+::\+Abstract\+Task}!done@{done}}
+\index{done@{done}!Do\+Lah\+::\+Abstract\+Task@{Do\+Lah\+::\+Abstract\+Task}}
+\subsubsection[{done}]{\setlength{\rightskip}{0pt plus 5cm}bool Do\+Lah\+::\+Abstract\+Task\+::done\hspace{0.3cm}{\ttfamily [private]}}\label{class_do_lah_1_1_abstract_task_a52d0b20701f38574b77811cd002b65ad}
+
+
+a flag that mark whether a task has finished, and may be hide or cleared later. 
+
+\hypertarget{class_do_lah_1_1_abstract_task_afdee8129f634d24d559670e8da94b1a2}{}\index{Do\+Lah\+::\+Abstract\+Task@{Do\+Lah\+::\+Abstract\+Task}!expired@{expired}}
+\index{expired@{expired}!Do\+Lah\+::\+Abstract\+Task@{Do\+Lah\+::\+Abstract\+Task}}
+\subsubsection[{expired}]{\setlength{\rightskip}{0pt plus 5cm}bool Do\+Lah\+::\+Abstract\+Task\+::expired = false\hspace{0.3cm}{\ttfamily [private]}}\label{class_do_lah_1_1_abstract_task_afdee8129f634d24d559670e8da94b1a2}
+\hypertarget{class_do_lah_1_1_abstract_task_a2ad7d227c4ab1ac0768a7633419f0934}{}\index{Do\+Lah\+::\+Abstract\+Task@{Do\+Lah\+::\+Abstract\+Task}!id@{id}}
+\index{id@{id}!Do\+Lah\+::\+Abstract\+Task@{Do\+Lah\+::\+Abstract\+Task}}
+\subsubsection[{id}]{\setlength{\rightskip}{0pt plus 5cm}int Do\+Lah\+::\+Abstract\+Task\+::id\hspace{0.3cm}{\ttfamily [private]}}\label{class_do_lah_1_1_abstract_task_a2ad7d227c4ab1ac0768a7633419f0934}
+
+
+Task identifier is used for the storage tracking. 
+
+\hypertarget{class_do_lah_1_1_abstract_task_a473c5889b75b19da3e81424e3710075e}{}\index{Do\+Lah\+::\+Abstract\+Task@{Do\+Lah\+::\+Abstract\+Task}!index@{index}}
+\index{index@{index}!Do\+Lah\+::\+Abstract\+Task@{Do\+Lah\+::\+Abstract\+Task}}
+\subsubsection[{index}]{\setlength{\rightskip}{0pt plus 5cm}int Do\+Lah\+::\+Abstract\+Task\+::index\hspace{0.3cm}{\ttfamily [private]}}\label{class_do_lah_1_1_abstract_task_a473c5889b75b19da3e81424e3710075e}
+\hypertarget{class_do_lah_1_1_abstract_task_a0d5e0174ffcd6b8e0f152130ede57fcb}{}\index{Do\+Lah\+::\+Abstract\+Task@{Do\+Lah\+::\+Abstract\+Task}!name@{name}}
+\index{name@{name}!Do\+Lah\+::\+Abstract\+Task@{Do\+Lah\+::\+Abstract\+Task}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Do\+Lah\+::\+Abstract\+Task\+::name\hspace{0.3cm}{\ttfamily [private]}}\label{class_do_lah_1_1_abstract_task_a0d5e0174ffcd6b8e0f152130ede57fcb}
+
+
+Task name is the header of the task. 
+
+\hypertarget{class_do_lah_1_1_abstract_task_aeffd99b2d49c068eaff0fe305464546d}{}\index{Do\+Lah\+::\+Abstract\+Task@{Do\+Lah\+::\+Abstract\+Task}!tags@{tags}}
+\index{tags@{tags}!Do\+Lah\+::\+Abstract\+Task@{Do\+Lah\+::\+Abstract\+Task}}
+\subsubsection[{tags}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::string$>$ Do\+Lah\+::\+Abstract\+Task\+::tags\hspace{0.3cm}{\ttfamily [private]}}\label{class_do_lah_1_1_abstract_task_aeffd99b2d49c068eaff0fe305464546d}
+
+
+Vector holding tags assigned to the task. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Do\+Lah/\+Models/\hyperlink{_task_8h}{Task.\+h}\item 
+Do\+Lah/\+Models/\hyperlink{_task_8cpp}{Task.\+cpp}\end{DoxyCompactItemize}

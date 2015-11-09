@@ -9,7 +9,5 @@ var class_do_lah_1_1_display_area =
     [ "homePage", "class_do_lah_1_1_display_area.html#a0bc53d7bed11ca86102a8f211a02d738", null ],
     [ "searchLayout", "class_do_lah_1_1_display_area.html#a9b549e5f86204024bb90bf1062f2e32b", null ],
     [ "searchPage", "class_do_lah_1_1_display_area.html#a43924eaffd8f850ee9cab55a848a1fb8", null ],
-    [ "sortLayout", "class_do_lah_1_1_display_area.html#ad9ff88c090f68f4e9e7951780e09b8ab", null ],
-    [ "sortPage", "class_do_lah_1_1_display_area.html#a4d7cde9137d2e1d923eed521fb07e092", null ],
     [ "tabbedView", "class_do_lah_1_1_display_area.html#a35f9dbc424ce552bc50427d624f74321", null ]
 ];

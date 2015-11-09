@@ -1,0 +1,111 @@
+\hypertarget{class_do_lah_1_1_time_manager}{}\section{Do\+Lah\+:\+:Time\+Manager Class Reference}
+\label{class_do_lah_1_1_time_manager}\index{Do\+Lah\+::\+Time\+Manager@{Do\+Lah\+::\+Time\+Manager}}
+
+
+A library consists of general functions related to time manipulation in std\+::tm.  
+
+
+
+
+{\ttfamily \#include $<$Time\+Manager.\+h$>$}
+
+
+
+Collaboration diagram for Do\+Lah\+:\+:Time\+Manager\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=189pt]{class_do_lah_1_1_time_manager__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_do_lah_1_1_time_manager_a0c71519ec445cbdc8dcb75d790d996cf}{Time\+Manager} ()
+\item 
+\hyperlink{class_do_lah_1_1_time_manager_a3f53ee3119cfdbcb1fadbd5e91fd48d1}{$\sim$\+Time\+Manager} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::tm \hyperlink{class_do_lah_1_1_time_manager_aad9e7e771c815d683da13e368d34c91e}{copy\+Day} (std\+::tm, std\+::tm)
+\item 
+static bool \hyperlink{class_do_lah_1_1_time_manager_ab9bd40629754aa5853e02d62f3db114a}{is\+Valid\+Date} (std\+::tm)
+\item 
+static std\+::tm \hyperlink{class_do_lah_1_1_time_manager_a17a984182301dc83721451f759eb96e9}{get\+Current\+Time} ()
+\item 
+static int \hyperlink{class_do_lah_1_1_time_manager_a0202198b81247c72ae6f600da2d676f0}{compare\+Time} (std\+::tm startdate, std\+::tm enddate)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A library consists of general functions related to time manipulation in std\+::tm. 
+
+These functions are widly used in parse component. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_do_lah_1_1_time_manager_a0c71519ec445cbdc8dcb75d790d996cf}{}\index{Do\+Lah\+::\+Time\+Manager@{Do\+Lah\+::\+Time\+Manager}!Time\+Manager@{Time\+Manager}}
+\index{Time\+Manager@{Time\+Manager}!Do\+Lah\+::\+Time\+Manager@{Do\+Lah\+::\+Time\+Manager}}
+\subsubsection[{Time\+Manager()}]{\setlength{\rightskip}{0pt plus 5cm}Do\+Lah\+::\+Time\+Manager\+::\+Time\+Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_do_lah_1_1_time_manager_a0c71519ec445cbdc8dcb75d790d996cf}
+\hypertarget{class_do_lah_1_1_time_manager_a3f53ee3119cfdbcb1fadbd5e91fd48d1}{}\index{Do\+Lah\+::\+Time\+Manager@{Do\+Lah\+::\+Time\+Manager}!````~Time\+Manager@{$\sim$\+Time\+Manager}}
+\index{````~Time\+Manager@{$\sim$\+Time\+Manager}!Do\+Lah\+::\+Time\+Manager@{Do\+Lah\+::\+Time\+Manager}}
+\subsubsection[{$\sim$\+Time\+Manager()}]{\setlength{\rightskip}{0pt plus 5cm}Do\+Lah\+::\+Time\+Manager\+::$\sim$\+Time\+Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_do_lah_1_1_time_manager_a3f53ee3119cfdbcb1fadbd5e91fd48d1}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_do_lah_1_1_time_manager_a0202198b81247c72ae6f600da2d676f0}{}\index{Do\+Lah\+::\+Time\+Manager@{Do\+Lah\+::\+Time\+Manager}!compare\+Time@{compare\+Time}}
+\index{compare\+Time@{compare\+Time}!Do\+Lah\+::\+Time\+Manager@{Do\+Lah\+::\+Time\+Manager}}
+\subsubsection[{compare\+Time(std\+::tm startdate, std\+::tm enddate)}]{\setlength{\rightskip}{0pt plus 5cm}int Do\+Lah\+::\+Time\+Manager\+::compare\+Time (
+\begin{DoxyParamCaption}
+\item[{std\+::tm}]{startdate, }
+\item[{std\+::tm}]{enddate}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_do_lah_1_1_time_manager_a0202198b81247c72ae6f600da2d676f0}
+Compare the two times and return int value that represents the comparison result. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em startdate} & Date that is supposed to be earlier. \\
+\hline
+\mbox{\tt in}  & {\em enddate} & Date that is supposed to be later. return Positive int represents startdate is earlier than enddate. Negative represents the opposite. 0 represents equal. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_do_lah_1_1_time_manager_aad9e7e771c815d683da13e368d34c91e}{}\index{Do\+Lah\+::\+Time\+Manager@{Do\+Lah\+::\+Time\+Manager}!copy\+Day@{copy\+Day}}
+\index{copy\+Day@{copy\+Day}!Do\+Lah\+::\+Time\+Manager@{Do\+Lah\+::\+Time\+Manager}}
+\subsubsection[{copy\+Day(std\+::tm, std\+::tm)}]{\setlength{\rightskip}{0pt plus 5cm}std\+::tm Do\+Lah\+::\+Time\+Manager\+::copy\+Day (
+\begin{DoxyParamCaption}
+\item[{std\+::tm}]{from, }
+\item[{std\+::tm}]{to}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_do_lah_1_1_time_manager_aad9e7e771c815d683da13e368d34c91e}
+\hypertarget{class_do_lah_1_1_time_manager_a17a984182301dc83721451f759eb96e9}{}\index{Do\+Lah\+::\+Time\+Manager@{Do\+Lah\+::\+Time\+Manager}!get\+Current\+Time@{get\+Current\+Time}}
+\index{get\+Current\+Time@{get\+Current\+Time}!Do\+Lah\+::\+Time\+Manager@{Do\+Lah\+::\+Time\+Manager}}
+\subsubsection[{get\+Current\+Time()}]{\setlength{\rightskip}{0pt plus 5cm}std\+::tm Do\+Lah\+::\+Time\+Manager\+::get\+Current\+Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_do_lah_1_1_time_manager_a17a984182301dc83721451f759eb96e9}
+Returns the current time according to the localtime setting in the system. return Current time represented in std\+::tm format. \hypertarget{class_do_lah_1_1_time_manager_ab9bd40629754aa5853e02d62f3db114a}{}\index{Do\+Lah\+::\+Time\+Manager@{Do\+Lah\+::\+Time\+Manager}!is\+Valid\+Date@{is\+Valid\+Date}}
+\index{is\+Valid\+Date@{is\+Valid\+Date}!Do\+Lah\+::\+Time\+Manager@{Do\+Lah\+::\+Time\+Manager}}
+\subsubsection[{is\+Valid\+Date(std\+::tm)}]{\setlength{\rightskip}{0pt plus 5cm}bool Do\+Lah\+::\+Time\+Manager\+::is\+Valid\+Date (
+\begin{DoxyParamCaption}
+\item[{std\+::tm}]{date}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_do_lah_1_1_time_manager_ab9bd40629754aa5853e02d62f3db114a}
+Check whether the given std\+::tm represents a valid date or not. For example, 31st of April is an invalid date. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em date} & Date to be evaluated. return True is it is a valid date. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Do\+Lah/\hyperlink{_time_manager_8h}{Time\+Manager.\+h}\item 
+Do\+Lah/\hyperlink{_time_manager_8cpp}{Time\+Manager.\+cpp}\end{DoxyCompactItemize}

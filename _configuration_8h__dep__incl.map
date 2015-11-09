@@ -1,15 +1,15 @@
 <map id="DoLah/Config/Configuration.h" name="DoLah/Config/Configuration.h">
-<area shape="rect" id="node2" href="$_configuration_manager_8h.html" title="DoLah/Config/Configuration\lManager.h" alt="" coords="249,80,428,121"/>
-<area shape="rect" id="node3" href="$_configuration_manager_8cpp.html" title="DoLah/Config/Configuration\lManager.cpp" alt="" coords="64,169,243,211"/>
-<area shape="rect" id="node4" href="$_do_lah_client_8h.html" title="DoLah/DoLahClient.h" alt="" coords="267,177,411,203"/>
-<area shape="rect" id="node13" href="$_settings_window_8h.html" title="DoLahUI/SettingsWindow.h" alt="" coords="465,177,645,203"/>
-<area shape="rect" id="node5" href="$_do_lah_client_8cpp.html" title="DoLah/DoLahClient.cpp" alt="" coords="50,259,209,285"/>
+<area shape="rect" id="node2" href="$_configuration_manager_8h.html" title="DoLah/Config/Configuration\lManager.h" alt="" coords="373,80,552,121"/>
+<area shape="rect" id="node3" href="$_configuration_manager_8cpp.html" title="DoLah/Config/Configuration\lManager.cpp" alt="" coords="95,169,273,211"/>
+<area shape="rect" id="node4" href="$_do_lah_client_8h.html" title="DoLah/DoLahClient.h" alt="" coords="297,177,441,203"/>
+<area shape="rect" id="node7" href="$_do_lah_u_i_8cpp.html" title="DoLahUI/DoLahUI.cpp" alt="" coords="637,430,787,457"/>
+<area shape="rect" id="node13" href="$_settings_window_8h.html" title="DoLahUI/SettingsWindow.h" alt="" coords="466,177,646,203"/>
+<area shape="rect" id="node5" href="$_do_lah_client_8cpp.html" title="DoLah/DoLahClient.cpp" alt="" coords="55,259,214,285"/>
 <area shape="rect" id="node6" href="$_do_lah_u_i_8h.html" title="DoLahUI/DoLahUI.h" alt="" coords="414,341,549,367"/>
-<area shape="rect" id="node10" href="$_u_i_task_box_8h.html" title="DoLahUI/UITaskBox.h" alt="" coords="233,259,383,285"/>
-<area shape="rect" id="node7" href="$_do_lah_u_i_8cpp.html" title="DoLahUI/DoLahUI.cpp" alt="" coords="216,430,365,457"/>
-<area shape="rect" id="node8" href="$moc___do_lah_u_i_8cpp.html" title="DoLahUI/GeneratedFiles\l/Release/moc_DoLahUI.cpp" alt="" coords="390,423,573,464"/>
-<area shape="rect" id="node9" href="$main_8cpp.html" title="DoLahUI/main.cpp" alt="" coords="597,430,725,457"/>
+<area shape="rect" id="node10" href="$_u_i_task_box_8h.html" title="DoLahUI/UITaskBox.h" alt="" coords="239,259,388,285"/>
+<area shape="rect" id="node8" href="$moc___do_lah_u_i_8cpp.html" title="DoLahUI/GeneratedFiles\l/Release/moc_DoLahUI.cpp" alt="" coords="413,423,595,464"/>
+<area shape="rect" id="node9" href="$main_8cpp.html" title="DoLahUI/main.cpp" alt="" coords="260,430,388,457"/>
 <area shape="rect" id="node11" href="$moc___u_i_task_box_8cpp.html" title="DoLahUI/GeneratedFiles\l/Release/moc_UITaskBox.cpp" alt="" coords="5,333,203,375"/>
 <area shape="rect" id="node12" href="$_u_i_task_box_8cpp.html" title="DoLahUI/UITaskBox.cpp" alt="" coords="227,341,389,367"/>
-<area shape="rect" id="node14" href="$_settings_window_8cpp.html" title="DoLahUI/SettingsWindow.cpp" alt="" coords="457,259,652,285"/>
+<area shape="rect" id="node14" href="$_settings_window_8cpp.html" title="DoLahUI/SettingsWindow.cpp" alt="" coords="513,259,708,285"/>
 </map>

@@ -1,0 +1,33 @@
+Welcome to our contribution guideline. Feel free to explore our documentation page.
+
+\subsection*{A\+P\+I Docs}
+
+The A\+P\+I docs should be written in the header files. It will be automatically generated from the project code using \href{http://www.doxygen.org/}{\tt Doxygen} docs using \href{https://www.stack.nl/~dimitri/doxygen/manual/docblocks.html#cppblock}{\tt C-\/like (C/\+C++) formatting}.
+
+Our A\+P\+I docs should start with {\ttfamily ///} for single line or {\ttfamily /$\ast$$\ast$} {\ttfamily $\ast$/} for multilines above the function or class. Alternatively, use {\ttfamily int my\+Variable; ///$<$ description} for inline description.
+
+Whenever possible, use the correct \href{https://www.stack.nl/~dimitri/doxygen/manual/commands.html}{\tt semantic command} when writing the A\+P\+I docs (e.\+g {\ttfamily params}, {\ttfamily todo}, {\ttfamily class}). Also use the {\ttfamily @} sign instead of backslash for command (e.\+g. {\ttfamily @params}).
+
+Please ensure the consistency of the syntax, and also consult with the team when in doubt of a certain format. It is also good to check out at some tips that others mentioned in online forum or Q\&A site such as Stackoverflow (e.\+g. \href{https://www.stack.nl/~dimitri/doxygen/manual/commands.html}{\tt Tips Doxygen}).
+
+Generating document for our project can be done by executing the following command in the terminal\+: \begin{DoxyVerb}doxygen
+\end{DoxyVerb}
+
+
+\subsection*{Branch naming}
+
+\begin{DoxyVerb}# Specific Feature or Functionality
+feature/<feature-label>
+
+# Semantic, Confiuration, Formatting, Code Cleanup, etc...
+enhance/<enhancement>
+
+# Bug, Error Fix, Etc...
+fix/<fix-label>
+\end{DoxyVerb}
+
+
+\subsection*{Code Style}
+
+Use forward slash for library include path. \begin{DoxyVerb}#include "path/path/module.h"\end{DoxyVerb}
+ 

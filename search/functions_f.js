@@ -21,6 +21,8 @@ var searchData=
   ['setstartdate',['setStartDate',['../class_do_lah_1_1_event_task.html#aa35cfdeaeec9ddfd33026ad250161fe4',1,'DoLah::EventTask']]],
   ['setstoragelocation',['setStorageLocation',['../class_do_lah_1_1_do_lah_client.html#af0849e1f18ae1983dcea42ed0ed87d4c',1,'DoLah::DoLahClient::setStorageLocation()'],['../class_do_lah_1_1_do_lah_u_i.html#abab3d8211a702d99233065ceff49869a',1,'DoLah::DoLahUI::setStorageLocation()']]],
   ['settags',['setTags',['../class_do_lah_1_1_abstract_task.html#ae87df86920dcaaf1353a412269d73727',1,'DoLah::AbstractTask']]],
+  ['settheme',['setTheme',['../class_do_lah_1_1_do_lah_client.html#a8f92063b2a17abe23c361a6e946fbf20',1,'DoLah::DoLahClient']]],
+  ['setthemeconfig',['setThemeConfig',['../class_do_lah_1_1_do_lah_u_i.html#aeeb3c0507a952006f8a4c9904240a740',1,'DoLah::DoLahUI']]],
   ['settingswindow',['SettingsWindow',['../class_do_lah_1_1_settings_window.html#aa9d32e9ffdb928d919350c22c2973468',1,'DoLah::SettingsWindow']]],
   ['setundonetaskcommand',['SetUndoneTaskCommand',['../class_do_lah_1_1_set_undone_task_command.html#afdc275ab0a51d5d1fd59e5138270298c',1,'DoLah::SetUndoneTaskCommand::SetUndoneTaskCommand()'],['../class_do_lah_1_1_set_undone_task_command.html#a38cd9be0a3f9deac9b5f57858176c0cf',1,'DoLah::SetUndoneTaskCommand::SetUndoneTaskCommand(int)']]],
   ['setupui',['setupUI',['../class_do_lah_1_1_do_lah_u_i.html#aec7e286bc67f57d2f125eb7a3085b099',1,'DoLah::DoLahUI']]],

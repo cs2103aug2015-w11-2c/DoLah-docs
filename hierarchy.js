@@ -54,5 +54,6 @@ var hierarchy =
     [ "qt_meta_stringdata_DoLah__UITaskBox_t", "structqt__meta__stringdata___do_lah_____u_i_task_box__t.html", null ],
     [ "DoLah::TaskParser", "class_do_lah_1_1_task_parser.html", null ],
     [ "DoLah::TaskTokenizer", "class_do_lah_1_1_task_tokenizer.html", null ],
-    [ "DoLah::TimeManager", "class_do_lah_1_1_time_manager.html", null ]
+    [ "DoLah::TimeManager", "class_do_lah_1_1_time_manager.html", null ],
+    [ "TokenTokenizer", "class_token_tokenizer.html", null ]
 ];

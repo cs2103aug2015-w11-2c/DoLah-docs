@@ -12,6 +12,6 @@ var searchData=
   ['homebutton',['homeButton',['../class_do_lah_1_1_do_lah_u_i.html#a10db92ff684ec50e9fa5ed47a8d50061',1,'DoLah::DoLahUI']]],
   ['homelayout',['homeLayout',['../class_do_lah_1_1_display_area.html#aa16ca495275d4ae6ff0f58efa13095be',1,'DoLah::DisplayArea']]],
   ['homepage',['homePage',['../class_do_lah_1_1_display_area.html#a0bc53d7bed11ca86102a8f211a02d738',1,'DoLah::DisplayArea']]],
-  ['hourdescriptionpattern',['hourDescriptionPattern',['../class_do_lah_1_1_date_time_parser.html#a16a53662cb34b3dcb443026bbff0da1e',1,'DoLah::DateTimeParser']]],
-  ['hourinsecs',['HOURINSECS',['../class_do_lah_1_1_date_time_parser.html#aae14bf5fd54de9913e6c48d3d61ff199',1,'DoLah::DateTimeParser']]]
+  ['hour_5fdescription_5findicator',['HOUR_DESCRIPTION_INDICATOR',['../class_do_lah_1_1_date_time_parser.html#a53e2831a83514941d8a6d77855d6d409',1,'DoLah::DateTimeParser']]],
+  ['hour_5fin_5fsecs',['HOUR_IN_SECS',['../class_do_lah_1_1_date_time_parser.html#ad860d83d2253ba7db8b7f405adc0a2c8',1,'DoLah::DateTimeParser']]]
 ];

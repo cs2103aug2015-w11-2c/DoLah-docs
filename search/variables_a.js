@@ -10,5 +10,5 @@ var searchData=
   ['nav_5fother',['nav_other',['../class_do_lah_1_1_help_window.html#af1fe46b47e8902a98d24bfa31c0895bf',1,'DoLah::HelpWindow']]],
   ['navi',['navi',['../class_do_lah_1_1_help_window.html#a6e2ae58bc43415e0815cd4955be70fbc',1,'DoLah::HelpWindow']]],
   ['navilayout',['navilayout',['../class_do_lah_1_1_help_window.html#a1b08cbaf4888897b8c112e4c09465ff6',1,'DoLah::HelpWindow']]],
-  ['nextpattern',['nextPattern',['../class_do_lah_1_1_date_time_parser.html#abb0d8ea640d7ba6e072cabbebf7b7572',1,'DoLah::DateTimeParser']]]
+  ['next_5fformats',['NEXT_FORMATS',['../class_do_lah_1_1_date_time_parser.html#a4bfc49a590f5662df8ffe2f8a6778997',1,'DoLah::DateTimeParser']]]
 ];

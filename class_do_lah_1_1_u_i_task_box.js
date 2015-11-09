@@ -8,10 +8,9 @@ var class_do_lah_1_1_u_i_task_box =
     [ "mouseDoubleClickEvent", "class_do_lah_1_1_u_i_task_box.html#ab14d8bbe4b2eb598546e0b56cf60fe70", null ],
     [ "mouseMoveEvent", "class_do_lah_1_1_u_i_task_box.html#a6f39cd480d09d9b2aeb66be6dfca809d", null ],
     [ "mousePressEvent", "class_do_lah_1_1_u_i_task_box.html#a878331142f2697c3f7b05d0e178bbb8e", null ],
-    [ "rightclicked", "class_do_lah_1_1_u_i_task_box.html#a096a9b3487a1b249eba6159ef9db6805", null ],
     [ "sizeHint", "class_do_lah_1_1_u_i_task_box.html#a35d46c015e2e24a45cfa39667c2e2694", null ],
     [ "tidyDate", "class_do_lah_1_1_u_i_task_box.html#a818165c54ddd543fb0338e4627be61b9", null ],
-    [ "easyedit", "class_do_lah_1_1_u_i_task_box.html#a619b5e441425a9698ebacf2ed0ae84e0", null ],
+    [ "easyEdit", "class_do_lah_1_1_u_i_task_box.html#a437fe635d4aee3ea4a6c371905b2e345", null ],
     [ "editabletext", "class_do_lah_1_1_u_i_task_box.html#a44c6395f81e68b4424c2b91a8b24af7d", null ],
     [ "index", "class_do_lah_1_1_u_i_task_box.html#a8f8946ade721e68fd3dbdcf5fa056a5d", null ],
     [ "task", "class_do_lah_1_1_u_i_task_box.html#a5c2170230a8892b1ad5959165b97f2ee", null ]

@@ -8,5 +8,6 @@ var searchData=
   ['addtoundostack',['addToUndoStack',['../class_do_lah_1_1_command_history.html#a6c2ca1c4dcda54fea643c3cd8cff1fd2',1,'DoLah::CommandHistory']]],
   ['applychanges',['applyChanges',['../class_do_lah_1_1_settings_window.html#ad64d12b81cf88d037ec8c99244176993',1,'DoLah::SettingsWindow']]],
   ['applystoragesettings',['applyStorageSettings',['../class_do_lah_1_1_settings_window.html#ab14ecbfb57dd29932e83d956eeb4d61d',1,'DoLah::SettingsWindow']]],
+  ['applythemesettings',['applyThemeSettings',['../class_do_lah_1_1_settings_window.html#a8b87756e98d0f669fc0abe74df86a7d1',1,'DoLah::SettingsWindow']]],
   ['arrangestack',['arrangeStack',['../class_do_lah_1_1_input_box.html#a21d12fbe5e02dc7eb68e869fc35c0145',1,'DoLah::InputBox']]]
 ];

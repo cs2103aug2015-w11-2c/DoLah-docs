@@ -1,0 +1,223 @@
+\hypertarget{class_do_lah_1_1_settings_window}{}\section{Do\+Lah\+:\+:Settings\+Window Class Reference}
+\label{class_do_lah_1_1_settings_window}\index{Do\+Lah\+::\+Settings\+Window@{Do\+Lah\+::\+Settings\+Window}}
+
+
+{\ttfamily \#include $<$Settings\+Window.\+h$>$}
+
+
+
+Inheritance diagram for Do\+Lah\+:\+:Settings\+Window\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{class_do_lah_1_1_settings_window__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Do\+Lah\+:\+:Settings\+Window\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_do_lah_1_1_settings_window__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_do_lah_1_1_settings_window_ab14ecbfb57dd29932e83d956eeb4d61d}{apply\+Storage\+Settings} (Q\+String)
+\item 
+void \hyperlink{class_do_lah_1_1_settings_window_a8b87756e98d0f669fc0abe74df86a7d1}{apply\+Theme\+Settings} (int)
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_do_lah_1_1_settings_window_aa9d32e9ffdb928d919350c22c2973468}{Settings\+Window} (Q\+Main\+Window $\ast$parent)
+\item 
+\hyperlink{class_do_lah_1_1_settings_window_a4d7e268c3f9c272c0efb0c3188bfba55}{$\sim$\+Settings\+Window} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Line\+Edit $\ast$ \hyperlink{class_do_lah_1_1_settings_window_a3154c430f280084ab4d9b558ff4d623a}{storage\+Location\+Box}
+\item 
+\hyperlink{class_do_lah_1_1_menu_label}{Menu\+Label} $\ast$ \hyperlink{class_do_lah_1_1_settings_window_aa520500f78ff095a3c5b7f8c38ff3299}{exit\+Button}
+\item 
+Q\+Dialog\+Button\+Box $\ast$ \hyperlink{class_do_lah_1_1_settings_window_a8d32ce14cf7865a6222860ff9b7af1a1}{button\+Box}
+\item 
+Q\+Push\+Button $\ast$ \hyperlink{class_do_lah_1_1_settings_window_ab8a381394058db1df35afd8de7298321}{browse\+Button}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_do_lah_1_1_settings_window_a4546dc844cd32b0a408b688e9e956107}{key\+Press\+Event} (Q\+Key\+Event $\ast$)
+\end{DoxyCompactItemize}
+\subsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_do_lah_1_1_settings_window_a79acea6560460a4a7bab35c4249285b1}{browse\+Location} ()
+\item 
+void \hyperlink{class_do_lah_1_1_settings_window_a8c1c13d0c4ab3faa57dbfb2418225cda}{change\+Theme} (int)
+\item 
+void \hyperlink{class_do_lah_1_1_settings_window_ad64d12b81cf88d037ec8c99244176993}{apply\+Changes} ()
+\item 
+void \hyperlink{class_do_lah_1_1_settings_window_ad323b6d64af4a865976684be5305888b}{cancel\+Changes} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_do_lah_1_1_settings_window_a198b5a222c1a612121988d86488008ba}{storage\+Settings} ()
+\item 
+void \hyperlink{class_do_lah_1_1_settings_window_af281a467be9f99d29e891904bd1fc239}{theme\+Options} ()
+\item 
+void \hyperlink{class_do_lah_1_1_settings_window_a190379578f80679445d34c3c90ce1614}{read\+And\+Set\+Style\+Sheet} (const char $\ast$)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_do_lah_1_1_settings_window_a923bacea5c3d17109ff6bfc0cbbaf58f}{original\+Theme}
+\item 
+Q\+File\+Dialog $\ast$ \hyperlink{class_do_lah_1_1_settings_window_a08d4040836467574e3ffbe85bdd3272d}{file\+Browser}
+\item 
+Q\+String \hyperlink{class_do_lah_1_1_settings_window_a1dcf2106d2e26c89f569e571a8fece38}{original\+Location}
+\item 
+Q\+String \hyperlink{class_do_lah_1_1_settings_window_a0c26a7b802888f80bf382a5f3245a1f6}{selected\+Location}
+\item 
+Q\+Combo\+Box $\ast$ \hyperlink{class_do_lah_1_1_settings_window_a6a18dc1bafd9e46b696584dbba064db5}{theme\+Selection}
+\item 
+Q\+Main\+Window $\ast$ \hyperlink{class_do_lah_1_1_settings_window_a6b6b0977f61b47a666dfbab2d861f99e}{main\+Win}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_do_lah_1_1_settings_window_aa9d32e9ffdb928d919350c22c2973468}{}\index{Do\+Lah\+::\+Settings\+Window@{Do\+Lah\+::\+Settings\+Window}!Settings\+Window@{Settings\+Window}}
+\index{Settings\+Window@{Settings\+Window}!Do\+Lah\+::\+Settings\+Window@{Do\+Lah\+::\+Settings\+Window}}
+\subsubsection[{Settings\+Window(\+Q\+Main\+Window $\ast$parent)}]{\setlength{\rightskip}{0pt plus 5cm}Do\+Lah\+::\+Settings\+Window\+::\+Settings\+Window (
+\begin{DoxyParamCaption}
+\item[{Q\+Main\+Window $\ast$}]{parent}
+\end{DoxyParamCaption}
+)}\label{class_do_lah_1_1_settings_window_aa9d32e9ffdb928d919350c22c2973468}
+\hypertarget{class_do_lah_1_1_settings_window_a4d7e268c3f9c272c0efb0c3188bfba55}{}\index{Do\+Lah\+::\+Settings\+Window@{Do\+Lah\+::\+Settings\+Window}!````~Settings\+Window@{$\sim$\+Settings\+Window}}
+\index{````~Settings\+Window@{$\sim$\+Settings\+Window}!Do\+Lah\+::\+Settings\+Window@{Do\+Lah\+::\+Settings\+Window}}
+\subsubsection[{$\sim$\+Settings\+Window()}]{\setlength{\rightskip}{0pt plus 5cm}Do\+Lah\+::\+Settings\+Window\+::$\sim$\+Settings\+Window (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_do_lah_1_1_settings_window_a4d7e268c3f9c272c0efb0c3188bfba55}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_do_lah_1_1_settings_window_ad64d12b81cf88d037ec8c99244176993}{}\index{Do\+Lah\+::\+Settings\+Window@{Do\+Lah\+::\+Settings\+Window}!apply\+Changes@{apply\+Changes}}
+\index{apply\+Changes@{apply\+Changes}!Do\+Lah\+::\+Settings\+Window@{Do\+Lah\+::\+Settings\+Window}}
+\subsubsection[{apply\+Changes}]{\setlength{\rightskip}{0pt plus 5cm}void Do\+Lah\+::\+Settings\+Window\+::apply\+Changes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}\label{class_do_lah_1_1_settings_window_ad64d12b81cf88d037ec8c99244176993}
+\hypertarget{class_do_lah_1_1_settings_window_ab14ecbfb57dd29932e83d956eeb4d61d}{}\index{Do\+Lah\+::\+Settings\+Window@{Do\+Lah\+::\+Settings\+Window}!apply\+Storage\+Settings@{apply\+Storage\+Settings}}
+\index{apply\+Storage\+Settings@{apply\+Storage\+Settings}!Do\+Lah\+::\+Settings\+Window@{Do\+Lah\+::\+Settings\+Window}}
+\subsubsection[{apply\+Storage\+Settings}]{\setlength{\rightskip}{0pt plus 5cm}void Do\+Lah\+::\+Settings\+Window\+::apply\+Storage\+Settings (
+\begin{DoxyParamCaption}
+\item[{Q\+String}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [signal]}}\label{class_do_lah_1_1_settings_window_ab14ecbfb57dd29932e83d956eeb4d61d}
+This signal is emitted when the user presses the ok button in the \hyperlink{class_do_lah_1_1_easy_edit}{Easy\+Edit} window \hypertarget{class_do_lah_1_1_settings_window_a8b87756e98d0f669fc0abe74df86a7d1}{}\index{Do\+Lah\+::\+Settings\+Window@{Do\+Lah\+::\+Settings\+Window}!apply\+Theme\+Settings@{apply\+Theme\+Settings}}
+\index{apply\+Theme\+Settings@{apply\+Theme\+Settings}!Do\+Lah\+::\+Settings\+Window@{Do\+Lah\+::\+Settings\+Window}}
+\subsubsection[{apply\+Theme\+Settings}]{\setlength{\rightskip}{0pt plus 5cm}void Do\+Lah\+::\+Settings\+Window\+::apply\+Theme\+Settings (
+\begin{DoxyParamCaption}
+\item[{int}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [signal]}}\label{class_do_lah_1_1_settings_window_a8b87756e98d0f669fc0abe74df86a7d1}
+\hypertarget{class_do_lah_1_1_settings_window_a79acea6560460a4a7bab35c4249285b1}{}\index{Do\+Lah\+::\+Settings\+Window@{Do\+Lah\+::\+Settings\+Window}!browse\+Location@{browse\+Location}}
+\index{browse\+Location@{browse\+Location}!Do\+Lah\+::\+Settings\+Window@{Do\+Lah\+::\+Settings\+Window}}
+\subsubsection[{browse\+Location}]{\setlength{\rightskip}{0pt plus 5cm}void Do\+Lah\+::\+Settings\+Window\+::browse\+Location (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}\label{class_do_lah_1_1_settings_window_a79acea6560460a4a7bab35c4249285b1}
+Opens file\+Browser, then gets and stores the user-\/selected location \hypertarget{class_do_lah_1_1_settings_window_ad323b6d64af4a865976684be5305888b}{}\index{Do\+Lah\+::\+Settings\+Window@{Do\+Lah\+::\+Settings\+Window}!cancel\+Changes@{cancel\+Changes}}
+\index{cancel\+Changes@{cancel\+Changes}!Do\+Lah\+::\+Settings\+Window@{Do\+Lah\+::\+Settings\+Window}}
+\subsubsection[{cancel\+Changes}]{\setlength{\rightskip}{0pt plus 5cm}void Do\+Lah\+::\+Settings\+Window\+::cancel\+Changes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}\label{class_do_lah_1_1_settings_window_ad323b6d64af4a865976684be5305888b}
+\hypertarget{class_do_lah_1_1_settings_window_a8c1c13d0c4ab3faa57dbfb2418225cda}{}\index{Do\+Lah\+::\+Settings\+Window@{Do\+Lah\+::\+Settings\+Window}!change\+Theme@{change\+Theme}}
+\index{change\+Theme@{change\+Theme}!Do\+Lah\+::\+Settings\+Window@{Do\+Lah\+::\+Settings\+Window}}
+\subsubsection[{change\+Theme}]{\setlength{\rightskip}{0pt plus 5cm}void Do\+Lah\+::\+Settings\+Window\+::change\+Theme (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}\label{class_do_lah_1_1_settings_window_a8c1c13d0c4ab3faa57dbfb2418225cda}
+Changes the theme according to user selection \hypertarget{class_do_lah_1_1_settings_window_a4546dc844cd32b0a408b688e9e956107}{}\index{Do\+Lah\+::\+Settings\+Window@{Do\+Lah\+::\+Settings\+Window}!key\+Press\+Event@{key\+Press\+Event}}
+\index{key\+Press\+Event@{key\+Press\+Event}!Do\+Lah\+::\+Settings\+Window@{Do\+Lah\+::\+Settings\+Window}}
+\subsubsection[{key\+Press\+Event(\+Q\+Key\+Event $\ast$)}]{\setlength{\rightskip}{0pt plus 5cm}void Do\+Lah\+::\+Settings\+Window\+::key\+Press\+Event (
+\begin{DoxyParamCaption}
+\item[{Q\+Key\+Event $\ast$}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_do_lah_1_1_settings_window_a4546dc844cd32b0a408b688e9e956107}
+Reimplemented from Q\+Widget\+::key\+Press\+Event() \hypertarget{class_do_lah_1_1_settings_window_a190379578f80679445d34c3c90ce1614}{}\index{Do\+Lah\+::\+Settings\+Window@{Do\+Lah\+::\+Settings\+Window}!read\+And\+Set\+Style\+Sheet@{read\+And\+Set\+Style\+Sheet}}
+\index{read\+And\+Set\+Style\+Sheet@{read\+And\+Set\+Style\+Sheet}!Do\+Lah\+::\+Settings\+Window@{Do\+Lah\+::\+Settings\+Window}}
+\subsubsection[{read\+And\+Set\+Style\+Sheet(const char $\ast$)}]{\setlength{\rightskip}{0pt plus 5cm}void Do\+Lah\+::\+Settings\+Window\+::read\+And\+Set\+Style\+Sheet (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{qss}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_do_lah_1_1_settings_window_a190379578f80679445d34c3c90ce1614}
+Reads stylesheet from a Q\+S\+S file and sets it as the main window stylesheet 
+\begin{DoxyParams}{Parameters}
+{\em qss} & file name of the Q\+S\+S stylesheet to be loaded \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_do_lah_1_1_settings_window_a198b5a222c1a612121988d86488008ba}{}\index{Do\+Lah\+::\+Settings\+Window@{Do\+Lah\+::\+Settings\+Window}!storage\+Settings@{storage\+Settings}}
+\index{storage\+Settings@{storage\+Settings}!Do\+Lah\+::\+Settings\+Window@{Do\+Lah\+::\+Settings\+Window}}
+\subsubsection[{storage\+Settings()}]{\setlength{\rightskip}{0pt plus 5cm}void Do\+Lah\+::\+Settings\+Window\+::storage\+Settings (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_do_lah_1_1_settings_window_a198b5a222c1a612121988d86488008ba}
+\hypertarget{class_do_lah_1_1_settings_window_af281a467be9f99d29e891904bd1fc239}{}\index{Do\+Lah\+::\+Settings\+Window@{Do\+Lah\+::\+Settings\+Window}!theme\+Options@{theme\+Options}}
+\index{theme\+Options@{theme\+Options}!Do\+Lah\+::\+Settings\+Window@{Do\+Lah\+::\+Settings\+Window}}
+\subsubsection[{theme\+Options()}]{\setlength{\rightskip}{0pt plus 5cm}void Do\+Lah\+::\+Settings\+Window\+::theme\+Options (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_do_lah_1_1_settings_window_af281a467be9f99d29e891904bd1fc239}
+Initializes the drop down menu allowing theme selection 
+
+\subsection{Member Data Documentation}
+\hypertarget{class_do_lah_1_1_settings_window_ab8a381394058db1df35afd8de7298321}{}\index{Do\+Lah\+::\+Settings\+Window@{Do\+Lah\+::\+Settings\+Window}!browse\+Button@{browse\+Button}}
+\index{browse\+Button@{browse\+Button}!Do\+Lah\+::\+Settings\+Window@{Do\+Lah\+::\+Settings\+Window}}
+\subsubsection[{browse\+Button}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Push\+Button$\ast$ Do\+Lah\+::\+Settings\+Window\+::browse\+Button}\label{class_do_lah_1_1_settings_window_ab8a381394058db1df35afd8de7298321}
+\hypertarget{class_do_lah_1_1_settings_window_a8d32ce14cf7865a6222860ff9b7af1a1}{}\index{Do\+Lah\+::\+Settings\+Window@{Do\+Lah\+::\+Settings\+Window}!button\+Box@{button\+Box}}
+\index{button\+Box@{button\+Box}!Do\+Lah\+::\+Settings\+Window@{Do\+Lah\+::\+Settings\+Window}}
+\subsubsection[{button\+Box}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Dialog\+Button\+Box$\ast$ Do\+Lah\+::\+Settings\+Window\+::button\+Box}\label{class_do_lah_1_1_settings_window_a8d32ce14cf7865a6222860ff9b7af1a1}
+\hypertarget{class_do_lah_1_1_settings_window_aa520500f78ff095a3c5b7f8c38ff3299}{}\index{Do\+Lah\+::\+Settings\+Window@{Do\+Lah\+::\+Settings\+Window}!exit\+Button@{exit\+Button}}
+\index{exit\+Button@{exit\+Button}!Do\+Lah\+::\+Settings\+Window@{Do\+Lah\+::\+Settings\+Window}}
+\subsubsection[{exit\+Button}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Menu\+Label}$\ast$ Do\+Lah\+::\+Settings\+Window\+::exit\+Button}\label{class_do_lah_1_1_settings_window_aa520500f78ff095a3c5b7f8c38ff3299}
+\hypertarget{class_do_lah_1_1_settings_window_a08d4040836467574e3ffbe85bdd3272d}{}\index{Do\+Lah\+::\+Settings\+Window@{Do\+Lah\+::\+Settings\+Window}!file\+Browser@{file\+Browser}}
+\index{file\+Browser@{file\+Browser}!Do\+Lah\+::\+Settings\+Window@{Do\+Lah\+::\+Settings\+Window}}
+\subsubsection[{file\+Browser}]{\setlength{\rightskip}{0pt plus 5cm}Q\+File\+Dialog$\ast$ Do\+Lah\+::\+Settings\+Window\+::file\+Browser\hspace{0.3cm}{\ttfamily [private]}}\label{class_do_lah_1_1_settings_window_a08d4040836467574e3ffbe85bdd3272d}
+\hypertarget{class_do_lah_1_1_settings_window_a6b6b0977f61b47a666dfbab2d861f99e}{}\index{Do\+Lah\+::\+Settings\+Window@{Do\+Lah\+::\+Settings\+Window}!main\+Win@{main\+Win}}
+\index{main\+Win@{main\+Win}!Do\+Lah\+::\+Settings\+Window@{Do\+Lah\+::\+Settings\+Window}}
+\subsubsection[{main\+Win}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Main\+Window$\ast$ Do\+Lah\+::\+Settings\+Window\+::main\+Win\hspace{0.3cm}{\ttfamily [private]}}\label{class_do_lah_1_1_settings_window_a6b6b0977f61b47a666dfbab2d861f99e}
+\hypertarget{class_do_lah_1_1_settings_window_a1dcf2106d2e26c89f569e571a8fece38}{}\index{Do\+Lah\+::\+Settings\+Window@{Do\+Lah\+::\+Settings\+Window}!original\+Location@{original\+Location}}
+\index{original\+Location@{original\+Location}!Do\+Lah\+::\+Settings\+Window@{Do\+Lah\+::\+Settings\+Window}}
+\subsubsection[{original\+Location}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Do\+Lah\+::\+Settings\+Window\+::original\+Location\hspace{0.3cm}{\ttfamily [private]}}\label{class_do_lah_1_1_settings_window_a1dcf2106d2e26c89f569e571a8fece38}
+\hypertarget{class_do_lah_1_1_settings_window_a923bacea5c3d17109ff6bfc0cbbaf58f}{}\index{Do\+Lah\+::\+Settings\+Window@{Do\+Lah\+::\+Settings\+Window}!original\+Theme@{original\+Theme}}
+\index{original\+Theme@{original\+Theme}!Do\+Lah\+::\+Settings\+Window@{Do\+Lah\+::\+Settings\+Window}}
+\subsubsection[{original\+Theme}]{\setlength{\rightskip}{0pt plus 5cm}int Do\+Lah\+::\+Settings\+Window\+::original\+Theme\hspace{0.3cm}{\ttfamily [private]}}\label{class_do_lah_1_1_settings_window_a923bacea5c3d17109ff6bfc0cbbaf58f}
+\hypertarget{class_do_lah_1_1_settings_window_a0c26a7b802888f80bf382a5f3245a1f6}{}\index{Do\+Lah\+::\+Settings\+Window@{Do\+Lah\+::\+Settings\+Window}!selected\+Location@{selected\+Location}}
+\index{selected\+Location@{selected\+Location}!Do\+Lah\+::\+Settings\+Window@{Do\+Lah\+::\+Settings\+Window}}
+\subsubsection[{selected\+Location}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Do\+Lah\+::\+Settings\+Window\+::selected\+Location\hspace{0.3cm}{\ttfamily [private]}}\label{class_do_lah_1_1_settings_window_a0c26a7b802888f80bf382a5f3245a1f6}
+\hypertarget{class_do_lah_1_1_settings_window_a3154c430f280084ab4d9b558ff4d623a}{}\index{Do\+Lah\+::\+Settings\+Window@{Do\+Lah\+::\+Settings\+Window}!storage\+Location\+Box@{storage\+Location\+Box}}
+\index{storage\+Location\+Box@{storage\+Location\+Box}!Do\+Lah\+::\+Settings\+Window@{Do\+Lah\+::\+Settings\+Window}}
+\subsubsection[{storage\+Location\+Box}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Line\+Edit$\ast$ Do\+Lah\+::\+Settings\+Window\+::storage\+Location\+Box}\label{class_do_lah_1_1_settings_window_a3154c430f280084ab4d9b558ff4d623a}
+Where user-\/selected storage location is displayed \hypertarget{class_do_lah_1_1_settings_window_a6a18dc1bafd9e46b696584dbba064db5}{}\index{Do\+Lah\+::\+Settings\+Window@{Do\+Lah\+::\+Settings\+Window}!theme\+Selection@{theme\+Selection}}
+\index{theme\+Selection@{theme\+Selection}!Do\+Lah\+::\+Settings\+Window@{Do\+Lah\+::\+Settings\+Window}}
+\subsubsection[{theme\+Selection}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Combo\+Box$\ast$ Do\+Lah\+::\+Settings\+Window\+::theme\+Selection\hspace{0.3cm}{\ttfamily [private]}}\label{class_do_lah_1_1_settings_window_a6a18dc1bafd9e46b696584dbba064db5}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Do\+Lah\+U\+I/\hyperlink{_settings_window_8h}{Settings\+Window.\+h}\item 
+Do\+Lah\+U\+I/\hyperlink{_settings_window_8cpp}{Settings\+Window.\+cpp}\end{DoxyCompactItemize}

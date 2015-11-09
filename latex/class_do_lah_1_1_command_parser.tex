@@ -1,0 +1,389 @@
+\hypertarget{class_do_lah_1_1_command_parser}{}\section{Do\+Lah\+:\+:Command\+Parser Class Reference}
+\label{class_do_lah_1_1_command_parser}\index{Do\+Lah\+::\+Command\+Parser@{Do\+Lah\+::\+Command\+Parser}}
+
+
+Receives a string and returns a Command object.  
+
+
+
+
+{\ttfamily \#include $<$Parser/\+Command\+Parser.\+h$>$}
+
+
+
+Collaboration diagram for Do\+Lah\+:\+:Command\+Parser\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{class_do_lah_1_1_command_parser__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_do_lah_1_1_command_parser_adcabb517afe371b22b228b392615da33}{Command\+Parser} ()
+\item 
+\hyperlink{class_do_lah_1_1_command_parser_a89ab2f7ccdace1eca7734b63bbe7f718}{$\sim$\+Command\+Parser} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_do_lah_1_1_abstract_command}{Abstract\+Command} $\ast$ \hyperlink{class_do_lah_1_1_command_parser_a54a1833a135fc33b171da5eafd3f72d3}{parse} (std\+::string)
+\item 
+static \hyperlink{class_do_lah_1_1_add_task_command}{Add\+Task\+Command} \hyperlink{class_do_lah_1_1_command_parser_acfdbc9b74dfe712260d665a732f9d4e7}{parse\+Add} (std\+::vector$<$ std\+::string $>$)
+\item 
+static \hyperlink{class_do_lah_1_1_search_task_command}{Search\+Task\+Command} \hyperlink{class_do_lah_1_1_command_parser_a881728dc43f96e993683284fa59df8de}{parse\+Search} (std\+::vector$<$ std\+::string $>$)
+\item 
+static \hyperlink{class_do_lah_1_1_search_date_task_command}{Search\+Date\+Task\+Command} \hyperlink{class_do_lah_1_1_command_parser_a0f0fe6d2e04d1690e8a288b7c439e1ff}{parse\+Search\+Date} (std\+::vector$<$ std\+::string $>$)
+\item 
+static \hyperlink{class_do_lah_1_1_set_done_task_command}{Set\+Done\+Task\+Command} \hyperlink{class_do_lah_1_1_command_parser_a393c222301fde27837a9c8252826cd97}{parse\+Set\+Done} (std\+::vector$<$ std\+::string $>$)
+\item 
+static \hyperlink{class_do_lah_1_1_set_undone_task_command}{Set\+Undone\+Task\+Command} \hyperlink{class_do_lah_1_1_command_parser_a349996bca3ad2cace57e1ecd6fa0bad9}{parse\+Set\+Undone} (std\+::vector$<$ std\+::string $>$)
+\item 
+static \hyperlink{class_do_lah_1_1_edit_task_command}{Edit\+Task\+Command} \hyperlink{class_do_lah_1_1_command_parser_a83c6517b2dc69d6b53fc020002ef4afd}{parse\+Edit} (std\+::vector$<$ std\+::string $>$)
+\item 
+static \hyperlink{class_do_lah_1_1_delete_task_command}{Delete\+Task\+Command} \hyperlink{class_do_lah_1_1_command_parser_aad78c1d4e5a959591722f56f702ced83}{parse\+Delete} (std\+::vector$<$ std\+::string $>$)
+\item 
+static \hyperlink{class_do_lah_1_1_clear_task_command}{Clear\+Task\+Command} \hyperlink{class_do_lah_1_1_command_parser_af01027268ff51142bcba498980b2012b}{parse\+Clear} (std\+::vector$<$ std\+::string $>$)
+\item 
+static \hyperlink{class_do_lah_1_1_undo_task_command}{Undo\+Task\+Command} \hyperlink{class_do_lah_1_1_command_parser_a7bd5ba4fb0e8d0fe8d25eeac00916227}{parse\+Undo} (std\+::vector$<$ std\+::string $>$)
+\item 
+static \hyperlink{class_do_lah_1_1_redo_task_command}{Redo\+Task\+Command} \hyperlink{class_do_lah_1_1_command_parser_aec60480f7475b7e3c0a2b264baf64adc}{parse\+Redo} (std\+::vector$<$ std\+::string $>$)
+\item 
+static std\+::vector$<$ std\+::string $>$ \hyperlink{class_do_lah_1_1_command_parser_a3533bc26c47acd5c7b41f2ac2d080c09}{prune\+Command} (std\+::vector$<$ std\+::string $>$ line\+Arr)
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::vector$<$ std\+::string $>$ \hyperlink{class_do_lah_1_1_command_parser_a1c73df26d5ef75f3bf8a175848c9c309}{A\+D\+D} = \{ \char`\"{}add\char`\"{} \}
+\begin{DoxyCompactList}\small\item\em List of strings that indicates the string is an \hyperlink{class_do_lah_1_1_add_task_command}{Add\+Task\+Command}. \end{DoxyCompactList}\item 
+static std\+::vector$<$ std\+::string $>$ \hyperlink{class_do_lah_1_1_command_parser_a2681caa42d19e5e414a54288ee705317}{S\+E\+A\+R\+C\+H} = \{ \char`\"{}search\char`\"{}, \char`\"{}find\char`\"{} \}
+\begin{DoxyCompactList}\small\item\em List of strings that indicates the string is a \hyperlink{class_do_lah_1_1_search_task_command}{Search\+Task\+Command}. \end{DoxyCompactList}\item 
+static std\+::vector$<$ std\+::string $>$ \hyperlink{class_do_lah_1_1_command_parser_a225369acfd527549bda2420ae7528987}{D\+O\+N\+E} = \{ \char`\"{}done\char`\"{} \}
+\begin{DoxyCompactList}\small\item\em List of strings that indicates the string is a Done\+Task\+Command. \end{DoxyCompactList}\item 
+static std\+::vector$<$ std\+::string $>$ \hyperlink{class_do_lah_1_1_command_parser_ad58f7d1620e3c60fc85850183804443a}{U\+N\+D\+O\+N\+E} = \{ \char`\"{}undone\char`\"{} \}
+\begin{DoxyCompactList}\small\item\em List of strings that indicates the string is an Undone\+Task\+Command. \end{DoxyCompactList}\item 
+static std\+::vector$<$ std\+::string $>$ \hyperlink{class_do_lah_1_1_command_parser_ae978394933fd0c4fb2bc7d1010e401ff}{E\+D\+I\+T} = \{ \char`\"{}edit\char`\"{} \}
+\begin{DoxyCompactList}\small\item\em List of strings that indicates the string is an \hyperlink{class_do_lah_1_1_edit_task_command}{Edit\+Task\+Command}. \end{DoxyCompactList}\item 
+static std\+::vector$<$ std\+::string $>$ \hyperlink{class_do_lah_1_1_command_parser_a205ebad6759a659219ed0a0decff7c2e}{D\+E\+L\+E\+T\+E} = \{ \char`\"{}delete\char`\"{}, \char`\"{}del\char`\"{}, \char`\"{}dl\char`\"{} \}
+\begin{DoxyCompactList}\small\item\em List of strings that indicates the string is a \hyperlink{class_do_lah_1_1_delete_task_command}{Delete\+Task\+Command}. \end{DoxyCompactList}\item 
+static std\+::vector$<$ std\+::string $>$ \hyperlink{class_do_lah_1_1_command_parser_a78a083731453c88a2684e788b516a84f}{C\+L\+E\+A\+R} = \{ \char`\"{}clear\char`\"{} \}
+\begin{DoxyCompactList}\small\item\em List of strings that indicates the string is a \hyperlink{class_do_lah_1_1_clear_task_command}{Clear\+Task\+Command}. \end{DoxyCompactList}\item 
+static std\+::vector$<$ std\+::string $>$ \hyperlink{class_do_lah_1_1_command_parser_a45a95546b7799a8107e53b2f9b06b832}{U\+N\+D\+O} = \{ \char`\"{}undo\char`\"{} \}
+\begin{DoxyCompactList}\small\item\em List of strings that indicates the string is an \hyperlink{class_do_lah_1_1_undo_task_command}{Undo\+Task\+Command}. \end{DoxyCompactList}\item 
+static std\+::vector$<$ std\+::string $>$ \hyperlink{class_do_lah_1_1_command_parser_a947bf7899fda03c33aced5b1458bc00e}{R\+E\+D\+O} = \{ \char`\"{}redo\char`\"{} \}
+\begin{DoxyCompactList}\small\item\em List of strings that indicates the string is a Redoh\+Task\+Command. \end{DoxyCompactList}\item 
+static std\+::string \hyperlink{class_do_lah_1_1_command_parser_aacc0440f95ccf0e54114d2aa7dd0938e}{T\+O\+O\+\_\+\+M\+A\+N\+Y\+\_\+\+A\+R\+G\+U\+M\+E\+N\+T\+S\+\_\+\+M\+E\+S\+S\+A\+G\+E} = \char`\"{}Too many arguments\char`\"{}
+\begin{DoxyCompactList}\small\item\em Message to be thrown when too many arguments are given for the command type. \end{DoxyCompactList}\item 
+static std\+::string \hyperlink{class_do_lah_1_1_command_parser_a3c16426a9f69f4a7553baf90267f0a35}{T\+O\+O\+\_\+\+L\+I\+T\+T\+L\+E\+\_\+\+A\+R\+G\+U\+M\+E\+N\+T\+S\+\_\+\+M\+E\+S\+S\+A\+G\+E} = \char`\"{}Too little arguments\char`\"{}
+\begin{DoxyCompactList}\small\item\em Message to be thrown when too little arguments are given for the command type. \end{DoxyCompactList}\item 
+static std\+::string \hyperlink{class_do_lah_1_1_command_parser_aedc81281994a109b2ad3c9ac77aa6ed8}{I\+N\+V\+A\+L\+I\+D\+\_\+\+T\+A\+S\+K\+\_\+\+I\+D\+\_\+\+A\+R\+G\+U\+M\+E\+N\+T} = \char`\"{}Invalid task I\+D given\char`\"{}
+\begin{DoxyCompactList}\small\item\em Message to be thrown when the task I\+D for edit or delete is nonsensual. \end{DoxyCompactList}\item 
+static std\+::vector$<$ std\+::string $>$ \hyperlink{class_do_lah_1_1_command_parser_aad7bb4ba109bb70f6997885b99e0ab66}{O\+U\+T\+D\+A\+T\+E\+D} = \{ \char`\"{}outdated\char`\"{}, \char`\"{}overdue\char`\"{} \}
+\begin{DoxyCompactList}\small\item\em Indicates that the search is looking for outdated tasks. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Receives a string and returns a Command object. 
+
+If the input is invalid, it will throw invalid\+\_\+argument exception. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_do_lah_1_1_command_parser_adcabb517afe371b22b228b392615da33}{}\index{Do\+Lah\+::\+Command\+Parser@{Do\+Lah\+::\+Command\+Parser}!Command\+Parser@{Command\+Parser}}
+\index{Command\+Parser@{Command\+Parser}!Do\+Lah\+::\+Command\+Parser@{Do\+Lah\+::\+Command\+Parser}}
+\subsubsection[{Command\+Parser()}]{\setlength{\rightskip}{0pt plus 5cm}Do\+Lah\+::\+Command\+Parser\+::\+Command\+Parser (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_do_lah_1_1_command_parser_adcabb517afe371b22b228b392615da33}
+\hypertarget{class_do_lah_1_1_command_parser_a89ab2f7ccdace1eca7734b63bbe7f718}{}\index{Do\+Lah\+::\+Command\+Parser@{Do\+Lah\+::\+Command\+Parser}!````~Command\+Parser@{$\sim$\+Command\+Parser}}
+\index{````~Command\+Parser@{$\sim$\+Command\+Parser}!Do\+Lah\+::\+Command\+Parser@{Do\+Lah\+::\+Command\+Parser}}
+\subsubsection[{$\sim$\+Command\+Parser()}]{\setlength{\rightskip}{0pt plus 5cm}Do\+Lah\+::\+Command\+Parser\+::$\sim$\+Command\+Parser (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_do_lah_1_1_command_parser_a89ab2f7ccdace1eca7734b63bbe7f718}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_do_lah_1_1_command_parser_a54a1833a135fc33b171da5eafd3f72d3}{}\index{Do\+Lah\+::\+Command\+Parser@{Do\+Lah\+::\+Command\+Parser}!parse@{parse}}
+\index{parse@{parse}!Do\+Lah\+::\+Command\+Parser@{Do\+Lah\+::\+Command\+Parser}}
+\subsubsection[{parse(std\+::string)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Abstract\+Command} $\ast$ Do\+Lah\+::\+Command\+Parser\+::parse (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{input}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_do_lah_1_1_command_parser_a54a1833a135fc33b171da5eafd3f72d3}
+Parse input string into a Command object. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em input} & String to be parsed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Command object. 
+\end{DoxyReturn}
+\hypertarget{class_do_lah_1_1_command_parser_acfdbc9b74dfe712260d665a732f9d4e7}{}\index{Do\+Lah\+::\+Command\+Parser@{Do\+Lah\+::\+Command\+Parser}!parse\+Add@{parse\+Add}}
+\index{parse\+Add@{parse\+Add}!Do\+Lah\+::\+Command\+Parser@{Do\+Lah\+::\+Command\+Parser}}
+\subsubsection[{parse\+Add(std\+::vector$<$ std\+::string $>$)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Add\+Task\+Command} Do\+Lah\+::\+Command\+Parser\+::parse\+Add (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::string $>$}]{input\+Arr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_do_lah_1_1_command_parser_acfdbc9b74dfe712260d665a732f9d4e7}
+Parse input string vector into a \hyperlink{class_do_lah_1_1_add_task_command}{Add\+Task\+Command}. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em input\+Arr} & String vector to be parsed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_do_lah_1_1_add_task_command}{Add\+Task\+Command} object. 
+\end{DoxyReturn}
+\hypertarget{class_do_lah_1_1_command_parser_af01027268ff51142bcba498980b2012b}{}\index{Do\+Lah\+::\+Command\+Parser@{Do\+Lah\+::\+Command\+Parser}!parse\+Clear@{parse\+Clear}}
+\index{parse\+Clear@{parse\+Clear}!Do\+Lah\+::\+Command\+Parser@{Do\+Lah\+::\+Command\+Parser}}
+\subsubsection[{parse\+Clear(std\+::vector$<$ std\+::string $>$)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Clear\+Task\+Command} Do\+Lah\+::\+Command\+Parser\+::parse\+Clear (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::string $>$}]{input\+Arr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_do_lah_1_1_command_parser_af01027268ff51142bcba498980b2012b}
+Parse input string vector into a \hyperlink{class_do_lah_1_1_clear_task_command}{Clear\+Task\+Command}. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em input\+Arr} & String vector to be parsed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_do_lah_1_1_clear_task_command}{Clear\+Task\+Command} object. 
+\end{DoxyReturn}
+\hypertarget{class_do_lah_1_1_command_parser_aad78c1d4e5a959591722f56f702ced83}{}\index{Do\+Lah\+::\+Command\+Parser@{Do\+Lah\+::\+Command\+Parser}!parse\+Delete@{parse\+Delete}}
+\index{parse\+Delete@{parse\+Delete}!Do\+Lah\+::\+Command\+Parser@{Do\+Lah\+::\+Command\+Parser}}
+\subsubsection[{parse\+Delete(std\+::vector$<$ std\+::string $>$)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Delete\+Task\+Command} Do\+Lah\+::\+Command\+Parser\+::parse\+Delete (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::string $>$}]{input\+Arr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_do_lah_1_1_command_parser_aad78c1d4e5a959591722f56f702ced83}
+Parse input string vector into a \hyperlink{class_do_lah_1_1_delete_task_command}{Delete\+Task\+Command}. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em input\+Arr} & String vector to be parsed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_do_lah_1_1_delete_task_command}{Delete\+Task\+Command} object. 
+\end{DoxyReturn}
+\hypertarget{class_do_lah_1_1_command_parser_a83c6517b2dc69d6b53fc020002ef4afd}{}\index{Do\+Lah\+::\+Command\+Parser@{Do\+Lah\+::\+Command\+Parser}!parse\+Edit@{parse\+Edit}}
+\index{parse\+Edit@{parse\+Edit}!Do\+Lah\+::\+Command\+Parser@{Do\+Lah\+::\+Command\+Parser}}
+\subsubsection[{parse\+Edit(std\+::vector$<$ std\+::string $>$)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Edit\+Task\+Command} Do\+Lah\+::\+Command\+Parser\+::parse\+Edit (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::string $>$}]{input\+Arr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_do_lah_1_1_command_parser_a83c6517b2dc69d6b53fc020002ef4afd}
+Parse input string vector into a \hyperlink{class_do_lah_1_1_edit_task_command}{Edit\+Task\+Command}. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em input\+Arr} & String vector to be parsed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_do_lah_1_1_edit_task_command}{Edit\+Task\+Command} object. 
+\end{DoxyReturn}
+\hypertarget{class_do_lah_1_1_command_parser_aec60480f7475b7e3c0a2b264baf64adc}{}\index{Do\+Lah\+::\+Command\+Parser@{Do\+Lah\+::\+Command\+Parser}!parse\+Redo@{parse\+Redo}}
+\index{parse\+Redo@{parse\+Redo}!Do\+Lah\+::\+Command\+Parser@{Do\+Lah\+::\+Command\+Parser}}
+\subsubsection[{parse\+Redo(std\+::vector$<$ std\+::string $>$)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Redo\+Task\+Command} Do\+Lah\+::\+Command\+Parser\+::parse\+Redo (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::string $>$}]{input\+Arr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_do_lah_1_1_command_parser_aec60480f7475b7e3c0a2b264baf64adc}
+Parse input string vector into a \hyperlink{class_do_lah_1_1_redo_task_command}{Redo\+Task\+Command}. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em input\+Arr} & String vector to be parsed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_do_lah_1_1_redo_task_command}{Redo\+Task\+Command} object. 
+\end{DoxyReturn}
+\hypertarget{class_do_lah_1_1_command_parser_a881728dc43f96e993683284fa59df8de}{}\index{Do\+Lah\+::\+Command\+Parser@{Do\+Lah\+::\+Command\+Parser}!parse\+Search@{parse\+Search}}
+\index{parse\+Search@{parse\+Search}!Do\+Lah\+::\+Command\+Parser@{Do\+Lah\+::\+Command\+Parser}}
+\subsubsection[{parse\+Search(std\+::vector$<$ std\+::string $>$)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Search\+Task\+Command} Do\+Lah\+::\+Command\+Parser\+::parse\+Search (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::string $>$}]{input\+Arr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_do_lah_1_1_command_parser_a881728dc43f96e993683284fa59df8de}
+Parse input string vector into a \hyperlink{class_do_lah_1_1_search_task_command}{Search\+Task\+Command}. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em input\+Arr} & String vector to be parsed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_do_lah_1_1_search_task_command}{Search\+Task\+Command} object. 
+\end{DoxyReturn}
+\hypertarget{class_do_lah_1_1_command_parser_a0f0fe6d2e04d1690e8a288b7c439e1ff}{}\index{Do\+Lah\+::\+Command\+Parser@{Do\+Lah\+::\+Command\+Parser}!parse\+Search\+Date@{parse\+Search\+Date}}
+\index{parse\+Search\+Date@{parse\+Search\+Date}!Do\+Lah\+::\+Command\+Parser@{Do\+Lah\+::\+Command\+Parser}}
+\subsubsection[{parse\+Search\+Date(std\+::vector$<$ std\+::string $>$)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Search\+Date\+Task\+Command} Do\+Lah\+::\+Command\+Parser\+::parse\+Search\+Date (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::string $>$}]{input\+Arr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_do_lah_1_1_command_parser_a0f0fe6d2e04d1690e8a288b7c439e1ff}
+Parse input string vector into a \hyperlink{class_do_lah_1_1_search_date_task_command}{Search\+Date\+Task\+Command}. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em input\+Arr} & String vector to be parsed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_do_lah_1_1_search_date_task_command}{Search\+Date\+Task\+Command} object. 
+\end{DoxyReturn}
+\hypertarget{class_do_lah_1_1_command_parser_a393c222301fde27837a9c8252826cd97}{}\index{Do\+Lah\+::\+Command\+Parser@{Do\+Lah\+::\+Command\+Parser}!parse\+Set\+Done@{parse\+Set\+Done}}
+\index{parse\+Set\+Done@{parse\+Set\+Done}!Do\+Lah\+::\+Command\+Parser@{Do\+Lah\+::\+Command\+Parser}}
+\subsubsection[{parse\+Set\+Done(std\+::vector$<$ std\+::string $>$)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Set\+Done\+Task\+Command} Do\+Lah\+::\+Command\+Parser\+::parse\+Set\+Done (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::string $>$}]{input\+Arr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_do_lah_1_1_command_parser_a393c222301fde27837a9c8252826cd97}
+Parse input string vector into a \hyperlink{class_do_lah_1_1_set_done_task_command}{Set\+Done\+Task\+Command}. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em input\+Arr} & String vector to be parsed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_do_lah_1_1_set_done_task_command}{Set\+Done\+Task\+Command} object. 
+\end{DoxyReturn}
+\hypertarget{class_do_lah_1_1_command_parser_a349996bca3ad2cace57e1ecd6fa0bad9}{}\index{Do\+Lah\+::\+Command\+Parser@{Do\+Lah\+::\+Command\+Parser}!parse\+Set\+Undone@{parse\+Set\+Undone}}
+\index{parse\+Set\+Undone@{parse\+Set\+Undone}!Do\+Lah\+::\+Command\+Parser@{Do\+Lah\+::\+Command\+Parser}}
+\subsubsection[{parse\+Set\+Undone(std\+::vector$<$ std\+::string $>$)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Set\+Undone\+Task\+Command} Do\+Lah\+::\+Command\+Parser\+::parse\+Set\+Undone (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::string $>$}]{input\+Arr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_do_lah_1_1_command_parser_a349996bca3ad2cace57e1ecd6fa0bad9}
+Parse input string vector into a \hyperlink{class_do_lah_1_1_set_undone_task_command}{Set\+Undone\+Task\+Command}. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em input\+Arr} & String vector to be parsed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_do_lah_1_1_set_undone_task_command}{Set\+Undone\+Task\+Command} object. 
+\end{DoxyReturn}
+\hypertarget{class_do_lah_1_1_command_parser_a7bd5ba4fb0e8d0fe8d25eeac00916227}{}\index{Do\+Lah\+::\+Command\+Parser@{Do\+Lah\+::\+Command\+Parser}!parse\+Undo@{parse\+Undo}}
+\index{parse\+Undo@{parse\+Undo}!Do\+Lah\+::\+Command\+Parser@{Do\+Lah\+::\+Command\+Parser}}
+\subsubsection[{parse\+Undo(std\+::vector$<$ std\+::string $>$)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Undo\+Task\+Command} Do\+Lah\+::\+Command\+Parser\+::parse\+Undo (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::string $>$}]{input\+Arr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_do_lah_1_1_command_parser_a7bd5ba4fb0e8d0fe8d25eeac00916227}
+Parse input string vector into a \hyperlink{class_do_lah_1_1_undo_task_command}{Undo\+Task\+Command}. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em input\+Arr} & String vector to be parsed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_do_lah_1_1_undo_task_command}{Undo\+Task\+Command} object. 
+\end{DoxyReturn}
+\hypertarget{class_do_lah_1_1_command_parser_a3533bc26c47acd5c7b41f2ac2d080c09}{}\index{Do\+Lah\+::\+Command\+Parser@{Do\+Lah\+::\+Command\+Parser}!prune\+Command@{prune\+Command}}
+\index{prune\+Command@{prune\+Command}!Do\+Lah\+::\+Command\+Parser@{Do\+Lah\+::\+Command\+Parser}}
+\subsubsection[{prune\+Command(std\+::vector$<$ std\+::string $>$ line\+Arr)}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ std\+::string $>$ Do\+Lah\+::\+Command\+Parser\+::prune\+Command (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::string $>$}]{line\+Arr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_do_lah_1_1_command_parser_a3533bc26c47acd5c7b41f2ac2d080c09}
+Prune the command from the string vector. Currently the format is fixed, and thus always the first element is pruned. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em input\+Arr} & String vector to be pruned \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pruned string vector. 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_do_lah_1_1_command_parser_a1c73df26d5ef75f3bf8a175848c9c309}{}\index{Do\+Lah\+::\+Command\+Parser@{Do\+Lah\+::\+Command\+Parser}!A\+D\+D@{A\+D\+D}}
+\index{A\+D\+D@{A\+D\+D}!Do\+Lah\+::\+Command\+Parser@{Do\+Lah\+::\+Command\+Parser}}
+\subsubsection[{A\+D\+D}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ std\+::string $>$ Do\+Lah\+::\+Command\+Parser\+::\+A\+D\+D = \{ \char`\"{}add\char`\"{} \}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_do_lah_1_1_command_parser_a1c73df26d5ef75f3bf8a175848c9c309}
+
+
+List of strings that indicates the string is an \hyperlink{class_do_lah_1_1_add_task_command}{Add\+Task\+Command}. 
+
+\hypertarget{class_do_lah_1_1_command_parser_a78a083731453c88a2684e788b516a84f}{}\index{Do\+Lah\+::\+Command\+Parser@{Do\+Lah\+::\+Command\+Parser}!C\+L\+E\+A\+R@{C\+L\+E\+A\+R}}
+\index{C\+L\+E\+A\+R@{C\+L\+E\+A\+R}!Do\+Lah\+::\+Command\+Parser@{Do\+Lah\+::\+Command\+Parser}}
+\subsubsection[{C\+L\+E\+A\+R}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ std\+::string $>$ Do\+Lah\+::\+Command\+Parser\+::\+C\+L\+E\+A\+R = \{ \char`\"{}clear\char`\"{} \}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_do_lah_1_1_command_parser_a78a083731453c88a2684e788b516a84f}
+
+
+List of strings that indicates the string is a \hyperlink{class_do_lah_1_1_clear_task_command}{Clear\+Task\+Command}. 
+
+\hypertarget{class_do_lah_1_1_command_parser_a205ebad6759a659219ed0a0decff7c2e}{}\index{Do\+Lah\+::\+Command\+Parser@{Do\+Lah\+::\+Command\+Parser}!D\+E\+L\+E\+T\+E@{D\+E\+L\+E\+T\+E}}
+\index{D\+E\+L\+E\+T\+E@{D\+E\+L\+E\+T\+E}!Do\+Lah\+::\+Command\+Parser@{Do\+Lah\+::\+Command\+Parser}}
+\subsubsection[{D\+E\+L\+E\+T\+E}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ std\+::string $>$ Do\+Lah\+::\+Command\+Parser\+::\+D\+E\+L\+E\+T\+E = \{ \char`\"{}delete\char`\"{}, \char`\"{}del\char`\"{}, \char`\"{}dl\char`\"{} \}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_do_lah_1_1_command_parser_a205ebad6759a659219ed0a0decff7c2e}
+
+
+List of strings that indicates the string is a \hyperlink{class_do_lah_1_1_delete_task_command}{Delete\+Task\+Command}. 
+
+\hypertarget{class_do_lah_1_1_command_parser_a225369acfd527549bda2420ae7528987}{}\index{Do\+Lah\+::\+Command\+Parser@{Do\+Lah\+::\+Command\+Parser}!D\+O\+N\+E@{D\+O\+N\+E}}
+\index{D\+O\+N\+E@{D\+O\+N\+E}!Do\+Lah\+::\+Command\+Parser@{Do\+Lah\+::\+Command\+Parser}}
+\subsubsection[{D\+O\+N\+E}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ std\+::string $>$ Do\+Lah\+::\+Command\+Parser\+::\+D\+O\+N\+E = \{ \char`\"{}done\char`\"{} \}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_do_lah_1_1_command_parser_a225369acfd527549bda2420ae7528987}
+
+
+List of strings that indicates the string is a Done\+Task\+Command. 
+
+\hypertarget{class_do_lah_1_1_command_parser_ae978394933fd0c4fb2bc7d1010e401ff}{}\index{Do\+Lah\+::\+Command\+Parser@{Do\+Lah\+::\+Command\+Parser}!E\+D\+I\+T@{E\+D\+I\+T}}
+\index{E\+D\+I\+T@{E\+D\+I\+T}!Do\+Lah\+::\+Command\+Parser@{Do\+Lah\+::\+Command\+Parser}}
+\subsubsection[{E\+D\+I\+T}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ std\+::string $>$ Do\+Lah\+::\+Command\+Parser\+::\+E\+D\+I\+T = \{ \char`\"{}edit\char`\"{} \}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_do_lah_1_1_command_parser_ae978394933fd0c4fb2bc7d1010e401ff}
+
+
+List of strings that indicates the string is an \hyperlink{class_do_lah_1_1_edit_task_command}{Edit\+Task\+Command}. 
+
+\hypertarget{class_do_lah_1_1_command_parser_aedc81281994a109b2ad3c9ac77aa6ed8}{}\index{Do\+Lah\+::\+Command\+Parser@{Do\+Lah\+::\+Command\+Parser}!I\+N\+V\+A\+L\+I\+D\+\_\+\+T\+A\+S\+K\+\_\+\+I\+D\+\_\+\+A\+R\+G\+U\+M\+E\+N\+T@{I\+N\+V\+A\+L\+I\+D\+\_\+\+T\+A\+S\+K\+\_\+\+I\+D\+\_\+\+A\+R\+G\+U\+M\+E\+N\+T}}
+\index{I\+N\+V\+A\+L\+I\+D\+\_\+\+T\+A\+S\+K\+\_\+\+I\+D\+\_\+\+A\+R\+G\+U\+M\+E\+N\+T@{I\+N\+V\+A\+L\+I\+D\+\_\+\+T\+A\+S\+K\+\_\+\+I\+D\+\_\+\+A\+R\+G\+U\+M\+E\+N\+T}!Do\+Lah\+::\+Command\+Parser@{Do\+Lah\+::\+Command\+Parser}}
+\subsubsection[{I\+N\+V\+A\+L\+I\+D\+\_\+\+T\+A\+S\+K\+\_\+\+I\+D\+\_\+\+A\+R\+G\+U\+M\+E\+N\+T}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Do\+Lah\+::\+Command\+Parser\+::\+I\+N\+V\+A\+L\+I\+D\+\_\+\+T\+A\+S\+K\+\_\+\+I\+D\+\_\+\+A\+R\+G\+U\+M\+E\+N\+T = \char`\"{}Invalid task I\+D given\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_do_lah_1_1_command_parser_aedc81281994a109b2ad3c9ac77aa6ed8}
+
+
+Message to be thrown when the task I\+D for edit or delete is nonsensual. 
+
+\hypertarget{class_do_lah_1_1_command_parser_aad7bb4ba109bb70f6997885b99e0ab66}{}\index{Do\+Lah\+::\+Command\+Parser@{Do\+Lah\+::\+Command\+Parser}!O\+U\+T\+D\+A\+T\+E\+D@{O\+U\+T\+D\+A\+T\+E\+D}}
+\index{O\+U\+T\+D\+A\+T\+E\+D@{O\+U\+T\+D\+A\+T\+E\+D}!Do\+Lah\+::\+Command\+Parser@{Do\+Lah\+::\+Command\+Parser}}
+\subsubsection[{O\+U\+T\+D\+A\+T\+E\+D}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ std\+::string $>$ Do\+Lah\+::\+Command\+Parser\+::\+O\+U\+T\+D\+A\+T\+E\+D = \{ \char`\"{}outdated\char`\"{}, \char`\"{}overdue\char`\"{} \}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_do_lah_1_1_command_parser_aad7bb4ba109bb70f6997885b99e0ab66}
+
+
+Indicates that the search is looking for outdated tasks. 
+
+\hypertarget{class_do_lah_1_1_command_parser_a947bf7899fda03c33aced5b1458bc00e}{}\index{Do\+Lah\+::\+Command\+Parser@{Do\+Lah\+::\+Command\+Parser}!R\+E\+D\+O@{R\+E\+D\+O}}
+\index{R\+E\+D\+O@{R\+E\+D\+O}!Do\+Lah\+::\+Command\+Parser@{Do\+Lah\+::\+Command\+Parser}}
+\subsubsection[{R\+E\+D\+O}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ std\+::string $>$ Do\+Lah\+::\+Command\+Parser\+::\+R\+E\+D\+O = \{ \char`\"{}redo\char`\"{} \}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_do_lah_1_1_command_parser_a947bf7899fda03c33aced5b1458bc00e}
+
+
+List of strings that indicates the string is a Redoh\+Task\+Command. 
+
+\hypertarget{class_do_lah_1_1_command_parser_a2681caa42d19e5e414a54288ee705317}{}\index{Do\+Lah\+::\+Command\+Parser@{Do\+Lah\+::\+Command\+Parser}!S\+E\+A\+R\+C\+H@{S\+E\+A\+R\+C\+H}}
+\index{S\+E\+A\+R\+C\+H@{S\+E\+A\+R\+C\+H}!Do\+Lah\+::\+Command\+Parser@{Do\+Lah\+::\+Command\+Parser}}
+\subsubsection[{S\+E\+A\+R\+C\+H}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ std\+::string $>$ Do\+Lah\+::\+Command\+Parser\+::\+S\+E\+A\+R\+C\+H = \{ \char`\"{}search\char`\"{}, \char`\"{}find\char`\"{} \}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_do_lah_1_1_command_parser_a2681caa42d19e5e414a54288ee705317}
+
+
+List of strings that indicates the string is a \hyperlink{class_do_lah_1_1_search_task_command}{Search\+Task\+Command}. 
+
+\hypertarget{class_do_lah_1_1_command_parser_a3c16426a9f69f4a7553baf90267f0a35}{}\index{Do\+Lah\+::\+Command\+Parser@{Do\+Lah\+::\+Command\+Parser}!T\+O\+O\+\_\+\+L\+I\+T\+T\+L\+E\+\_\+\+A\+R\+G\+U\+M\+E\+N\+T\+S\+\_\+\+M\+E\+S\+S\+A\+G\+E@{T\+O\+O\+\_\+\+L\+I\+T\+T\+L\+E\+\_\+\+A\+R\+G\+U\+M\+E\+N\+T\+S\+\_\+\+M\+E\+S\+S\+A\+G\+E}}
+\index{T\+O\+O\+\_\+\+L\+I\+T\+T\+L\+E\+\_\+\+A\+R\+G\+U\+M\+E\+N\+T\+S\+\_\+\+M\+E\+S\+S\+A\+G\+E@{T\+O\+O\+\_\+\+L\+I\+T\+T\+L\+E\+\_\+\+A\+R\+G\+U\+M\+E\+N\+T\+S\+\_\+\+M\+E\+S\+S\+A\+G\+E}!Do\+Lah\+::\+Command\+Parser@{Do\+Lah\+::\+Command\+Parser}}
+\subsubsection[{T\+O\+O\+\_\+\+L\+I\+T\+T\+L\+E\+\_\+\+A\+R\+G\+U\+M\+E\+N\+T\+S\+\_\+\+M\+E\+S\+S\+A\+G\+E}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Do\+Lah\+::\+Command\+Parser\+::\+T\+O\+O\+\_\+\+L\+I\+T\+T\+L\+E\+\_\+\+A\+R\+G\+U\+M\+E\+N\+T\+S\+\_\+\+M\+E\+S\+S\+A\+G\+E = \char`\"{}Too little arguments\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_do_lah_1_1_command_parser_a3c16426a9f69f4a7553baf90267f0a35}
+
+
+Message to be thrown when too little arguments are given for the command type. 
+
+\hypertarget{class_do_lah_1_1_command_parser_aacc0440f95ccf0e54114d2aa7dd0938e}{}\index{Do\+Lah\+::\+Command\+Parser@{Do\+Lah\+::\+Command\+Parser}!T\+O\+O\+\_\+\+M\+A\+N\+Y\+\_\+\+A\+R\+G\+U\+M\+E\+N\+T\+S\+\_\+\+M\+E\+S\+S\+A\+G\+E@{T\+O\+O\+\_\+\+M\+A\+N\+Y\+\_\+\+A\+R\+G\+U\+M\+E\+N\+T\+S\+\_\+\+M\+E\+S\+S\+A\+G\+E}}
+\index{T\+O\+O\+\_\+\+M\+A\+N\+Y\+\_\+\+A\+R\+G\+U\+M\+E\+N\+T\+S\+\_\+\+M\+E\+S\+S\+A\+G\+E@{T\+O\+O\+\_\+\+M\+A\+N\+Y\+\_\+\+A\+R\+G\+U\+M\+E\+N\+T\+S\+\_\+\+M\+E\+S\+S\+A\+G\+E}!Do\+Lah\+::\+Command\+Parser@{Do\+Lah\+::\+Command\+Parser}}
+\subsubsection[{T\+O\+O\+\_\+\+M\+A\+N\+Y\+\_\+\+A\+R\+G\+U\+M\+E\+N\+T\+S\+\_\+\+M\+E\+S\+S\+A\+G\+E}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Do\+Lah\+::\+Command\+Parser\+::\+T\+O\+O\+\_\+\+M\+A\+N\+Y\+\_\+\+A\+R\+G\+U\+M\+E\+N\+T\+S\+\_\+\+M\+E\+S\+S\+A\+G\+E = \char`\"{}Too many arguments\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_do_lah_1_1_command_parser_aacc0440f95ccf0e54114d2aa7dd0938e}
+
+
+Message to be thrown when too many arguments are given for the command type. 
+
+\hypertarget{class_do_lah_1_1_command_parser_a45a95546b7799a8107e53b2f9b06b832}{}\index{Do\+Lah\+::\+Command\+Parser@{Do\+Lah\+::\+Command\+Parser}!U\+N\+D\+O@{U\+N\+D\+O}}
+\index{U\+N\+D\+O@{U\+N\+D\+O}!Do\+Lah\+::\+Command\+Parser@{Do\+Lah\+::\+Command\+Parser}}
+\subsubsection[{U\+N\+D\+O}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ std\+::string $>$ Do\+Lah\+::\+Command\+Parser\+::\+U\+N\+D\+O = \{ \char`\"{}undo\char`\"{} \}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_do_lah_1_1_command_parser_a45a95546b7799a8107e53b2f9b06b832}
+
+
+List of strings that indicates the string is an \hyperlink{class_do_lah_1_1_undo_task_command}{Undo\+Task\+Command}. 
+
+\hypertarget{class_do_lah_1_1_command_parser_ad58f7d1620e3c60fc85850183804443a}{}\index{Do\+Lah\+::\+Command\+Parser@{Do\+Lah\+::\+Command\+Parser}!U\+N\+D\+O\+N\+E@{U\+N\+D\+O\+N\+E}}
+\index{U\+N\+D\+O\+N\+E@{U\+N\+D\+O\+N\+E}!Do\+Lah\+::\+Command\+Parser@{Do\+Lah\+::\+Command\+Parser}}
+\subsubsection[{U\+N\+D\+O\+N\+E}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ std\+::string $>$ Do\+Lah\+::\+Command\+Parser\+::\+U\+N\+D\+O\+N\+E = \{ \char`\"{}undone\char`\"{} \}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_do_lah_1_1_command_parser_ad58f7d1620e3c60fc85850183804443a}
+
+
+List of strings that indicates the string is an Undone\+Task\+Command. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Do\+Lah/\+Parser/\hyperlink{_command_parser_8h}{Command\+Parser.\+h}\item 
+Do\+Lah/\+Parser/\hyperlink{_command_parser_8cpp}{Command\+Parser.\+cpp}\end{DoxyCompactItemize}

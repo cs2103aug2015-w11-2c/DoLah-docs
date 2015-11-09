@@ -26,7 +26,5 @@ var class_do_lah_1_1_command_parser =
     [ "TOO_LITTLE_ARGUMENTS_MESSAGE", "class_do_lah_1_1_command_parser.html#a3c16426a9f69f4a7553baf90267f0a35", null ],
     [ "TOO_MANY_ARGUMENTS_MESSAGE", "class_do_lah_1_1_command_parser.html#aacc0440f95ccf0e54114d2aa7dd0938e", null ],
     [ "UNDO", "class_do_lah_1_1_command_parser.html#a45a95546b7799a8107e53b2f9b06b832", null ],
-    [ "UNDONE", "class_do_lah_1_1_command_parser.html#ad58f7d1620e3c60fc85850183804443a", null ],
-    [ "UNHANDLED_COMMAND_MESSAGE", "class_do_lah_1_1_command_parser.html#aa0d1598afa9d52668f865a455d48ebf8", null ],
-    [ "UNKNOWN_COMMAND_MESSAGE", "class_do_lah_1_1_command_parser.html#addef146f1fd4751ca9d7a7db3cff9f57", null ]
+    [ "UNDONE", "class_do_lah_1_1_command_parser.html#ad58f7d1620e3c60fc85850183804443a", null ]
 ];

@@ -1,0 +1,566 @@
+\hypertarget{class_do_lah_1_1_date_time_parser}{}\section{Do\+Lah\+:\+:Date\+Time\+Parser Class Reference}
+\label{class_do_lah_1_1_date_time_parser}\index{Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}}
+
+
+Static library to handle conversion from string vector to std\+::tm.  
+
+
+
+
+{\ttfamily \#include $<$Parser/\+Date\+Time\+Parser.\+h$>$}
+
+
+
+Collaboration diagram for Do\+Lah\+:\+:Date\+Time\+Parser\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{class_do_lah_1_1_date_time_parser__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_do_lah_1_1_date_time_parser_afbde4ac9bc1256361277129d68001b00}{Date\+Time\+Parser} ()
+\item 
+\hyperlink{class_do_lah_1_1_date_time_parser_addef73e210f968e6e07b1fef40d38113}{$\sim$\+Date\+Time\+Parser} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::tm \hyperlink{class_do_lah_1_1_date_time_parser_a7c6b180ae65f821c06e3da405c4e787d}{to\+Date\+Format} (std\+::vector$<$ std\+::string $>$, std\+::tm=std\+::tm())
+\item 
+static int \hyperlink{class_do_lah_1_1_date_time_parser_a1ab804d9ffd52e22e0b646e520467314}{get\+Day} (std\+::string)
+\item 
+static int \hyperlink{class_do_lah_1_1_date_time_parser_aacc66f917eed838b97e7fd05aa49beac}{get\+Month} (std\+::string)
+\item 
+static int \hyperlink{class_do_lah_1_1_date_time_parser_a456ecc41eccc5ec1d7fcb74dc3fc8b29}{get\+Year} (std\+::string)
+\item 
+static int \hyperlink{class_do_lah_1_1_date_time_parser_a533d484c8d01959703f29aec8a7c1089}{get\+Date} (std\+::string)
+\item 
+static int \hyperlink{class_do_lah_1_1_date_time_parser_a66151443985e90f8b0ebd59f35feb44e}{get\+Time} (std\+::string)
+\item 
+static std\+::vector$<$ std\+::string $>$ \hyperlink{class_do_lah_1_1_date_time_parser_a03735027b318f5fb216e3077b32ece3f}{format\+Arr} (std\+::vector$<$ std\+::string $>$)
+\item 
+static int \hyperlink{class_do_lah_1_1_date_time_parser_a2cc5bed72c78b834ddef92d5258168be}{get\+Date\+Modifier} (int, bool)
+\item 
+static int \hyperlink{class_do_lah_1_1_date_time_parser_a2f0bb541141139013d7a33d32080c3a0}{check\+Date\+Modifier} (std\+::vector$<$ std\+::string $>$, std\+::tm)
+\item 
+static int \hyperlink{class_do_lah_1_1_date_time_parser_ab674e193e3492fb70b333c5f7f90b4ca}{check\+Time\+Modifier} (std\+::vector$<$ std\+::string $>$)
+\item 
+static std\+::tm \hyperlink{class_do_lah_1_1_date_time_parser_a19c642690ef968cb2c63ea488c5d3b09}{classify\+Date} (std\+::vector$<$ std\+::string $>$)
+\item 
+static std\+::tm \hyperlink{class_do_lah_1_1_date_time_parser_a502238ca6c7e8dc3b813acb7117bf995}{check\+D\+M\+Yformat} (std\+::vector$<$ std\+::string $>$)
+\item 
+static std\+::tm \hyperlink{class_do_lah_1_1_date_time_parser_a397bf0a22aa556af330b77fc0718d041}{check\+M\+D\+Yformat} (std\+::vector$<$ std\+::string $>$)
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{class_do_lah_1_1_date_time_parser_a23feb7cbc6832ca6931a2204752ce930}{R\+E\+J\+E\+C\+T} = -\/1
+\item 
+static std\+::string \hyperlink{class_do_lah_1_1_date_time_parser_adb080e964894e09a85f4b5314e4098d7}{C\+E\+N\+T\+U\+R\+Y} = \char`\"{}20\char`\"{}
+\begin{DoxyCompactList}\small\item\em Arbitrary int value to indicates R\+E\+J\+E\+C\+T in any classification. \end{DoxyCompactList}\item 
+static int \hyperlink{class_do_lah_1_1_date_time_parser_a6bcbe9c2772910a92e518a39f4ca81b7}{M\+I\+N\+\_\+\+I\+N\+\_\+\+S\+E\+C\+S} = 60
+\begin{DoxyCompactList}\small\item\em For year described in 2 digits, 20 will be added. e.\+x. 15 -\/$>$ 2015. \end{DoxyCompactList}\item 
+static int \hyperlink{class_do_lah_1_1_date_time_parser_ad860d83d2253ba7db8b7f405adc0a2c8}{H\+O\+U\+R\+\_\+\+I\+N\+\_\+\+S\+E\+C\+S} = 3600
+\begin{DoxyCompactList}\small\item\em Minute in Seconds. \end{DoxyCompactList}\item 
+static int \hyperlink{class_do_lah_1_1_date_time_parser_a829ee3acb25eecc96b6529d335edfbe7}{D\+A\+Y\+\_\+\+I\+N\+\_\+\+S\+E\+C\+S} = 86400
+\begin{DoxyCompactList}\small\item\em Hour in Seconds. \end{DoxyCompactList}\item 
+static int \hyperlink{class_do_lah_1_1_date_time_parser_a6e930ec6feb5cbfe0d3429bb20142d3c}{W\+E\+E\+K\+\_\+\+I\+N\+\_\+\+S\+E\+C\+S} = 604800
+\begin{DoxyCompactList}\small\item\em Day in Seconds. \end{DoxyCompactList}\item 
+static int \hyperlink{class_do_lah_1_1_date_time_parser_a32467508a17e5406b529eb61177264ee}{M\+O\+N\+T\+H\+\_\+\+I\+N\+\_\+\+S\+E\+C\+S} = 2592000
+\begin{DoxyCompactList}\small\item\em Week in Seconds. \end{DoxyCompactList}\item 
+static int \hyperlink{class_do_lah_1_1_date_time_parser_a958ccfe724266321507056e0461a5a98}{D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+I\+M\+E} = 1439
+\begin{DoxyCompactList}\small\item\em Month in Seconds. \end{DoxyCompactList}\item 
+static std\+::vector$<$ std\+::string $>$ \hyperlink{class_do_lah_1_1_date_time_parser_a315041bae4546ac4d88ba9ed955edceb}{D\+A\+T\+E\+\_\+\+P\+A\+T\+T\+E\+R\+N}
+\begin{DoxyCompactList}\small\item\em If time is not specified, 23\+:59 is the default time. \end{DoxyCompactList}\item 
+static std\+::vector$<$ std\+::string $>$ \hyperlink{class_do_lah_1_1_date_time_parser_ad713cbb4bea551075364247f8c09b08d}{M\+O\+N\+T\+H\+\_\+\+P\+A\+T\+T\+E\+R\+N}
+\begin{DoxyCompactList}\small\item\em Monday, Mon. \end{DoxyCompactList}\item 
+static std\+::string \hyperlink{class_do_lah_1_1_date_time_parser_ac3dd9a041853326af40af0a33dfd9974}{D\+A\+Y\+\_\+\+A\+P\+P\+E\+N\+D\+I\+X\+\_\+\+P\+A\+T\+T\+E\+R\+N} = \char`\"{}(st$\vert$nd$\vert$rd$\vert$th)\$\char`\"{}
+\begin{DoxyCompactList}\small\item\em 12, December, Dec \end{DoxyCompactList}\item 
+static std\+::vector$<$ std\+::string $>$ \hyperlink{class_do_lah_1_1_date_time_parser_a3e78cc57480f0d193e6c9e9a3683dc16}{D\+E\+C\+O\+R\+A\+T\+O\+R\+S} = \{ \char`\"{}of\char`\"{}, \char`\"{}in\char`\"{}, \char`\"{}on\char`\"{}, \char`\"{}by\char`\"{}, \char`\"{}due\char`\"{}, \char`\"{}at\char`\"{} \}
+\begin{DoxyCompactList}\small\item\em 1st, 2nd, 3rd, 4th \end{DoxyCompactList}\item 
+static std\+::vector$<$ std\+::string $>$ \hyperlink{class_do_lah_1_1_date_time_parser_a32a1a31cd10efd72ecfe55e89aea8ec4}{P\+U\+N\+C\+T\+U\+A\+T\+I\+O\+N\+S} = \{ \char`\"{},\char`\"{} \}
+\begin{DoxyCompactList}\small\item\em 25th of Dec \end{DoxyCompactList}\item 
+static std\+::vector$<$ std\+::string $>$ \hyperlink{class_do_lah_1_1_date_time_parser_a3f39609d7434c47c257dc17045d1913a}{D\+A\+T\+E\+\_\+\+D\+I\+V\+I\+D\+E\+R\+S} = \{ \char`\"{}/\char`\"{}, \char`\"{}-\/\char`\"{}, \char`\"{}.\char`\"{} \}
+\begin{DoxyCompactList}\small\item\em Sunday, 17th of March. \end{DoxyCompactList}\item 
+static std\+::vector$<$ std\+::string $>$ \hyperlink{class_do_lah_1_1_date_time_parser_adbc5291689a2864bf02beebbb4549489}{T\+O\+D\+A\+Y\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R\+S} = \{ \char`\"{}today\char`\"{}, \char`\"{}td\char`\"{} \}
+\begin{DoxyCompactList}\small\item\em 25.\+12.\+2015, 25/12/2015, 25-\/12-\/2015 \end{DoxyCompactList}\item 
+static std\+::vector$<$ std\+::string $>$ \hyperlink{class_do_lah_1_1_date_time_parser_a1bf675804ae4bafa0621681512b75573}{T\+O\+M\+O\+R\+R\+O\+W\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R\+S} = \{ \char`\"{}tomorrow\char`\"{}, \char`\"{}tom\char`\"{}, \char`\"{}tmr\char`\"{} \}
+\begin{DoxyCompactList}\small\item\em today \end{DoxyCompactList}\item 
+static std\+::vector$<$ std\+::string $>$ \hyperlink{class_do_lah_1_1_date_time_parser_a1c0a27093d6d779d5675195dd42f399c}{S\+I\+N\+G\+U\+L\+A\+R\+\_\+\+F\+O\+R\+M\+A\+T\+S} = \{ \char`\"{}a\char`\"{}, \char`\"{}an\char`\"{}, \char`\"{}the\char`\"{}, \char`\"{}one\char`\"{} \}
+\begin{DoxyCompactList}\small\item\em tomorrow \end{DoxyCompactList}\item 
+static std\+::vector$<$ std\+::string $>$ \hyperlink{class_do_lah_1_1_date_time_parser_a81a0b53c3a23599180092187e57fb66b}{D\+A\+Y\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R} = \{ \char`\"{}d\char`\"{}, \char`\"{}day\char`\"{}, \char`\"{}days\char`\"{} \}
+\begin{DoxyCompactList}\small\item\em a, an, the, one \end{DoxyCompactList}\item 
+static std\+::vector$<$ std\+::string $>$ \hyperlink{class_do_lah_1_1_date_time_parser_a622cd79bd79480fd69ad6161ccae07dc}{W\+E\+E\+K\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R} = \{ \char`\"{}w\char`\"{}, \char`\"{}week\char`\"{}, \char`\"{}weeks\char`\"{}, \char`\"{}wk\char`\"{}, \char`\"{}wks\char`\"{} \}
+\begin{DoxyCompactList}\small\item\em 10 days \end{DoxyCompactList}\item 
+static std\+::vector$<$ std\+::string $>$ \hyperlink{class_do_lah_1_1_date_time_parser_a9e5d75c4251b0035d4debcc8ff6ce713}{M\+O\+N\+T\+H\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R} = \{ \char`\"{}m\char`\"{}, \char`\"{}month\char`\"{}, \char`\"{}months\char`\"{}, \char`\"{}mon\char`\"{}, \char`\"{}mons\char`\"{} \}
+\begin{DoxyCompactList}\small\item\em 2 weeks \end{DoxyCompactList}\item 
+static std\+::vector$<$ std\+::string $>$ \hyperlink{class_do_lah_1_1_date_time_parser_af2324a9dc5ed95d1d31d584bbb1e869c}{Y\+E\+A\+R\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R} = \{ \char`\"{}y\char`\"{}, \char`\"{}year\char`\"{}, \char`\"{}years\char`\"{}, \char`\"{}yr\char`\"{}, \char`\"{}yrs\char`\"{} \}
+\begin{DoxyCompactList}\small\item\em 3 months \end{DoxyCompactList}\item 
+static std\+::vector$<$ std\+::string $>$ \hyperlink{class_do_lah_1_1_date_time_parser_a53e2831a83514941d8a6d77855d6d409}{H\+O\+U\+R\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R} = \{ \char`\"{}hour\char`\"{}, \char`\"{}hours\char`\"{}, \char`\"{}hr\char`\"{}, \char`\"{}hrs\char`\"{} \}
+\begin{DoxyCompactList}\small\item\em 4 year \end{DoxyCompactList}\item 
+static std\+::vector$<$ std\+::string $>$ \hyperlink{class_do_lah_1_1_date_time_parser_af9a3cc6e4d648744d460b5475cadccee}{M\+I\+N\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R} = \{ \char`\"{}minute\char`\"{}, \char`\"{}minutes\char`\"{}, \char`\"{}min\char`\"{}, \char`\"{}mins\char`\"{} \}
+\begin{DoxyCompactList}\small\item\em 3 hours \end{DoxyCompactList}\item 
+static std\+::vector$<$ std\+::string $>$ \hyperlink{class_do_lah_1_1_date_time_parser_a4bfc49a590f5662df8ffe2f8a6778997}{N\+E\+X\+T\+\_\+\+F\+O\+R\+M\+A\+T\+S} = \{ \char`\"{}next\char`\"{}, \char`\"{}coming\char`\"{} \}
+\begin{DoxyCompactList}\small\item\em 30 mins \end{DoxyCompactList}\item 
+static std\+::string \hyperlink{class_do_lah_1_1_date_time_parser_a2e5d86b7140cd250657ac37ac8b37278}{A\+M} = \char`\"{}am\char`\"{}
+\begin{DoxyCompactList}\small\item\em next, coming \end{DoxyCompactList}\item 
+static std\+::string \hyperlink{class_do_lah_1_1_date_time_parser_a3c3173f1f18e2353e2f2dda0d075fb86}{P\+M} = \char`\"{}pm\char`\"{}
+\begin{DoxyCompactList}\small\item\em am \end{DoxyCompactList}\item 
+static std\+::string \hyperlink{class_do_lah_1_1_date_time_parser_a12154c3dbe0bc222f7a2f20e0b9ee21c}{T\+I\+M\+E\+\_\+\+D\+I\+V\+I\+D\+E\+R\+S} = \char`\"{}\+:\char`\"{}
+\begin{DoxyCompactList}\small\item\em pm \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Static library to handle conversion from string vector to std\+::tm. 
+
+Throws invalid\+\_\+argument exception if the given list of string cannot be converted. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_do_lah_1_1_date_time_parser_afbde4ac9bc1256361277129d68001b00}{}\index{Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}!Date\+Time\+Parser@{Date\+Time\+Parser}}
+\index{Date\+Time\+Parser@{Date\+Time\+Parser}!Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}}
+\subsubsection[{Date\+Time\+Parser()}]{\setlength{\rightskip}{0pt plus 5cm}Do\+Lah\+::\+Date\+Time\+Parser\+::\+Date\+Time\+Parser (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_do_lah_1_1_date_time_parser_afbde4ac9bc1256361277129d68001b00}
+\hypertarget{class_do_lah_1_1_date_time_parser_addef73e210f968e6e07b1fef40d38113}{}\index{Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}!````~Date\+Time\+Parser@{$\sim$\+Date\+Time\+Parser}}
+\index{````~Date\+Time\+Parser@{$\sim$\+Date\+Time\+Parser}!Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}}
+\subsubsection[{$\sim$\+Date\+Time\+Parser()}]{\setlength{\rightskip}{0pt plus 5cm}Do\+Lah\+::\+Date\+Time\+Parser\+::$\sim$\+Date\+Time\+Parser (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_do_lah_1_1_date_time_parser_addef73e210f968e6e07b1fef40d38113}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_do_lah_1_1_date_time_parser_a2f0bb541141139013d7a33d32080c3a0}{}\index{Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}!check\+Date\+Modifier@{check\+Date\+Modifier}}
+\index{check\+Date\+Modifier@{check\+Date\+Modifier}!Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}}
+\subsubsection[{check\+Date\+Modifier(std\+::vector$<$ std\+::string $>$, std\+::tm)}]{\setlength{\rightskip}{0pt plus 5cm}int Do\+Lah\+::\+Date\+Time\+Parser\+::check\+Date\+Modifier (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::string $>$}]{str\+Arr, }
+\item[{std\+::tm}]{lower\+Bound}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_do_lah_1_1_date_time_parser_a2f0bb541141139013d7a33d32080c3a0}
+Deals with the expressions that describe relative date. e.\+x. today, tomorrow, 10 days, 1 week, next Thursday... 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em str\+Arr} & The string vector list to be evaluated. \\
+\hline
+\mbox{\tt in}  & {\em lower\+Bound} & Returned day is above this lowerbound. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of seconds difference compared to the current time. 
+\end{DoxyReturn}
+\hypertarget{class_do_lah_1_1_date_time_parser_a502238ca6c7e8dc3b813acb7117bf995}{}\index{Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}!check\+D\+M\+Yformat@{check\+D\+M\+Yformat}}
+\index{check\+D\+M\+Yformat@{check\+D\+M\+Yformat}!Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}}
+\subsubsection[{check\+D\+M\+Yformat(std\+::vector$<$ std\+::string $>$)}]{\setlength{\rightskip}{0pt plus 5cm}std\+::tm Do\+Lah\+::\+Date\+Time\+Parser\+::check\+D\+M\+Yformat (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::string $>$}]{str\+Arr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_do_lah_1_1_date_time_parser_a502238ca6c7e8dc3b813acb7117bf995}
+Check Day Month Year format and convert it into date format 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em str\+Arr} & The string vector list to be evaluated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Date in std\+::tm format. 
+\end{DoxyReturn}
+\hypertarget{class_do_lah_1_1_date_time_parser_a397bf0a22aa556af330b77fc0718d041}{}\index{Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}!check\+M\+D\+Yformat@{check\+M\+D\+Yformat}}
+\index{check\+M\+D\+Yformat@{check\+M\+D\+Yformat}!Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}}
+\subsubsection[{check\+M\+D\+Yformat(std\+::vector$<$ std\+::string $>$)}]{\setlength{\rightskip}{0pt plus 5cm}std\+::tm Do\+Lah\+::\+Date\+Time\+Parser\+::check\+M\+D\+Yformat (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::string $>$}]{str\+Arr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_do_lah_1_1_date_time_parser_a397bf0a22aa556af330b77fc0718d041}
+Check Month Day Year format and convert it into date format 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em str\+Arr} & The string vector list to be evaluated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Date in std\+::tm format. 
+\end{DoxyReturn}
+\hypertarget{class_do_lah_1_1_date_time_parser_ab674e193e3492fb70b333c5f7f90b4ca}{}\index{Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}!check\+Time\+Modifier@{check\+Time\+Modifier}}
+\index{check\+Time\+Modifier@{check\+Time\+Modifier}!Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}}
+\subsubsection[{check\+Time\+Modifier(std\+::vector$<$ std\+::string $>$)}]{\setlength{\rightskip}{0pt plus 5cm}int Do\+Lah\+::\+Date\+Time\+Parser\+::check\+Time\+Modifier (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::string $>$}]{str\+Arr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_do_lah_1_1_date_time_parser_ab674e193e3492fb70b333c5f7f90b4ca}
+Deals with the expressions that describe relative time. e.\+x. next hour, 30 minutes... 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em str\+Arr} & The string vector list to be evaluated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of seconds difference compared to the current time. 
+\end{DoxyReturn}
+\hypertarget{class_do_lah_1_1_date_time_parser_a19c642690ef968cb2c63ea488c5d3b09}{}\index{Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}!classify\+Date@{classify\+Date}}
+\index{classify\+Date@{classify\+Date}!Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}}
+\subsubsection[{classify\+Date(std\+::vector$<$ std\+::string $>$)}]{\setlength{\rightskip}{0pt plus 5cm}std\+::tm Do\+Lah\+::\+Date\+Time\+Parser\+::classify\+Date (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::string $>$}]{str\+Arr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_do_lah_1_1_date_time_parser_a19c642690ef968cb2c63ea488c5d3b09}
+Check the specific date format in D\+M\+Y and M\+D\+Y format e.\+x. 25 December 2015 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em str\+Arr} & The string vector list to be evaluated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Date in std\+::tm format. 
+\end{DoxyReturn}
+\hypertarget{class_do_lah_1_1_date_time_parser_a03735027b318f5fb216e3077b32ece3f}{}\index{Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}!format\+Arr@{format\+Arr}}
+\index{format\+Arr@{format\+Arr}!Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}}
+\subsubsection[{format\+Arr(std\+::vector$<$ std\+::string $>$)}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ std\+::string $>$ Do\+Lah\+::\+Date\+Time\+Parser\+::format\+Arr (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::string $>$}]{str\+Arr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_do_lah_1_1_date_time_parser_a03735027b318f5fb216e3077b32ece3f}
+Removes unnecessary elements that is unrelated to date time parsing from the string array. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em str\+Arr} & String vector to be formatted \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Formatted string vector 
+\end{DoxyReturn}
+\hypertarget{class_do_lah_1_1_date_time_parser_a533d484c8d01959703f29aec8a7c1089}{}\index{Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}!get\+Date@{get\+Date}}
+\index{get\+Date@{get\+Date}!Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}}
+\subsubsection[{get\+Date(std\+::string)}]{\setlength{\rightskip}{0pt plus 5cm}int Do\+Lah\+::\+Date\+Time\+Parser\+::get\+Date (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{str}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_do_lah_1_1_date_time_parser_a533d484c8d01959703f29aec8a7c1089}
+Check the input string and convert it into corresponding int that represents the date. If not valid, global variable int R\+E\+J\+E\+C\+T will be returned. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em str} & String to be converted \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Date int 
+\end{DoxyReturn}
+\hypertarget{class_do_lah_1_1_date_time_parser_a2cc5bed72c78b834ddef92d5258168be}{}\index{Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}!get\+Date\+Modifier@{get\+Date\+Modifier}}
+\index{get\+Date\+Modifier@{get\+Date\+Modifier}!Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}}
+\subsubsection[{get\+Date\+Modifier(int, bool)}]{\setlength{\rightskip}{0pt plus 5cm}int Do\+Lah\+::\+Date\+Time\+Parser\+::get\+Date\+Modifier (
+\begin{DoxyParamCaption}
+\item[{int}]{date, }
+\item[{bool}]{not\+This\+Week}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_do_lah_1_1_date_time_parser_a2cc5bed72c78b834ddef92d5258168be}
+Handles dates such as Monday 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em date} & Expressed in int value as the std\+::tm \\
+\hline
+\mbox{\tt in}  & {\em not\+This\+Week} & True if the date is not this week \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of days difference compared to the current day. 
+\end{DoxyReturn}
+\hypertarget{class_do_lah_1_1_date_time_parser_a1ab804d9ffd52e22e0b646e520467314}{}\index{Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}!get\+Day@{get\+Day}}
+\index{get\+Day@{get\+Day}!Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}}
+\subsubsection[{get\+Day(std\+::string)}]{\setlength{\rightskip}{0pt plus 5cm}int Do\+Lah\+::\+Date\+Time\+Parser\+::get\+Day (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{str}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_do_lah_1_1_date_time_parser_a1ab804d9ffd52e22e0b646e520467314}
+Check the input string and convert it into corresponding day. If not valid, global variable int R\+E\+J\+E\+C\+T will be returned. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em str} & String to be converted \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Day int 
+\end{DoxyReturn}
+\hypertarget{class_do_lah_1_1_date_time_parser_aacc66f917eed838b97e7fd05aa49beac}{}\index{Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}!get\+Month@{get\+Month}}
+\index{get\+Month@{get\+Month}!Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}}
+\subsubsection[{get\+Month(std\+::string)}]{\setlength{\rightskip}{0pt plus 5cm}int Do\+Lah\+::\+Date\+Time\+Parser\+::get\+Month (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{str}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_do_lah_1_1_date_time_parser_aacc66f917eed838b97e7fd05aa49beac}
+Check the input string and convert it into corresponding month. If not valid, global variable int R\+E\+J\+E\+C\+T will be returned. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em str} & String to be converted \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Month int 
+\end{DoxyReturn}
+\hypertarget{class_do_lah_1_1_date_time_parser_a66151443985e90f8b0ebd59f35feb44e}{}\index{Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}!get\+Time@{get\+Time}}
+\index{get\+Time@{get\+Time}!Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}}
+\subsubsection[{get\+Time(std\+::string)}]{\setlength{\rightskip}{0pt plus 5cm}int Do\+Lah\+::\+Date\+Time\+Parser\+::get\+Time (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{str}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_do_lah_1_1_date_time_parser_a66151443985e90f8b0ebd59f35feb44e}
+Check the input string and convert it into corresponding time represented as seconds since the Epoch. If not valid, global variable int R\+E\+J\+E\+C\+T will be returned. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em str} & String to be converted \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Time int 
+\end{DoxyReturn}
+\hypertarget{class_do_lah_1_1_date_time_parser_a456ecc41eccc5ec1d7fcb74dc3fc8b29}{}\index{Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}!get\+Year@{get\+Year}}
+\index{get\+Year@{get\+Year}!Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}}
+\subsubsection[{get\+Year(std\+::string)}]{\setlength{\rightskip}{0pt plus 5cm}int Do\+Lah\+::\+Date\+Time\+Parser\+::get\+Year (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{year}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_do_lah_1_1_date_time_parser_a456ecc41eccc5ec1d7fcb74dc3fc8b29}
+Check the input string and convert it into corresponding year. If not valid, global variable int R\+E\+J\+E\+C\+T will be returned. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em str} & String to be converted \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Year int 
+\end{DoxyReturn}
+\hypertarget{class_do_lah_1_1_date_time_parser_a7c6b180ae65f821c06e3da405c4e787d}{}\index{Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}!to\+Date\+Format@{to\+Date\+Format}}
+\index{to\+Date\+Format@{to\+Date\+Format}!Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}}
+\subsubsection[{to\+Date\+Format(std\+::vector$<$ std\+::string $>$, std\+::tm=std\+::tm())}]{\setlength{\rightskip}{0pt plus 5cm}std\+::tm Do\+Lah\+::\+Date\+Time\+Parser\+::to\+Date\+Format (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::string $>$}]{str\+Arr, }
+\item[{std\+::tm}]{lower\+Bound = {\ttfamily std\+:\+:tm()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_do_lah_1_1_date_time_parser_a7c6b180ae65f821c06e3da405c4e787d}
+Converts string array into std\+::tm. It will handle many different kinds of formats for a degree of N\+L\+P. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em str\+Arr} & String array to be converted \\
+\hline
+\mbox{\tt in}  & {\em lower\+Bound} & std\+::tm that indicates the lowerbound for the time. By default, the current time is set as the lowerbound. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::tm object 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_do_lah_1_1_date_time_parser_a2e5d86b7140cd250657ac37ac8b37278}{}\index{Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}!A\+M@{A\+M}}
+\index{A\+M@{A\+M}!Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}}
+\subsubsection[{A\+M}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Do\+Lah\+::\+Date\+Time\+Parser\+::\+A\+M = \char`\"{}am\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_do_lah_1_1_date_time_parser_a2e5d86b7140cd250657ac37ac8b37278}
+
+
+next, coming 
+
+\hypertarget{class_do_lah_1_1_date_time_parser_adb080e964894e09a85f4b5314e4098d7}{}\index{Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}!C\+E\+N\+T\+U\+R\+Y@{C\+E\+N\+T\+U\+R\+Y}}
+\index{C\+E\+N\+T\+U\+R\+Y@{C\+E\+N\+T\+U\+R\+Y}!Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}}
+\subsubsection[{C\+E\+N\+T\+U\+R\+Y}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Do\+Lah\+::\+Date\+Time\+Parser\+::\+C\+E\+N\+T\+U\+R\+Y = \char`\"{}20\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_do_lah_1_1_date_time_parser_adb080e964894e09a85f4b5314e4098d7}
+
+
+Arbitrary int value to indicates R\+E\+J\+E\+C\+T in any classification. 
+
+\hypertarget{class_do_lah_1_1_date_time_parser_a3f39609d7434c47c257dc17045d1913a}{}\index{Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}!D\+A\+T\+E\+\_\+\+D\+I\+V\+I\+D\+E\+R\+S@{D\+A\+T\+E\+\_\+\+D\+I\+V\+I\+D\+E\+R\+S}}
+\index{D\+A\+T\+E\+\_\+\+D\+I\+V\+I\+D\+E\+R\+S@{D\+A\+T\+E\+\_\+\+D\+I\+V\+I\+D\+E\+R\+S}!Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}}
+\subsubsection[{D\+A\+T\+E\+\_\+\+D\+I\+V\+I\+D\+E\+R\+S}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ std\+::string $>$ Do\+Lah\+::\+Date\+Time\+Parser\+::\+D\+A\+T\+E\+\_\+\+D\+I\+V\+I\+D\+E\+R\+S = \{ \char`\"{}/\char`\"{}, \char`\"{}-\/\char`\"{}, \char`\"{}.\char`\"{} \}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_do_lah_1_1_date_time_parser_a3f39609d7434c47c257dc17045d1913a}
+
+
+Sunday, 17th of March. 
+
+\hypertarget{class_do_lah_1_1_date_time_parser_a315041bae4546ac4d88ba9ed955edceb}{}\index{Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}!D\+A\+T\+E\+\_\+\+P\+A\+T\+T\+E\+R\+N@{D\+A\+T\+E\+\_\+\+P\+A\+T\+T\+E\+R\+N}}
+\index{D\+A\+T\+E\+\_\+\+P\+A\+T\+T\+E\+R\+N@{D\+A\+T\+E\+\_\+\+P\+A\+T\+T\+E\+R\+N}!Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}}
+\subsubsection[{D\+A\+T\+E\+\_\+\+P\+A\+T\+T\+E\+R\+N}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ std\+::string $>$ Do\+Lah\+::\+Date\+Time\+Parser\+::\+D\+A\+T\+E\+\_\+\+P\+A\+T\+T\+E\+R\+N\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_do_lah_1_1_date_time_parser_a315041bae4546ac4d88ba9ed955edceb}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+        \textcolor{stringliteral}{"monday|mon|mond"},
+        \textcolor{stringliteral}{"tuesday|tue|tues"},
+        \textcolor{stringliteral}{"wednesday|wed|weds"},
+        \textcolor{stringliteral}{"thursday|thu|thur"},
+        \textcolor{stringliteral}{"friday|fri|frid"},
+        \textcolor{stringliteral}{"saturday|sat|satu"},
+        \textcolor{stringliteral}{"sunday|sun|sund"}
+    \}
+\end{DoxyCode}
+
+
+If time is not specified, 23\+:59 is the default time. 
+
+\hypertarget{class_do_lah_1_1_date_time_parser_ac3dd9a041853326af40af0a33dfd9974}{}\index{Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}!D\+A\+Y\+\_\+\+A\+P\+P\+E\+N\+D\+I\+X\+\_\+\+P\+A\+T\+T\+E\+R\+N@{D\+A\+Y\+\_\+\+A\+P\+P\+E\+N\+D\+I\+X\+\_\+\+P\+A\+T\+T\+E\+R\+N}}
+\index{D\+A\+Y\+\_\+\+A\+P\+P\+E\+N\+D\+I\+X\+\_\+\+P\+A\+T\+T\+E\+R\+N@{D\+A\+Y\+\_\+\+A\+P\+P\+E\+N\+D\+I\+X\+\_\+\+P\+A\+T\+T\+E\+R\+N}!Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}}
+\subsubsection[{D\+A\+Y\+\_\+\+A\+P\+P\+E\+N\+D\+I\+X\+\_\+\+P\+A\+T\+T\+E\+R\+N}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Do\+Lah\+::\+Date\+Time\+Parser\+::\+D\+A\+Y\+\_\+\+A\+P\+P\+E\+N\+D\+I\+X\+\_\+\+P\+A\+T\+T\+E\+R\+N = \char`\"{}(st$\vert$nd$\vert$rd$\vert$th)\$\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_do_lah_1_1_date_time_parser_ac3dd9a041853326af40af0a33dfd9974}
+
+
+12, December, Dec 
+
+\hypertarget{class_do_lah_1_1_date_time_parser_a81a0b53c3a23599180092187e57fb66b}{}\index{Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}!D\+A\+Y\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R@{D\+A\+Y\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R}}
+\index{D\+A\+Y\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R@{D\+A\+Y\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R}!Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}}
+\subsubsection[{D\+A\+Y\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ std\+::string $>$ Do\+Lah\+::\+Date\+Time\+Parser\+::\+D\+A\+Y\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R = \{ \char`\"{}d\char`\"{}, \char`\"{}day\char`\"{}, \char`\"{}days\char`\"{} \}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_do_lah_1_1_date_time_parser_a81a0b53c3a23599180092187e57fb66b}
+
+
+a, an, the, one 
+
+\hypertarget{class_do_lah_1_1_date_time_parser_a829ee3acb25eecc96b6529d335edfbe7}{}\index{Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}!D\+A\+Y\+\_\+\+I\+N\+\_\+\+S\+E\+C\+S@{D\+A\+Y\+\_\+\+I\+N\+\_\+\+S\+E\+C\+S}}
+\index{D\+A\+Y\+\_\+\+I\+N\+\_\+\+S\+E\+C\+S@{D\+A\+Y\+\_\+\+I\+N\+\_\+\+S\+E\+C\+S}!Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}}
+\subsubsection[{D\+A\+Y\+\_\+\+I\+N\+\_\+\+S\+E\+C\+S}]{\setlength{\rightskip}{0pt plus 5cm}int Do\+Lah\+::\+Date\+Time\+Parser\+::\+D\+A\+Y\+\_\+\+I\+N\+\_\+\+S\+E\+C\+S = 86400\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_do_lah_1_1_date_time_parser_a829ee3acb25eecc96b6529d335edfbe7}
+
+
+Hour in Seconds. 
+
+\hypertarget{class_do_lah_1_1_date_time_parser_a3e78cc57480f0d193e6c9e9a3683dc16}{}\index{Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}!D\+E\+C\+O\+R\+A\+T\+O\+R\+S@{D\+E\+C\+O\+R\+A\+T\+O\+R\+S}}
+\index{D\+E\+C\+O\+R\+A\+T\+O\+R\+S@{D\+E\+C\+O\+R\+A\+T\+O\+R\+S}!Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}}
+\subsubsection[{D\+E\+C\+O\+R\+A\+T\+O\+R\+S}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ std\+::string $>$ Do\+Lah\+::\+Date\+Time\+Parser\+::\+D\+E\+C\+O\+R\+A\+T\+O\+R\+S = \{ \char`\"{}of\char`\"{}, \char`\"{}in\char`\"{}, \char`\"{}on\char`\"{}, \char`\"{}by\char`\"{}, \char`\"{}due\char`\"{}, \char`\"{}at\char`\"{} \}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_do_lah_1_1_date_time_parser_a3e78cc57480f0d193e6c9e9a3683dc16}
+
+
+1st, 2nd, 3rd, 4th 
+
+\hypertarget{class_do_lah_1_1_date_time_parser_a958ccfe724266321507056e0461a5a98}{}\index{Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}!D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+I\+M\+E@{D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+I\+M\+E}}
+\index{D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+I\+M\+E@{D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+I\+M\+E}!Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}}
+\subsubsection[{D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+I\+M\+E}]{\setlength{\rightskip}{0pt plus 5cm}int Do\+Lah\+::\+Date\+Time\+Parser\+::\+D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+I\+M\+E = 1439\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_do_lah_1_1_date_time_parser_a958ccfe724266321507056e0461a5a98}
+
+
+Month in Seconds. 
+
+\hypertarget{class_do_lah_1_1_date_time_parser_a53e2831a83514941d8a6d77855d6d409}{}\index{Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}!H\+O\+U\+R\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R@{H\+O\+U\+R\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R}}
+\index{H\+O\+U\+R\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R@{H\+O\+U\+R\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R}!Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}}
+\subsubsection[{H\+O\+U\+R\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ std\+::string $>$ Do\+Lah\+::\+Date\+Time\+Parser\+::\+H\+O\+U\+R\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R = \{ \char`\"{}hour\char`\"{}, \char`\"{}hours\char`\"{}, \char`\"{}hr\char`\"{}, \char`\"{}hrs\char`\"{} \}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_do_lah_1_1_date_time_parser_a53e2831a83514941d8a6d77855d6d409}
+
+
+4 year 
+
+\hypertarget{class_do_lah_1_1_date_time_parser_ad860d83d2253ba7db8b7f405adc0a2c8}{}\index{Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}!H\+O\+U\+R\+\_\+\+I\+N\+\_\+\+S\+E\+C\+S@{H\+O\+U\+R\+\_\+\+I\+N\+\_\+\+S\+E\+C\+S}}
+\index{H\+O\+U\+R\+\_\+\+I\+N\+\_\+\+S\+E\+C\+S@{H\+O\+U\+R\+\_\+\+I\+N\+\_\+\+S\+E\+C\+S}!Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}}
+\subsubsection[{H\+O\+U\+R\+\_\+\+I\+N\+\_\+\+S\+E\+C\+S}]{\setlength{\rightskip}{0pt plus 5cm}int Do\+Lah\+::\+Date\+Time\+Parser\+::\+H\+O\+U\+R\+\_\+\+I\+N\+\_\+\+S\+E\+C\+S = 3600\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_do_lah_1_1_date_time_parser_ad860d83d2253ba7db8b7f405adc0a2c8}
+
+
+Minute in Seconds. 
+
+\hypertarget{class_do_lah_1_1_date_time_parser_af9a3cc6e4d648744d460b5475cadccee}{}\index{Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}!M\+I\+N\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R@{M\+I\+N\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R}}
+\index{M\+I\+N\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R@{M\+I\+N\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R}!Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}}
+\subsubsection[{M\+I\+N\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ std\+::string $>$ Do\+Lah\+::\+Date\+Time\+Parser\+::\+M\+I\+N\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R = \{ \char`\"{}minute\char`\"{}, \char`\"{}minutes\char`\"{}, \char`\"{}min\char`\"{}, \char`\"{}mins\char`\"{} \}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_do_lah_1_1_date_time_parser_af9a3cc6e4d648744d460b5475cadccee}
+
+
+3 hours 
+
+\hypertarget{class_do_lah_1_1_date_time_parser_a6bcbe9c2772910a92e518a39f4ca81b7}{}\index{Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}!M\+I\+N\+\_\+\+I\+N\+\_\+\+S\+E\+C\+S@{M\+I\+N\+\_\+\+I\+N\+\_\+\+S\+E\+C\+S}}
+\index{M\+I\+N\+\_\+\+I\+N\+\_\+\+S\+E\+C\+S@{M\+I\+N\+\_\+\+I\+N\+\_\+\+S\+E\+C\+S}!Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}}
+\subsubsection[{M\+I\+N\+\_\+\+I\+N\+\_\+\+S\+E\+C\+S}]{\setlength{\rightskip}{0pt plus 5cm}int Do\+Lah\+::\+Date\+Time\+Parser\+::\+M\+I\+N\+\_\+\+I\+N\+\_\+\+S\+E\+C\+S = 60\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_do_lah_1_1_date_time_parser_a6bcbe9c2772910a92e518a39f4ca81b7}
+
+
+For year described in 2 digits, 20 will be added. e.\+x. 15 -\/$>$ 2015. 
+
+\hypertarget{class_do_lah_1_1_date_time_parser_a9e5d75c4251b0035d4debcc8ff6ce713}{}\index{Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}!M\+O\+N\+T\+H\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R@{M\+O\+N\+T\+H\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R}}
+\index{M\+O\+N\+T\+H\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R@{M\+O\+N\+T\+H\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R}!Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}}
+\subsubsection[{M\+O\+N\+T\+H\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ std\+::string $>$ Do\+Lah\+::\+Date\+Time\+Parser\+::\+M\+O\+N\+T\+H\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R = \{ \char`\"{}m\char`\"{}, \char`\"{}month\char`\"{}, \char`\"{}months\char`\"{}, \char`\"{}mon\char`\"{}, \char`\"{}mons\char`\"{} \}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_do_lah_1_1_date_time_parser_a9e5d75c4251b0035d4debcc8ff6ce713}
+
+
+2 weeks 
+
+\hypertarget{class_do_lah_1_1_date_time_parser_a32467508a17e5406b529eb61177264ee}{}\index{Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}!M\+O\+N\+T\+H\+\_\+\+I\+N\+\_\+\+S\+E\+C\+S@{M\+O\+N\+T\+H\+\_\+\+I\+N\+\_\+\+S\+E\+C\+S}}
+\index{M\+O\+N\+T\+H\+\_\+\+I\+N\+\_\+\+S\+E\+C\+S@{M\+O\+N\+T\+H\+\_\+\+I\+N\+\_\+\+S\+E\+C\+S}!Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}}
+\subsubsection[{M\+O\+N\+T\+H\+\_\+\+I\+N\+\_\+\+S\+E\+C\+S}]{\setlength{\rightskip}{0pt plus 5cm}int Do\+Lah\+::\+Date\+Time\+Parser\+::\+M\+O\+N\+T\+H\+\_\+\+I\+N\+\_\+\+S\+E\+C\+S = 2592000\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_do_lah_1_1_date_time_parser_a32467508a17e5406b529eb61177264ee}
+
+
+Week in Seconds. 
+
+\hypertarget{class_do_lah_1_1_date_time_parser_ad713cbb4bea551075364247f8c09b08d}{}\index{Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}!M\+O\+N\+T\+H\+\_\+\+P\+A\+T\+T\+E\+R\+N@{M\+O\+N\+T\+H\+\_\+\+P\+A\+T\+T\+E\+R\+N}}
+\index{M\+O\+N\+T\+H\+\_\+\+P\+A\+T\+T\+E\+R\+N@{M\+O\+N\+T\+H\+\_\+\+P\+A\+T\+T\+E\+R\+N}!Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}}
+\subsubsection[{M\+O\+N\+T\+H\+\_\+\+P\+A\+T\+T\+E\+R\+N}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ std\+::string $>$ Do\+Lah\+::\+Date\+Time\+Parser\+::\+M\+O\+N\+T\+H\+\_\+\+P\+A\+T\+T\+E\+R\+N\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_do_lah_1_1_date_time_parser_ad713cbb4bea551075364247f8c09b08d}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+        \textcolor{stringliteral}{"^(january|jan|01|1)$"},
+        \textcolor{stringliteral}{"^(february|feb|02|2)$"},
+        \textcolor{stringliteral}{"^(march|mar|03|3)$"},
+        \textcolor{stringliteral}{"^(april|apr|04|4)$"},
+        \textcolor{stringliteral}{"^(may|05|5)$"},
+        \textcolor{stringliteral}{"^(june|jun|06|6)$"},
+        \textcolor{stringliteral}{"^(july|jul|07|7)$"},
+        \textcolor{stringliteral}{"^(august|aug|08|8)$"},
+        \textcolor{stringliteral}{"^(september|sep|09|9)$"},
+        \textcolor{stringliteral}{"^(october|oct|10)$"},
+        \textcolor{stringliteral}{"^(november|nov|11)$"},
+        \textcolor{stringliteral}{"^(december|dec|12)$"}
+    \}
+\end{DoxyCode}
+
+
+Monday, Mon. 
+
+\hypertarget{class_do_lah_1_1_date_time_parser_a4bfc49a590f5662df8ffe2f8a6778997}{}\index{Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}!N\+E\+X\+T\+\_\+\+F\+O\+R\+M\+A\+T\+S@{N\+E\+X\+T\+\_\+\+F\+O\+R\+M\+A\+T\+S}}
+\index{N\+E\+X\+T\+\_\+\+F\+O\+R\+M\+A\+T\+S@{N\+E\+X\+T\+\_\+\+F\+O\+R\+M\+A\+T\+S}!Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}}
+\subsubsection[{N\+E\+X\+T\+\_\+\+F\+O\+R\+M\+A\+T\+S}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ std\+::string $>$ Do\+Lah\+::\+Date\+Time\+Parser\+::\+N\+E\+X\+T\+\_\+\+F\+O\+R\+M\+A\+T\+S = \{ \char`\"{}next\char`\"{}, \char`\"{}coming\char`\"{} \}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_do_lah_1_1_date_time_parser_a4bfc49a590f5662df8ffe2f8a6778997}
+
+
+30 mins 
+
+\hypertarget{class_do_lah_1_1_date_time_parser_a3c3173f1f18e2353e2f2dda0d075fb86}{}\index{Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}!P\+M@{P\+M}}
+\index{P\+M@{P\+M}!Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}}
+\subsubsection[{P\+M}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Do\+Lah\+::\+Date\+Time\+Parser\+::\+P\+M = \char`\"{}pm\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_do_lah_1_1_date_time_parser_a3c3173f1f18e2353e2f2dda0d075fb86}
+
+
+am 
+
+\hypertarget{class_do_lah_1_1_date_time_parser_a32a1a31cd10efd72ecfe55e89aea8ec4}{}\index{Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}!P\+U\+N\+C\+T\+U\+A\+T\+I\+O\+N\+S@{P\+U\+N\+C\+T\+U\+A\+T\+I\+O\+N\+S}}
+\index{P\+U\+N\+C\+T\+U\+A\+T\+I\+O\+N\+S@{P\+U\+N\+C\+T\+U\+A\+T\+I\+O\+N\+S}!Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}}
+\subsubsection[{P\+U\+N\+C\+T\+U\+A\+T\+I\+O\+N\+S}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ std\+::string $>$ Do\+Lah\+::\+Date\+Time\+Parser\+::\+P\+U\+N\+C\+T\+U\+A\+T\+I\+O\+N\+S = \{ \char`\"{},\char`\"{} \}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_do_lah_1_1_date_time_parser_a32a1a31cd10efd72ecfe55e89aea8ec4}
+
+
+25th of Dec 
+
+\hypertarget{class_do_lah_1_1_date_time_parser_a23feb7cbc6832ca6931a2204752ce930}{}\index{Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}!R\+E\+J\+E\+C\+T@{R\+E\+J\+E\+C\+T}}
+\index{R\+E\+J\+E\+C\+T@{R\+E\+J\+E\+C\+T}!Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}}
+\subsubsection[{R\+E\+J\+E\+C\+T}]{\setlength{\rightskip}{0pt plus 5cm}int Do\+Lah\+::\+Date\+Time\+Parser\+::\+R\+E\+J\+E\+C\+T = -\/1\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_do_lah_1_1_date_time_parser_a23feb7cbc6832ca6931a2204752ce930}
+\hypertarget{class_do_lah_1_1_date_time_parser_a1c0a27093d6d779d5675195dd42f399c}{}\index{Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}!S\+I\+N\+G\+U\+L\+A\+R\+\_\+\+F\+O\+R\+M\+A\+T\+S@{S\+I\+N\+G\+U\+L\+A\+R\+\_\+\+F\+O\+R\+M\+A\+T\+S}}
+\index{S\+I\+N\+G\+U\+L\+A\+R\+\_\+\+F\+O\+R\+M\+A\+T\+S@{S\+I\+N\+G\+U\+L\+A\+R\+\_\+\+F\+O\+R\+M\+A\+T\+S}!Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}}
+\subsubsection[{S\+I\+N\+G\+U\+L\+A\+R\+\_\+\+F\+O\+R\+M\+A\+T\+S}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ std\+::string $>$ Do\+Lah\+::\+Date\+Time\+Parser\+::\+S\+I\+N\+G\+U\+L\+A\+R\+\_\+\+F\+O\+R\+M\+A\+T\+S = \{ \char`\"{}a\char`\"{}, \char`\"{}an\char`\"{}, \char`\"{}the\char`\"{}, \char`\"{}one\char`\"{} \}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_do_lah_1_1_date_time_parser_a1c0a27093d6d779d5675195dd42f399c}
+
+
+tomorrow 
+
+\hypertarget{class_do_lah_1_1_date_time_parser_a12154c3dbe0bc222f7a2f20e0b9ee21c}{}\index{Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}!T\+I\+M\+E\+\_\+\+D\+I\+V\+I\+D\+E\+R\+S@{T\+I\+M\+E\+\_\+\+D\+I\+V\+I\+D\+E\+R\+S}}
+\index{T\+I\+M\+E\+\_\+\+D\+I\+V\+I\+D\+E\+R\+S@{T\+I\+M\+E\+\_\+\+D\+I\+V\+I\+D\+E\+R\+S}!Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}}
+\subsubsection[{T\+I\+M\+E\+\_\+\+D\+I\+V\+I\+D\+E\+R\+S}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Do\+Lah\+::\+Date\+Time\+Parser\+::\+T\+I\+M\+E\+\_\+\+D\+I\+V\+I\+D\+E\+R\+S = \char`\"{}\+:\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_do_lah_1_1_date_time_parser_a12154c3dbe0bc222f7a2f20e0b9ee21c}
+
+
+pm 
+
+\hypertarget{class_do_lah_1_1_date_time_parser_adbc5291689a2864bf02beebbb4549489}{}\index{Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}!T\+O\+D\+A\+Y\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R\+S@{T\+O\+D\+A\+Y\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R\+S}}
+\index{T\+O\+D\+A\+Y\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R\+S@{T\+O\+D\+A\+Y\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R\+S}!Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}}
+\subsubsection[{T\+O\+D\+A\+Y\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R\+S}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ std\+::string $>$ Do\+Lah\+::\+Date\+Time\+Parser\+::\+T\+O\+D\+A\+Y\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R\+S = \{ \char`\"{}today\char`\"{}, \char`\"{}td\char`\"{} \}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_do_lah_1_1_date_time_parser_adbc5291689a2864bf02beebbb4549489}
+
+
+25.\+12.\+2015, 25/12/2015, 25-\/12-\/2015 
+
+\hypertarget{class_do_lah_1_1_date_time_parser_a1bf675804ae4bafa0621681512b75573}{}\index{Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}!T\+O\+M\+O\+R\+R\+O\+W\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R\+S@{T\+O\+M\+O\+R\+R\+O\+W\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R\+S}}
+\index{T\+O\+M\+O\+R\+R\+O\+W\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R\+S@{T\+O\+M\+O\+R\+R\+O\+W\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R\+S}!Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}}
+\subsubsection[{T\+O\+M\+O\+R\+R\+O\+W\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R\+S}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ std\+::string $>$ Do\+Lah\+::\+Date\+Time\+Parser\+::\+T\+O\+M\+O\+R\+R\+O\+W\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R\+S = \{ \char`\"{}tomorrow\char`\"{}, \char`\"{}tom\char`\"{}, \char`\"{}tmr\char`\"{} \}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_do_lah_1_1_date_time_parser_a1bf675804ae4bafa0621681512b75573}
+
+
+today 
+
+\hypertarget{class_do_lah_1_1_date_time_parser_a622cd79bd79480fd69ad6161ccae07dc}{}\index{Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}!W\+E\+E\+K\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R@{W\+E\+E\+K\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R}}
+\index{W\+E\+E\+K\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R@{W\+E\+E\+K\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R}!Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}}
+\subsubsection[{W\+E\+E\+K\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ std\+::string $>$ Do\+Lah\+::\+Date\+Time\+Parser\+::\+W\+E\+E\+K\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R = \{ \char`\"{}w\char`\"{}, \char`\"{}week\char`\"{}, \char`\"{}weeks\char`\"{}, \char`\"{}wk\char`\"{}, \char`\"{}wks\char`\"{} \}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_do_lah_1_1_date_time_parser_a622cd79bd79480fd69ad6161ccae07dc}
+
+
+10 days 
+
+\hypertarget{class_do_lah_1_1_date_time_parser_a6e930ec6feb5cbfe0d3429bb20142d3c}{}\index{Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}!W\+E\+E\+K\+\_\+\+I\+N\+\_\+\+S\+E\+C\+S@{W\+E\+E\+K\+\_\+\+I\+N\+\_\+\+S\+E\+C\+S}}
+\index{W\+E\+E\+K\+\_\+\+I\+N\+\_\+\+S\+E\+C\+S@{W\+E\+E\+K\+\_\+\+I\+N\+\_\+\+S\+E\+C\+S}!Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}}
+\subsubsection[{W\+E\+E\+K\+\_\+\+I\+N\+\_\+\+S\+E\+C\+S}]{\setlength{\rightskip}{0pt plus 5cm}int Do\+Lah\+::\+Date\+Time\+Parser\+::\+W\+E\+E\+K\+\_\+\+I\+N\+\_\+\+S\+E\+C\+S = 604800\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_do_lah_1_1_date_time_parser_a6e930ec6feb5cbfe0d3429bb20142d3c}
+
+
+Day in Seconds. 
+
+\hypertarget{class_do_lah_1_1_date_time_parser_af2324a9dc5ed95d1d31d584bbb1e869c}{}\index{Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}!Y\+E\+A\+R\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R@{Y\+E\+A\+R\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R}}
+\index{Y\+E\+A\+R\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R@{Y\+E\+A\+R\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R}!Do\+Lah\+::\+Date\+Time\+Parser@{Do\+Lah\+::\+Date\+Time\+Parser}}
+\subsubsection[{Y\+E\+A\+R\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ std\+::string $>$ Do\+Lah\+::\+Date\+Time\+Parser\+::\+Y\+E\+A\+R\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+R = \{ \char`\"{}y\char`\"{}, \char`\"{}year\char`\"{}, \char`\"{}years\char`\"{}, \char`\"{}yr\char`\"{}, \char`\"{}yrs\char`\"{} \}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_do_lah_1_1_date_time_parser_af2324a9dc5ed95d1d31d584bbb1e869c}
+
+
+3 months 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Do\+Lah/\+Parser/\hyperlink{_date_time_parser_8h}{Date\+Time\+Parser.\+h}\item 
+Do\+Lah/\+Parser/\hyperlink{_date_time_parser_8cpp}{Date\+Time\+Parser.\+cpp}\end{DoxyCompactItemize}

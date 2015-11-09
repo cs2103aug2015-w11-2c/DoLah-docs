@@ -8,5 +8,5 @@ var searchData=
   ['page_5fkeyboard',['page_keyboard',['../class_do_lah_1_1_help_window.html#aa02d6db9ccf96c9bc368db37d1480cb7',1,'DoLah::HelpWindow']]],
   ['page_5fother',['page_other',['../class_do_lah_1_1_help_window.html#ae95510d5027171260f759d7b7645cf04',1,'DoLah::HelpWindow']]],
   ['pm',['PM',['../class_do_lah_1_1_date_time_parser.html#a3c3173f1f18e2353e2f2dda0d075fb86',1,'DoLah::DateTimeParser']]],
-  ['punctuations',['punctuations',['../class_do_lah_1_1_date_time_parser.html#a0ceedea3863cfc96042863a317946fea',1,'DoLah::DateTimeParser']]]
+  ['punctuations',['PUNCTUATIONS',['../class_do_lah_1_1_date_time_parser.html#a32a1a31cd10efd72ecfe55e89aea8ec4',1,'DoLah::DateTimeParser']]]
 ];

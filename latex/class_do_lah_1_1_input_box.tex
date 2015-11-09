@@ -1,0 +1,96 @@
+\hypertarget{class_do_lah_1_1_input_box}{}\section{Do\+Lah\+:\+:Input\+Box Class Reference}
+\label{class_do_lah_1_1_input_box}\index{Do\+Lah\+::\+Input\+Box@{Do\+Lah\+::\+Input\+Box}}
+
+
+{\ttfamily \#include $<$Input\+Box.\+h$>$}
+
+
+
+Inheritance diagram for Do\+Lah\+:\+:Input\+Box\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{class_do_lah_1_1_input_box__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Do\+Lah\+:\+:Input\+Box\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{class_do_lah_1_1_input_box__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_do_lah_1_1_input_box_a23eea1852eb1377105dd048a99656687}{Input\+Box} (Q\+Widget $\ast$parent=0)
+\item 
+\hyperlink{class_do_lah_1_1_input_box_ac0a5ef8737a9b32cddcaead8e5828871}{$\sim$\+Input\+Box} ()
+\item 
+void \hyperlink{class_do_lah_1_1_input_box_a21d12fbe5e02dc7eb68e869fc35c0145}{arrange\+Stack} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::stack$<$ std\+::string $>$ \hyperlink{class_do_lah_1_1_input_box_a429fbfb31340bc3f638549bdc0ad2f5f}{command\+Stack\+Up}
+\item 
+std\+::stack$<$ std\+::string $>$ \hyperlink{class_do_lah_1_1_input_box_aedbae7556a9b89922bc005550d86aeb8}{command\+Stack\+Down}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_do_lah_1_1_input_box_abae6661e73c4f789e6784dbf96248704}{key\+Press\+Event} (Q\+Key\+Event $\ast$)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_do_lah_1_1_input_box_a23eea1852eb1377105dd048a99656687}{}\index{Do\+Lah\+::\+Input\+Box@{Do\+Lah\+::\+Input\+Box}!Input\+Box@{Input\+Box}}
+\index{Input\+Box@{Input\+Box}!Do\+Lah\+::\+Input\+Box@{Do\+Lah\+::\+Input\+Box}}
+\subsubsection[{Input\+Box(\+Q\+Widget $\ast$parent=0)}]{\setlength{\rightskip}{0pt plus 5cm}Do\+Lah\+::\+Input\+Box\+::\+Input\+Box (
+\begin{DoxyParamCaption}
+\item[{Q\+Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{class_do_lah_1_1_input_box_a23eea1852eb1377105dd048a99656687}
+\hypertarget{class_do_lah_1_1_input_box_ac0a5ef8737a9b32cddcaead8e5828871}{}\index{Do\+Lah\+::\+Input\+Box@{Do\+Lah\+::\+Input\+Box}!````~Input\+Box@{$\sim$\+Input\+Box}}
+\index{````~Input\+Box@{$\sim$\+Input\+Box}!Do\+Lah\+::\+Input\+Box@{Do\+Lah\+::\+Input\+Box}}
+\subsubsection[{$\sim$\+Input\+Box()}]{\setlength{\rightskip}{0pt plus 5cm}Do\+Lah\+::\+Input\+Box\+::$\sim$\+Input\+Box (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_do_lah_1_1_input_box_ac0a5ef8737a9b32cddcaead8e5828871}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_do_lah_1_1_input_box_a21d12fbe5e02dc7eb68e869fc35c0145}{}\index{Do\+Lah\+::\+Input\+Box@{Do\+Lah\+::\+Input\+Box}!arrange\+Stack@{arrange\+Stack}}
+\index{arrange\+Stack@{arrange\+Stack}!Do\+Lah\+::\+Input\+Box@{Do\+Lah\+::\+Input\+Box}}
+\subsubsection[{arrange\+Stack()}]{\setlength{\rightskip}{0pt plus 5cm}void Do\+Lah\+::\+Input\+Box\+::arrange\+Stack (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_do_lah_1_1_input_box_a21d12fbe5e02dc7eb68e869fc35c0145}
+Moves all commands back up to commandstack\+\_\+up \hypertarget{class_do_lah_1_1_input_box_abae6661e73c4f789e6784dbf96248704}{}\index{Do\+Lah\+::\+Input\+Box@{Do\+Lah\+::\+Input\+Box}!key\+Press\+Event@{key\+Press\+Event}}
+\index{key\+Press\+Event@{key\+Press\+Event}!Do\+Lah\+::\+Input\+Box@{Do\+Lah\+::\+Input\+Box}}
+\subsubsection[{key\+Press\+Event(\+Q\+Key\+Event $\ast$)}]{\setlength{\rightskip}{0pt plus 5cm}void Do\+Lah\+::\+Input\+Box\+::key\+Press\+Event (
+\begin{DoxyParamCaption}
+\item[{Q\+Key\+Event $\ast$}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_do_lah_1_1_input_box_abae6661e73c4f789e6784dbf96248704}
+Reimplemented from Q\+Widget\+::key\+Press\+Event() 
+
+\subsection{Member Data Documentation}
+\hypertarget{class_do_lah_1_1_input_box_aedbae7556a9b89922bc005550d86aeb8}{}\index{Do\+Lah\+::\+Input\+Box@{Do\+Lah\+::\+Input\+Box}!command\+Stack\+Down@{command\+Stack\+Down}}
+\index{command\+Stack\+Down@{command\+Stack\+Down}!Do\+Lah\+::\+Input\+Box@{Do\+Lah\+::\+Input\+Box}}
+\subsubsection[{command\+Stack\+Down}]{\setlength{\rightskip}{0pt plus 5cm}std\+::stack$<$std\+::string$>$ Do\+Lah\+::\+Input\+Box\+::command\+Stack\+Down}\label{class_do_lah_1_1_input_box_aedbae7556a9b89922bc005550d86aeb8}
+Contains previous commands that have been scrolled down \hypertarget{class_do_lah_1_1_input_box_a429fbfb31340bc3f638549bdc0ad2f5f}{}\index{Do\+Lah\+::\+Input\+Box@{Do\+Lah\+::\+Input\+Box}!command\+Stack\+Up@{command\+Stack\+Up}}
+\index{command\+Stack\+Up@{command\+Stack\+Up}!Do\+Lah\+::\+Input\+Box@{Do\+Lah\+::\+Input\+Box}}
+\subsubsection[{command\+Stack\+Up}]{\setlength{\rightskip}{0pt plus 5cm}std\+::stack$<$std\+::string$>$ Do\+Lah\+::\+Input\+Box\+::command\+Stack\+Up}\label{class_do_lah_1_1_input_box_a429fbfb31340bc3f638549bdc0ad2f5f}
+Contains previous commands 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Do\+Lah\+U\+I/\hyperlink{_input_box_8h}{Input\+Box.\+h}\item 
+Do\+Lah\+U\+I/\hyperlink{_input_box_8cpp}{Input\+Box.\+cpp}\end{DoxyCompactItemize}

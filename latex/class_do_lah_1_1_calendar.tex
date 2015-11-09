@@ -1,0 +1,346 @@
+\hypertarget{class_do_lah_1_1_calendar}{}\section{Do\+Lah\+:\+:Calendar Class Reference}
+\label{class_do_lah_1_1_calendar}\index{Do\+Lah\+::\+Calendar@{Do\+Lah\+::\+Calendar}}
+
+
+Class for holding the actual tasklist(s) and any operations on tasks in those list(s).  
+
+
+
+
+{\ttfamily \#include $<$Calendar.\+h$>$}
+
+
+
+Collaboration diagram for Do\+Lah\+:\+:Calendar\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{class_do_lah_1_1_calendar__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_do_lah_1_1_calendar_afde5e203ea4cb45ecf4d2cabce19826e}{Calendar} ()
+\item 
+\hyperlink{class_do_lah_1_1_calendar_abe8ecd064fff0cb055938c2f2ab6eaca}{$\sim$\+Calendar} ()
+\item 
+\hyperlink{class_do_lah_1_1_abstract_task}{Abstract\+Task} $\ast$ \hyperlink{class_do_lah_1_1_calendar_abb1d17aa8c99cc151a43d8f13ebff86b}{get\+Task} (int) const 
+\begin{DoxyCompactList}\small\item\em Returns the task at the given index in the main task list task\+List. \end{DoxyCompactList}\item 
+\hyperlink{class_do_lah_1_1_abstract_task}{Abstract\+Task} $\ast$ \hyperlink{class_do_lah_1_1_calendar_ac6461f76975d358bd5f109d3e5c129a6}{get\+Done} (int) const 
+\begin{DoxyCompactList}\small\item\em Returns the task at the given index in the done task list done\+List. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{class_do_lah_1_1_abstract_task}{Abstract\+Task} $\ast$ $>$ \hyperlink{class_do_lah_1_1_calendar_a3cbae80d27c584a64026725f64d07896}{get\+Task\+List} () const 
+\begin{DoxyCompactList}\small\item\em Returns a copy of task\+List as an actual vector object. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{class_do_lah_1_1_abstract_task}{Abstract\+Task} $\ast$ $>$ \hyperlink{class_do_lah_1_1_calendar_ac14944af156416344c85d0c4001281b0}{get\+Done\+List} () const 
+\begin{DoxyCompactList}\small\item\em Returns a copy of done\+List as an actual vector object. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{class_do_lah_1_1_abstract_task}{Abstract\+Task} $\ast$ $>$ \hyperlink{class_do_lah_1_1_calendar_aaf633ddb1652ac6faa1e6e3a0a2aaea9}{get\+Searched\+Task\+List} () const 
+\begin{DoxyCompactList}\small\item\em Returns a copy of the vector containing the search results of the last query as an actual object. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{class_do_lah_1_1_abstract_task}{Abstract\+Task} $\ast$ $>$ \hyperlink{class_do_lah_1_1_calendar_a190db0f939a52b40fbec2482056820f4}{get\+All\+Task\+List} () const 
+\begin{DoxyCompactList}\small\item\em Returns a vector containing all tasks from task\+List and done\+List as an actual object. \end{DoxyCompactList}\item 
+\hyperlink{class_do_lah_1_1_command_history}{Command\+History} $\ast$ \hyperlink{class_do_lah_1_1_calendar_a65c6f8e5a6bc421d20eded6fbf6221ae}{get\+Cmd\+History} ()
+\begin{DoxyCompactList}\small\item\em Returns a pointer to the \hyperlink{class_do_lah_1_1_command_history}{Command\+History} class instance associated with this particular \hyperlink{class_do_lah_1_1_calendar}{Calendar} instance. \end{DoxyCompactList}\item 
+void \hyperlink{class_do_lah_1_1_calendar_a962c1ff0c5d697282fa5943a5e62a538}{add\+Task} (\hyperlink{class_do_lah_1_1_abstract_task}{Abstract\+Task} $\ast$)
+\item 
+void \hyperlink{class_do_lah_1_1_calendar_a4f5d55b04a1ea3b62f03a3cad19b12c9}{delete\+Task} (int, bool=true)
+\begin{DoxyCompactList}\small\item\em Deletes. \end{DoxyCompactList}\item 
+void \hyperlink{class_do_lah_1_1_calendar_af4e2ac9b3563863cb402c3070dc4a068}{set\+Done\+Task} (int, bool=true)
+\item 
+void \hyperlink{class_do_lah_1_1_calendar_aeeaf96fc786f7bb10f4f705990463376}{update\+Task} (int, \hyperlink{class_do_lah_1_1_abstract_task}{Abstract\+Task} $\ast$)
+\item 
+void \hyperlink{class_do_lah_1_1_calendar_a35b75de2b1203f707c25fe7f75b8f58b}{clear\+Tasks} ()
+\item 
+void \hyperlink{class_do_lah_1_1_calendar_a91fa97512b28c6c09c28d912340c1e2e}{search} (std\+::string)
+\item 
+void \hyperlink{class_do_lah_1_1_calendar_aaea96510180152ca13e24793b92f46c9}{search\+Date} (std\+::tm, std\+::tm)
+\item 
+void \hyperlink{class_do_lah_1_1_calendar_a4eebadb86c16cb33b00531c1523ce5e3}{sort\+Tasks} (std\+::vector$<$ \hyperlink{class_do_lah_1_1_abstract_task}{Abstract\+Task} $\ast$ $>$ \&)
+\item 
+void \hyperlink{class_do_lah_1_1_calendar_a7824820e868bcd25b13771aea3b1e03e}{update\+Task\+Expiry} ()
+\item 
+void \hyperlink{class_do_lah_1_1_calendar_a44a1a787d875cc3e8e67d261b8b097bc}{index\+Tasks} (std\+::vector$<$ \hyperlink{class_do_lah_1_1_abstract_task}{Abstract\+Task} $\ast$ $>$ \&, int=0)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{class_do_lah_1_1_calendar_a7a0efe29e15b06b684b4069e9cd1c665}{task\+Compare} (\hyperlink{class_do_lah_1_1_abstract_task}{Abstract\+Task} $\ast$, \hyperlink{class_do_lah_1_1_abstract_task}{Abstract\+Task} $\ast$)
+\item 
+static std\+::vector$<$ std\+::tm $>$ \hyperlink{class_do_lah_1_1_calendar_a5cc616d7cf65a05871c0d399e8fae083}{get\+Dates} (\hyperlink{class_do_lah_1_1_abstract_task}{Abstract\+Task} $\ast$)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_do_lah_1_1_calendar_a824cb648003203e6fe2784955efbf078}{Calendar\+::find\+Insertion\+Point} (\hyperlink{class_do_lah_1_1_abstract_task}{Abstract\+Task} $\ast$task, int start, int end)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{class_do_lah_1_1_abstract_task}{Abstract\+Task} $\ast$ $>$ \hyperlink{class_do_lah_1_1_calendar_aec812b23859cfd1e7cce11d4efe1ff56}{task\+List}
+\item 
+std\+::vector$<$ \hyperlink{class_do_lah_1_1_abstract_task}{Abstract\+Task} $\ast$ $>$ \hyperlink{class_do_lah_1_1_calendar_a7d8b88d505dfdf50201129928c7cb97b}{done\+List}
+\item 
+\hyperlink{class_do_lah_1_1_command_history}{Command\+History} \hyperlink{class_do_lah_1_1_calendar_a4324df6d3d33b55375d650a5baa41e3a}{cmd\+History}
+\item 
+std\+::vector$<$ \hyperlink{class_do_lah_1_1_abstract_task}{Abstract\+Task} $\ast$ $>$ \hyperlink{class_do_lah_1_1_calendar_a4354b2eeb2a32b579dcab4d16fbe3f9f}{searched\+List}
+\item 
+std\+::string \hyperlink{class_do_lah_1_1_calendar_a6bb6992b8aeb30195175e1b742a7f2fa}{T\+A\+S\+K\+\_\+\+I\+N\+D\+E\+X\+\_\+\+O\+U\+T\+\_\+\+O\+F\+\_\+\+R\+A\+N\+G\+E\+\_\+\+M\+E\+S\+S\+A\+G\+E} = \char`\"{}Task index out of range\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for holding the actual tasklist(s) and any operations on tasks in those list(s). 
+
+This class holds all the tasks and contains all the possible operations onthe tasklists. Any operation on the tasklists must necessarily go through one of the methods in this class. For all practical purposes only one copy of this class should exist in the program at any point of time. It is not a singleton class only because of testing purposes and also encapsulation problems arising from creating a singleton class. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_do_lah_1_1_calendar_afde5e203ea4cb45ecf4d2cabce19826e}{}\index{Do\+Lah\+::\+Calendar@{Do\+Lah\+::\+Calendar}!Calendar@{Calendar}}
+\index{Calendar@{Calendar}!Do\+Lah\+::\+Calendar@{Do\+Lah\+::\+Calendar}}
+\subsubsection[{Calendar()}]{\setlength{\rightskip}{0pt plus 5cm}Do\+Lah\+::\+Calendar\+::\+Calendar (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_do_lah_1_1_calendar_afde5e203ea4cb45ecf4d2cabce19826e}
+\hypertarget{class_do_lah_1_1_calendar_abe8ecd064fff0cb055938c2f2ab6eaca}{}\index{Do\+Lah\+::\+Calendar@{Do\+Lah\+::\+Calendar}!````~Calendar@{$\sim$\+Calendar}}
+\index{````~Calendar@{$\sim$\+Calendar}!Do\+Lah\+::\+Calendar@{Do\+Lah\+::\+Calendar}}
+\subsubsection[{$\sim$\+Calendar()}]{\setlength{\rightskip}{0pt plus 5cm}Do\+Lah\+::\+Calendar\+::$\sim$\+Calendar (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_do_lah_1_1_calendar_abe8ecd064fff0cb055938c2f2ab6eaca}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_do_lah_1_1_calendar_a962c1ff0c5d697282fa5943a5e62a538}{}\index{Do\+Lah\+::\+Calendar@{Do\+Lah\+::\+Calendar}!add\+Task@{add\+Task}}
+\index{add\+Task@{add\+Task}!Do\+Lah\+::\+Calendar@{Do\+Lah\+::\+Calendar}}
+\subsubsection[{add\+Task(\+Abstract\+Task $\ast$)}]{\setlength{\rightskip}{0pt plus 5cm}void Do\+Lah\+::\+Calendar\+::add\+Task (
+\begin{DoxyParamCaption}
+\item[{{\bf Abstract\+Task} $\ast$}]{task}
+\end{DoxyParamCaption}
+)}\label{class_do_lah_1_1_calendar_a962c1ff0c5d697282fa5943a5e62a538}
+Adds a task to either done\+List or task\+List depending on whether the task is done. The task is inserted into the vector at the appropriate index to maintain a sorted file. \hypertarget{class_do_lah_1_1_calendar_a824cb648003203e6fe2784955efbf078}{}\index{Do\+Lah\+::\+Calendar@{Do\+Lah\+::\+Calendar}!Calendar\+::find\+Insertion\+Point@{Calendar\+::find\+Insertion\+Point}}
+\index{Calendar\+::find\+Insertion\+Point@{Calendar\+::find\+Insertion\+Point}!Do\+Lah\+::\+Calendar@{Do\+Lah\+::\+Calendar}}
+\subsubsection[{Calendar\+::find\+Insertion\+Point(\+Abstract\+Task $\ast$task, int start, int end)}]{\setlength{\rightskip}{0pt plus 5cm}void Do\+Lah\+::\+Calendar\+::\+Calendar\+::find\+Insertion\+Point (
+\begin{DoxyParamCaption}
+\item[{{\bf Abstract\+Task} $\ast$}]{task, }
+\item[{int}]{start, }
+\item[{int}]{end}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_do_lah_1_1_calendar_a824cb648003203e6fe2784955efbf078}
+\hypertarget{class_do_lah_1_1_calendar_a35b75de2b1203f707c25fe7f75b8f58b}{}\index{Do\+Lah\+::\+Calendar@{Do\+Lah\+::\+Calendar}!clear\+Tasks@{clear\+Tasks}}
+\index{clear\+Tasks@{clear\+Tasks}!Do\+Lah\+::\+Calendar@{Do\+Lah\+::\+Calendar}}
+\subsubsection[{clear\+Tasks()}]{\setlength{\rightskip}{0pt plus 5cm}void Do\+Lah\+::\+Calendar\+::clear\+Tasks (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_do_lah_1_1_calendar_a35b75de2b1203f707c25fe7f75b8f58b}
+\hypertarget{class_do_lah_1_1_calendar_a4f5d55b04a1ea3b62f03a3cad19b12c9}{}\index{Do\+Lah\+::\+Calendar@{Do\+Lah\+::\+Calendar}!delete\+Task@{delete\+Task}}
+\index{delete\+Task@{delete\+Task}!Do\+Lah\+::\+Calendar@{Do\+Lah\+::\+Calendar}}
+\subsubsection[{delete\+Task(int, bool=true)}]{\setlength{\rightskip}{0pt plus 5cm}void Do\+Lah\+::\+Calendar\+::delete\+Task (
+\begin{DoxyParamCaption}
+\item[{int}]{index, }
+\item[{bool}]{status = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\label{class_do_lah_1_1_calendar_a4f5d55b04a1ea3b62f03a3cad19b12c9}
+
+
+Deletes. 
+
+\hypertarget{class_do_lah_1_1_calendar_a190db0f939a52b40fbec2482056820f4}{}\index{Do\+Lah\+::\+Calendar@{Do\+Lah\+::\+Calendar}!get\+All\+Task\+List@{get\+All\+Task\+List}}
+\index{get\+All\+Task\+List@{get\+All\+Task\+List}!Do\+Lah\+::\+Calendar@{Do\+Lah\+::\+Calendar}}
+\subsubsection[{get\+All\+Task\+List() const }]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf Abstract\+Task} $\ast$ $>$ Do\+Lah\+::\+Calendar\+::get\+All\+Task\+List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_do_lah_1_1_calendar_a190db0f939a52b40fbec2482056820f4}
+
+
+Returns a vector containing all tasks from task\+List and done\+List as an actual object. 
+
+\begin{DoxyReturn}{Returns}
+A vector containing all tasks. 
+\end{DoxyReturn}
+\hypertarget{class_do_lah_1_1_calendar_a65c6f8e5a6bc421d20eded6fbf6221ae}{}\index{Do\+Lah\+::\+Calendar@{Do\+Lah\+::\+Calendar}!get\+Cmd\+History@{get\+Cmd\+History}}
+\index{get\+Cmd\+History@{get\+Cmd\+History}!Do\+Lah\+::\+Calendar@{Do\+Lah\+::\+Calendar}}
+\subsubsection[{get\+Cmd\+History()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Do\+Lah\+::\+Command\+History} $\ast$ Do\+Lah\+::\+Calendar\+::get\+Cmd\+History (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_do_lah_1_1_calendar_a65c6f8e5a6bc421d20eded6fbf6221ae}
+
+
+Returns a pointer to the \hyperlink{class_do_lah_1_1_command_history}{Command\+History} class instance associated with this particular \hyperlink{class_do_lah_1_1_calendar}{Calendar} instance. 
+
+\begin{DoxyReturn}{Returns}
+A pointer to an instance of \hyperlink{class_do_lah_1_1_command_history}{Command\+History}. 
+\end{DoxyReturn}
+\hypertarget{class_do_lah_1_1_calendar_a5cc616d7cf65a05871c0d399e8fae083}{}\index{Do\+Lah\+::\+Calendar@{Do\+Lah\+::\+Calendar}!get\+Dates@{get\+Dates}}
+\index{get\+Dates@{get\+Dates}!Do\+Lah\+::\+Calendar@{Do\+Lah\+::\+Calendar}}
+\subsubsection[{get\+Dates(\+Abstract\+Task $\ast$)}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ std\+::tm $>$ Do\+Lah\+::\+Calendar\+::get\+Dates (
+\begin{DoxyParamCaption}
+\item[{{\bf Abstract\+Task} $\ast$}]{it}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_do_lah_1_1_calendar_a5cc616d7cf65a05871c0d399e8fae083}
+\hypertarget{class_do_lah_1_1_calendar_ac6461f76975d358bd5f109d3e5c129a6}{}\index{Do\+Lah\+::\+Calendar@{Do\+Lah\+::\+Calendar}!get\+Done@{get\+Done}}
+\index{get\+Done@{get\+Done}!Do\+Lah\+::\+Calendar@{Do\+Lah\+::\+Calendar}}
+\subsubsection[{get\+Done(int) const }]{\setlength{\rightskip}{0pt plus 5cm}{\bf Abstract\+Task} $\ast$ Do\+Lah\+::\+Calendar\+::get\+Done (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+) const}\label{class_do_lah_1_1_calendar_ac6461f76975d358bd5f109d3e5c129a6}
+
+
+Returns the task at the given index in the done task list done\+List. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The target index. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the relevant \hyperlink{class_do_lah_1_1_abstract_task}{Abstract\+Task}. 
+\end{DoxyReturn}
+\hypertarget{class_do_lah_1_1_calendar_ac14944af156416344c85d0c4001281b0}{}\index{Do\+Lah\+::\+Calendar@{Do\+Lah\+::\+Calendar}!get\+Done\+List@{get\+Done\+List}}
+\index{get\+Done\+List@{get\+Done\+List}!Do\+Lah\+::\+Calendar@{Do\+Lah\+::\+Calendar}}
+\subsubsection[{get\+Done\+List() const }]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf Abstract\+Task} $\ast$ $>$ Do\+Lah\+::\+Calendar\+::get\+Done\+List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_do_lah_1_1_calendar_ac14944af156416344c85d0c4001281b0}
+
+
+Returns a copy of done\+List as an actual vector object. 
+
+\begin{DoxyReturn}{Returns}
+A vector containing all done tasks. 
+\end{DoxyReturn}
+\hypertarget{class_do_lah_1_1_calendar_aaf633ddb1652ac6faa1e6e3a0a2aaea9}{}\index{Do\+Lah\+::\+Calendar@{Do\+Lah\+::\+Calendar}!get\+Searched\+Task\+List@{get\+Searched\+Task\+List}}
+\index{get\+Searched\+Task\+List@{get\+Searched\+Task\+List}!Do\+Lah\+::\+Calendar@{Do\+Lah\+::\+Calendar}}
+\subsubsection[{get\+Searched\+Task\+List() const }]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf Abstract\+Task} $\ast$ $>$ Do\+Lah\+::\+Calendar\+::get\+Searched\+Task\+List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_do_lah_1_1_calendar_aaf633ddb1652ac6faa1e6e3a0a2aaea9}
+
+
+Returns a copy of the vector containing the search results of the last query as an actual object. 
+
+\begin{DoxyReturn}{Returns}
+A vector containing the search results of the last query. 
+\end{DoxyReturn}
+\hypertarget{class_do_lah_1_1_calendar_abb1d17aa8c99cc151a43d8f13ebff86b}{}\index{Do\+Lah\+::\+Calendar@{Do\+Lah\+::\+Calendar}!get\+Task@{get\+Task}}
+\index{get\+Task@{get\+Task}!Do\+Lah\+::\+Calendar@{Do\+Lah\+::\+Calendar}}
+\subsubsection[{get\+Task(int) const }]{\setlength{\rightskip}{0pt plus 5cm}{\bf Abstract\+Task} $\ast$ Do\+Lah\+::\+Calendar\+::get\+Task (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+) const}\label{class_do_lah_1_1_calendar_abb1d17aa8c99cc151a43d8f13ebff86b}
+
+
+Returns the task at the given index in the main task list task\+List. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The target index. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the relevant \hyperlink{class_do_lah_1_1_abstract_task}{Abstract\+Task}. 
+\end{DoxyReturn}
+\hypertarget{class_do_lah_1_1_calendar_a3cbae80d27c584a64026725f64d07896}{}\index{Do\+Lah\+::\+Calendar@{Do\+Lah\+::\+Calendar}!get\+Task\+List@{get\+Task\+List}}
+\index{get\+Task\+List@{get\+Task\+List}!Do\+Lah\+::\+Calendar@{Do\+Lah\+::\+Calendar}}
+\subsubsection[{get\+Task\+List() const }]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf Abstract\+Task} $\ast$ $>$ Do\+Lah\+::\+Calendar\+::get\+Task\+List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_do_lah_1_1_calendar_a3cbae80d27c584a64026725f64d07896}
+
+
+Returns a copy of task\+List as an actual vector object. 
+
+\begin{DoxyReturn}{Returns}
+A vector containing all undone tasks. 
+\end{DoxyReturn}
+\hypertarget{class_do_lah_1_1_calendar_a44a1a787d875cc3e8e67d261b8b097bc}{}\index{Do\+Lah\+::\+Calendar@{Do\+Lah\+::\+Calendar}!index\+Tasks@{index\+Tasks}}
+\index{index\+Tasks@{index\+Tasks}!Do\+Lah\+::\+Calendar@{Do\+Lah\+::\+Calendar}}
+\subsubsection[{index\+Tasks(std\+::vector$<$ Abstract\+Task $\ast$ $>$ \&, int=0)}]{\setlength{\rightskip}{0pt plus 5cm}void Do\+Lah\+::\+Calendar\+::index\+Tasks (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf Abstract\+Task} $\ast$ $>$ \&}]{list, }
+\item[{int}]{start\+Index = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{class_do_lah_1_1_calendar_a44a1a787d875cc3e8e67d261b8b097bc}
+\hypertarget{class_do_lah_1_1_calendar_a91fa97512b28c6c09c28d912340c1e2e}{}\index{Do\+Lah\+::\+Calendar@{Do\+Lah\+::\+Calendar}!search@{search}}
+\index{search@{search}!Do\+Lah\+::\+Calendar@{Do\+Lah\+::\+Calendar}}
+\subsubsection[{search(std\+::string)}]{\setlength{\rightskip}{0pt plus 5cm}void Do\+Lah\+::\+Calendar\+::search (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{query}
+\end{DoxyParamCaption}
+)}\label{class_do_lah_1_1_calendar_a91fa97512b28c6c09c28d912340c1e2e}
+\hypertarget{class_do_lah_1_1_calendar_aaea96510180152ca13e24793b92f46c9}{}\index{Do\+Lah\+::\+Calendar@{Do\+Lah\+::\+Calendar}!search\+Date@{search\+Date}}
+\index{search\+Date@{search\+Date}!Do\+Lah\+::\+Calendar@{Do\+Lah\+::\+Calendar}}
+\subsubsection[{search\+Date(std\+::tm, std\+::tm)}]{\setlength{\rightskip}{0pt plus 5cm}void Do\+Lah\+::\+Calendar\+::search\+Date (
+\begin{DoxyParamCaption}
+\item[{std\+::tm}]{from, }
+\item[{std\+::tm}]{to}
+\end{DoxyParamCaption}
+)}\label{class_do_lah_1_1_calendar_aaea96510180152ca13e24793b92f46c9}
+\hypertarget{class_do_lah_1_1_calendar_af4e2ac9b3563863cb402c3070dc4a068}{}\index{Do\+Lah\+::\+Calendar@{Do\+Lah\+::\+Calendar}!set\+Done\+Task@{set\+Done\+Task}}
+\index{set\+Done\+Task@{set\+Done\+Task}!Do\+Lah\+::\+Calendar@{Do\+Lah\+::\+Calendar}}
+\subsubsection[{set\+Done\+Task(int, bool=true)}]{\setlength{\rightskip}{0pt plus 5cm}void Do\+Lah\+::\+Calendar\+::set\+Done\+Task (
+\begin{DoxyParamCaption}
+\item[{int}]{task\+Index, }
+\item[{bool}]{status = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\label{class_do_lah_1_1_calendar_af4e2ac9b3563863cb402c3070dc4a068}
+\hypertarget{class_do_lah_1_1_calendar_a4eebadb86c16cb33b00531c1523ce5e3}{}\index{Do\+Lah\+::\+Calendar@{Do\+Lah\+::\+Calendar}!sort\+Tasks@{sort\+Tasks}}
+\index{sort\+Tasks@{sort\+Tasks}!Do\+Lah\+::\+Calendar@{Do\+Lah\+::\+Calendar}}
+\subsubsection[{sort\+Tasks(std\+::vector$<$ Abstract\+Task $\ast$ $>$ \&)}]{\setlength{\rightskip}{0pt plus 5cm}void Do\+Lah\+::\+Calendar\+::sort\+Tasks (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf Abstract\+Task} $\ast$ $>$ \&}]{unsorted\+Task\+List}
+\end{DoxyParamCaption}
+)}\label{class_do_lah_1_1_calendar_a4eebadb86c16cb33b00531c1523ce5e3}
+\hypertarget{class_do_lah_1_1_calendar_a7a0efe29e15b06b684b4069e9cd1c665}{}\index{Do\+Lah\+::\+Calendar@{Do\+Lah\+::\+Calendar}!task\+Compare@{task\+Compare}}
+\index{task\+Compare@{task\+Compare}!Do\+Lah\+::\+Calendar@{Do\+Lah\+::\+Calendar}}
+\subsubsection[{task\+Compare(\+Abstract\+Task $\ast$, Abstract\+Task $\ast$)}]{\setlength{\rightskip}{0pt plus 5cm}bool Do\+Lah\+::\+Calendar\+::task\+Compare (
+\begin{DoxyParamCaption}
+\item[{{\bf Abstract\+Task} $\ast$}]{first, }
+\item[{{\bf Abstract\+Task} $\ast$}]{second}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_do_lah_1_1_calendar_a7a0efe29e15b06b684b4069e9cd1c665}
+\hypertarget{class_do_lah_1_1_calendar_aeeaf96fc786f7bb10f4f705990463376}{}\index{Do\+Lah\+::\+Calendar@{Do\+Lah\+::\+Calendar}!update\+Task@{update\+Task}}
+\index{update\+Task@{update\+Task}!Do\+Lah\+::\+Calendar@{Do\+Lah\+::\+Calendar}}
+\subsubsection[{update\+Task(int, Abstract\+Task $\ast$)}]{\setlength{\rightskip}{0pt plus 5cm}void Do\+Lah\+::\+Calendar\+::update\+Task (
+\begin{DoxyParamCaption}
+\item[{int}]{task\+Index, }
+\item[{{\bf Abstract\+Task} $\ast$}]{task}
+\end{DoxyParamCaption}
+)}\label{class_do_lah_1_1_calendar_aeeaf96fc786f7bb10f4f705990463376}
+\hypertarget{class_do_lah_1_1_calendar_a7824820e868bcd25b13771aea3b1e03e}{}\index{Do\+Lah\+::\+Calendar@{Do\+Lah\+::\+Calendar}!update\+Task\+Expiry@{update\+Task\+Expiry}}
+\index{update\+Task\+Expiry@{update\+Task\+Expiry}!Do\+Lah\+::\+Calendar@{Do\+Lah\+::\+Calendar}}
+\subsubsection[{update\+Task\+Expiry()}]{\setlength{\rightskip}{0pt plus 5cm}void Do\+Lah\+::\+Calendar\+::update\+Task\+Expiry (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_do_lah_1_1_calendar_a7824820e868bcd25b13771aea3b1e03e}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_do_lah_1_1_calendar_a4324df6d3d33b55375d650a5baa41e3a}{}\index{Do\+Lah\+::\+Calendar@{Do\+Lah\+::\+Calendar}!cmd\+History@{cmd\+History}}
+\index{cmd\+History@{cmd\+History}!Do\+Lah\+::\+Calendar@{Do\+Lah\+::\+Calendar}}
+\subsubsection[{cmd\+History}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Command\+History} Do\+Lah\+::\+Calendar\+::cmd\+History\hspace{0.3cm}{\ttfamily [private]}}\label{class_do_lah_1_1_calendar_a4324df6d3d33b55375d650a5baa41e3a}
+\hypertarget{class_do_lah_1_1_calendar_a7d8b88d505dfdf50201129928c7cb97b}{}\index{Do\+Lah\+::\+Calendar@{Do\+Lah\+::\+Calendar}!done\+List@{done\+List}}
+\index{done\+List@{done\+List}!Do\+Lah\+::\+Calendar@{Do\+Lah\+::\+Calendar}}
+\subsubsection[{done\+List}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Abstract\+Task}$\ast$$>$ Do\+Lah\+::\+Calendar\+::done\+List\hspace{0.3cm}{\ttfamily [private]}}\label{class_do_lah_1_1_calendar_a7d8b88d505dfdf50201129928c7cb97b}
+\hypertarget{class_do_lah_1_1_calendar_a4354b2eeb2a32b579dcab4d16fbe3f9f}{}\index{Do\+Lah\+::\+Calendar@{Do\+Lah\+::\+Calendar}!searched\+List@{searched\+List}}
+\index{searched\+List@{searched\+List}!Do\+Lah\+::\+Calendar@{Do\+Lah\+::\+Calendar}}
+\subsubsection[{searched\+List}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Abstract\+Task}$\ast$$>$ Do\+Lah\+::\+Calendar\+::searched\+List\hspace{0.3cm}{\ttfamily [private]}}\label{class_do_lah_1_1_calendar_a4354b2eeb2a32b579dcab4d16fbe3f9f}
+\hypertarget{class_do_lah_1_1_calendar_a6bb6992b8aeb30195175e1b742a7f2fa}{}\index{Do\+Lah\+::\+Calendar@{Do\+Lah\+::\+Calendar}!T\+A\+S\+K\+\_\+\+I\+N\+D\+E\+X\+\_\+\+O\+U\+T\+\_\+\+O\+F\+\_\+\+R\+A\+N\+G\+E\+\_\+\+M\+E\+S\+S\+A\+G\+E@{T\+A\+S\+K\+\_\+\+I\+N\+D\+E\+X\+\_\+\+O\+U\+T\+\_\+\+O\+F\+\_\+\+R\+A\+N\+G\+E\+\_\+\+M\+E\+S\+S\+A\+G\+E}}
+\index{T\+A\+S\+K\+\_\+\+I\+N\+D\+E\+X\+\_\+\+O\+U\+T\+\_\+\+O\+F\+\_\+\+R\+A\+N\+G\+E\+\_\+\+M\+E\+S\+S\+A\+G\+E@{T\+A\+S\+K\+\_\+\+I\+N\+D\+E\+X\+\_\+\+O\+U\+T\+\_\+\+O\+F\+\_\+\+R\+A\+N\+G\+E\+\_\+\+M\+E\+S\+S\+A\+G\+E}!Do\+Lah\+::\+Calendar@{Do\+Lah\+::\+Calendar}}
+\subsubsection[{T\+A\+S\+K\+\_\+\+I\+N\+D\+E\+X\+\_\+\+O\+U\+T\+\_\+\+O\+F\+\_\+\+R\+A\+N\+G\+E\+\_\+\+M\+E\+S\+S\+A\+G\+E}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Do\+Lah\+::\+Calendar\+::\+T\+A\+S\+K\+\_\+\+I\+N\+D\+E\+X\+\_\+\+O\+U\+T\+\_\+\+O\+F\+\_\+\+R\+A\+N\+G\+E\+\_\+\+M\+E\+S\+S\+A\+G\+E = \char`\"{}Task index out of range\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}\label{class_do_lah_1_1_calendar_a6bb6992b8aeb30195175e1b742a7f2fa}
+\hypertarget{class_do_lah_1_1_calendar_aec812b23859cfd1e7cce11d4efe1ff56}{}\index{Do\+Lah\+::\+Calendar@{Do\+Lah\+::\+Calendar}!task\+List@{task\+List}}
+\index{task\+List@{task\+List}!Do\+Lah\+::\+Calendar@{Do\+Lah\+::\+Calendar}}
+\subsubsection[{task\+List}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Abstract\+Task}$\ast$$>$ Do\+Lah\+::\+Calendar\+::task\+List\hspace{0.3cm}{\ttfamily [private]}}\label{class_do_lah_1_1_calendar_aec812b23859cfd1e7cce11d4efe1ff56}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Do\+Lah/\+Models/\hyperlink{_calendar_8h}{Calendar.\+h}\item 
+Do\+Lah/\+Models/\hyperlink{_calendar_8cpp}{Calendar.\+cpp}\end{DoxyCompactItemize}

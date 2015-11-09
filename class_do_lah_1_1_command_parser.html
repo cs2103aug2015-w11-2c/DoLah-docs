@@ -117,11 +117,16 @@ $(document).ready(function(){initNavTree('class_do_lah_1_1_command_parser.html',
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="_command_parser_8h_source.html">CommandParser.h</a>&gt;</code></p>
+<p>Receives a string and returns a Command object.  
+ <a href="class_do_lah_1_1_command_parser.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_command_parser_8h_source.html">Parser/CommandParser.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for DoLah::CommandParser:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_do_lah_1_1_command_parser__coll__graph.png" border="0" usemap="#_do_lah_1_1_command_parser_coll__map" alt="Collaboration graph"/></div>
+<map name="_do_lah_1_1_command_parser_coll__map" id="_do_lah_1_1_command_parser_coll__map">
+</map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -161,37 +166,49 @@ Static Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
 <tr class="memitem:a1c73df26d5ef75f3bf8a175848c9c309"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_command_parser.html#a1c73df26d5ef75f3bf8a175848c9c309">ADD</a> = { &quot;add&quot; }</td></tr>
+<tr class="memdesc:a1c73df26d5ef75f3bf8a175848c9c309"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of strings that indicates the string is an <a class="el" href="class_do_lah_1_1_add_task_command.html">AddTaskCommand</a>.  <a href="#a1c73df26d5ef75f3bf8a175848c9c309">More...</a><br /></td></tr>
 <tr class="separator:a1c73df26d5ef75f3bf8a175848c9c309"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2681caa42d19e5e414a54288ee705317"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_command_parser.html#a2681caa42d19e5e414a54288ee705317">SEARCH</a> = { &quot;search&quot;, &quot;find&quot; }</td></tr>
+<tr class="memdesc:a2681caa42d19e5e414a54288ee705317"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of strings that indicates the string is a <a class="el" href="class_do_lah_1_1_search_task_command.html">SearchTaskCommand</a>.  <a href="#a2681caa42d19e5e414a54288ee705317">More...</a><br /></td></tr>
 <tr class="separator:a2681caa42d19e5e414a54288ee705317"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a225369acfd527549bda2420ae7528987"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_command_parser.html#a225369acfd527549bda2420ae7528987">DONE</a> = { &quot;done&quot; }</td></tr>
+<tr class="memdesc:a225369acfd527549bda2420ae7528987"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of strings that indicates the string is a DoneTaskCommand.  <a href="#a225369acfd527549bda2420ae7528987">More...</a><br /></td></tr>
 <tr class="separator:a225369acfd527549bda2420ae7528987"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad58f7d1620e3c60fc85850183804443a"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_command_parser.html#ad58f7d1620e3c60fc85850183804443a">UNDONE</a> = { &quot;undone&quot; }</td></tr>
+<tr class="memdesc:ad58f7d1620e3c60fc85850183804443a"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of strings that indicates the string is an UndoneTaskCommand.  <a href="#ad58f7d1620e3c60fc85850183804443a">More...</a><br /></td></tr>
 <tr class="separator:ad58f7d1620e3c60fc85850183804443a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae978394933fd0c4fb2bc7d1010e401ff"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_command_parser.html#ae978394933fd0c4fb2bc7d1010e401ff">EDIT</a> = { &quot;edit&quot; }</td></tr>
+<tr class="memdesc:ae978394933fd0c4fb2bc7d1010e401ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of strings that indicates the string is an <a class="el" href="class_do_lah_1_1_edit_task_command.html">EditTaskCommand</a>.  <a href="#ae978394933fd0c4fb2bc7d1010e401ff">More...</a><br /></td></tr>
 <tr class="separator:ae978394933fd0c4fb2bc7d1010e401ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a205ebad6759a659219ed0a0decff7c2e"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_command_parser.html#a205ebad6759a659219ed0a0decff7c2e">DELETE</a> = { &quot;delete&quot;, &quot;del&quot;, &quot;dl&quot; }</td></tr>
+<tr class="memdesc:a205ebad6759a659219ed0a0decff7c2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of strings that indicates the string is a <a class="el" href="class_do_lah_1_1_delete_task_command.html">DeleteTaskCommand</a>.  <a href="#a205ebad6759a659219ed0a0decff7c2e">More...</a><br /></td></tr>
 <tr class="separator:a205ebad6759a659219ed0a0decff7c2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78a083731453c88a2684e788b516a84f"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_command_parser.html#a78a083731453c88a2684e788b516a84f">CLEAR</a> = { &quot;clear&quot; }</td></tr>
+<tr class="memdesc:a78a083731453c88a2684e788b516a84f"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of strings that indicates the string is a <a class="el" href="class_do_lah_1_1_clear_task_command.html">ClearTaskCommand</a>.  <a href="#a78a083731453c88a2684e788b516a84f">More...</a><br /></td></tr>
 <tr class="separator:a78a083731453c88a2684e788b516a84f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45a95546b7799a8107e53b2f9b06b832"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_command_parser.html#a45a95546b7799a8107e53b2f9b06b832">UNDO</a> = { &quot;undo&quot; }</td></tr>
+<tr class="memdesc:a45a95546b7799a8107e53b2f9b06b832"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of strings that indicates the string is an <a class="el" href="class_do_lah_1_1_undo_task_command.html">UndoTaskCommand</a>.  <a href="#a45a95546b7799a8107e53b2f9b06b832">More...</a><br /></td></tr>
 <tr class="separator:a45a95546b7799a8107e53b2f9b06b832"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a947bf7899fda03c33aced5b1458bc00e"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_command_parser.html#a947bf7899fda03c33aced5b1458bc00e">REDO</a> = { &quot;redo&quot; }</td></tr>
+<tr class="memdesc:a947bf7899fda03c33aced5b1458bc00e"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of strings that indicates the string is a RedohTaskCommand.  <a href="#a947bf7899fda03c33aced5b1458bc00e">More...</a><br /></td></tr>
 <tr class="separator:a947bf7899fda03c33aced5b1458bc00e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0d1598afa9d52668f865a455d48ebf8"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_command_parser.html#aa0d1598afa9d52668f865a455d48ebf8">UNHANDLED_COMMAND_MESSAGE</a> = &quot;Command not handled&quot;</td></tr>
-<tr class="separator:aa0d1598afa9d52668f865a455d48ebf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:addef146f1fd4751ca9d7a7db3cff9f57"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_command_parser.html#addef146f1fd4751ca9d7a7db3cff9f57">UNKNOWN_COMMAND_MESSAGE</a> = &quot;Command not recognized&quot;</td></tr>
-<tr class="separator:addef146f1fd4751ca9d7a7db3cff9f57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aacc0440f95ccf0e54114d2aa7dd0938e"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_command_parser.html#aacc0440f95ccf0e54114d2aa7dd0938e">TOO_MANY_ARGUMENTS_MESSAGE</a> = &quot;Too many arguments&quot;</td></tr>
+<tr class="memdesc:aacc0440f95ccf0e54114d2aa7dd0938e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Message to be thrown when too many arguments are given for the command type.  <a href="#aacc0440f95ccf0e54114d2aa7dd0938e">More...</a><br /></td></tr>
 <tr class="separator:aacc0440f95ccf0e54114d2aa7dd0938e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c16426a9f69f4a7553baf90267f0a35"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_command_parser.html#a3c16426a9f69f4a7553baf90267f0a35">TOO_LITTLE_ARGUMENTS_MESSAGE</a> = &quot;Too little arguments&quot;</td></tr>
+<tr class="memdesc:a3c16426a9f69f4a7553baf90267f0a35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Message to be thrown when too little arguments are given for the command type.  <a href="#a3c16426a9f69f4a7553baf90267f0a35">More...</a><br /></td></tr>
 <tr class="separator:a3c16426a9f69f4a7553baf90267f0a35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aedc81281994a109b2ad3c9ac77aa6ed8"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_command_parser.html#aedc81281994a109b2ad3c9ac77aa6ed8">INVALID_TASK_ID_ARGUMENT</a> = &quot;Invalid task ID given&quot;</td></tr>
+<tr class="memdesc:aedc81281994a109b2ad3c9ac77aa6ed8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Message to be thrown when the task ID for edit or delete is nonsensual.  <a href="#aedc81281994a109b2ad3c9ac77aa6ed8">More...</a><br /></td></tr>
 <tr class="separator:aedc81281994a109b2ad3c9ac77aa6ed8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad7bb4ba109bb70f6997885b99e0ab66"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_command_parser.html#aad7bb4ba109bb70f6997885b99e0ab66">OUTDATED</a> = { &quot;outdated&quot;, &quot;overdue&quot; }</td></tr>
+<tr class="memdesc:aad7bb4ba109bb70f6997885b99e0ab66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates that the search is looking for outdated tasks.  <a href="#aad7bb4ba109bb70f6997885b99e0ab66">More...</a><br /></td></tr>
 <tr class="separator:aad7bb4ba109bb70f6997885b99e0ab66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Receives a string and returns a Command object. </p>
+<p>If the input is invalid, it will throw invalid_argument exception. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="adcabb517afe371b22b228b392615da33"></a>
 <div class="memitem">
 <div class="memproto">
@@ -244,6 +261,13 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Parse input string into a Command object. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">input</td><td>String to be parsed. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Command object. </dd></dl>
 
 </div>
 </div>
@@ -268,6 +292,13 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Parse input string vector into a <a class="el" href="class_do_lah_1_1_add_task_command.html">AddTaskCommand</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">inputArr</td><td>String vector to be parsed. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_do_lah_1_1_add_task_command.html">AddTaskCommand</a> object. </dd></dl>
 
 </div>
 </div>
@@ -292,6 +323,13 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Parse input string vector into a <a class="el" href="class_do_lah_1_1_clear_task_command.html">ClearTaskCommand</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">inputArr</td><td>String vector to be parsed. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_do_lah_1_1_clear_task_command.html">ClearTaskCommand</a> object. </dd></dl>
 
 </div>
 </div>
@@ -316,6 +354,13 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Parse input string vector into a <a class="el" href="class_do_lah_1_1_delete_task_command.html">DeleteTaskCommand</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">inputArr</td><td>String vector to be parsed. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_do_lah_1_1_delete_task_command.html">DeleteTaskCommand</a> object. </dd></dl>
 
 </div>
 </div>
@@ -340,6 +385,13 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Parse input string vector into a <a class="el" href="class_do_lah_1_1_edit_task_command.html">EditTaskCommand</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">inputArr</td><td>String vector to be parsed. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_do_lah_1_1_edit_task_command.html">EditTaskCommand</a> object. </dd></dl>
 
 </div>
 </div>
@@ -364,6 +416,13 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Parse input string vector into a <a class="el" href="class_do_lah_1_1_redo_task_command.html">RedoTaskCommand</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">inputArr</td><td>String vector to be parsed. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_do_lah_1_1_redo_task_command.html">RedoTaskCommand</a> object. </dd></dl>
 
 </div>
 </div>
@@ -388,6 +447,13 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Parse input string vector into a <a class="el" href="class_do_lah_1_1_search_task_command.html">SearchTaskCommand</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">inputArr</td><td>String vector to be parsed. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_do_lah_1_1_search_task_command.html">SearchTaskCommand</a> object. </dd></dl>
 
 </div>
 </div>
@@ -412,6 +478,13 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Parse input string vector into a <a class="el" href="class_do_lah_1_1_search_date_task_command.html">SearchDateTaskCommand</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">inputArr</td><td>String vector to be parsed. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_do_lah_1_1_search_date_task_command.html">SearchDateTaskCommand</a> object. </dd></dl>
 
 </div>
 </div>
@@ -436,6 +509,13 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Parse input string vector into a <a class="el" href="class_do_lah_1_1_set_done_task_command.html">SetDoneTaskCommand</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">inputArr</td><td>String vector to be parsed. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_do_lah_1_1_set_done_task_command.html">SetDoneTaskCommand</a> object. </dd></dl>
 
 </div>
 </div>
@@ -460,6 +540,13 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Parse input string vector into a <a class="el" href="class_do_lah_1_1_set_undone_task_command.html">SetUndoneTaskCommand</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">inputArr</td><td>String vector to be parsed. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_do_lah_1_1_set_undone_task_command.html">SetUndoneTaskCommand</a> object. </dd></dl>
 
 </div>
 </div>
@@ -484,6 +571,13 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Parse input string vector into a <a class="el" href="class_do_lah_1_1_undo_task_command.html">UndoTaskCommand</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">inputArr</td><td>String vector to be parsed. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_do_lah_1_1_undo_task_command.html">UndoTaskCommand</a> object. </dd></dl>
 
 </div>
 </div>
@@ -508,6 +602,13 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Prune the command from the string vector. Currently the format is fixed, and thus always the first element is pruned. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">inputArr</td><td>String vector to be pruned </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pruned string vector. </dd></dl>
 
 </div>
 </div>
@@ -530,6 +631,8 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>List of strings that indicates the string is an <a class="el" href="class_do_lah_1_1_add_task_command.html">AddTaskCommand</a>. </p>
+
 </div>
 </div>
 <a class="anchor" id="a78a083731453c88a2684e788b516a84f"></a>
@@ -549,6 +652,8 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>List of strings that indicates the string is a <a class="el" href="class_do_lah_1_1_clear_task_command.html">ClearTaskCommand</a>. </p>
 
 </div>
 </div>
@@ -570,6 +675,8 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>List of strings that indicates the string is a <a class="el" href="class_do_lah_1_1_delete_task_command.html">DeleteTaskCommand</a>. </p>
+
 </div>
 </div>
 <a class="anchor" id="a225369acfd527549bda2420ae7528987"></a>
@@ -589,6 +696,8 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>List of strings that indicates the string is a DoneTaskCommand. </p>
 
 </div>
 </div>
@@ -610,6 +719,8 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>List of strings that indicates the string is an <a class="el" href="class_do_lah_1_1_edit_task_command.html">EditTaskCommand</a>. </p>
+
 </div>
 </div>
 <a class="anchor" id="aedc81281994a109b2ad3c9ac77aa6ed8"></a>
@@ -629,6 +740,8 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Message to be thrown when the task ID for edit or delete is nonsensual. </p>
 
 </div>
 </div>
@@ -650,6 +763,8 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Indicates that the search is looking for outdated tasks. </p>
+
 </div>
 </div>
 <a class="anchor" id="a947bf7899fda03c33aced5b1458bc00e"></a>
@@ -669,6 +784,8 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>List of strings that indicates the string is a RedohTaskCommand. </p>
 
 </div>
 </div>
@@ -690,6 +807,8 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>List of strings that indicates the string is a <a class="el" href="class_do_lah_1_1_search_task_command.html">SearchTaskCommand</a>. </p>
+
 </div>
 </div>
 <a class="anchor" id="a3c16426a9f69f4a7553baf90267f0a35"></a>
@@ -709,6 +828,8 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Message to be thrown when too little arguments are given for the command type. </p>
 
 </div>
 </div>
@@ -730,6 +851,8 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Message to be thrown when too many arguments are given for the command type. </p>
+
 </div>
 </div>
 <a class="anchor" id="a45a95546b7799a8107e53b2f9b06b832"></a>
@@ -749,6 +872,8 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>List of strings that indicates the string is an <a class="el" href="class_do_lah_1_1_undo_task_command.html">UndoTaskCommand</a>. </p>
 
 </div>
 </div>
@@ -770,45 +895,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a class="anchor" id="aa0d1598afa9d52668f865a455d48ebf8"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string DoLah::CommandParser::UNHANDLED_COMMAND_MESSAGE = &quot;Command not handled&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="addef146f1fd4751ca9d7a7db3cff9f57"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string DoLah::CommandParser::UNKNOWN_COMMAND_MESSAGE = &quot;Command not recognized&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p>List of strings that indicates the string is an UndoneTaskCommand. </p>
 
 </div>
 </div>

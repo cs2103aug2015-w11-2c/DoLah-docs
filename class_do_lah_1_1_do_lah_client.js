@@ -6,6 +6,7 @@ var class_do_lah_1_1_do_lah_client =
     [ "parseAndProcessCommand", "class_do_lah_1_1_do_lah_client.html#a74843a748129cc862416e87c9730d654", null ],
     [ "restart", "class_do_lah_1_1_do_lah_client.html#a702e3fcdf119dfb69b8a0fa96b0f5c86", null ],
     [ "setStorageLocation", "class_do_lah_1_1_do_lah_client.html#af0849e1f18ae1983dcea42ed0ed87d4c", null ],
+    [ "setTheme", "class_do_lah_1_1_do_lah_client.html#a8f92063b2a17abe23c361a6e946fbf20", null ],
     [ "calendar", "class_do_lah_1_1_do_lah_client.html#adb2e6fbb727d41de344d163de8c8de33", null ],
     [ "commandInvoker", "class_do_lah_1_1_do_lah_client.html#a53d3d667c3a6b9f20b5709bb4ed886fa", null ],
     [ "config", "class_do_lah_1_1_do_lah_client.html#a01d9d99b4d1db03117fffccb2f4fb81b", null ],

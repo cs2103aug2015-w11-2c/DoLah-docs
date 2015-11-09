@@ -117,11 +117,16 @@ $(document).ready(function(){initNavTree('class_do_lah_1_1_date_time_parser.html
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="_date_time_parser_8h_source.html">DateTimeParser.h</a>&gt;</code></p>
+<p>Static library to handle conversion from string vector to std::tm.  
+ <a href="class_do_lah_1_1_date_time_parser.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_date_time_parser_8h_source.html">Parser/DateTimeParser.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for DoLah::DateTimeParser:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_do_lah_1_1_date_time_parser__coll__graph.png" border="0" usemap="#_do_lah_1_1_date_time_parser_coll__map" alt="Collaboration graph"/></div>
+<map name="_do_lah_1_1_date_time_parser_coll__map" id="_do_lah_1_1_date_time_parser_coll__map">
+</map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -165,61 +170,88 @@ Static Private Attributes</h2></td></tr>
 <tr class="memitem:a23feb7cbc6832ca6931a2204752ce930"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_date_time_parser.html#a23feb7cbc6832ca6931a2204752ce930">REJECT</a> = -1</td></tr>
 <tr class="separator:a23feb7cbc6832ca6931a2204752ce930"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb080e964894e09a85f4b5314e4098d7"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_date_time_parser.html#adb080e964894e09a85f4b5314e4098d7">CENTURY</a> = &quot;20&quot;</td></tr>
+<tr class="memdesc:adb080e964894e09a85f4b5314e4098d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Arbitrary int value to indicates REJECT in any classification.  <a href="#adb080e964894e09a85f4b5314e4098d7">More...</a><br /></td></tr>
 <tr class="separator:adb080e964894e09a85f4b5314e4098d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b0a189985bf3f6424b73c218392ae1a"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_date_time_parser.html#a5b0a189985bf3f6424b73c218392ae1a">MININSECS</a> = 60</td></tr>
-<tr class="separator:a5b0a189985bf3f6424b73c218392ae1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae14bf5fd54de9913e6c48d3d61ff199"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_date_time_parser.html#aae14bf5fd54de9913e6c48d3d61ff199">HOURINSECS</a> = 3600</td></tr>
-<tr class="separator:aae14bf5fd54de9913e6c48d3d61ff199"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98ddd8d28567f4a0315bc299ef6c70f7"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_date_time_parser.html#a98ddd8d28567f4a0315bc299ef6c70f7">DAYINSECS</a> = 86400</td></tr>
-<tr class="separator:a98ddd8d28567f4a0315bc299ef6c70f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3827a5a4a123ae324c0da742bd1d3eb1"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_date_time_parser.html#a3827a5a4a123ae324c0da742bd1d3eb1">WEEKINSECS</a> = 604800</td></tr>
-<tr class="separator:a3827a5a4a123ae324c0da742bd1d3eb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0fd70aa24d5b7488de30c882d2606d1a"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_date_time_parser.html#a0fd70aa24d5b7488de30c882d2606d1a">MONTHINSECS</a> = 2592000</td></tr>
-<tr class="separator:a0fd70aa24d5b7488de30c882d2606d1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bcbe9c2772910a92e518a39f4ca81b7"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_date_time_parser.html#a6bcbe9c2772910a92e518a39f4ca81b7">MIN_IN_SECS</a> = 60</td></tr>
+<tr class="memdesc:a6bcbe9c2772910a92e518a39f4ca81b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">For year described in 2 digits, 20 will be added. e.x. 15 -&gt; 2015.  <a href="#a6bcbe9c2772910a92e518a39f4ca81b7">More...</a><br /></td></tr>
+<tr class="separator:a6bcbe9c2772910a92e518a39f4ca81b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad860d83d2253ba7db8b7f405adc0a2c8"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_date_time_parser.html#ad860d83d2253ba7db8b7f405adc0a2c8">HOUR_IN_SECS</a> = 3600</td></tr>
+<tr class="memdesc:ad860d83d2253ba7db8b7f405adc0a2c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minute in Seconds.  <a href="#ad860d83d2253ba7db8b7f405adc0a2c8">More...</a><br /></td></tr>
+<tr class="separator:ad860d83d2253ba7db8b7f405adc0a2c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a829ee3acb25eecc96b6529d335edfbe7"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_date_time_parser.html#a829ee3acb25eecc96b6529d335edfbe7">DAY_IN_SECS</a> = 86400</td></tr>
+<tr class="memdesc:a829ee3acb25eecc96b6529d335edfbe7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hour in Seconds.  <a href="#a829ee3acb25eecc96b6529d335edfbe7">More...</a><br /></td></tr>
+<tr class="separator:a829ee3acb25eecc96b6529d335edfbe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e930ec6feb5cbfe0d3429bb20142d3c"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_date_time_parser.html#a6e930ec6feb5cbfe0d3429bb20142d3c">WEEK_IN_SECS</a> = 604800</td></tr>
+<tr class="memdesc:a6e930ec6feb5cbfe0d3429bb20142d3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Day in Seconds.  <a href="#a6e930ec6feb5cbfe0d3429bb20142d3c">More...</a><br /></td></tr>
+<tr class="separator:a6e930ec6feb5cbfe0d3429bb20142d3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32467508a17e5406b529eb61177264ee"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_date_time_parser.html#a32467508a17e5406b529eb61177264ee">MONTH_IN_SECS</a> = 2592000</td></tr>
+<tr class="memdesc:a32467508a17e5406b529eb61177264ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Week in Seconds.  <a href="#a32467508a17e5406b529eb61177264ee">More...</a><br /></td></tr>
+<tr class="separator:a32467508a17e5406b529eb61177264ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a958ccfe724266321507056e0461a5a98"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_date_time_parser.html#a958ccfe724266321507056e0461a5a98">DEFAULT_TIME</a> = 1439</td></tr>
+<tr class="memdesc:a958ccfe724266321507056e0461a5a98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Month in Seconds.  <a href="#a958ccfe724266321507056e0461a5a98">More...</a><br /></td></tr>
 <tr class="separator:a958ccfe724266321507056e0461a5a98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a673a742d51726b18982538f120233504"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_date_time_parser.html#a673a742d51726b18982538f120233504">relativePattern</a></td></tr>
-<tr class="separator:a673a742d51726b18982538f120233504"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac33e53517bb287b044e49befc68bc14a"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_date_time_parser.html#ac33e53517bb287b044e49befc68bc14a">datePattern</a></td></tr>
-<tr class="separator:ac33e53517bb287b044e49befc68bc14a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16c3d24f4799edd094fb86ad84dc895d"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_date_time_parser.html#a16c3d24f4799edd094fb86ad84dc895d">monthPattern</a></td></tr>
-<tr class="separator:a16c3d24f4799edd094fb86ad84dc895d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbb860b2c023f5184fe25375e0ed4461"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_date_time_parser.html#adbb860b2c023f5184fe25375e0ed4461">dayAppendixPattern</a> = &quot;(st|nd|rd|th)$&quot;</td></tr>
-<tr class="separator:adbb860b2c023f5184fe25375e0ed4461"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba38a69611ab8ebee17b1b2b8cffc37f"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_date_time_parser.html#aba38a69611ab8ebee17b1b2b8cffc37f">decorators</a> = { &quot;of&quot;, &quot;in&quot;, &quot;on&quot;, &quot;by&quot;, &quot;due&quot;, &quot;at&quot; }</td></tr>
-<tr class="separator:aba38a69611ab8ebee17b1b2b8cffc37f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ceedea3863cfc96042863a317946fea"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_date_time_parser.html#a0ceedea3863cfc96042863a317946fea">punctuations</a> = { &quot;,&quot; }</td></tr>
-<tr class="separator:a0ceedea3863cfc96042863a317946fea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87ad6283e9e5e09396506304d2b426d6"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_date_time_parser.html#a87ad6283e9e5e09396506304d2b426d6">dateDividers</a> = { &quot;/&quot;, &quot;-&quot;, &quot;.&quot; }</td></tr>
-<tr class="separator:a87ad6283e9e5e09396506304d2b426d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b7edc3d50c8d0b4150e3939ee5feda7"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_date_time_parser.html#a3b7edc3d50c8d0b4150e3939ee5feda7">todayPattern</a> = { &quot;today&quot;, &quot;td&quot; }</td></tr>
-<tr class="separator:a3b7edc3d50c8d0b4150e3939ee5feda7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf0104c456e60b9b33064ccc3f307cb0"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_date_time_parser.html#abf0104c456e60b9b33064ccc3f307cb0">tomorrowPattern</a> = { &quot;tomorrow&quot;, &quot;tom&quot;, &quot;tm&quot; }</td></tr>
-<tr class="separator:abf0104c456e60b9b33064ccc3f307cb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a281174013714274d1cf7c301169b23e0"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_date_time_parser.html#a281174013714274d1cf7c301169b23e0">singularPattern</a> = { &quot;a&quot;, &quot;an&quot;, &quot;the&quot;, &quot;one&quot; }</td></tr>
-<tr class="separator:a281174013714274d1cf7c301169b23e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc0bc3ce88cfa5eaf03ba7469010df16"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_date_time_parser.html#acc0bc3ce88cfa5eaf03ba7469010df16">dayDescriptionPattern</a> = { &quot;d&quot;, &quot;day&quot;, &quot;days&quot; }</td></tr>
-<tr class="separator:acc0bc3ce88cfa5eaf03ba7469010df16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24ed09e9d3af6ba7e3e70af28aaebd80"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_date_time_parser.html#a24ed09e9d3af6ba7e3e70af28aaebd80">weekDescriptionPattern</a> = { &quot;w&quot;, &quot;week&quot;, &quot;weeks&quot;, &quot;wk&quot;, &quot;wks&quot; }</td></tr>
-<tr class="separator:a24ed09e9d3af6ba7e3e70af28aaebd80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a525c7a3e2105ae6559e81a2ea85c4ecf"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_date_time_parser.html#a525c7a3e2105ae6559e81a2ea85c4ecf">monthDescriptionPattern</a> = { &quot;m&quot;, &quot;month&quot;, &quot;months&quot;, &quot;mon&quot;, &quot;mons&quot; }</td></tr>
-<tr class="separator:a525c7a3e2105ae6559e81a2ea85c4ecf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0dcbab6f875e36f675d9184a98a47c6"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_date_time_parser.html#af0dcbab6f875e36f675d9184a98a47c6">yearDescriptionPattern</a> = { &quot;y&quot;, &quot;year&quot;, &quot;years&quot;, &quot;yr&quot;, &quot;yrs&quot; }</td></tr>
-<tr class="separator:af0dcbab6f875e36f675d9184a98a47c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16a53662cb34b3dcb443026bbff0da1e"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_date_time_parser.html#a16a53662cb34b3dcb443026bbff0da1e">hourDescriptionPattern</a> = { &quot;hour&quot;, &quot;hours&quot;, &quot;hr&quot;, &quot;hrs&quot; }</td></tr>
-<tr class="separator:a16a53662cb34b3dcb443026bbff0da1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ab7f05dd41eff3320745e1bd42e18a7"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_date_time_parser.html#a0ab7f05dd41eff3320745e1bd42e18a7">minDescriptionPattern</a> = { &quot;minute&quot;, &quot;minutes&quot;, &quot;min&quot;, &quot;mins&quot; }</td></tr>
-<tr class="separator:a0ab7f05dd41eff3320745e1bd42e18a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb0d8ea640d7ba6e072cabbebf7b7572"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_date_time_parser.html#abb0d8ea640d7ba6e072cabbebf7b7572">nextPattern</a> = { &quot;next&quot;, &quot;coming&quot; }</td></tr>
-<tr class="separator:abb0d8ea640d7ba6e072cabbebf7b7572"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a315041bae4546ac4d88ba9ed955edceb"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_date_time_parser.html#a315041bae4546ac4d88ba9ed955edceb">DATE_PATTERN</a></td></tr>
+<tr class="memdesc:a315041bae4546ac4d88ba9ed955edceb"><td class="mdescLeft">&#160;</td><td class="mdescRight">If time is not specified, 23:59 is the default time.  <a href="#a315041bae4546ac4d88ba9ed955edceb">More...</a><br /></td></tr>
+<tr class="separator:a315041bae4546ac4d88ba9ed955edceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad713cbb4bea551075364247f8c09b08d"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_date_time_parser.html#ad713cbb4bea551075364247f8c09b08d">MONTH_PATTERN</a></td></tr>
+<tr class="memdesc:ad713cbb4bea551075364247f8c09b08d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Monday, Mon.  <a href="#ad713cbb4bea551075364247f8c09b08d">More...</a><br /></td></tr>
+<tr class="separator:ad713cbb4bea551075364247f8c09b08d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3dd9a041853326af40af0a33dfd9974"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_date_time_parser.html#ac3dd9a041853326af40af0a33dfd9974">DAY_APPENDIX_PATTERN</a> = &quot;(st|nd|rd|th)$&quot;</td></tr>
+<tr class="memdesc:ac3dd9a041853326af40af0a33dfd9974"><td class="mdescLeft">&#160;</td><td class="mdescRight">12, December, Dec  <a href="#ac3dd9a041853326af40af0a33dfd9974">More...</a><br /></td></tr>
+<tr class="separator:ac3dd9a041853326af40af0a33dfd9974"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e78cc57480f0d193e6c9e9a3683dc16"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_date_time_parser.html#a3e78cc57480f0d193e6c9e9a3683dc16">DECORATORS</a> = { &quot;of&quot;, &quot;in&quot;, &quot;on&quot;, &quot;by&quot;, &quot;due&quot;, &quot;at&quot; }</td></tr>
+<tr class="memdesc:a3e78cc57480f0d193e6c9e9a3683dc16"><td class="mdescLeft">&#160;</td><td class="mdescRight">1st, 2nd, 3rd, 4th  <a href="#a3e78cc57480f0d193e6c9e9a3683dc16">More...</a><br /></td></tr>
+<tr class="separator:a3e78cc57480f0d193e6c9e9a3683dc16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32a1a31cd10efd72ecfe55e89aea8ec4"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_date_time_parser.html#a32a1a31cd10efd72ecfe55e89aea8ec4">PUNCTUATIONS</a> = { &quot;,&quot; }</td></tr>
+<tr class="memdesc:a32a1a31cd10efd72ecfe55e89aea8ec4"><td class="mdescLeft">&#160;</td><td class="mdescRight">25th of Dec  <a href="#a32a1a31cd10efd72ecfe55e89aea8ec4">More...</a><br /></td></tr>
+<tr class="separator:a32a1a31cd10efd72ecfe55e89aea8ec4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f39609d7434c47c257dc17045d1913a"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_date_time_parser.html#a3f39609d7434c47c257dc17045d1913a">DATE_DIVIDERS</a> = { &quot;/&quot;, &quot;-&quot;, &quot;.&quot; }</td></tr>
+<tr class="memdesc:a3f39609d7434c47c257dc17045d1913a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sunday, 17th of March.  <a href="#a3f39609d7434c47c257dc17045d1913a">More...</a><br /></td></tr>
+<tr class="separator:a3f39609d7434c47c257dc17045d1913a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbc5291689a2864bf02beebbb4549489"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_date_time_parser.html#adbc5291689a2864bf02beebbb4549489">TODAY_INDICATORS</a> = { &quot;today&quot;, &quot;td&quot; }</td></tr>
+<tr class="memdesc:adbc5291689a2864bf02beebbb4549489"><td class="mdescLeft">&#160;</td><td class="mdescRight">25.12.2015, 25/12/2015, 25-12-2015  <a href="#adbc5291689a2864bf02beebbb4549489">More...</a><br /></td></tr>
+<tr class="separator:adbc5291689a2864bf02beebbb4549489"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bf675804ae4bafa0621681512b75573"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_date_time_parser.html#a1bf675804ae4bafa0621681512b75573">TOMORROW_INDICATORS</a> = { &quot;tomorrow&quot;, &quot;tom&quot;, &quot;tmr&quot; }</td></tr>
+<tr class="memdesc:a1bf675804ae4bafa0621681512b75573"><td class="mdescLeft">&#160;</td><td class="mdescRight">today  <a href="#a1bf675804ae4bafa0621681512b75573">More...</a><br /></td></tr>
+<tr class="separator:a1bf675804ae4bafa0621681512b75573"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c0a27093d6d779d5675195dd42f399c"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_date_time_parser.html#a1c0a27093d6d779d5675195dd42f399c">SINGULAR_FORMATS</a> = { &quot;a&quot;, &quot;an&quot;, &quot;the&quot;, &quot;one&quot; }</td></tr>
+<tr class="memdesc:a1c0a27093d6d779d5675195dd42f399c"><td class="mdescLeft">&#160;</td><td class="mdescRight">tomorrow  <a href="#a1c0a27093d6d779d5675195dd42f399c">More...</a><br /></td></tr>
+<tr class="separator:a1c0a27093d6d779d5675195dd42f399c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81a0b53c3a23599180092187e57fb66b"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_date_time_parser.html#a81a0b53c3a23599180092187e57fb66b">DAY_DESCRIPTION_INDICATOR</a> = { &quot;d&quot;, &quot;day&quot;, &quot;days&quot; }</td></tr>
+<tr class="memdesc:a81a0b53c3a23599180092187e57fb66b"><td class="mdescLeft">&#160;</td><td class="mdescRight">a, an, the, one  <a href="#a81a0b53c3a23599180092187e57fb66b">More...</a><br /></td></tr>
+<tr class="separator:a81a0b53c3a23599180092187e57fb66b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a622cd79bd79480fd69ad6161ccae07dc"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_date_time_parser.html#a622cd79bd79480fd69ad6161ccae07dc">WEEK_DESCRIPTION_INDICATOR</a> = { &quot;w&quot;, &quot;week&quot;, &quot;weeks&quot;, &quot;wk&quot;, &quot;wks&quot; }</td></tr>
+<tr class="memdesc:a622cd79bd79480fd69ad6161ccae07dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">10 days  <a href="#a622cd79bd79480fd69ad6161ccae07dc">More...</a><br /></td></tr>
+<tr class="separator:a622cd79bd79480fd69ad6161ccae07dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e5d75c4251b0035d4debcc8ff6ce713"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_date_time_parser.html#a9e5d75c4251b0035d4debcc8ff6ce713">MONTH_DESCRIPTION_INDICATOR</a> = { &quot;m&quot;, &quot;month&quot;, &quot;months&quot;, &quot;mon&quot;, &quot;mons&quot; }</td></tr>
+<tr class="memdesc:a9e5d75c4251b0035d4debcc8ff6ce713"><td class="mdescLeft">&#160;</td><td class="mdescRight">2 weeks  <a href="#a9e5d75c4251b0035d4debcc8ff6ce713">More...</a><br /></td></tr>
+<tr class="separator:a9e5d75c4251b0035d4debcc8ff6ce713"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2324a9dc5ed95d1d31d584bbb1e869c"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_date_time_parser.html#af2324a9dc5ed95d1d31d584bbb1e869c">YEAR_DESCRIPTION_INDICATOR</a> = { &quot;y&quot;, &quot;year&quot;, &quot;years&quot;, &quot;yr&quot;, &quot;yrs&quot; }</td></tr>
+<tr class="memdesc:af2324a9dc5ed95d1d31d584bbb1e869c"><td class="mdescLeft">&#160;</td><td class="mdescRight">3 months  <a href="#af2324a9dc5ed95d1d31d584bbb1e869c">More...</a><br /></td></tr>
+<tr class="separator:af2324a9dc5ed95d1d31d584bbb1e869c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53e2831a83514941d8a6d77855d6d409"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_date_time_parser.html#a53e2831a83514941d8a6d77855d6d409">HOUR_DESCRIPTION_INDICATOR</a> = { &quot;hour&quot;, &quot;hours&quot;, &quot;hr&quot;, &quot;hrs&quot; }</td></tr>
+<tr class="memdesc:a53e2831a83514941d8a6d77855d6d409"><td class="mdescLeft">&#160;</td><td class="mdescRight">4 year  <a href="#a53e2831a83514941d8a6d77855d6d409">More...</a><br /></td></tr>
+<tr class="separator:a53e2831a83514941d8a6d77855d6d409"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9a3cc6e4d648744d460b5475cadccee"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_date_time_parser.html#af9a3cc6e4d648744d460b5475cadccee">MIN_DESCRIPTION_INDICATOR</a> = { &quot;minute&quot;, &quot;minutes&quot;, &quot;min&quot;, &quot;mins&quot; }</td></tr>
+<tr class="memdesc:af9a3cc6e4d648744d460b5475cadccee"><td class="mdescLeft">&#160;</td><td class="mdescRight">3 hours  <a href="#af9a3cc6e4d648744d460b5475cadccee">More...</a><br /></td></tr>
+<tr class="separator:af9a3cc6e4d648744d460b5475cadccee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bfc49a590f5662df8ffe2f8a6778997"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_date_time_parser.html#a4bfc49a590f5662df8ffe2f8a6778997">NEXT_FORMATS</a> = { &quot;next&quot;, &quot;coming&quot; }</td></tr>
+<tr class="memdesc:a4bfc49a590f5662df8ffe2f8a6778997"><td class="mdescLeft">&#160;</td><td class="mdescRight">30 mins  <a href="#a4bfc49a590f5662df8ffe2f8a6778997">More...</a><br /></td></tr>
+<tr class="separator:a4bfc49a590f5662df8ffe2f8a6778997"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e5d86b7140cd250657ac37ac8b37278"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_date_time_parser.html#a2e5d86b7140cd250657ac37ac8b37278">AM</a> = &quot;am&quot;</td></tr>
+<tr class="memdesc:a2e5d86b7140cd250657ac37ac8b37278"><td class="mdescLeft">&#160;</td><td class="mdescRight">next, coming  <a href="#a2e5d86b7140cd250657ac37ac8b37278">More...</a><br /></td></tr>
 <tr class="separator:a2e5d86b7140cd250657ac37ac8b37278"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c3173f1f18e2353e2f2dda0d075fb86"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_date_time_parser.html#a3c3173f1f18e2353e2f2dda0d075fb86">PM</a> = &quot;pm&quot;</td></tr>
+<tr class="memdesc:a3c3173f1f18e2353e2f2dda0d075fb86"><td class="mdescLeft">&#160;</td><td class="mdescRight">am  <a href="#a3c3173f1f18e2353e2f2dda0d075fb86">More...</a><br /></td></tr>
 <tr class="separator:a3c3173f1f18e2353e2f2dda0d075fb86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09015028e9437753b348df0115802c67"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_date_time_parser.html#a09015028e9437753b348df0115802c67">timeDivider</a> = &quot;:&quot;</td></tr>
-<tr class="separator:a09015028e9437753b348df0115802c67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12154c3dbe0bc222f7a2f20e0b9ee21c"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_date_time_parser.html#a12154c3dbe0bc222f7a2f20e0b9ee21c">TIME_DIVIDERS</a> = &quot;:&quot;</td></tr>
+<tr class="memdesc:a12154c3dbe0bc222f7a2f20e0b9ee21c"><td class="mdescLeft">&#160;</td><td class="mdescRight">pm  <a href="#a12154c3dbe0bc222f7a2f20e0b9ee21c">More...</a><br /></td></tr>
+<tr class="separator:a12154c3dbe0bc222f7a2f20e0b9ee21c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Static library to handle conversion from string vector to std::tm. </p>
+<p>Throws invalid_argument exception if the given list of string cannot be converted. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="afbde4ac9bc1256361277129d68001b00"></a>
 <div class="memitem">
 <div class="memproto">
@@ -282,6 +314,14 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Deals with the expressions that describe relative date. e.x. today, tomorrow, 10 days, 1 week, next Thursday... </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">strArr</td><td>The string vector list to be evaluated. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lowerBound</td><td>Returned day is above this lowerbound. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of seconds difference compared to the current time. </dd></dl>
 
 </div>
 </div>
@@ -306,6 +346,13 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Check Day Month Year format and convert it into date format </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">strArr</td><td>The string vector list to be evaluated. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Date in std::tm format. </dd></dl>
 
 </div>
 </div>
@@ -330,6 +377,13 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Check Month Day Year format and convert it into date format </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">strArr</td><td>The string vector list to be evaluated. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Date in std::tm format. </dd></dl>
 
 </div>
 </div>
@@ -354,6 +408,13 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Deals with the expressions that describe relative time. e.x. next hour, 30 minutes... </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">strArr</td><td>The string vector list to be evaluated. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of seconds difference compared to the current time. </dd></dl>
 
 </div>
 </div>
@@ -378,6 +439,13 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Check the specific date format in DMY and MDY format e.x. 25 December 2015 </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">strArr</td><td>The string vector list to be evaluated. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Date in std::tm format. </dd></dl>
 
 </div>
 </div>
@@ -402,6 +470,13 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Removes unnecessary elements that is unrelated to date time parsing from the string array. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">strArr</td><td>String vector to be formatted </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Formatted string vector </dd></dl>
 
 </div>
 </div>
@@ -426,6 +501,13 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Check the input string and convert it into corresponding int that represents the date. If not valid, global variable int REJECT will be returned. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">str</td><td>String to be converted </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Date int </dd></dl>
 
 </div>
 </div>
@@ -460,6 +542,14 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Handles dates such as Monday </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">date</td><td>Expressed in int value as the std::tm </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">notThisWeek</td><td>True if the date is not this week </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of days difference compared to the current day. </dd></dl>
 
 </div>
 </div>
@@ -484,6 +574,13 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Check the input string and convert it into corresponding day. If not valid, global variable int REJECT will be returned. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">str</td><td>String to be converted </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Day int </dd></dl>
 
 </div>
 </div>
@@ -508,6 +605,13 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Check the input string and convert it into corresponding month. If not valid, global variable int REJECT will be returned. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">str</td><td>String to be converted </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Month int </dd></dl>
 
 </div>
 </div>
@@ -532,6 +636,13 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Check the input string and convert it into corresponding time represented as seconds since the Epoch. If not valid, global variable int REJECT will be returned. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">str</td><td>String to be converted </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Time int </dd></dl>
 
 </div>
 </div>
@@ -556,6 +667,13 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Check the input string and convert it into corresponding year. If not valid, global variable int REJECT will be returned. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">str</td><td>String to be converted </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Year int </dd></dl>
 
 </div>
 </div>
@@ -590,6 +708,14 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Converts string array into std::tm. It will handle many different kinds of formats for a degree of NLP. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">strArr</td><td>String array to be converted </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lowerBound</td><td>std::tm that indicates the lowerbound for the time. By default, the current time is set as the lowerbound. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::tm object </dd></dl>
 
 </div>
 </div>
@@ -612,6 +738,8 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>next, coming </p>
+
 </div>
 </div>
 <a class="anchor" id="adb080e964894e09a85f4b5314e4098d7"></a>
@@ -632,9 +760,11 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Arbitrary int value to indicates REJECT in any classification. </p>
+
 </div>
 </div>
-<a class="anchor" id="a87ad6283e9e5e09396506304d2b426d6"></a>
+<a class="anchor" id="a3f39609d7434c47c257dc17045d1913a"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -642,7 +772,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::string &gt; DoLah::DateTimeParser::dateDividers = { &quot;/&quot;, &quot;-&quot;, &quot;.&quot; }</td>
+          <td class="memname">std::vector&lt; std::string &gt; DoLah::DateTimeParser::DATE_DIVIDERS = { &quot;/&quot;, &quot;-&quot;, &quot;.&quot; }</td>
         </tr>
       </table>
   </td>
@@ -652,9 +782,11 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Sunday, 17th of March. </p>
+
 </div>
 </div>
-<a class="anchor" id="ac33e53517bb287b044e49befc68bc14a"></a>
+<a class="anchor" id="a315041bae4546ac4d88ba9ed955edceb"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -662,7 +794,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::string &gt; DoLah::DateTimeParser::datePattern</td>
+          <td class="memname">std::vector&lt; std::string &gt; DoLah::DateTimeParser::DATE_PATTERN</td>
         </tr>
       </table>
   </td>
@@ -681,9 +813,11 @@ Static Private Attributes</h2></td></tr>
 <div class="line">        <span class="stringliteral">&quot;sunday|sun|sund&quot;</span></div>
 <div class="line">    }</div>
 </div><!-- fragment -->
+<p>If time is not specified, 23:59 is the default time. </p>
+
 </div>
 </div>
-<a class="anchor" id="adbb860b2c023f5184fe25375e0ed4461"></a>
+<a class="anchor" id="ac3dd9a041853326af40af0a33dfd9974"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -691,7 +825,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string DoLah::DateTimeParser::dayAppendixPattern = &quot;(st|nd|rd|th)$&quot;</td>
+          <td class="memname">std::string DoLah::DateTimeParser::DAY_APPENDIX_PATTERN = &quot;(st|nd|rd|th)$&quot;</td>
         </tr>
       </table>
   </td>
@@ -701,9 +835,11 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>12, December, Dec </p>
+
 </div>
 </div>
-<a class="anchor" id="acc0bc3ce88cfa5eaf03ba7469010df16"></a>
+<a class="anchor" id="a81a0b53c3a23599180092187e57fb66b"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -711,7 +847,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::string &gt; DoLah::DateTimeParser::dayDescriptionPattern = { &quot;d&quot;, &quot;day&quot;, &quot;days&quot; }</td>
+          <td class="memname">std::vector&lt; std::string &gt; DoLah::DateTimeParser::DAY_DESCRIPTION_INDICATOR = { &quot;d&quot;, &quot;day&quot;, &quot;days&quot; }</td>
         </tr>
       </table>
   </td>
@@ -721,9 +857,11 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>a, an, the, one </p>
+
 </div>
 </div>
-<a class="anchor" id="a98ddd8d28567f4a0315bc299ef6c70f7"></a>
+<a class="anchor" id="a829ee3acb25eecc96b6529d335edfbe7"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -731,7 +869,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int DoLah::DateTimeParser::DAYINSECS = 86400</td>
+          <td class="memname">int DoLah::DateTimeParser::DAY_IN_SECS = 86400</td>
         </tr>
       </table>
   </td>
@@ -741,9 +879,11 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Hour in Seconds. </p>
+
 </div>
 </div>
-<a class="anchor" id="aba38a69611ab8ebee17b1b2b8cffc37f"></a>
+<a class="anchor" id="a3e78cc57480f0d193e6c9e9a3683dc16"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -751,7 +891,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::string &gt; DoLah::DateTimeParser::decorators = { &quot;of&quot;, &quot;in&quot;, &quot;on&quot;, &quot;by&quot;, &quot;due&quot;, &quot;at&quot; }</td>
+          <td class="memname">std::vector&lt; std::string &gt; DoLah::DateTimeParser::DECORATORS = { &quot;of&quot;, &quot;in&quot;, &quot;on&quot;, &quot;by&quot;, &quot;due&quot;, &quot;at&quot; }</td>
         </tr>
       </table>
   </td>
@@ -760,6 +900,8 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>1st, 2nd, 3rd, 4th </p>
 
 </div>
 </div>
@@ -781,9 +923,11 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Month in Seconds. </p>
+
 </div>
 </div>
-<a class="anchor" id="a16a53662cb34b3dcb443026bbff0da1e"></a>
+<a class="anchor" id="a53e2831a83514941d8a6d77855d6d409"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -791,7 +935,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::string &gt; DoLah::DateTimeParser::hourDescriptionPattern = { &quot;hour&quot;, &quot;hours&quot;, &quot;hr&quot;, &quot;hrs&quot; }</td>
+          <td class="memname">std::vector&lt; std::string &gt; DoLah::DateTimeParser::HOUR_DESCRIPTION_INDICATOR = { &quot;hour&quot;, &quot;hours&quot;, &quot;hr&quot;, &quot;hrs&quot; }</td>
         </tr>
       </table>
   </td>
@@ -801,9 +945,11 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>4 year </p>
+
 </div>
 </div>
-<a class="anchor" id="aae14bf5fd54de9913e6c48d3d61ff199"></a>
+<a class="anchor" id="ad860d83d2253ba7db8b7f405adc0a2c8"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -811,7 +957,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int DoLah::DateTimeParser::HOURINSECS = 3600</td>
+          <td class="memname">int DoLah::DateTimeParser::HOUR_IN_SECS = 3600</td>
         </tr>
       </table>
   </td>
@@ -821,9 +967,11 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Minute in Seconds. </p>
+
 </div>
 </div>
-<a class="anchor" id="a0ab7f05dd41eff3320745e1bd42e18a7"></a>
+<a class="anchor" id="af9a3cc6e4d648744d460b5475cadccee"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -831,7 +979,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::string &gt; DoLah::DateTimeParser::minDescriptionPattern = { &quot;minute&quot;, &quot;minutes&quot;, &quot;min&quot;, &quot;mins&quot; }</td>
+          <td class="memname">std::vector&lt; std::string &gt; DoLah::DateTimeParser::MIN_DESCRIPTION_INDICATOR = { &quot;minute&quot;, &quot;minutes&quot;, &quot;min&quot;, &quot;mins&quot; }</td>
         </tr>
       </table>
   </td>
@@ -841,9 +989,11 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>3 hours </p>
+
 </div>
 </div>
-<a class="anchor" id="a5b0a189985bf3f6424b73c218392ae1a"></a>
+<a class="anchor" id="a6bcbe9c2772910a92e518a39f4ca81b7"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -851,7 +1001,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int DoLah::DateTimeParser::MININSECS = 60</td>
+          <td class="memname">int DoLah::DateTimeParser::MIN_IN_SECS = 60</td>
         </tr>
       </table>
   </td>
@@ -861,9 +1011,11 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>For year described in 2 digits, 20 will be added. e.x. 15 -&gt; 2015. </p>
+
 </div>
 </div>
-<a class="anchor" id="a525c7a3e2105ae6559e81a2ea85c4ecf"></a>
+<a class="anchor" id="a9e5d75c4251b0035d4debcc8ff6ce713"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -871,7 +1023,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::string &gt; DoLah::DateTimeParser::monthDescriptionPattern = { &quot;m&quot;, &quot;month&quot;, &quot;months&quot;, &quot;mon&quot;, &quot;mons&quot; }</td>
+          <td class="memname">std::vector&lt; std::string &gt; DoLah::DateTimeParser::MONTH_DESCRIPTION_INDICATOR = { &quot;m&quot;, &quot;month&quot;, &quot;months&quot;, &quot;mon&quot;, &quot;mons&quot; }</td>
         </tr>
       </table>
   </td>
@@ -881,9 +1033,11 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>2 weeks </p>
+
 </div>
 </div>
-<a class="anchor" id="a0fd70aa24d5b7488de30c882d2606d1a"></a>
+<a class="anchor" id="a32467508a17e5406b529eb61177264ee"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -891,7 +1045,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int DoLah::DateTimeParser::MONTHINSECS = 2592000</td>
+          <td class="memname">int DoLah::DateTimeParser::MONTH_IN_SECS = 2592000</td>
         </tr>
       </table>
   </td>
@@ -901,9 +1055,11 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Week in Seconds. </p>
+
 </div>
 </div>
-<a class="anchor" id="a16c3d24f4799edd094fb86ad84dc895d"></a>
+<a class="anchor" id="ad713cbb4bea551075364247f8c09b08d"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -911,7 +1067,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::string &gt; DoLah::DateTimeParser::monthPattern</td>
+          <td class="memname">std::vector&lt; std::string &gt; DoLah::DateTimeParser::MONTH_PATTERN</td>
         </tr>
       </table>
   </td>
@@ -935,9 +1091,11 @@ Static Private Attributes</h2></td></tr>
 <div class="line">        <span class="stringliteral">&quot;^(december|dec|12)$&quot;</span></div>
 <div class="line">    }</div>
 </div><!-- fragment -->
+<p>Monday, Mon. </p>
+
 </div>
 </div>
-<a class="anchor" id="abb0d8ea640d7ba6e072cabbebf7b7572"></a>
+<a class="anchor" id="a4bfc49a590f5662df8ffe2f8a6778997"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -945,7 +1103,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::string &gt; DoLah::DateTimeParser::nextPattern = { &quot;next&quot;, &quot;coming&quot; }</td>
+          <td class="memname">std::vector&lt; std::string &gt; DoLah::DateTimeParser::NEXT_FORMATS = { &quot;next&quot;, &quot;coming&quot; }</td>
         </tr>
       </table>
   </td>
@@ -954,6 +1112,8 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>30 mins </p>
 
 </div>
 </div>
@@ -975,9 +1135,11 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>am </p>
+
 </div>
 </div>
-<a class="anchor" id="a0ceedea3863cfc96042863a317946fea"></a>
+<a class="anchor" id="a32a1a31cd10efd72ecfe55e89aea8ec4"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -985,7 +1147,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::string &gt; DoLah::DateTimeParser::punctuations = { &quot;,&quot; }</td>
+          <td class="memname">std::vector&lt; std::string &gt; DoLah::DateTimeParser::PUNCTUATIONS = { &quot;,&quot; }</td>
         </tr>
       </table>
   </td>
@@ -994,6 +1156,8 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>25th of Dec </p>
 
 </div>
 </div>
@@ -1017,7 +1181,7 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a673a742d51726b18982538f120233504"></a>
+<a class="anchor" id="a1c0a27093d6d779d5675195dd42f399c"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1025,7 +1189,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string DoLah::DateTimeParser::relativePattern</td>
+          <td class="memname">std::vector&lt; std::string &gt; DoLah::DateTimeParser::SINGULAR_FORMATS = { &quot;a&quot;, &quot;an&quot;, &quot;the&quot;, &quot;one&quot; }</td>
         </tr>
       </table>
   </td>
@@ -1035,9 +1199,11 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>tomorrow </p>
+
 </div>
 </div>
-<a class="anchor" id="a281174013714274d1cf7c301169b23e0"></a>
+<a class="anchor" id="a12154c3dbe0bc222f7a2f20e0b9ee21c"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1045,7 +1211,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::string &gt; DoLah::DateTimeParser::singularPattern = { &quot;a&quot;, &quot;an&quot;, &quot;the&quot;, &quot;one&quot; }</td>
+          <td class="memname">std::string DoLah::DateTimeParser::TIME_DIVIDERS = &quot;:&quot;</td>
         </tr>
       </table>
   </td>
@@ -1055,9 +1221,11 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>pm </p>
+
 </div>
 </div>
-<a class="anchor" id="a09015028e9437753b348df0115802c67"></a>
+<a class="anchor" id="adbc5291689a2864bf02beebbb4549489"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1065,7 +1233,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string DoLah::DateTimeParser::timeDivider = &quot;:&quot;</td>
+          <td class="memname">std::vector&lt; std::string &gt; DoLah::DateTimeParser::TODAY_INDICATORS = { &quot;today&quot;, &quot;td&quot; }</td>
         </tr>
       </table>
   </td>
@@ -1075,9 +1243,11 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>25.12.2015, 25/12/2015, 25-12-2015 </p>
+
 </div>
 </div>
-<a class="anchor" id="a3b7edc3d50c8d0b4150e3939ee5feda7"></a>
+<a class="anchor" id="a1bf675804ae4bafa0621681512b75573"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1085,7 +1255,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::string &gt; DoLah::DateTimeParser::todayPattern = { &quot;today&quot;, &quot;td&quot; }</td>
+          <td class="memname">std::vector&lt; std::string &gt; DoLah::DateTimeParser::TOMORROW_INDICATORS = { &quot;tomorrow&quot;, &quot;tom&quot;, &quot;tmr&quot; }</td>
         </tr>
       </table>
   </td>
@@ -1095,9 +1265,11 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>today </p>
+
 </div>
 </div>
-<a class="anchor" id="abf0104c456e60b9b33064ccc3f307cb0"></a>
+<a class="anchor" id="a622cd79bd79480fd69ad6161ccae07dc"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1105,7 +1277,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::string &gt; DoLah::DateTimeParser::tomorrowPattern = { &quot;tomorrow&quot;, &quot;tom&quot;, &quot;tm&quot; }</td>
+          <td class="memname">std::vector&lt; std::string &gt; DoLah::DateTimeParser::WEEK_DESCRIPTION_INDICATOR = { &quot;w&quot;, &quot;week&quot;, &quot;weeks&quot;, &quot;wk&quot;, &quot;wks&quot; }</td>
         </tr>
       </table>
   </td>
@@ -1115,9 +1287,11 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>10 days </p>
+
 </div>
 </div>
-<a class="anchor" id="a24ed09e9d3af6ba7e3e70af28aaebd80"></a>
+<a class="anchor" id="a6e930ec6feb5cbfe0d3429bb20142d3c"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1125,7 +1299,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::string &gt; DoLah::DateTimeParser::weekDescriptionPattern = { &quot;w&quot;, &quot;week&quot;, &quot;weeks&quot;, &quot;wk&quot;, &quot;wks&quot; }</td>
+          <td class="memname">int DoLah::DateTimeParser::WEEK_IN_SECS = 604800</td>
         </tr>
       </table>
   </td>
@@ -1135,9 +1309,11 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Day in Seconds. </p>
+
 </div>
 </div>
-<a class="anchor" id="a3827a5a4a123ae324c0da742bd1d3eb1"></a>
+<a class="anchor" id="af2324a9dc5ed95d1d31d584bbb1e869c"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1145,7 +1321,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int DoLah::DateTimeParser::WEEKINSECS = 604800</td>
+          <td class="memname">std::vector&lt; std::string &gt; DoLah::DateTimeParser::YEAR_DESCRIPTION_INDICATOR = { &quot;y&quot;, &quot;year&quot;, &quot;years&quot;, &quot;yr&quot;, &quot;yrs&quot; }</td>
         </tr>
       </table>
   </td>
@@ -1155,25 +1331,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a class="anchor" id="af0dcbab6f875e36f675d9184a98a47c6"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt; std::string &gt; DoLah::DateTimeParser::yearDescriptionPattern = { &quot;y&quot;, &quot;year&quot;, &quot;years&quot;, &quot;yr&quot;, &quot;yrs&quot; }</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p>3 months </p>
 
 </div>
 </div>

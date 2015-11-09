@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['easyedit',['easyedit',['../class_do_lah_1_1_u_i_task_box.html#a619b5e441425a9698ebacf2ed0ae84e0',1,'DoLah::UITaskBox']]],
+  ['easyedit',['easyEdit',['../class_do_lah_1_1_u_i_task_box.html#a437fe635d4aee3ea4a6c371905b2e345',1,'DoLah::UITaskBox']]],
   ['edit',['EDIT',['../class_do_lah_1_1_command_parser.html#ae978394933fd0c4fb2bc7d1010e401ff',1,'DoLah::CommandParser']]],
   ['editabletext',['editabletext',['../class_do_lah_1_1_u_i_task_box.html#a44c6395f81e68b4424c2b91a8b24af7d',1,'DoLah::UITaskBox']]],
-  ['editarea',['editarea',['../class_do_lah_1_1_easy_edit.html#a5227d7d3756fc2dd05939db7b719c55c',1,'DoLah::EasyEdit']]],
+  ['editarea',['editArea',['../class_do_lah_1_1_easy_edit.html#af0fcb4b23998a319e187da309748e319',1,'DoLah::EasyEdit']]],
   ['enddate',['endDate',['../class_do_lah_1_1_event_task.html#ae9696ae87dadd2de4f76e5ea13426287',1,'DoLah::EventTask']]],
   ['event_5findicator',['EVENT_INDICATOR',['../class_do_lah_1_1_task_tokenizer.html#ac6cb395be71da1b56c8a21702fe8e145',1,'DoLah::TaskTokenizer']]],
   ['event_5fseparator',['EVENT_SEPARATOR',['../class_do_lah_1_1_task_tokenizer.html#a9014063c9cecbca31aff4c3af27edb75',1,'DoLah::TaskTokenizer']]],

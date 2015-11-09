@@ -116,6 +116,9 @@ $(document).ready(function(){initNavTree('class_do_lah_1_1_time_manager.html',''
 </div><!--header-->
 <div class="contents">
 
+<p>A library consists of general functions related to time manipulation in std::tm.  
+ <a href="class_do_lah_1_1_time_manager.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_time_manager_8h_source.html">TimeManager.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for DoLah::TimeManager:</div>
@@ -141,7 +144,10 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a0202198b81247c72ae6f600da2d676f0"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_do_lah_1_1_time_manager.html#a0202198b81247c72ae6f600da2d676f0">compareTime</a> (std::tm startdate, std::tm enddate)</td></tr>
 <tr class="separator:a0202198b81247c72ae6f600da2d676f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A library consists of general functions related to time manipulation in std::tm. </p>
+<p>These functions are widly used in parse component. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a0c71519ec445cbdc8dcb75d790d996cf"></a>
 <div class="memitem">
 <div class="memproto">
@@ -204,6 +210,13 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Compare the two times and return int value that represents the comparison result. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">startdate</td><td>Date that is supposed to be earlier. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enddate</td><td>Date that is supposed to be later. return Positive int represents startdate is earlier than enddate. Negative represents the opposite. 0 represents equal. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -261,6 +274,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Returns the current time according to the localtime setting in the system. return Current time represented in std::tm format. </p>
 
 </div>
 </div>
@@ -285,6 +299,12 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Check whether the given std::tm represents a valid date or not. For example, 31st of April is an invalid date. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">date</td><td>Date to be evaluated. return True is it is a valid date. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

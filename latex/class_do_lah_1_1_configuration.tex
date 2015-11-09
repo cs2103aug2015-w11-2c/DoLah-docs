@@ -1,0 +1,92 @@
+\hypertarget{class_do_lah_1_1_configuration}{}\section{Do\+Lah\+:\+:Configuration Class Reference}
+\label{class_do_lah_1_1_configuration}\index{Do\+Lah\+::\+Configuration@{Do\+Lah\+::\+Configuration}}
+
+
+The user configuration data structure.  
+
+
+
+
+{\ttfamily \#include $<$Configuration.\+h$>$}
+
+
+
+Collaboration diagram for Do\+Lah\+:\+:Configuration\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{class_do_lah_1_1_configuration__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{class_do_lah_1_1_configuration_a18677d9cc2cdecba1b4d2d69320135b4}{storagefile}
+\begin{DoxyCompactList}\small\item\em The \hyperlink{class_do_lah_1_1_calendar}{Calendar} file path (either absolute path or relative path) \end{DoxyCompactList}\item 
+int \hyperlink{class_do_lah_1_1_configuration_ae53919c98ff4c97b8ec92cfd056c793c}{theme}
+\begin{DoxyCompactList}\small\item\em The themes number. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \hyperlink{class_do_lah_1_1_configuration_a7d9dff9a6b5162f5fabf5bb657962b13}{save} (Archive \&ar, const unsigned int version) const 
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \hyperlink{class_do_lah_1_1_configuration_adeb5727cd5d0327788622eee67bc3c6a}{load} (Archive \&ar, const unsigned int version)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_do_lah_1_1_configuration_ac98d07dd8f7b70e16ccb9a01abf56b9c}{boost\+::serialization\+::access}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The user configuration data structure. 
+
+This class handles the serialization of configuration. It takes care the saving and loading of the serialized configuration. The format of the serialized format will be in X\+M\+L. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_do_lah_1_1_configuration_adeb5727cd5d0327788622eee67bc3c6a}{}\index{Do\+Lah\+::\+Configuration@{Do\+Lah\+::\+Configuration}!load@{load}}
+\index{load@{load}!Do\+Lah\+::\+Configuration@{Do\+Lah\+::\+Configuration}}
+\subsubsection[{load(\+Archive \&ar, const unsigned int version)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Archive $>$ void Do\+Lah\+::\+Configuration\+::load (
+\begin{DoxyParamCaption}
+\item[{Archive \&}]{ar, }
+\item[{const unsigned int}]{version}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\label{class_do_lah_1_1_configuration_adeb5727cd5d0327788622eee67bc3c6a}
+deserialize X\+M\+L file into a configuration object. For more information, check Boost save \& load archive \hypertarget{class_do_lah_1_1_configuration_a7d9dff9a6b5162f5fabf5bb657962b13}{}\index{Do\+Lah\+::\+Configuration@{Do\+Lah\+::\+Configuration}!save@{save}}
+\index{save@{save}!Do\+Lah\+::\+Configuration@{Do\+Lah\+::\+Configuration}}
+\subsubsection[{save(\+Archive \&ar, const unsigned int version) const }]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Archive $>$ void Do\+Lah\+::\+Configuration\+::save (
+\begin{DoxyParamCaption}
+\item[{Archive \&}]{ar, }
+\item[{const unsigned int}]{version}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\label{class_do_lah_1_1_configuration_a7d9dff9a6b5162f5fabf5bb657962b13}
+serialization of configuration into an X\+M\+L format For more information, check Boost save \& load archive 
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_do_lah_1_1_configuration_ac98d07dd8f7b70e16ccb9a01abf56b9c}{}\index{Do\+Lah\+::\+Configuration@{Do\+Lah\+::\+Configuration}!boost\+::serialization\+::access@{boost\+::serialization\+::access}}
+\index{boost\+::serialization\+::access@{boost\+::serialization\+::access}!Do\+Lah\+::\+Configuration@{Do\+Lah\+::\+Configuration}}
+\subsubsection[{boost\+::serialization\+::access}]{\setlength{\rightskip}{0pt plus 5cm}friend class boost\+::serialization\+::access\hspace{0.3cm}{\ttfamily [friend]}}\label{class_do_lah_1_1_configuration_ac98d07dd8f7b70e16ccb9a01abf56b9c}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_do_lah_1_1_configuration_a18677d9cc2cdecba1b4d2d69320135b4}{}\index{Do\+Lah\+::\+Configuration@{Do\+Lah\+::\+Configuration}!storagefile@{storagefile}}
+\index{storagefile@{storagefile}!Do\+Lah\+::\+Configuration@{Do\+Lah\+::\+Configuration}}
+\subsubsection[{storagefile}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Do\+Lah\+::\+Configuration\+::storagefile}\label{class_do_lah_1_1_configuration_a18677d9cc2cdecba1b4d2d69320135b4}
+
+
+The \hyperlink{class_do_lah_1_1_calendar}{Calendar} file path (either absolute path or relative path) 
+
+\hypertarget{class_do_lah_1_1_configuration_ae53919c98ff4c97b8ec92cfd056c793c}{}\index{Do\+Lah\+::\+Configuration@{Do\+Lah\+::\+Configuration}!theme@{theme}}
+\index{theme@{theme}!Do\+Lah\+::\+Configuration@{Do\+Lah\+::\+Configuration}}
+\subsubsection[{theme}]{\setlength{\rightskip}{0pt plus 5cm}int Do\+Lah\+::\+Configuration\+::theme}\label{class_do_lah_1_1_configuration_ae53919c98ff4c97b8ec92cfd056c793c}
+
+
+The themes number. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Do\+Lah/\+Config/\hyperlink{_configuration_8h}{Configuration.\+h}\end{DoxyCompactItemize}

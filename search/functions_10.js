@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['finddate',['findDate',['../class_do_lah_1_1_task_tokenizer.html#ada3fadabb1179f148f154414d752504f',1,'DoLah::TaskTokenizer']]],
+  ['finddate',['findDate',['../class_do_lah_1_1_task_tokenizer.html#a2bb2e8d0d007af6186401bb46e205510',1,'DoLah::TaskTokenizer']]],
   ['finddeadline',['findDeadline',['../class_do_lah_1_1_task_tokenizer.html#a82b33da61aae5f6ae01aceaf470d8aaa',1,'DoLah::TaskTokenizer']]],
   ['findevent',['findEvent',['../class_do_lah_1_1_task_tokenizer.html#ae5c39a94f0663c393b23b56dd43bd275',1,'DoLah::TaskTokenizer']]],
   ['taskcompare',['taskCompare',['../class_do_lah_1_1_calendar.html#a7a0efe29e15b06b684b4069e9cd1c665',1,'DoLah::Calendar']]],

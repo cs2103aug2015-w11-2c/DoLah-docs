@@ -4,6 +4,7 @@ var class_do_lah_1_1_settings_window =
     [ "~SettingsWindow", "class_do_lah_1_1_settings_window.html#a4d7e268c3f9c272c0efb0c3188bfba55", null ],
     [ "applyChanges", "class_do_lah_1_1_settings_window.html#ad64d12b81cf88d037ec8c99244176993", null ],
     [ "applyStorageSettings", "class_do_lah_1_1_settings_window.html#ab14ecbfb57dd29932e83d956eeb4d61d", null ],
+    [ "applyThemeSettings", "class_do_lah_1_1_settings_window.html#a8b87756e98d0f669fc0abe74df86a7d1", null ],
     [ "browseLocation", "class_do_lah_1_1_settings_window.html#a79acea6560460a4a7bab35c4249285b1", null ],
     [ "cancelChanges", "class_do_lah_1_1_settings_window.html#ad323b6d64af4a865976684be5305888b", null ],
     [ "changeTheme", "class_do_lah_1_1_settings_window.html#a8c1c13d0c4ab3faa57dbfb2418225cda", null ],
